@@ -1,0 +1,32 @@
+/* Переворачиваемая карточка: обе стороны лежат в одной ячейке сетки, поэтому высота равна большей из них. */
+.root { position: relative; display: grid; min-width: 0; border-radius: var(--fc-radius, 22px); cursor: pointer; touch-action: pan-y; -webkit-tap-highlight-color: transparent; }
+.root[data-dragging] { cursor: grabbing; user-select: none; -webkit-user-select: none; }
+.shadow { position: absolute; inset: 14% 9% -4%; border-radius: inherit; background: rgb(0 0 0 / 55%); filter: blur(24px); pointer-events: none; }
+.rotor { position: relative; display: grid; transform-style: preserve-3d; }
+.face { position: relative; display: flex; flex-direction: column; grid-area: 1 / 1; min-width: 0; overflow: hidden; border-radius: var(--fc-radius, 22px); backface-visibility: hidden; -webkit-backface-visibility: hidden; }
+.face[data-side="back"] { transform: rotateY(180deg); }
+.glare { position: absolute; inset: 0; border-radius: inherit; opacity: var(--fc-sheen, 0); pointer-events: none;
+  background: radial-gradient(circle farthest-side at var(--fc-gx, 50%) var(--fc-gy, 50%), rgb(255 255 255 / 16%), rgb(255 255 255 / 6%) 40%, transparent 75%); }
+
+/* Ярлык «перевернуть»: всегда внизу стороны, значок поворачивается при наведении на карточку. */
+.chip { position: relative; z-index: 1; display: inline-flex; align-self: flex-end; align-items: center; gap: 8px; min-height: 40px; margin: auto 16px 16px; padding: 8px 14px 8px 10px;
+  border: 1px solid rgb(255 255 255 / 22%); border-radius: 99px; background: rgb(4 24 54 / 55%); color: #fff; font: inherit; font-size: .84rem; font-weight: 700; cursor: pointer;
+  -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px); transition: background-color .2s ease, border-color .2s ease, transform .3s var(--ease-spring); }
+.chip svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; transition: transform .5s var(--ease-spring); }
+.chip:hover { border-color: var(--construction-accent); background: rgb(255 209 102 / 16%); }
+.root:hover .chip svg { transform: rotate(180deg); }
+.chip[data-side="front"] svg { animation: nudge 3.6s ease-in-out 2s infinite; }
+.root:hover .chip[data-side="front"] svg { animation: none; }
+@keyframes nudge { 0%, 78%, 100% { transform: none; } 86% { transform: rotate(-35deg); } 94% { transform: rotate(200deg); } }
+
+/* Без анимаций стороны просто сменяют друг друга. */
+.root[data-fade] .face { transform: none; opacity: 0; backface-visibility: visible; -webkit-backface-visibility: visible; transition: opacity .2s ease; }
+.root[data-fade="front"] .face[data-side="front"], .root[data-fade="back"] .face[data-side="back"] { opacity: 1; }
+.root[data-fade="front"] .face[data-side="back"], .root[data-fade="back"] .face[data-side="front"] { pointer-events: none; }
+
+/* На печати обе стороны видны одна под другой. */
+@media print {
+  .rotor { transform: none !important; display: block; }
+  .face { transform: none !important; backface-visibility: visible; margin-bottom: 8px; }
+  .chip, .shadow, .glare { display: none; }
+}

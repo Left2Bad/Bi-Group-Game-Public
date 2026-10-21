@@ -1,0 +1,227 @@
+.page { max-width: 1120px; }
+.header { margin-bottom: 28px; }
+.header > p { max-width: 70ch; }
+.titleRow { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px 24px; }
+.kicker { margin: 0 0 6px; color: var(--brand-strong); font-weight: 600; }
+.header h1 { margin: 0; font-size: clamp(2.2rem, 5vw, 3.4rem); line-height: 1.04; letter-spacing: -.04em; }
+.header > p { margin: 12px 0 0; color: var(--muted); }
+.toggle { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; margin-top: 14px; padding: 6px 14px; border: 1px solid var(--border); border-radius: 12px; background: var(--surface); font-weight: 600; cursor: pointer; }
+.toggle input { width: 20px; height: 20px; accent-color: var(--brand); }
+
+/* Сводка: радар на листе-чертеже, рядом две карточки общей статистики в стиле карточек качеств профиля. */
+.overview { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px; }
+.radarBox { display: grid; align-content: start; gap: 6px; padding: 22px 22px 18px; border-radius: 22px; border: 1px solid rgb(155 206 255 / 22%);
+  background:
+    linear-gradient(rgb(155 206 255 / 6%) 1px, transparent 1px) 0 0 / 24px 24px,
+    linear-gradient(90deg, rgb(155 206 255 / 6%) 1px, transparent 1px) 0 0 / 24px 24px,
+    linear-gradient(160deg, #144a8f, var(--blueprint) 55%, #0d2f5c); }
+.radarHead h2 { margin: 0; color: #fff; font-size: 1.15rem; }
+.radarHead p { margin: 4px 0 0; color: var(--blueprint-line); font-size: .85rem; }
+.radarBox figure svg { max-width: 460px; }
+.insights { display: grid; grid-auto-rows: 1fr; gap: 16px; }
+.statName { margin: 2px 0 8px; font-size: 1.3rem; font-weight: 800; line-height: 1.2; letter-spacing: -.01em; }
+.statText { margin: 0; color: var(--muted); font-size: .92rem; }
+.range { position: relative; height: 6px; margin-top: auto; border-radius: 99px; background: var(--track); }
+.range span { position: absolute; top: 0; bottom: 0; border-radius: inherit; background: color-mix(in srgb, var(--c) 45%, transparent); }
+.range i { position: absolute; top: 50%; width: 10px; height: 10px; border: 2px solid var(--surface); border-radius: 50%; background: var(--c); transform: translate(-50%, -50%); }
+.rangeNote { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2px 10px; margin: 0; color: var(--muted); font-size: .8rem; }
+.statText + .rangeNote { margin-top: auto; }
+
+.heatSection, .mix { margin-top: 40px; }
+.sectionHead { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 12px 24px; margin-bottom: 14px; }
+.sectionHead h2, .mix h2 { margin: 0; font-size: clamp(1.5rem, 3vw, 2rem); letter-spacing: -.03em; }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 14px; color: var(--muted); font-size: .8rem; }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.legend i { width: 16px; height: 12px; border-radius: 3px; }
+.tableWrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 18px; background: var(--surface); }
+.heat { width: 100%; min-width: 680px; table-layout: fixed; border-collapse: separate; border-spacing: 0; font-size: .9rem; }
+.heat th, .heat td { padding: 8px 10px; overflow-wrap: anywhere; border-bottom: 1px solid var(--border); text-align: left; }
+.heat thead th { color: var(--muted); font-size: .82rem; font-weight: 600; }
+.heat tbody tr:last-child > * { border-bottom: 0; }
+.heat tbody th { display: grid; font-weight: 400; }
+.heat tbody th span { color: var(--muted); font-size: .82rem; }
+.heat td[data-band] { font-family: var(--font-technical); font-weight: 600; text-align: center; border-left: 3px solid var(--surface); }
+.heat tr[data-own] > * { background-color: var(--warn-bg); }
+[data-band="0"] { background: var(--band-0) !important; color: var(--band-0-ink); }
+[data-band="1"] { background: var(--band-1) !important; color: var(--band-1-ink); }
+[data-band="2"] { background: var(--band-2) !important; color: var(--band-2-ink); }
+[data-band="3"] { background: var(--band-3) !important; color: var(--band-3-ink); }
+[data-band="4"] { background: var(--band-4) !important; color: var(--band-4-ink); }
+.archetypeCell { font-weight: 600; line-height: 1.3; }
+.code { display: inline-block; margin-right: 8px; padding: 2px 7px; border-radius: 6px; background: var(--blueprint); color: var(--construction-accent); font-family: var(--font-technical); font-size: .85rem; letter-spacing: .06em; }
+.srOnly { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+.mix ul { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0 0; padding: 0; list-style: none; }
+.mix li { display: inline-flex; align-items: center; gap: 4px; padding: 8px 10px 8px 8px; border: 1px solid var(--border); border-radius: 12px; background: var(--surface); font-weight: 600; font-size: .92rem; }
+.mix li b { display: grid; place-items: center; min-width: 24px; height: 24px; margin-left: 8px; border-radius: 50%; background: var(--brand-soft); color: var(--brand-strong); font-family: var(--font-technical); font-size: .82rem; }
+.mix > p { max-width: 75ch; margin: 14px 0 0; color: var(--muted); }
+.next { margin-top: 32px; padding: 18px 20px; border-left: 3px solid var(--construction-accent); border-radius: 0 14px 14px 0; background: var(--surface); }
+.next a { font-weight: 700; }
+@media(max-width: 960px) { .overview { grid-template-columns: 1fr; } }
+
+.attention { margin: 22px 0 0; padding: 14px 18px; border-left: 4px solid var(--brand); border-radius: 0 14px 14px 0; background: var(--brand-soft); color: var(--ink); font-size: .95rem; }
+.attention[data-attention] { border-left-color: #c77700; background: var(--warn-bg); }
+.consistencyCell { font-size: .82rem; font-weight: 600; line-height: 1.3; }
+.consistencyCell[data-level="check"] { color: var(--warn-ink); background-color: var(--warn-bg); }
+.consistencyCell[data-level="low"] { color: var(--danger-ink); background-color: var(--danger-bg); }
+.consistencyCell[data-level="consistent"] { color: var(--brand-strong); }
+[data-summary] { margin-top: 12px; }
+.summary { width: 100%; min-width: 560px; border-collapse: separate; border-spacing: 0; font-size: .93rem; }
+.summary th, .summary td { padding: 9px 12px; border-bottom: 1px solid var(--border); text-align: left; }
+.summary thead th { color: var(--muted); font-size: .82rem; font-weight: 600; }
+.summary td { font-family: var(--font-technical); font-weight: 600; text-align: center; }
+.summary thead th:not(:first-child) { text-align: center; }
+.summary tbody tr:last-child > * { border-bottom: 0; }
+.exportBox { display: grid; gap: 12px; margin-top: 40px; padding: 22px 24px; border: 1px solid var(--border); border-radius: 18px; background: var(--surface); }
+.exportBox h2 { margin: 0; font-size: 1.2rem; }
+
+/* Ширины столбцов: имя шире, четыре качества поровну, архетип и согласованность компактно. */
+.heat thead th:first-child { width: 20%; }
+.heat thead th:nth-child(n+2):nth-child(-n+5) { width: 12%; line-height: 1.25; }
+.heat thead th:nth-child(6) { width: 18%; }
+.heat thead th:nth-child(7) { width: 14%; }
+
+/* Бригада персонажами: руководитель видит людей, а не только таблицу. */
+.brigade { margin-bottom: 18px; padding: 22px 22px 0; border-radius: 22px; color: #fff;
+  background: linear-gradient(rgb(155 206 255 / 7%) 1px, transparent 1px) 0 0 / 28px 28px, linear-gradient(90deg, rgb(155 206 255 / 7%) 1px, transparent 1px) 0 0 / 28px 28px, linear-gradient(140deg, #072a58, #0a4a95); }
+.brigade h2 { margin: 0; font-size: 1.15rem; }
+.brigade .leader { margin: 6px 0 0; font-weight: 600; }
+.brigade ul { display: flex; gap: 4px; margin: 10px 0 0; padding: 0 0 16px; overflow-x: auto; list-style: none; scrollbar-width: thin; }
+.brigade li { flex: 1 0 96px; display: grid; justify-items: center; gap: 4px; text-align: center; font-size: .88rem; }
+.brigade li .code { margin: 0; }
+/* Бригада «дышит» вразнобой, а фигура под курсором поднимается: состав читается как живая команда. */
+.brigade li { transition: transform .35s var(--ease-spring); }
+.brigade li:hover { transform: translateY(-6px); }
+.brigade li > svg { animation: crew-breathe 4.5s ease-in-out infinite alternate; }
+.brigade li:nth-child(2n) > svg { animation-delay: -1.4s; }
+.brigade li:nth-child(3n) > svg { animation-delay: -2.6s; }
+.brigade li:nth-child(5n) > svg { animation-delay: -3.3s; }
+@keyframes crew-breathe { to { transform: translateY(-4px); } }
+.avatarCrop { display: block; flex: none; width: 40px; height: 40px; overflow: hidden; border-radius: 50%; background: var(--blueprint); }
+.avatarCrop > svg { margin: -8px 0 0 -15px; }
+.person { display: flex; align-items: center; gap: 10px; }
+.personText { display: grid; }
+.personText > span { color: var(--muted); font-size: .82rem; }
+.heat tbody th { display: table-cell; }
+
+.meetingCell { text-align: center; }
+.planRow > td { padding: 0 12px 14px; background: transparent; }
+.personText > .compactMeeting { margin-top: 6px; }
+/* Телефон: таблица прокручивается по горизонтали, первая колонка не сжимается, чтобы действие под именем не перекрывало соседние ячейки. */
+@media (max-width: 720px) {
+  .heat { min-width: 680px; }
+  .heat thead th:first-child { width: 190px; min-width: 190px; }
+  .heat tbody th:first-child { min-width: 190px; }
+  .person { align-items: flex-start; }
+  .personText { min-width: 0; }
+  .personText > .compactMeeting { display: block; }
+}
+
+.leaders, .impact { margin-top: 24px; }
+.leaders h2 { margin: 0 0 12px; font-size: 1.15rem; }
+.leaders ul, .impact ul { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin: 0; padding: 0; list-style: none; }
+.leaders li, .impact li { display: grid; gap: 4px; padding: 16px 18px; border-radius: 18px; background: var(--surface); border: 1px solid var(--border); }
+.leaders li[data-own] { border-color: var(--brand); background: var(--brand-soft); }
+.leaders li { transition: transform .3s var(--ease-out), box-shadow .3s ease, border-color .2s ease; }
+.leaders li:hover { border-color: color-mix(in srgb, var(--brand-bright) 45%, var(--border)); box-shadow: var(--shadow-md); transform: translateY(-3px); }
+.leaders li span, .impact li span { color: var(--muted); font-size: .85rem; }
+.leaders li b, .impact li b { color: var(--brand); font-family: var(--font-technical); font-size: 1.3rem; }
+.impact li[data-sign="-1"] b { color: var(--danger-ink); }
+.impact li[data-sign="0"] b { color: var(--muted); }
+.impactToggle { padding: 10px 16px; border-radius: 12px; border: 1px solid var(--brand); background: var(--brand-soft); color: var(--ink); font: inherit; font-weight: 600; cursor: pointer; }
+.impact > p { color: var(--muted); }
+
+/* Влияние на команду: сотрудники-кнопки, радар с наложением и полосы результатов. */
+.impactView { margin-top: 8px; }
+.impactHint { margin: 0; color: var(--muted); font-size: .9rem; }
+.picker { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 10px; margin: 0 0 16px; padding: 0; list-style: none; }
+.pick { display: flex; align-items: center; gap: 12px; width: 100%; min-height: 72px; padding: 10px 14px 10px 10px; border: 1px solid var(--border); border-radius: 16px;
+  background: var(--surface); color: var(--ink); font: inherit; text-align: left; cursor: pointer; transition: border-color .2s ease, background .2s ease, transform .2s ease, box-shadow .2s ease; }
+.pick:hover { border-color: color-mix(in srgb, #ffd166 45%, var(--border)); transform: translateY(-1px); }
+.pick:focus-visible { outline: 3px solid var(--focus, #ffd166); outline-offset: 2px; }
+.pick[aria-pressed="true"] { border-color: #ffd166; background: linear-gradient(150deg, rgb(255 209 102 / 16%), var(--surface) 70%); box-shadow: 0 0 0 1px #ffd166, 0 10px 26px rgb(255 209 102 / 14%); }
+.pickAvatar { display: block; flex: none; width: 52px; height: 52px; overflow: hidden; border-radius: 50%; background: var(--blueprint); }
+.pickAvatar > svg { margin: -10px 0 0 -16px; }
+.pick[aria-pressed="true"] .pickAvatar { box-shadow: 0 0 0 2px #ffd166; }
+.pickText { display: grid; gap: 1px; min-width: 0; }
+.pickText strong { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.pickText > span:not(.code) { overflow: hidden; color: var(--muted); font-size: .8rem; text-overflow: ellipsis; white-space: nowrap; }
+.pickText .code { justify-self: start; margin-top: 3px; }
+.impactGrid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px; }
+.barsBox { display: grid; align-content: start; gap: 6px; padding: 22px; border: 1px solid var(--border); border-radius: 22px; background: var(--surface); }
+.barsBox h2 { margin: 0; font-size: 1.15rem; }
+.barsNote { margin: 0 0 8px; color: var(--muted); font-size: .85rem; }
+.bars { display: grid; gap: 18px; margin: 0; padding: 0; list-style: none; }
+.barHead { display: flex; align-items: baseline; gap: 10px; margin-bottom: 8px; }
+.barHead span { flex: 1; font-weight: 600; }
+.barHead b { color: var(--c); font-family: var(--font-technical); font-size: 1.2rem; font-weight: 600; font-variant-numeric: tabular-nums; }
+.barHead em { min-width: 42px; padding: 1px 8px; border-radius: 6px; font-family: var(--font-technical); font-size: .8rem; font-style: normal; text-align: center; background: var(--track); color: var(--muted); }
+.bars li[data-sign="1"] .barHead em { background: rgb(91 224 168 / 16%); color: #5be0a8; }
+.bars li[data-sign="-1"] .barHead em { background: rgb(255 143 163 / 16%); color: #ff8fa3; }
+.barTrack { position: relative; height: 12px; border-radius: 99px; background: var(--track); }
+.barTrack span { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, color-mix(in srgb, var(--c) 55%, transparent), var(--c));
+  box-shadow: 0 0 12px color-mix(in srgb, var(--c) 35%, transparent); transition: width .6s var(--ease-out, cubic-bezier(.2, .8, .2, 1)); }
+.barTrack i { position: absolute; top: -4px; bottom: -4px; width: 3px; border-radius: 2px; background: #fff; transform: translateX(-50%); box-shadow: 0 0 0 2px var(--surface); }
+.barNote { margin: 6px 0 0; color: var(--muted); font-size: .8rem; }
+@media(max-width: 960px) { .impactGrid { grid-template-columns: 1fr; } }
+@media (prefers-reduced-motion: reduce) { .barTrack span, .pick { transition: none; } }
+
+/* «Качества сотрудников» в стиле матрицы 16 архетипов: синий лист-чертёж, стеклянные плитки, жёлтые коды,
+   контурные номера качеств 01–04. Насыщенность плитки по-прежнему кодирует диапазон процента (data-band). */
+.heatSection .legend { gap: 6px; }
+.heatSection .legend span { padding: 4px 10px 4px 6px; border: 1px solid var(--border); border-radius: 999px; background: var(--surface); color: var(--ink-soft); }
+.heatSection .legend i { width: 14px; height: 14px; border-radius: 4px; }
+.heatSection .tableWrap { padding: 10px 12px 12px; border: 1px solid rgb(155 206 255 / 18%); border-radius: 24px; box-shadow: 0 24px 60px rgb(4 20 46 / 45%);
+  background:
+    linear-gradient(rgb(155 206 255 / 5%) 1px, transparent 1px) 0 0 / 28px 28px,
+    linear-gradient(90deg, rgb(155 206 255 / 5%) 1px, transparent 1px) 0 0 / 28px 28px,
+    linear-gradient(140deg, #072a58, #0a4a95); scrollbar-color: rgb(155 206 255 / 35%) transparent; }
+.heatSection .heat, .heatSection .summary { border-spacing: 6px; color: #fff; }
+.heatSection .heat th, .heatSection .heat td, .heatSection .summary th, .heatSection .summary td { border-bottom: 0; }
+.heatSection .heat thead th, .heatSection .summary thead th { padding: 8px 10px 4px; color: var(--blueprint-line); font-size: .8rem; font-weight: 600; line-height: 1.25; vertical-align: bottom; overflow-wrap: normal; }
+.traitHead { white-space: nowrap; }
+.heatSection .summary thead th.traitHead { text-align: center; }
+.traitNo { display: block; margin-bottom: 2px; color: transparent; font-family: var(--font-technical); font-size: 1.55rem; font-weight: 700; line-height: 1;
+  -webkit-text-stroke: 1.2px color-mix(in srgb, var(--construction-accent) 80%, transparent); }
+.heatSection .heat tbody th { padding: 8px 6px; vertical-align: middle; }
+.heatSection .personText strong { color: #fff; }
+.heatSection .personText > span { color: var(--blueprint-line); }
+.heatSection .avatarCrop { width: 44px; height: 44px; background: rgb(255 255 255 / 10%); box-shadow: 0 0 0 2px rgb(255 255 255 / 70%); }
+
+/* Плитки качеств: стекло, насыщенность по диапазону, внизу тонкая шкала процента. */
+.heatSection .heat td[data-band] { position: relative; padding: 12px 10px 16px; border: 1px solid rgb(155 206 255 / 20%); border-left: 1px solid rgb(155 206 255 / 20%); border-radius: 14px; color: #fff; vertical-align: middle; }
+.heatSection [data-band="0"] { background: rgb(255 255 255 / 4%) !important; color: #ffc2cd !important; }
+.heatSection [data-band="1"] { background: rgb(93 181 255 / 10%) !important; color: #fff !important; }
+.heatSection [data-band="2"] { background: rgb(93 181 255 / 18%) !important; color: #fff !important; }
+.heatSection [data-band="3"] { background: rgb(93 181 255 / 28%) !important; color: #fff !important; border-color: rgb(155 206 255 / 35%) !important; }
+.heatSection [data-band="4"] { background: rgb(93 181 255 / 40%) !important; color: #fff !important; border-color: rgb(155 206 255 / 50%) !important; }
+.heatSection .legend [data-band="0"] { background: rgb(255 255 255 / 8%) !important; box-shadow: inset 0 0 0 1px rgb(255 194 205 / 60%); }
+.tileValue { display: block; font-family: var(--font-technical); font-size: 1.08rem; font-weight: 600; font-variant-numeric: tabular-nums; }
+.tileMeter { position: absolute; right: 10px; bottom: 7px; left: 10px; height: 3px; border-radius: 99px; background: rgb(255 255 255 / 12%); }
+.tileMeter i { display: block; height: 100%; border-radius: inherit; background: var(--construction-accent); }
+.heatSection [data-band="0"] .tileMeter i { background: #ff8fa3; }
+
+/* Архетип — как карточка в матрице: жёлтый код над названием. */
+.heatSection .archetypeCell { padding: 10px 12px; border: 1px solid rgb(155 206 255 / 20%); border-radius: 14px; background: rgb(255 255 255 / 6%); color: #fff; font-weight: 600; vertical-align: middle; }
+.archetypeCode { display: block; margin-bottom: 3px; color: var(--construction-accent); font-family: var(--font-technical); font-size: .88rem; letter-spacing: .06em; }
+.heatSection .consistencyCell { border: 1px solid rgb(155 206 255 / 20%); border-radius: 14px; background: rgb(255 255 255 / 6%); vertical-align: middle; }
+.heatSection .consistencyCell[data-level="consistent"] { color: #9bf0c9; }
+.heatSection .consistencyCell[data-level="check"] { background: rgb(255 209 102 / 12%); color: #ffd166; }
+.heatSection .consistencyCell[data-level="low"] { background: rgb(255 143 163 / 14%); color: #ffc2cd; }
+.heatSection .meetingCell { vertical-align: middle; }
+
+/* Своя строка — жёлтая обводка плиток вместо заливки всей строки. */
+.heatSection .heat tr[data-own] > * { background-color: transparent; }
+.heatSection .heat tr[data-own] > td { box-shadow: inset 0 0 0 1px var(--construction-accent); }
+.heatSection .heat tr[data-own] .personText strong { color: var(--construction-accent); }
+
+/* Итоги по команде — тот же лист, значения на плитках. */
+.heatSection .summary tbody th { padding: 10px 6px; color: var(--blueprint-line); font-size: .86rem; font-weight: 600; }
+.heatSection .summary td { padding: 10px; border: 1px solid rgb(155 206 255 / 20%); border-radius: 12px; background: rgb(255 255 255 / 6%); color: #fff; }
+.heatSection .summary tbody tr:first-child td { color: var(--construction-accent); font-size: 1.05rem; }
+/* Слова в таблице не рвутся посередине: на узком экране таблица прокручивается, а не сжимает подписи. */
+.heatSection .heat { min-width: 860px; }
+.heatSection .heat th, .heatSection .heat td { overflow-wrap: normal; hyphens: manual; }
+.heatSection .personText strong { white-space: nowrap; }
+.heatSection .heat thead th:first-child { width: 22%; }
+.heatSection .heat thead th.traitHead { width: 11%; }

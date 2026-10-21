@@ -1,0 +1,51 @@
+/* Тест начинается почти сразу под шапкой сайта, чтобы вопрос и варианты помещались на экран без прокрутки. */
+.page.page { padding-top: clamp(16px, 2.4vw, 28px); }
+.layout { display: grid; grid-template-columns: minmax(0, 1fr) clamp(270px, 25vw, 340px); gap: clamp(20px, 3vw, 36px); align-items: start; }
+/* Стройка стоит справа от вопроса. В разметке она первая, чтобы на телефоне оставаться над вопросом.
+   На ПК содержимое вопроса раскладывается прямо по сетке: шапка теста занимает первую строку, а стройка начинается
+   со второй — вровень с верхним краем карточки вопроса — и тянется до конца, чтобы оставаться на экране при прокрутке. */
+.flow { min-width: 0; }
+@media(min-width: 901px) {
+  .layout { row-gap: 0; }
+  .flow { display: contents; }
+  .flow > * { grid-column: 1; min-width: 0; }
+  .layout > :first-child { grid-column: 2; grid-row: 2 / span 40; }
+}
+.head { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 10px 28px; margin-bottom: 16px; scroll-margin-top: 20px; }
+.head > div:first-child { min-width: 0; }
+.flow h1 { margin: 0; font-size: clamp(1.5rem, 2.6vw, 2rem); line-height: 1.15; letter-spacing: -.03em; }
+.flow h1:focus { outline: none; }
+.meta { display: grid; grid-template-columns: auto minmax(120px, 1fr); align-items: center; gap: 6px 16px; margin: 10px 0 20px; color: var(--muted); font-size: .92rem; }
+.head .meta { flex: 1 1 260px; max-width: 360px; margin: 0; }
+.meta p { margin: 0; }
+.meta .saved { grid-column: 1 / -1; font-size: .85rem; }
+.flow progress { width: 100%; height: 8px; appearance: none; border: 0; border-radius: 99px; background: var(--track); overflow: hidden; }
+.flow progress::-webkit-progress-bar { background: var(--track); border-radius: 99px; }
+.flow progress::-webkit-progress-value { background: linear-gradient(90deg, var(--brand), var(--brand-bright) 70%, var(--construction-accent)); border-radius: 99px; box-shadow: 0 0 10px rgb(41 147 237 / 55%); transition: width .5s var(--ease-out); }
+.flow progress::-moz-progress-bar { background: var(--brand); border-radius: 99px; }
+.questionSwap { animation: question-in .5s var(--ease-spring); }
+@keyframes question-in { from { opacity: 0; transform: translateX(26px) scale(.99); } to { opacity: 1; transform: none; } }
+.answers { display: grid; gap: .75rem; margin-block: 1rem; padding: 1rem; }
+.answers label { display: flex; align-items: baseline; gap: .75rem; padding: .75rem; border: 1px solid var(--border); cursor: pointer; }
+.answers input { flex-shrink: 0; }
+.answers label:has(input:checked) { border-color: var(--brand); border-width: 2px; }
+.answers label:focus-within { outline: 3px solid var(--focus); outline-offset: 3px; }
+/* Кнопки перехода прилипают к низу экрана: длинный вопрос не прячет их за прокруткой. */
+.navigation { position: sticky; bottom: 0; z-index: 2; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem; margin: 12px 0 0; padding: 12px 14px; border: 1px solid var(--border); border-radius: 16px;
+  background: color-mix(in srgb, var(--canvas) 80%, transparent); backdrop-filter: blur(12px); box-shadow: 0 -12px 30px -18px rgb(0 0 0 / 70%); }
+.review { margin: 18px 0 24px; padding: 0; list-style: none; counter-reset: review; }
+.review li { position: relative; margin: 0; padding: 16px 0 16px 46px; border-top: 1px solid var(--border); counter-increment: review; }
+.review li::before { position: absolute; left: 0; top: 16px; display: grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: var(--brand-soft); color: var(--brand-strong); font-family: var(--font-technical); font-size: .85rem; content: counter(review); }
+.review p { margin: 0 0 8px; }
+.reviewContext { color: var(--muted); font-size: .9rem; }
+.reviewAnswer { font-weight: 600; }
+@media(max-width: 900px) {
+  .layout { grid-template-columns: 1fr; gap: 14px; }
+  /* Под закреплённой полосой стройки: заголовок вопроса при возврате к началу не прячется под ней. */
+  .head { gap: 8px 20px; margin-bottom: 12px; scroll-margin-top: 104px; }
+  .meta .saved { display: none; }
+  /* Пока пишется ответ, клавиатура занимает пол-экрана: полоса стройки перестаёт закрепляться и уходит вверх вместе со страницей. */
+  .layout:has(textarea:focus) > [data-phase] { position: static; }
+}
+/* На телефоне кнопки встают в один ряд, чтобы полоса не закрывала полэкрана. */
+@media(max-width: 520px) { .navigation { flex-wrap: nowrap; gap: 10px; padding: 10px; } .navigation > button { flex: 1 1 0; width: auto; } .navigation > p { display: none; } }

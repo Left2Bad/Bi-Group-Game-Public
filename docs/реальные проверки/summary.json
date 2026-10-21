@@ -1,0 +1,1664 @@
+{
+  "generatedAt": "2026-10-20T21:22:42.340Z",
+  "model": [
+    "gpt-6-luna"
+  ],
+  "serviceTier": [
+    "fast"
+  ],
+  "reasoning": [
+    "high",
+    "low"
+  ],
+  "price": {
+    "input": 0.2,
+    "cached": 0.02,
+    "cacheWrite": 0.25,
+    "output": 1
+  },
+  "openaiCalls": 57,
+  "failedChecks": [
+    {
+      "run": "R5",
+      "stage": "evaluate",
+      "code": "invalid_output"
+    }
+  ],
+  "totalUsd": 0.1297,
+  "perFullAttemptUsd": 0.0166,
+  "per10000EmployeesUsd": 166,
+  "localization": {
+    "translateKkUsd": 0.00354,
+    "translateEnUsd": 0.00224,
+    "progressUsd": 0.00374,
+    "callsByOperation": {
+      "question_selection": 4,
+      "open_question": 20,
+      "professional_evaluation": 10,
+      "evaluation_quote_repair": 7,
+      "translation_kk": 9,
+      "translation_en": 6,
+      "progress_analysis": 1
+    }
+  },
+  "timing": {
+    "start_select_10_ids": {
+      "n": 4,
+      "min": 7.1,
+      "median": 9.1,
+      "max": 10.1,
+      "avg": 8.3
+    },
+    "open_question": {
+      "n": 20,
+      "min": 7.1,
+      "median": 9.1,
+      "max": 30.3,
+      "avg": 10.9
+    },
+    "evaluate": {
+      "n": 9,
+      "min": 32.4,
+      "median": 37.4,
+      "max": 50.5,
+      "avg": 39.4
+    },
+    "translate_kk": {
+      "n": 3,
+      "min": 18.4,
+      "median": 19.3,
+      "max": 20.4,
+      "avg": 19.4
+    },
+    "translate_en": {
+      "n": 2,
+      "min": 13.2,
+      "median": 13.2,
+      "max": 13.2,
+      "avg": 13.2
+    },
+    "progress_analysis": {
+      "n": 1,
+      "min": 17.2,
+      "median": 17.2,
+      "max": 17.2,
+      "avg": 17.2
+    }
+  },
+  "fullRun": [
+    {
+      "id": "A1",
+      "aiSeconds": 109.1,
+      "usd": 0.01584
+    },
+    {
+      "id": "A2",
+      "aiSeconds": 105.2,
+      "usd": 0.01545
+    },
+    {
+      "id": "B1",
+      "aiSeconds": 112.3,
+      "usd": 0.01953
+    },
+    {
+      "id": "C1",
+      "aiSeconds": 91,
+      "usd": 0.01558
+    }
+  ],
+  "repeatability": {
+    "runs": [
+      "A1",
+      "R1",
+      "R2",
+      "R3",
+      "R4",
+      "R5"
+    ],
+    "spread": {
+      "criticalThinking": {
+        "values": [
+          85,
+          85,
+          85,
+          85,
+          85,
+          85
+        ],
+        "min": 85,
+        "max": 85,
+        "spread": 0
+      },
+      "confidence": {
+        "values": [
+          53,
+          53,
+          53,
+          53,
+          53,
+          53
+        ],
+        "min": 53,
+        "max": 53,
+        "spread": 0
+      },
+      "discipline": {
+        "values": [
+          100,
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "min": 100,
+        "max": 100,
+        "spread": 0
+      },
+      "engagement": {
+        "values": [
+          52,
+          52,
+          52,
+          52,
+          52,
+          52
+        ],
+        "min": 52,
+        "max": 52,
+        "spread": 0
+      }
+    },
+    "sameAnswers": true,
+    "criteriaIdentical": false,
+    "skillsIdentical": false
+  },
+  "runs": [
+    {
+      "id": "A1",
+      "persona": "A",
+      "jobRole": "Прораб",
+      "attemptId": "433e5771-393a-41cd-b261-ddcf2b4cf9d5",
+      "stages": [
+        {
+          "stage": "start_select_10_ids",
+          "status": 201,
+          "seconds": 9.1,
+          "calls": [
+            {
+              "operation": "question_selection",
+              "responseId": "resp_0719c312b873da79016ad7aa854a2087d2b5bda28e48abf51f",
+              "requestId": "req_ae927698e7fb49a8954ed1add34b500f",
+              "seconds": 9,
+              "serviceTier": "fast",
+              "inputTokens": 6295,
+              "outputTokens": 661,
+              "reasoningTokens": 615,
+              "usd": 0.00223
+            }
+          ]
+        },
+        {
+          "stage": "open_question_1",
+          "status": 200,
+          "seconds": 18.2,
+          "calls": [
+            {
+              "operation": "open_question",
+              "responseId": "resp_04ff8f22cb34b1ea016ad7aa8b11c487d2b3d8ef07f57891b1",
+              "requestId": "req_9ba0463b4afd4e18baec97d097cc54eb",
+              "seconds": 17.6,
+              "serviceTier": "fast",
+              "inputTokens": 532,
+              "outputTokens": 363,
+              "reasoningTokens": 286,
+              "usd": 0.00047
+            }
+          ]
+        },
+        {
+          "stage": "open_question_2",
+          "status": 200,
+          "seconds": 10.1,
+          "calls": [
+            {
+              "operation": "open_question",
+              "responseId": "resp_0466eb09a47fa185016ad7aaab9dfc87d28289a57142f2f94e",
+              "requestId": "req_78bac1aa012e43e19de745e8029c96bb",
+              "seconds": 9.6,
+              "serviceTier": "fast",
+              "inputTokens": 785,
+              "outputTokens": 803,
+              "reasoningTokens": 708,
+              "usd": 0.00096
+            }
+          ]
+        },
+        {
+          "stage": "open_question_3",
+          "status": 200,
+          "seconds": 10.1,
+          "calls": [
+            {
+              "operation": "open_question",
+              "responseId": "resp_0bdb88f9f8c8011f016ad7aabdd19c87d2b6cdd462e9375688",
+              "requestId": "req_dc21cd9df7f044acac761a05ebf58a70",
+              "seconds": 9.6,
+              "serviceTier": "fast",
+              "inputTokens": 1049,
+              "outputTokens": 1180,
+              "reasoningTokens": 1087,
+              "usd": 0.00144
+            }
+          ]
+        },
+        {
+          "stage": "open_question_4",
+          "status": 200,
+          "seconds": 12.1,
+          "calls": [
+            {
+              "operation": "open_question",
+              "responseId": "resp_03892437c3ab48af016ad7aada833487d19fd73f946029e661",
+              "requestId": "req_36afcafea92d4d7781d8844407481ee7",
+              "seconds": 11.6,
+              "serviceTier": "fast",
+              "inputTokens": 1310,
+              "outputTokens": 992,
+              "reasoningTokens": 904,
+              "usd": 0.00132
+            }
+          ]
+        },
+        {
+          "stage": "open_question_5",
+          "status": 200,
+          "seconds": 9.1,
+          "calls": [
+            {
+              "operation": "open_question",
+              "responseId": "resp_08a083d23bcc6e8d016ad7aaf0ae6887d2bba1146715da7308",
+              "requestId": "req_a20636bc18834192bc73728bbcd4c544",
+              "seconds": 8.3,
+              "serviceTier": "fast",
+              "inputTokens": 1585,
+              "outputTokens": 674,
+              "reasoningTokens": 583,
+              "usd": 0.00107
+            }
+          ]
+        },
+        {
+          "stage": "evaluate",
+          "status": 200,
+          "seconds": 40.4,
+          "calls": [
+            {
+              "operation": "professional_evaluation",
+              "responseId": "resp_019f3c3caa4e1ea4016ad7ab013f9887d29f977bd648b86376",
+              "requestId": "req_bd0cd90696264774b6c901be836b9c9b",
+              "seconds": 30.1,
+              "serviceTier": "fast",
+              "inputTokens": 3506,
+              "outputTokens": 5566,
+              "reasoningTokens": 2587,
+              "usd": 0.00612
+            },
+            {
+              "operation": "evaluation_quote_repair",
+              "responseId": "resp_08affec89e80c4ed016ad7ab1edac087d2be8a5c27337fd944",
+              "requestId": "req_5ed237d0daaa4a158f62b5cffe25ccfd",
+              "seconds": 10.4,
+              "serviceTier": "fast",
+              "inputTokens": 1453,
+              "outputTokens": 1863,
+              "reasoningTokens": 1707,
+              "usd": 0.00223
+            }
+          ]
+        },
+        {
+          "stage": "translate_kk",
+          "status": 200,
+          "seconds": 20.4,
+          "calls": [
+            {
+              "operation": "translation_kk",
+              "responseId": "resp_0402cb3fd8a0de3d016ad7db18485c87d199654d7369ee1d1c",
+              "requestId": "req_20f7a95933ce46ada5c252cc270a8536",
+              "seconds": 10.6,
+              "serviceTier": "fast",
+              "inputTokens": 1145,
+              "outputTokens": 1437,
+              "reasoningTokens": 88,
+              "usd": 0.00172
+            },
+            {
+              "operation": "translation_kk",
+              "responseId": "resp_0e48e2608c23163c016ad7db20df0887d1b653c432cc2fa3bc",
+              "requestId": "req_f21822d76c934a809678dc4a1f4dfc00",
+              "seconds": 5.9,
+              "serviceTier": "fast",
+              "inputTokens": 816,
+              "outputTokens": 947,
+              "reasoningTokens": 89,
+              "usd": 0.00111
+            },
+            {
+              "operation": "translation_kk",
+              "responseId": "resp_0ffffd7ff7dfa234016ad7db26e14487d181748beb9177559d",
+              "requestId": "req_c3014db125fb456681107b9e93b7fd3d",
+              "seconds": 3,
+              "serviceTier": "fast",
+              "inputTokens": 496,
+              "outputTokens": 414,
+              "reasoningTokens": 0,
+              "usd": 0.00051
+            }
+          ]
+        },
+        {
+          "stage": "translate_en",
+          "status": 200,
+          "seconds": 13.2,
+          "calls": [
+            {
+              "operation": "translation_en",
+              "responseId": "resp_0bb3ecf40a28cb58016ad7db2ad50887d192f75b83e2acaf38",
+              "requestId": "req_875b3c3014894dc49253e5907354be35",
+              "seconds": 5.6,
+              "serviceTier": "fast",
+              "inputTokens": 1139,
+              "outputTokens": 897,
+              "reasoningTokens": 69,
+              "usd": 0.00118
+            },
+            {
+              "operation": "translation_en",
+              "responseId": "resp_068fd94aba46aeed016ad7db309b8c87d1866c3204e159ef36",
+              "requestId": "req_6d46854e019e4aa0954e2e2f1f422cb4",
+              "seconds": 4.1,
+              "serviceTier": "fast",
+              "inputTokens": 810,
+              "outputTokens": 528,
+              "reasoningTokens": 0,
+              "usd": 0.00069
+            },
+            {
+              "operation": "translation_en",
+              "responseId": "resp_01dd62578cad7786016ad7db34d04487d1a875c551486541b4",
+              "requestId": "req_580e9d1086634132b6ec00338f8c2b0b",
+              "seconds": 2.3,
+              "serviceTier": "fast",
+              "inputTokens": 490,
+              "outputTokens": 258,
+              "reasoningTokens": 0,
+              "usd": 0.00036
+            }
+          ]
+        }
+      ],
+      "usd": 0.01584,
+      "extraUsd": {
+        "translate_kk": 0.00334,
+        "translate_en": 0.00223
+      },
+      "result": {
+        "traits": {
+          "criticalThinking": {
+            "final": 85,
+            "choice": 78,
+            "written": 100
+          },
+          "confidence": {
+            "final": 53,
+            "choice": 42,
+            "written": 75
+          },
+          "discipline": {
+            "final": 100,
+            "choice": 100,
+            "written": 100
+          },
+          "engagement": {
+            "final": 52,
+            "choice": 40,
+            "written": 75
+          }
+        },
+        "behaviorLevels": {
+          "criticalThinking": 4,
+          "confidence": 3,
+          "discipline": 4,
+          "engagement": 3
+        },
+        "criteria": {
+          "facts": 4,
+          "safety": 4,
+          "reasoning": 4,
+          "responsibility": 4,
+          "communication": 3,
+          "plan": 4
+        },
+        "skills": [
+          "Практика: монолит: 100%",
+          "Практика: кладка: 100%",
+          "Охрана труда и технология: 100%",
+          "Контроль качества: 100%",
+          "Планирование работ: 75%"
+        ],
+        "unsafe": false,
+        "roadmap": [
+          "confidence",
+          "engagement",
+          "criticalThinking",
+          "discipline"
+        ]
+      },
+      "answersHash": "5b97ce32de3cb046"
+    },
+    {
+      "id": "A2",
+      "persona": "A",
+      "jobRole": "Прораб",
+      "attemptId": "cf252187-92a2-4686-8fd8-af614920a668",
+      "stages": [
+        {
+          "stage": "start_select_10_ids",
+          "status": 201,
+          "seconds": 10.1,
+          "calls": [
+            {
+              "operation": "question_selection",
+              "responseId": "resp_09c8d586ba4390dd016ad7ad7b3b1487d2bfbe5c9066a0fc40",
+              "requestId": "req_015d4231f0324b81989aef72f7b4085d",
+              "seconds": 9.4,
+              "serviceTier": "fast",
+              "inputTokens": 6295,
+              "outputTokens": 1219,
+              "reasoningTokens": 1174,
+              "usd": 0.00135
+            }
+          ]
+        },
+        {
+          "stage": "open_question_1",
+          "status": 200,
+          "seconds": 7.1,
+          "calls": [
+            {
+              "operation": "open_question",
+              "responseId": "resp_04db9cf0330f404c016ad7ad84cd7c87d2af206e6228849216",
+              "requestId": "req_344637f1f6064e3fa50502bae5ee9f97",
+              "seconds": 6.7,
+              "serviceTier": "fast",
+              "inputTokens": 524,
+              "outputTokens": 715,
+              "reasoningTokens": 631,
+              "usd": 0.00082
+            }
+          ]
+        },
+        {
+          "stage": "open_question_2",
+          "status": 200,
+          "seconds": 7.1,
+          "calls": [
+            {
+              "operation": "open_question",
+              "responseId": "resp_04790c3819b94a60016ad7ad9793a887d1b24f901d991075b0",
+              "requestId": "req_cf171f6bcb4a4c379d03a37106ff034b",
+              "seconds": 6.7,
+              "serviceTier": "fast",
+              "inputTokens": 785,
+              "outputTokens": 686,
+              "reasoningTokens": 597,
+              "usd": 0.00084
+            }
+          ]
+        },
+        {
+          "stage": "open_question_3",
+          "status": 200,
+          "seconds": 8.1,
+          "calls": [
+            {
+              "operation": "open_question",
+              "responseId": "resp_069a9b6d6bc38f03016ad7adaa546087d2aaf3b4c34e946d38",
+              "requestId": "req_e01132e52f92413fa4edaf83aacbcafd",
+              "seconds": 7.6,
+              "serviceTier": "fast",
+              "inputTokens": 1022,
+              "outputTokens": 846,
+              "reasoningTokens": 762,
+              "usd": 0.00105
+            }
+          ]
+        },
+        {
+          "stage": "open_question_4",
+          "status": 200,
+          "seconds": 30.3,
+          "calls": [
+            {
+              "operation": "open_question",
+              "responseId": "resp_0d6fe07d0fcbdf16016ad7adbecdac87d19bb9de2809951765",
+              "requestId": "req_7c99242245764183883369c00097bb15",
+              "seconds": 29.4,
+              "serviceTier": "fast",
+              "inputTokens": 1281,
+              "outputTokens": 3065,
+              "reasoningTokens": 2966,
+              "usd": 0.00339
+            }
+          ]
+        },
+        {
+          "stage": "open_question_5",
+          "status": 200,
+          "seconds": 8.1,
+          "calls": [
+            {
+              "operation": "open_question",
+              "responseId": "resp_0856755b3c573f59016ad7ade840c487d18d6f50c24fd5475a",
+              "requestId": "req_bd76543fcf8a4ce9829f6b55118bf3d7",
+              "seconds": 7.8,
+              "serviceTier": "fast",
+              "inputTokens": 1553,
+              "outputTokens": 801,
+              "reasoningTokens": 704,
+              "usd": 0.00119
+            }
+          ]
+        },
+        {
+          "stage": "evaluate",
+          "status": 200,
+          "seconds": 34.4,
+          "calls": [
+            {
+              "operation": "professional_evaluation",
+              "responseId": "resp_0191c589eeee0548016ad7adf9397887d1b9e69f7b51726600",
+              "requestId": "req_4c9c1fb2c56648bcbd82fc68917c1707",
+              "seconds": 34.1,
+              "serviceTier": "fast",
+              "inputTokens": 3479,
+              "outputTokens": 6261,
+              "reasoningTokens": 3089,
+              "usd": 0.00681
+            }
+          ]
+        },
+        {
+          "stage": "translate_kk",
+          "status": 200,
+          "seconds": 18.4,
+          "calls": [
+            {
+              "operation": "translation_kk",
+              "responseId": "resp_0bc144092145d642016ad7db59713887d19370af5e18e5e135",
+              "requestId": "req_d00d1cd3ad98420b933975be0b162b5f",
+              "seconds": 8,
+              "serviceTier": "fast",
+              "inputTokens": 1234,
+              "outputTokens": 1494,
+              "reasoningTokens": 22,
+              "usd": 0.0018
+            },
+            {
+              "operation": "translation_kk",
+              "responseId": "resp_0f1174a50e86e994016ad7db6188c487d1a438d1073e2eaa08",
+              "requestId": "req_a3d2509304b1454088527f8b3261846a",
+              "seconds": 5.1,
+              "serviceTier": "fast",
+              "inputTokens": 873,
+              "outputTokens": 913,
+              "reasoningTokens": 0,
+              "usd": 0.00109
+            },
+            {
+              "operation": "translation_kk",
+              "responseId": "resp_0f1a7a695a1cde9f016ad7db66dc2487d18271e6688e6225fd",
+              "requestId": "req_bccdd51921b647f8bc9e7563b27bc9d3",
+              "seconds": 4.3,
+              "serviceTier": "fast",
+              "inputTokens": 521,
+              "outputTokens": 541,
+              "reasoningTokens": 115,
+              "usd": 0.00065
+            }
+          ]
+        },
+        {
+          "stage": "progress_analysis",
+          "status": 200,
+          "seconds": 17.2,
+          "calls": [
+            {
+              "operation": "progress_analysis",
+              "responseId": "resp_0d801784f09fff6d016ad7db7502dc87d18ff12eed44f1e08c",
+              "requestId": "req_70648bef474141c18097266c160ec936",
+              "seconds": 16.7,
+              "serviceTier": "fast",
+              "inputTokens": 4654,
+              "outputTokens": 2580,
+              "reasoningTokens": 2070,
+              "usd": 0.00374
+            }
+          ]
+        }
+      ],
+      "usd": 0.01545,
+      "extraUsd": {
+        "translate_kk": 0.00354,
+        "progress_analysis": 0.00374
+      },
+      "result": {
+        "traits": {
+          "criticalThinking": {
+            "final": 82,
+            "choice": 73,
+            "written": 100
+          },
+          "confidence": {
+            "final": 52,
+            "choice": 40,
+            "written": 75
+          },
+          "discipline": {
+            "final": 100,
+            "choice": 100,
+            "written": 100
+          },
+          "engagement": {
+            "final": 60,
+            "choice": 53,
+            "written": 75
+          }
+        },
+        "behaviorLevels": {
+          "criticalThinking": 4,
+          "confidence": 3,
+          "discipline": 4,
+          "engagement": 3
+        },
+        "criteria": {
+          "facts": 4,
+          "safety": 4,
+          "reasoning": 4,
+          "responsibility": 4,
+          "communication": 3,
+          "plan": 4
+        },
+        "skills": [
+          "Охрана труда и технология: 100%",
+          "Контроль качества: 100%",
+          "Практика: монолит: 100%",
+          "Исполнительная документация: 100%",
+          "Координация бригады: 75%"
+        ],
+        "unsafe": false,
+        "roadmap": [
+          "engagement",
+          "confidence",
+          "criticalThinking",
+          "discipline"
+        ]
+      },
+      "answersHash": "b5a0d5808dca746a"
+    },
+    {
+      "id": "B1",
+      "persona": "B",
+      "jobRole": "Мастер участка",
+      "attemptId": "28cb4e76-510c-4947-858f-ad16a64fbe3b",
+      "stages": [
+        {
+          "stage": "start_select_10_ids",
+          "status": 201,
+          "seconds": 7.1,
+          "calls": [
+            {
+              "operation": "question_selection",
+              "responseId": "resp_0a59f1dca067a4d7016ad7ac40926887d29c97ceda7eb76a8c",
+              "requestId": "req_86bad33caa5a46e99d644892ef4195be",
+              "seconds": 6.3,
+              "serviceTier": "fast",
+              "inputTokens": 7495,
+              "outputTokens": 675,
+              "reasoningTokens": 621,
+              "usd": 0.00255
+            }
+          ]
+        },
+        {
+          "stage": "open_question_1",
+          "status": 200,
+          "seconds": 7.1,
+          "calls": [
+            {
+              "operation": "open_question",
+              "responseId": "resp_042608d6b2d2fccb016ad7ac47395487d289280efd2e3c2782",
+              "requestId": "req_5ced25433fb74314962e97948a168963",
+              "seconds": 6.7,
+              "serviceTier": "fast",
+              "inputTokens": 592,
+              "outputTokens": 805,
+              "reasoningTokens": 717,
+              "usd": 0.00092
+            }
+          ]
+        },
+        {
+          "stage": "open_question_2",
+          "status": 200,
+          "seconds": 14.2,
+          "calls": [
+            {
+              "operation": "open_question",
+              "responseId": "resp_0df9a00836a9f1b8016ad7ac59683087d2961c6be2d014c3e4",
+              "requestId": "req_c4b3579746894a43875506ea821bb2ac",
+              "seconds": 13.5,
+              "serviceTier": "fast",
+              "inputTokens": 742,
+              "outputTokens": 1705,
+              "reasoningTokens": 1616,
+              "usd": 0.00185
+            }
+          ]
+        },
+        {
+          "stage": "open_question_3",
+          "status": 200,
+          "seconds": 9.1,
+          "calls": [
+            {
+              "operation": "open_question",
+              "responseId": "resp_01150d3911df1d35016ad7ac6eed6887d286e2443e5c817dbf",
+              "requestId": "req_e61a48ee7995446b91564a64c17f4c9c",
+              "seconds": 8.1,
+              "serviceTier": "fast",
+              "inputTokens": 891,
+              "outputTokens": 1121,
+              "reasoningTokens": 1034,
+              "usd": 0.0013
+            }
+          ]
+        },
+        {
+          "stage": "open_question_4",
+          "status": 200,
+          "seconds": 13.2,
+          "calls": [
+            {
+              "operation": "open_question",
+              "responseId": "resp_02bd038a113456cb016ad7ac7fb2ec87d2824dbbd409973c71",
+              "requestId": "req_f158a9e6d56247888285e09ada93c687",
+              "seconds": 12.5,
+              "serviceTier": "fast",
+              "inputTokens": 1029,
+              "outputTokens": 1655,
+              "reasoningTokens": 1552,
+              "usd": 0.00191
+            }
+          ]
+        },
+        {
+          "stage": "open_question_5",
+          "status": 200,
+          "seconds": 11.1,
+          "calls": [
+            {
+              "operation": "open_question",
+              "responseId": "resp_07e0f2321ed7add4016ad7ac96beb487d2872572f6361f7642",
+              "requestId": "req_2ca477e913924453863d7082bac15f48",
+              "seconds": 10.7,
+              "serviceTier": "fast",
+              "inputTokens": 1196,
+              "outputTokens": 1123,
+              "reasoningTokens": 1034,
+              "usd": 0.00142
+            }
+          ]
+        },
+        {
+          "stage": "evaluate",
+          "status": 200,
+          "seconds": 50.5,
+          "calls": [
+            {
+              "operation": "professional_evaluation",
+              "responseId": "resp_0f7c7c64940cb1c0016ad7acabc69487d18566a2e48d56618a",
+              "requestId": "req_99246767b7b24681847936b53f9990d8",
+              "seconds": 47.1,
+              "serviceTier": "fast",
+              "inputTokens": 2993,
+              "outputTokens": 8613,
+              "reasoningTokens": 5364,
+              "usd": 0.00904
+            },
+            {
+              "operation": "evaluation_quote_repair",
+              "responseId": "resp_0ce0ebbafb7a946a016ad7acdaa71c87d1913b0110a137ba51",
+              "requestId": "req_71dce41b52184ed095f92df4880fdcbc",
+              "seconds": 3,
+              "serviceTier": "fast",
+              "inputTokens": 915,
+              "outputTokens": 358,
+              "reasoningTokens": 259,
+              "usd": 0.00054
+            }
+          ]
+        },
+        {
+          "stage": "translate_kk",
+          "status": 200,
+          "seconds": 19.3,
+          "calls": [
+            {
+              "operation": "translation_kk",
+              "responseId": "resp_08ca540e8816ff0e016ad7db385dd487d1bf842555703918fa",
+              "requestId": "req_cc541c19f62e4250a7baa0ee0034bf19",
+              "seconds": 8.9,
+              "serviceTier": "fast",
+              "inputTokens": 1360,
+              "outputTokens": 1584,
+              "reasoningTokens": 55,
+              "usd": 0.00192
+            },
+            {
+              "operation": "translation_kk",
+              "responseId": "resp_02b41624be8dbfec016ad7db414bd887d18ca2a8c2e496412a",
+              "requestId": "req_b0d840f117e54e5e923872f914911b51",
+              "seconds": 6.6,
+              "serviceTier": "fast",
+              "inputTokens": 966,
+              "outputTokens": 1114,
+              "reasoningTokens": 0,
+              "usd": 0.00131
+            },
+            {
+              "operation": "translation_kk",
+              "responseId": "resp_0e970b9d3d1823a9016ad7db4805c087d1ba5a589247509250",
+              "requestId": "req_9a5fcc2e168749f3b241eb9cdafaf4b9",
+              "seconds": 3,
+              "serviceTier": "fast",
+              "inputTokens": 494,
+              "outputTokens": 401,
+              "reasoningTokens": 0,
+              "usd": 0.0005
+            }
+          ]
+        }
+      ],
+      "usd": 0.01953,
+      "extraUsd": {
+        "translate_kk": 0.00373
+      },
+      "result": {
+        "traits": {
+          "criticalThinking": {
+            "final": 52,
+            "choice": 53,
+            "written": 50
+          },
+          "confidence": {
+            "final": 83,
+            "choice": 100,
+            "written": 50
+          },
+          "discipline": {
+            "final": 35,
+            "choice": 40,
+            "written": 25
+          },
+          "engagement": {
+            "final": 65,
+            "choice": 73,
+            "written": 50
+          }
+        },
+        "behaviorLevels": {
+          "criticalThinking": 2,
+          "confidence": 2,
+          "discipline": 1,
+          "engagement": 2
+        },
+        "criteria": {
+          "facts": 1,
+          "safety": 0,
+          "reasoning": 1,
+          "responsibility": 0,
+          "communication": 2,
+          "plan": 2
+        },
+        "skills": [
+          "Охрана труда и технология: 0%",
+          "Контроль качества: 0%",
+          "Исполнительная документация: 0%",
+          "Планирование работ: 25%",
+          "Координация бригады: 25%"
+        ],
+        "unsafe": true,
+        "roadmap": [
+          "discipline",
+          "criticalThinking",
+          "confidence",
+          "engagement"
+        ]
+      },
+      "answersHash": "6ee9600d0cae4422"
+    },
+    {
+      "id": "C1",
+      "persona": "C",
+      "jobRole": "Инженер ПТО",
+      "attemptId": "063c1bca-d9bd-47b1-9f63-18b30bc41718",
+      "stages": [
+        {
+          "stage": "start_select_10_ids",
+          "status": 201,
+          "seconds": 7.1,
+          "calls": [
+            {
+              "operation": "question_selection",
+              "responseId": "resp_0a0a8a67e2bc5a01016ad7ace7395487d28e0e307159a46905",
+              "requestId": "req_126181c5d72d4216b671033b095d7866",
+              "seconds": 6.3,
+              "serviceTier": "fast",
+              "inputTokens": 6292,
+              "outputTokens": 599,
+              "reasoningTokens": 545,
+              "usd": 0.00217
+            }
+          ]
+        },
+        {
+          "stage": "open_question_1",
+          "status": 200,
+          "seconds": 7.1,
+          "calls": [
+            {
+              "operation": "open_question",
+              "responseId": "resp_005f49210183cea5016ad7acecc9e087d280544cd64e632c31",
+              "requestId": "req_bbc4caf939294d6aa36a350116eccfdd",
+              "seconds": 6.2,
+              "serviceTier": "fast",
+              "inputTokens": 522,
+              "outputTokens": 766,
+              "reasoningTokens": 684,
+              "usd": 0.00087
+            }
+          ]
+        },
+        {
+          "stage": "open_question_2",
+          "status": 200,
+          "seconds": 9.1,
+          "calls": [
+            {
+              "operation": "open_question",
+              "responseId": "resp_0aabd92b9cd8565a016ad7acfef17487d2b9b984cc729febf7",
+              "requestId": "req_b4bae7a77acb4add9f52e6de0a00d592",
+              "seconds": 8.8,
+              "serviceTier": "fast",
+              "inputTokens": 755,
+              "outputTokens": 925,
+              "reasoningTokens": 824,
+              "usd": 0.00108
+            }
+          ]
+        },
+        {
+          "stage": "open_question_3",
+          "status": 200,
+          "seconds": 11.1,
+          "calls": [
+            {
+              "operation": "open_question",
+              "responseId": "resp_094bee10a7f0d685016ad7ad0ed55487d19f3fb5575bb5fdbd",
+              "requestId": "req_d6942d5383704065b3bb49fbcf1944c1",
+              "seconds": 10.3,
+              "serviceTier": "fast",
+              "inputTokens": 997,
+              "outputTokens": 1308,
+              "reasoningTokens": 1212,
+              "usd": 0.00151
+            }
+          ]
+        },
+        {
+          "stage": "open_question_4",
+          "status": 200,
+          "seconds": 7.1,
+          "calls": [
+            {
+              "operation": "open_question",
+              "responseId": "resp_065688e3de57ffc1016ad7ad2660a887d2b4a3bba1bcc43691",
+              "requestId": "req_c2c80b2e9f3e4ee5a79fa4d8277c89f8",
+              "seconds": 6.2,
+              "serviceTier": "fast",
+              "inputTokens": 1225,
+              "outputTokens": 552,
+              "reasoningTokens": 459,
+              "usd": 0.00086
+            }
+          ]
+        },
+        {
+          "stage": "open_question_5",
+          "status": 200,
+          "seconds": 9.1,
+          "calls": [
+            {
+              "operation": "open_question",
+              "responseId": "resp_0e227a4d9cf015ec016ad7ad33ce5087d2a164d3ce4ee7c097",
+              "requestId": "req_1a9d4211e4974d18ae26ffea21b2ab92",
+              "seconds": 8.2,
+              "serviceTier": "fast",
+              "inputTokens": 1491,
+              "outputTokens": 1087,
+              "reasoningTokens": 989,
+              "usd": 0.00146
+            }
+          ]
+        },
+        {
+          "stage": "evaluate",
+          "status": 200,
+          "seconds": 40.4,
+          "calls": [
+            {
+              "operation": "professional_evaluation",
+              "responseId": "resp_0b732ba5b9fc25af016ad7ad4792b487d1800b2e66f8b0488a",
+              "requestId": "req_29982a6d23284d11b07c1ebe4ccd4424",
+              "seconds": 37.7,
+              "serviceTier": "fast",
+              "inputTokens": 3390,
+              "outputTokens": 6644,
+              "reasoningTokens": 3717,
+              "usd": 0.00717
+            },
+            {
+              "operation": "evaluation_quote_repair",
+              "responseId": "resp_01c7fc7625211ac0016ad7ad6bc23887d19afb404869ec5641",
+              "requestId": "req_f1b3935930724097b1de14e56410b57d",
+              "seconds": 2.2,
+              "serviceTier": "fast",
+              "inputTokens": 1152,
+              "outputTokens": 174,
+              "reasoningTokens": 128,
+              "usd": 0.00046
+            }
+          ]
+        },
+        {
+          "stage": "translate_en",
+          "status": 200,
+          "seconds": 13.2,
+          "calls": [
+            {
+              "operation": "translation_en",
+              "responseId": "resp_0e0455ddccea9712016ad7db4bf15c87d1a3d07791b57e02ff",
+              "requestId": "req_73ca6974bc554467b601d373789cdeab",
+              "seconds": 5.7,
+              "serviceTier": "fast",
+              "inputTokens": 1194,
+              "outputTokens": 938,
+              "reasoningTokens": 73,
+              "usd": 0.00124
+            },
+            {
+              "operation": "translation_en",
+              "responseId": "resp_0e81c654527f3758016ad7db51b79887d1ab0776d820e63138",
+              "requestId": "req_1abfd11801d14a878c3e41d73a5f5eef",
+              "seconds": 3.9,
+              "serviceTier": "fast",
+              "inputTokens": 829,
+              "outputTokens": 517,
+              "reasoningTokens": 0,
+              "usd": 0.00068
+            },
+            {
+              "operation": "translation_en",
+              "responseId": "resp_07329b51b2012b2a016ad7db55c26887d198ae0622688c7fc2",
+              "requestId": "req_5959b4a00d6e42c3a78a6a8ab456b2b1",
+              "seconds": 2.7,
+              "serviceTier": "fast",
+              "inputTokens": 474,
+              "outputTokens": 233,
+              "reasoningTokens": 0,
+              "usd": 0.00033
+            }
+          ]
+        }
+      ],
+      "usd": 0.01558,
+      "extraUsd": {
+        "translate_en": 0.00225
+      },
+      "result": {
+        "traits": {
+          "criticalThinking": {
+            "final": 92,
+            "choice": 100,
+            "written": 75
+          },
+          "confidence": {
+            "final": 39,
+            "choice": 33,
+            "written": 50
+          },
+          "discipline": {
+            "final": 65,
+            "choice": 60,
+            "written": 75
+          },
+          "engagement": {
+            "final": 74,
+            "choice": 73,
+            "written": 75
+          }
+        },
+        "behaviorLevels": {
+          "criticalThinking": 3,
+          "confidence": 2,
+          "discipline": 3,
+          "engagement": 3
+        },
+        "criteria": {
+          "facts": 3,
+          "safety": 4,
+          "reasoning": 3,
+          "responsibility": 3,
+          "communication": 3,
+          "plan": 4
+        },
+        "skills": [
+          "Знание обязанностей: 75%",
+          "Чертежи и BIG Engineering: 50%",
+          "Планирование работ: 75%",
+          "Охрана труда и технология: 75%",
+          "Исполнительная документация: 75%"
+        ],
+        "unsafe": false,
+        "roadmap": [
+          "confidence",
+          "confidence",
+          "discipline",
+          "engagement"
+        ]
+      },
+      "answersHash": "445dba1fae9bceb6"
+    },
+    {
+      "id": "R1",
+      "persona": "repeat-of-A1",
+      "jobRole": "Прораб",
+      "attemptId": "fac748e7-6b9e-4662-b760-ca09a73285da",
+      "stages": [
+        {
+          "stage": "evaluate",
+          "status": 200,
+          "seconds": 37.4,
+          "calls": [
+            {
+              "operation": "professional_evaluation",
+              "responseId": "resp_0a117d229d5a0d67016ad7ab34037087d1ae2063769e260d69",
+              "requestId": "req_0887b68e71054d43bfca12a954c17990",
+              "seconds": 34,
+              "serviceTier": "fast",
+              "inputTokens": 3506,
+              "outputTokens": 5902,
+              "reasoningTokens": 2945,
+              "usd": 0.00678
+            },
+            {
+              "operation": "evaluation_quote_repair",
+              "responseId": "resp_086fcfc93fdb3d3f016ad7ab54975887d1a2102cade9ecdc5b",
+              "requestId": "req_c669fee803894c9eadc5147115db0fd8",
+              "seconds": 3.2,
+              "serviceTier": "fast",
+              "inputTokens": 1352,
+              "outputTokens": 363,
+              "reasoningTokens": 296,
+              "usd": 0.0007
+            }
+          ]
+        }
+      ],
+      "usd": 0.00748,
+      "extraUsd": {},
+      "result": {
+        "traits": {
+          "criticalThinking": {
+            "final": 85,
+            "choice": 78,
+            "written": 100
+          },
+          "confidence": {
+            "final": 53,
+            "choice": 42,
+            "written": 75
+          },
+          "discipline": {
+            "final": 100,
+            "choice": 100,
+            "written": 100
+          },
+          "engagement": {
+            "final": 52,
+            "choice": 40,
+            "written": 75
+          }
+        },
+        "behaviorLevels": {
+          "criticalThinking": 4,
+          "confidence": 3,
+          "discipline": 4,
+          "engagement": 3
+        },
+        "criteria": {
+          "facts": 4,
+          "safety": 4,
+          "reasoning": 4,
+          "responsibility": 4,
+          "communication": 3,
+          "plan": 4
+        },
+        "skills": [
+          "Охрана труда и технология: 100%",
+          "Контроль качества: 100%",
+          "Практика: монолит: 75%",
+          "Практика: кладка: 75%",
+          "Планирование работ: 75%"
+        ],
+        "unsafe": false,
+        "roadmap": [
+          "engagement",
+          "confidence",
+          "criticalThinking",
+          "discipline"
+        ]
+      },
+      "answersHash": "5b97ce32de3cb046"
+    },
+    {
+      "id": "R2",
+      "persona": "repeat-of-A1",
+      "jobRole": "Прораб",
+      "attemptId": "f61ca2a5-1aa7-46e8-b3dc-60c9fc000cae",
+      "stages": [
+        {
+          "stage": "evaluate",
+          "status": 200,
+          "seconds": 36.4,
+          "calls": [
+            {
+              "operation": "professional_evaluation",
+              "responseId": "resp_0b19a5dff700545d016ad7ab585d3c87d1aba33a0605bbad78",
+              "requestId": "req_4c99c92dc17e4773a7efa1a6513186b8",
+              "seconds": 36,
+              "serviceTier": "fast",
+              "inputTokens": 3506,
+              "outputTokens": 6676,
+              "reasoningTokens": 3475,
+              "usd": 0.00675
+            }
+          ]
+        }
+      ],
+      "usd": 0.00675,
+      "extraUsd": {},
+      "result": {
+        "traits": {
+          "criticalThinking": {
+            "final": 85,
+            "choice": 78,
+            "written": 100
+          },
+          "confidence": {
+            "final": 53,
+            "choice": 42,
+            "written": 75
+          },
+          "discipline": {
+            "final": 100,
+            "choice": 100,
+            "written": 100
+          },
+          "engagement": {
+            "final": 52,
+            "choice": 40,
+            "written": 75
+          }
+        },
+        "behaviorLevels": {
+          "criticalThinking": 4,
+          "confidence": 3,
+          "discipline": 4,
+          "engagement": 3
+        },
+        "criteria": {
+          "facts": 3,
+          "safety": 3,
+          "reasoning": 4,
+          "responsibility": 4,
+          "communication": 3,
+          "plan": 4
+        },
+        "skills": [
+          "Практика: монолит: 100%",
+          "Практика: кладка: 100%",
+          "Охрана труда и технология: 75%",
+          "Контроль качества: 100%",
+          "Планирование работ: 75%"
+        ],
+        "unsafe": false,
+        "roadmap": [
+          "confidence",
+          "engagement",
+          "criticalThinking",
+          "discipline"
+        ]
+      },
+      "answersHash": "5b97ce32de3cb046"
+    },
+    {
+      "id": "R3",
+      "persona": "repeat-of-A1",
+      "jobRole": "Прораб",
+      "attemptId": "34bbfc4c-9388-41d9-aea9-e98a2a17eef1",
+      "stages": [
+        {
+          "stage": "evaluate",
+          "status": 200,
+          "seconds": 36.3,
+          "calls": [
+            {
+              "operation": "professional_evaluation",
+              "responseId": "resp_08bde7a2b356131f016ad7ab7d059087d1b016788b8e1eeb50",
+              "requestId": "req_5e5cadcf0b604c468608a9011c3a5383",
+              "seconds": 33.5,
+              "serviceTier": "fast",
+              "inputTokens": 3506,
+              "outputTokens": 6186,
+              "reasoningTokens": 2948,
+              "usd": 0.00626
+            },
+            {
+              "operation": "evaluation_quote_repair",
+              "responseId": "resp_045cd6372b6b860f016ad7ab9e7d2487d1ad0fd18227bc90a2",
+              "requestId": "req_5d29e48b22924e2a8caa971790c545cc",
+              "seconds": 2.4,
+              "serviceTier": "fast",
+              "inputTokens": 1352,
+              "outputTokens": 163,
+              "reasoningTokens": 111,
+              "usd": 0.0005
+            }
+          ]
+        }
+      ],
+      "usd": 0.00676,
+      "extraUsd": {},
+      "result": {
+        "traits": {
+          "criticalThinking": {
+            "final": 85,
+            "choice": 78,
+            "written": 100
+          },
+          "confidence": {
+            "final": 53,
+            "choice": 42,
+            "written": 75
+          },
+          "discipline": {
+            "final": 100,
+            "choice": 100,
+            "written": 100
+          },
+          "engagement": {
+            "final": 52,
+            "choice": 40,
+            "written": 75
+          }
+        },
+        "behaviorLevels": {
+          "criticalThinking": 4,
+          "confidence": 3,
+          "discipline": 4,
+          "engagement": 3
+        },
+        "criteria": {
+          "facts": 3,
+          "safety": 4,
+          "reasoning": 4,
+          "responsibility": 4,
+          "communication": 3,
+          "plan": 4
+        },
+        "skills": [
+          "Охрана труда и технология: 100%",
+          "Контроль качества: 100%",
+          "Практика: монолит: 100%",
+          "Практика: кладка: 100%",
+          "Планирование работ: 75%"
+        ],
+        "unsafe": false,
+        "roadmap": [
+          "confidence",
+          "engagement",
+          "criticalThinking",
+          "discipline"
+        ]
+      },
+      "answersHash": "5b97ce32de3cb046"
+    },
+    {
+      "id": "R4",
+      "persona": "repeat-of-A1",
+      "jobRole": "Прораб",
+      "attemptId": "3133a77e-190c-45b3-9e15-9d867d45e5fa",
+      "stages": [
+        {
+          "stage": "evaluate",
+          "status": 200,
+          "seconds": 32.4,
+          "calls": [
+            {
+              "operation": "professional_evaluation",
+              "responseId": "resp_0ffc652b5c3a586d016ad7aba1ac4087d1bccb28d76544f678",
+              "requestId": "req_c3feb59b9811480f90efdb7adcc772b5",
+              "seconds": 31.6,
+              "serviceTier": "fast",
+              "inputTokens": 3506,
+              "outputTokens": 5955,
+              "reasoningTokens": 2765,
+              "usd": 0.00603
+            }
+          ]
+        }
+      ],
+      "usd": 0.00603,
+      "extraUsd": {},
+      "result": {
+        "traits": {
+          "criticalThinking": {
+            "final": 85,
+            "choice": 78,
+            "written": 100
+          },
+          "confidence": {
+            "final": 53,
+            "choice": 42,
+            "written": 75
+          },
+          "discipline": {
+            "final": 100,
+            "choice": 100,
+            "written": 100
+          },
+          "engagement": {
+            "final": 52,
+            "choice": 40,
+            "written": 75
+          }
+        },
+        "behaviorLevels": {
+          "criticalThinking": 4,
+          "confidence": 3,
+          "discipline": 4,
+          "engagement": 3
+        },
+        "criteria": {
+          "facts": 4,
+          "safety": 4,
+          "reasoning": 4,
+          "responsibility": 4,
+          "communication": 3,
+          "plan": 4
+        },
+        "skills": [
+          "Практика: монолит: 100%",
+          "Практика: кладка: 100%",
+          "Охрана труда и технология: 100%",
+          "Контроль качества: 100%",
+          "Планирование работ: 100%"
+        ],
+        "unsafe": false,
+        "roadmap": [
+          "confidence",
+          "engagement",
+          "criticalThinking",
+          "discipline"
+        ]
+      },
+      "answersHash": "5b97ce32de3cb046"
+    },
+    {
+      "id": "R5",
+      "persona": "repeat-of-A1",
+      "jobRole": "Прораб",
+      "attemptId": "841dc490-276c-4945-86ff-d8457c40a847",
+      "stages": [
+        {
+          "stage": "evaluate",
+          "status": 422,
+          "seconds": 44.5,
+          "error": "invalid_output",
+          "calls": [
+            {
+              "operation": "professional_evaluation",
+              "responseId": "resp_0dc5e4078e910c90016ad7abc254dc87d1988d22409f98f38e",
+              "requestId": "req_81b0b9c22577443f861de169b79e0890",
+              "seconds": 35.7,
+              "serviceTier": "fast",
+              "inputTokens": 3506,
+              "outputTokens": 6679,
+              "reasoningTokens": 3478,
+              "usd": 0.00675
+            },
+            {
+              "operation": "evaluation_quote_repair",
+              "responseId": "resp_0e69c213fb33e18b016ad7abe6055487d19462516cbb386665",
+              "requestId": "req_b88b042fb5dd434ca55fec41110e0ed6",
+              "seconds": 7.9,
+              "serviceTier": "fast",
+              "inputTokens": 2296,
+              "outputTokens": 1423,
+              "reasoningTokens": 758,
+              "usd": 0.002
+            }
+          ]
+        },
+        {
+          "stage": "evaluate_retry",
+          "status": 200,
+          "seconds": 46.6,
+          "calls": [
+            {
+              "operation": "professional_evaluation",
+              "responseId": "resp_0acdedd7a8aac8f4016ad7ac0910a487d1a5006883933ea6c8",
+              "requestId": "req_b281f9af07354743a8c66e64ce5f0c3b",
+              "seconds": 38.8,
+              "serviceTier": "fast",
+              "inputTokens": 3506,
+              "outputTokens": 7032,
+              "reasoningTokens": 3928,
+              "usd": 0.0071
+            },
+            {
+              "operation": "evaluation_quote_repair",
+              "responseId": "resp_0b6f2dfc23830483016ad7ac2f709c87d1a9ed12e149e974ae",
+              "requestId": "req_eac3e5f75ed347e085c45ee53a80df98",
+              "seconds": 7.3,
+              "serviceTier": "fast",
+              "inputTokens": 1468,
+              "outputTokens": 1188,
+              "reasoningTokens": 1034,
+              "usd": 0.00155
+            }
+          ]
+        }
+      ],
+      "usd": 0.0174,
+      "extraUsd": {},
+      "result": {
+        "traits": {
+          "criticalThinking": {
+            "final": 85,
+            "choice": 78,
+            "written": 100
+          },
+          "confidence": {
+            "final": 53,
+            "choice": 42,
+            "written": 75
+          },
+          "discipline": {
+            "final": 100,
+            "choice": 100,
+            "written": 100
+          },
+          "engagement": {
+            "final": 52,
+            "choice": 40,
+            "written": 75
+          }
+        },
+        "behaviorLevels": {
+          "criticalThinking": 4,
+          "confidence": 3,
+          "discipline": 4,
+          "engagement": 3
+        },
+        "criteria": {
+          "facts": 4,
+          "safety": 4,
+          "reasoning": 4,
+          "responsibility": 4,
+          "communication": 4,
+          "plan": 4
+        },
+        "skills": [
+          "Практика: монолит: 100%",
+          "Практика: кладка: 100%",
+          "Охрана труда и технология: 100%",
+          "Контроль качества: 100%",
+          "Планирование работ: 75%"
+        ],
+        "unsafe": false,
+        "roadmap": [
+          "engagement",
+          "confidence",
+          "criticalThinking",
+          "discipline"
+        ]
+      },
+      "answersHash": "5b97ce32de3cb046"
+    }
+  ]
+}

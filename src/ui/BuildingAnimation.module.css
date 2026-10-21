@@ -1,0 +1,58 @@
+.building { position: sticky; top: 24px; display: grid; justify-items: center; gap: 0; padding: 18px 10px 14px; border-radius: 18px; background:
+  linear-gradient(rgb(155 206 255 / 9%) 1px, transparent 1px) 0 0 / 16px 16px,
+  linear-gradient(90deg, rgb(155 206 255 / 9%) 1px, transparent 1px) 0 0 / 16px 16px, var(--blueprint); }
+
+/* Сцена: этажи внизу, кран сверху. Мачта стоит правее этажей, чтобы не закрывать номера. */
+.stage { position: relative; width: 96px; height: calc(30px + var(--total) * 25px - 3px); }
+.rig { position: absolute; inset: 0 0 auto 0; height: 100%; pointer-events: none; }
+.mast { position: absolute; top: 0; bottom: 0; right: 4px; width: 8px; border-inline: 2px solid var(--blueprint-line);
+  background: repeating-linear-gradient(180deg, transparent 0 6px, rgb(155 206 255 / 55%) 6px 8px); opacity: .85; }
+.jib { position: absolute; top: 4px; left: 4px; right: 2px; height: 4px; background: repeating-linear-gradient(90deg, var(--blueprint-line) 0 6px, transparent 6px 9px); }
+.trolley { position: absolute; top: 2px; left: 36px; width: 8px; height: 8px; border-radius: 2px; background: var(--construction-accent); }
+/* Трос с грузом: опускается к месту нового этажа, оставляет его и поднимается за следующим. */
+.hoist { position: absolute; top: 10px; left: 39px; width: 2px; height: 10px; background: var(--blueprint-line); animation: hoist .7s ease-in-out both; }
+.load { position: absolute; left: 50%; bottom: -12px; width: 22px; height: 12px; margin-left: -11px; border-radius: 2px; background: var(--construction-accent); box-shadow: 0 0 0 1px rgb(8 46 96 / 55%) inset; }
+.load::before { position: absolute; left: 50%; top: -5px; width: 10px; height: 5px; margin-left: -5px; border: 1.5px solid var(--blueprint-line); border-bottom: 0; border-radius: 6px 6px 0 0; content: ''; }
+.flag { position: absolute; top: -4px; right: 8px; width: 16px; height: 11px; background: #3ddc84; clip-path: polygon(0 0, 100% 50%, 0 100%); transform-origin: left center; animation: flag-wave 1s ease-in-out infinite alternate; }
+
+.floors { position: absolute; left: 6px; bottom: 0; display: flex; flex-direction: column-reverse; gap: 3px; width: 68px; margin: 0; padding: 0; list-style: none; transition: opacity .5s var(--ease-out); }
+.floors li { position: relative; display: flex; align-items: center; justify-content: flex-end; height: 22px; padding-right: 6px; border: 1px solid rgb(155 206 255 / 35%); border-radius: 3px;
+  color: rgb(155 206 255 / 70%); font-family: var(--font-technical); font-size: .68rem; line-height: 1; }
+.floors li[data-state="done"] { border-color: var(--blueprint-line); background: linear-gradient(90deg, #2993ed, #5db5ff); color: var(--blueprint); animation: floor-land .45s var(--ease-out); }
+.floors li[data-state="current"] { border: 2px solid var(--construction-accent); color: var(--construction-accent); background: rgb(255 209 102 / 12%); }
+.floors li[data-state="current"]::before { position: absolute; left: -12px; top: 50%; width: 8px; height: 2px; background: var(--construction-accent); content: ''; }
+
+/* Когда всё построено, этажи по очереди вспыхивают снизу вверх. */
+.building[data-phase="success"] .floors li { animation: floor-wave .7s ease-out calc(var(--i) * 45ms) backwards; }
+.building[data-phase="reset"] .floors { opacity: 0; }
+.building[data-phase="reset"] .stamp { opacity: 0; transition: opacity .3s; }
+
+.stamp { position: absolute; left: 50%; top: 50%; z-index: 1; display: inline-flex; align-items: center; gap: 6px; margin: 0; padding: 7px 14px; border: 3px solid #3ddc84; border-radius: 10px;
+  background: rgb(8 46 96 / 90%); color: #7dffb0; font-family: var(--font-technical); font-size: 1.15rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase;
+  box-shadow: 0 0 0 4px rgb(61 220 132 / 18%), 0 8px 24px rgb(0 0 0 / 35%); transform: translate(-50%, -50%) rotate(-8deg); animation: stamp .6s var(--ease-out) .35s backwards; }
+
+.ground { width: 108px; height: 3px; margin-top: 5px; border-radius: 2px; background: var(--construction-accent); }
+.caption { margin: 10px 0 0; color: #cfe6ff; font-size: .78rem; text-align: center; }
+.caption strong { color: #fff; font-family: var(--font-technical); font-size: 1rem; }
+
+@keyframes hoist { 0% { height: 10px; } 55% { height: var(--reach); } 70% { height: var(--reach); } 100% { height: calc(var(--reach) - 16px); } }
+@keyframes floor-land { 0% { transform: translateY(-14px) scaleX(.8); opacity: 0; filter: brightness(1.6); } 60% { transform: translateY(2px); opacity: 1; } 100% { transform: none; filter: none; } }
+@keyframes floor-wave { 0% { filter: brightness(1); } 40% { filter: brightness(1.9) saturate(1.3); background: linear-gradient(90deg, #3ddc84, #9bffc8); } 100% { filter: brightness(1); } }
+@keyframes stamp { 0% { opacity: 0; transform: translate(-50%, -50%) rotate(-8deg) scale(2.4); } 60% { opacity: 1; transform: translate(-50%, -50%) rotate(-8deg) scale(.92); } 100% { transform: translate(-50%, -50%) rotate(-8deg) scale(1); } }
+@keyframes flag-wave { from { transform: skewY(-8deg) scaleX(.85); } to { transform: skewY(8deg) scaleX(1); } }
+
+@media (prefers-reduced-motion: reduce) {
+  .hoist, .flag, .stamp, .floors li, .building[data-phase="success"] .floors li { animation: none; }
+}
+
+/* На узком экране здание ложится в горизонтальную полосу из этажей, а печать выходит под ней. */
+@media(max-width: 760px) {
+  .building { position: static; grid-template-columns: 1fr auto; align-items: center; gap: 10px; padding: 12px 14px; border-radius: 14px; }
+  .stage { display: contents; }
+  .rig, .ground { display: none; }
+  .floors { position: static; flex-direction: row; width: auto; gap: 3px; }
+  .floors li { flex: 1; height: 14px; padding: 0; justify-content: center; font-size: 0; }
+  .floors li[data-state="current"]::before { display: none; }
+  .caption { margin: 0; white-space: nowrap; }
+  .stamp { position: static; grid-column: 1 / -1; justify-self: center; padding: 5px 12px; font-size: 1rem; transform: rotate(-4deg); animation: none; }
+}

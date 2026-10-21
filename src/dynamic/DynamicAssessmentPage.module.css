@@ -1,0 +1,46 @@
+/* Only the new text fields need styles; the layout and choice cards use the original components. */
+.field { display: grid; gap: 10px; font-weight: 650; }
+.field input, .field textarea { box-sizing: border-box; width: 100%; min-width: 0; padding: 14px 16px; border: 1px solid var(--border); border-radius: var(--radius-control); background: var(--surface); color: var(--ink); font: inherit; font-weight: 400; line-height: 1.6; }
+.field textarea { min-height: 170px; resize: vertical; }
+/* Открытый вопрос: компактный заголовок, кнопка сохранения в прилипающей полосе вместе с подсказкой. */
+.open h2 { margin: 0 0 14px; font-size: clamp(1.2rem, 2vw, 1.45rem); line-height: 1.35; letter-spacing: -.02em; }
+.saveHint { flex: 1 1 220px; align-self: center; margin: 0; color: var(--muted); font-size: .88rem; }
+.field input:focus-visible, .field textarea:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+.field input:disabled, .field textarea:disabled { opacity: .7; }
+.field textarea { transition: border-color .2s ease, box-shadow .25s ease; }
+.field textarea:focus { border-color: color-mix(in srgb, var(--brand-bright) 60%, var(--border)); box-shadow: 0 0 0 4px color-mix(in srgb, var(--brand-bright) 16%, transparent); }
+
+/* Под полем ответа: ориентиры, что описать, и счётчик до минимума. */
+.answerMeta { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 16px; margin-top: 12px; }
+.include { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.include li { display: inline-flex; align-items: center; gap: 6px; padding: 5px 11px; border: 1px solid var(--border); border-radius: 999px; background: var(--chip); color: var(--ink-soft); font-size: .82rem; font-weight: 600; }
+.include li::before { width: 6px; height: 6px; border-radius: 50%; background: var(--construction-accent); content: ''; }
+.count { margin: 0; color: var(--muted); font-family: var(--font-technical); font-size: .85rem; transition: color .2s ease; }
+.count[data-ready] { color: var(--brand-strong); }
+
+/* Старт: три этапа теста одной строкой. */
+.plan { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; margin: 6px 0 22px; padding: 0; list-style: none; counter-reset: none; }
+.plan li { display: flex; align-items: center; gap: 10px; padding: 12px 14px; border: 1px solid var(--border); border-radius: 14px; background: var(--canvas); color: var(--ink-soft); font-size: .9rem; font-weight: 650; line-height: 1.3;
+  animation: plan-in .5s var(--ease-out) both; }
+.plan li:nth-child(2) { animation-delay: .08s; } .plan li:nth-child(3) { animation-delay: .16s; }
+.plan b { display: grid; flex: 0 0 auto; place-items: center; width: 28px; height: 28px; border-radius: 50%; background: var(--brand); color: #fff; font-family: var(--font-technical); font-size: .85rem; }
+.plan li:last-child b { background: var(--construction-accent); color: var(--blueprint); }
+
+/* Все ответы сохранены: отметка готовности и сводка перед оценкой. */
+.ready { display: grid; gap: 4px; }
+.ready > button { justify-self: start; }
+.readyHead { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 20px; margin-bottom: 14px; }
+.readyBadge { display: grid; place-items: center; width: 58px; height: 58px; border-radius: 18px; background: linear-gradient(150deg, var(--brand-bright), var(--brand-strong)); color: #fff; font-size: 1.7rem; font-weight: 800;
+  box-shadow: 0 12px 28px -12px rgb(0 106 203 / 80%); animation: badge-pop .6s cubic-bezier(.3, 1.6, .5, 1) both; }
+.readyList { display: flex; flex-wrap: wrap; gap: 10px; margin: 0; padding: 0; list-style: none; }
+.readyList li { padding: 8px 14px; border-radius: 12px; background: var(--chip); color: var(--ink-soft); font-weight: 600; }
+.readyList b { color: var(--brand-strong); font-family: var(--font-technical); }
+@keyframes plan-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+@keyframes badge-pop { from { opacity: 0; transform: scale(.5) rotate(-12deg); } to { opacity: 1; transform: none; } }
+@media (max-width: 640px) {
+  .plan { grid-template-columns: 1fr; }
+  .include { flex: 1 1 100%; gap: 6px; }
+  .include li { padding: 4px 9px; font-size: .76rem; }
+  .field textarea { min-height: 150px; }
+}
+@media (prefers-reduced-motion: reduce) { .plan li, .readyBadge { animation: none; } .field textarea, .count { transition: none; } }

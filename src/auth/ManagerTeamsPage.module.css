@@ -1,0 +1,160 @@
+/*
+ * Кабинет руководителя: тёмная «шапка-чертёж» во всю ширину, вкладки команд, лист команды
+ * с пропуском-приглашением и участниками. Карточка сотрудника и отчёт команды тоже во всю ширину,
+ * чтобы содержимое не сжималось в одну колонку.
+ */
+.page { display: grid; gap: 22px; padding-top: clamp(24px, 4vw, 44px); }
+/* Дети грида не должны расползаться по ширине широкой таблицы отчёта: прокручивается сама таблица. */
+.page > * { min-width: 0; }
+
+/* Шапка: та же сетка чертежа и синий градиент, что у профиля и бригады. */
+.hero { display: grid; grid-template-columns: minmax(0, 1fr) minmax(280px, 380px); gap: clamp(20px, 4vw, 48px); align-items: center;
+  padding: clamp(24px, 4vw, 40px); border-radius: 24px; color: #fff;
+  background:
+    linear-gradient(rgb(155 206 255 / 7%) 1px, transparent 1px) 0 0 / 28px 28px,
+    linear-gradient(90deg, rgb(155 206 255 / 7%) 1px, transparent 1px) 0 0 / 28px 28px,
+    linear-gradient(140deg, #072a58, #0a4a95);
+  box-shadow: 0 24px 60px rgb(8 46 96 / 22%); }
+.kicker { margin: 0 0 6px; color: var(--blueprint-line); font-weight: 600; }
+.intro h1 { margin: 0; color: #fff; font-size: clamp(2.2rem, 5vw, 3.4rem); line-height: 1.04; letter-spacing: -.04em; }
+.lead { max-width: 52ch; margin: 12px 0 0; color: #cfe6ff; }
+.totals { display: flex; flex-wrap: wrap; gap: 10px 28px; margin: 22px 0 0; padding-top: 16px; border-top: 1px dashed rgb(155 206 255 / 35%); }
+.totals div { display: grid; gap: 2px; }
+.totals dt { color: var(--blueprint-line); font-size: .85rem; }
+.totals dd { margin: 0; color: var(--construction-accent); font-family: var(--font-technical); font-size: 1.8rem; font-weight: 700; line-height: 1; }
+
+/* Форма создания команды — светлый лист поверх чертежа. */
+.createForm { display: grid; gap: 12px; padding: 20px; border-radius: 18px; background: rgb(255 255 255 / 96%); color: var(--ink); box-shadow: 0 18px 40px -20px rgb(0 0 0 / 55%); }
+:root[data-theme="dark"] .createForm { background: var(--surface); }
+.createForm h2 { margin: 0; font-size: 1.1rem; }
+.createForm label { display: grid; gap: 6px; color: var(--ink-soft); font-size: .9rem; font-weight: 600; }
+.createForm input { width: 100%; min-width: 0; min-height: 46px; padding: 10px 12px; border: 1px solid var(--border); border-radius: 10px; background: var(--surface); color: var(--ink); font: inherit; }
+.createForm input:focus-visible { outline: 3px solid var(--focus); outline-offset: 1px; }
+.createForm input[aria-invalid="true"] { border-color: var(--danger-ink); }
+.createForm .create { width: 100%; }
+
+.error { margin: 0; padding: 12px 16px; border-radius: 10px; background: var(--danger-bg); color: var(--danger-ink); }
+.muted { margin: 0; color: var(--muted); }
+
+/* Вкладки команд вместо выпадающего списка: команд обычно немного, и все видны сразу. */
+.toolbar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 20px; }
+.tabs { display: flex; flex-wrap: wrap; gap: 8px; }
+.tab { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; padding: 8px 10px 8px 16px; border: 1px solid var(--border); border-radius: 999px; background: var(--surface); color: var(--ink); font: inherit; font-weight: 650; cursor: pointer; transition: border-color .2s ease, background-color .2s ease; }
+.tab:hover { border-color: color-mix(in srgb, var(--brand-bright) 50%, var(--border)); }
+.tab:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+.tab b { min-width: 28px; padding: 2px 8px; border-radius: 999px; background: var(--chip); color: var(--ink-soft); font-family: var(--font-technical); font-size: .85rem; text-align: center; }
+.tab[aria-pressed="true"] { border-color: var(--blueprint); background: var(--blueprint); color: #fff; }
+.tab[aria-pressed="true"] b { background: var(--construction-accent); color: var(--blueprint); }
+.demoLink { color: var(--brand-strong); font-weight: 600; }
+
+/* Лист команды. */
+.sheet { display: grid; gap: 18px; }
+.sheetHead { display: flex; flex-wrap: wrap; align-items: start; justify-content: space-between; gap: 12px 20px; }
+.sheetHead h2 { margin: 0 0 4px; font-size: clamp(1.4rem, 3vw, 1.9rem); letter-spacing: -.02em; }
+.sheetBody { display: grid; grid-template-columns: minmax(250px, 300px) minmax(0, 1fr); gap: clamp(18px, 3vw, 32px); align-items: start; }
+
+/* Пропуск: тёмная бирка с перфорацией сверху, код — техническим шрифтом. */
+.pass { position: relative; display: grid; gap: 12px; padding: 26px 20px 20px; border-radius: 16px; color: #fff;
+  background:
+    radial-gradient(circle at 50% 0, var(--surface) 9px, transparent 10px),
+    linear-gradient(160deg, var(--brand-deep), #0a4a95); }
+.pass::before { position: absolute; top: 16px; right: 20px; left: 20px; height: 0; border-top: 2px dashed rgb(155 206 255 / 40%); content: ""; }
+.passTitle { margin: 8px 0 0; color: var(--blueprint-line); font-weight: 600; }
+.code { display: block; padding: 14px 12px; border: 1.5px dashed var(--construction-accent); border-radius: 12px; background: rgb(255 209 102 / 8%); color: var(--construction-accent);
+  font-family: var(--font-technical); font-size: 1.2rem; font-weight: 700; letter-spacing: .14em; text-align: center; overflow-wrap: anywhere; user-select: all; }
+.pass .copy { width: 100%; }
+.copied { margin: 0; color: var(--construction-accent); font-size: .88rem; font-weight: 600; }
+.passHint { margin: 0; color: #cfe6ff; font-size: .86rem; line-height: 1.45; }
+
+/* Пачка пропусков: из-под верхнего видны края следующих. */
+.passStack { position: relative; isolation: isolate; align-self: start; margin-bottom: 10px; }
+.passStack::before, .passStack::after { position: absolute; z-index: -1; height: 14px; border-radius: 0 0 14px 14px; content: ""; }
+.passStack::after { right: 8px; bottom: -6px; left: 8px; background: color-mix(in srgb, #0a4a95 70%, #000); }
+.passStack::before { right: 16px; bottom: -11px; left: 16px; background: color-mix(in srgb, #0a4a95 45%, #000); }
+/* Оторванный пропуск: копия поверх настоящего, обрезанная зубцами по перфорации.
+   Как настоящий билет: держится за правый край, перфорация лопается рывками слева направо (бумага слегка выгибается),
+   последний щелчок — и пропуск поднимают к себе и уносят в сторону. */
+.passTorn { position: absolute; z-index: 2; inset: 0; pointer-events: none; transform-origin: calc(100% - 6px) 17px;
+  clip-path: polygon(0 100%, 0 17px, 0.00% 17px, 2.08% 23px, 4.17% 17px, 6.25% 23px, 8.33% 17px, 10.42% 23px, 12.50% 17px, 14.58% 23px, 16.67% 17px, 18.75% 23px, 20.83% 17px, 22.92% 23px, 25.00% 17px, 27.08% 23px, 29.17% 17px, 31.25% 23px, 33.33% 17px, 35.42% 23px, 37.50% 17px, 39.58% 23px, 41.67% 17px, 43.75% 23px, 45.83% 17px, 47.92% 23px, 50.00% 17px, 52.08% 23px, 54.17% 17px, 56.25% 23px, 58.33% 17px, 60.42% 23px, 62.50% 17px, 64.58% 23px, 66.67% 17px, 68.75% 23px, 70.83% 17px, 72.92% 23px, 75.00% 17px, 77.08% 23px, 79.17% 17px, 81.25% 23px, 83.33% 17px, 85.42% 23px, 87.50% 17px, 89.58% 23px, 91.67% 17px, 93.75% 23px, 95.83% 17px, 97.92% 23px, 100% 17px, 100% 100%);
+  animation: pass-tear 1.05s linear forwards; }
+.passTorn::before { display: none; }
+/* Светлые волокна по линии отрыва. */
+.passTorn::after { position: absolute; top: 17px; right: 0; left: 0; height: 8px; content: "";
+  background: linear-gradient(rgb(255 255 255 / 42%), rgb(255 255 255 / 0%)); }
+@keyframes pass-tear {
+  0% { transform: none; opacity: 1; filter: drop-shadow(0 0 0 rgb(0 0 0 / 0%)); animation-timing-function: ease-out; }
+  /* Рывки: натянули — бумага поддалась — пауза, перфорация лопается по одной дырочке. */
+  6% { transform: rotate(-.7deg); animation-timing-function: ease-in; }
+  10% { transform: rotate(-.45deg); animation-timing-function: ease-out; }
+  17% { transform: perspective(700px) rotateX(3deg) rotate(-1.9deg); animation-timing-function: ease-in; }
+  21% { transform: perspective(700px) rotateX(2deg) rotate(-1.6deg); animation-timing-function: ease-out; }
+  29% { transform: perspective(700px) rotateX(5deg) rotate(-3.4deg); animation-timing-function: ease-in; }
+  33% { transform: perspective(700px) rotateX(4deg) rotate(-3.1deg); animation-timing-function: ease-out; }
+  41% { transform: perspective(700px) rotateX(7deg) rotate(-5.2deg); filter: drop-shadow(0 4px 6px rgb(0 0 0 / 25%)); animation-timing-function: ease-in; }
+  45% { transform: perspective(700px) rotateX(6deg) rotate(-5deg); animation-timing-function: cubic-bezier(.5, 0, .9, .5); }
+  /* Последняя дырочка: щелчок, пропуск свободен и чуть проседает. */
+  50% { transform: perspective(700px) rotateX(9deg) translate(-4px, 10px) rotate(-8.5deg); filter: drop-shadow(0 8px 10px rgb(0 0 0 / 32%)); animation-timing-function: ease-out; }
+  /* Поднимают к себе: крупнее, тень дальше. */
+  68% { transform: perspective(700px) rotateX(3deg) translate(18px, -14px) rotate(-3deg) scale(1.06); opacity: 1; filter: drop-shadow(0 22px 26px rgb(0 0 0 / 45%)); animation-timing-function: ease-in; }
+  /* И уносят в сторону. */
+  100% { transform: translate(280px, -90px) rotate(14deg) scale(1.03); opacity: 0; filter: drop-shadow(0 30px 34px rgb(0 0 0 / 40%)); }
+}
+@media (prefers-reduced-motion: reduce) { .passTorn { display: none; } }
+
+.members { display: grid; gap: 10px; min-width: 0; }
+.members h3 { margin: 0; font-size: 1.1rem; }
+.empty { margin: 0; padding: 18px; border: 1.5px dashed var(--border); border-radius: 14px; color: var(--muted); }
+.list { display: grid; grid-template-columns: 42px minmax(0, 1fr) auto auto; column-gap: 14px; margin: 0; padding: 0; list-style: none; }
+.list li { display: grid; grid-column: 1 / -1; grid-template-columns: subgrid; align-items: center; gap: 10px 14px; padding: 12px 10px; border-top: 1px solid var(--border); border-radius: 12px; transition: background-color .2s ease; }
+.list li:first-child { border-top-color: transparent; }
+.list li:hover { background: color-mix(in srgb, var(--brand-soft) 55%, transparent); }
+.list li[data-selected] { background: var(--brand-soft); }
+/* Голова героя вместо инициалов, если сотрудник создал аватар: тот же кадр, что в таблице качеств. */
+.badgeAvatar { overflow: hidden; box-shadow: 0 0 0 2px color-mix(in srgb, var(--construction-accent) 55%, transparent); }
+.badgeAvatar > svg { flex: none; margin: -9px 0 0 -16px; }
+.list li:hover .badgeAvatar { box-shadow: 0 0 0 3px var(--construction-accent); }
+.badge { display: grid; place-items: center; width: 42px; height: 42px; border-radius: 50%; background: var(--blueprint); color: var(--construction-accent); font-family: var(--font-technical); font-weight: 700; }
+.person { min-width: 0; }
+.person strong, .person small { display: block; overflow-wrap: anywhere; }
+.person small { color: var(--muted); }
+.state { justify-self: start; padding: 4px 10px; border-radius: 999px; background: var(--chip); color: var(--ink-soft); font-size: .8rem; font-weight: 600; white-space: nowrap; }
+.state[data-state="done"] { background: color-mix(in srgb, var(--surface) 80%, #2aa05a); color: #17663a; }
+.state[data-state="pending"] { background: var(--warn-soft); color: var(--warn-ink); }
+:root[data-theme="dark"] .state[data-state="done"] { color: #8fe0b0; }
+.actions { display: flex; flex-wrap: wrap; justify-content: end; gap: 8px; }
+
+.firstTeam { max-width: 60ch; }
+.firstTeam h2 { margin: 0 0 8px; }
+
+/* Результат сотрудника и отчёт команды во всю ширину. */
+.result { display: grid; gap: 4px; scroll-margin-top: 90px; }
+.resultHead { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; padding-top: 8px; border-top: 2px solid var(--blueprint); }
+.resultHead h2 { margin: 12px 0; font-size: clamp(1.4rem, 3vw, 1.9rem); letter-spacing: -.02em; }
+.subhead { margin: 18px 0 0; font-size: 1.3rem; }
+/* Встроенные страницы (профиль, команда) уже имеют свою обёртку Page: убираем её отступы. */
+.embedded > section { width: 100%; max-width: none; padding-block: 12px 0; }
+.embedded h1 { font-size: clamp(1.6rem, 3vw, 2.2rem); }
+
+@media (max-width: 900px) {
+  .hero { grid-template-columns: 1fr; }
+  .sheetBody { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  .list { grid-template-columns: 42px minmax(0, 1fr); }
+  .state { grid-column: 2; justify-self: start; }
+  .actions { grid-column: 1 / -1; justify-content: start; }
+  .toolbar { align-items: start; flex-direction: column; }
+}
+@media (prefers-reduced-motion: reduce) { .tab, .list li { transition: none; } }
+.legacy { margin-top: 8px; padding: 14px 18px; border: 1px solid var(--border); border-radius: 18px; background: var(--surface); }
+.legacy > summary { color: var(--brand-strong); font-weight: 600; cursor: pointer; }
+
+/* Сброс тестовых аккаунтов: служебный блок внизу кабинета. */
+.testAccounts { display: grid; gap: 14px; border-style: dashed; }
+.testHead { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 20px; }
+.testHead > div { max-width: 68ch; }
+.testHead h2 { margin: 0 0 6px; font-size: 1.25rem; }
+.testResult { display: grid; gap: 8px; padding: 14px 16px; border-radius: 12px; background: var(--chip); color: var(--ink); }
+.testResult p, .testResult ul { margin: 0; }
+.testResult ul { display: grid; gap: 4px; padding-left: 18px; }
+.testResult code { font-family: var(--font-technical); overflow-wrap: anywhere; }

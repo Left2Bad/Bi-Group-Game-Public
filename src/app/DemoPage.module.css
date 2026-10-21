@@ -1,0 +1,9 @@
+.page { display: grid; gap: 1.5rem; }
+.page h1, .page h2, .page h3 { margin-top: 0; }
+.page p { line-height: 1.65; }
+.switcher { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.25rem; }
+.grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.grid > * { min-width: 0; overflow-wrap: anywhere; }
+.check { display: flex; gap: .75rem; align-items: center; cursor: pointer; line-height: 1.5; }
+.check input { width: 1.25rem; height: 1.25rem; flex: 0 0 auto; accent-color: var(--brand); }
+@media (max-width: 640px) { .grid { grid-template-columns: 1fr; } }

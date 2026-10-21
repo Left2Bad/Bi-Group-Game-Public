@@ -1,0 +1,66 @@
+/* Лёгкие анимации персонажей. Каждая подчёркивает черту персонажа: решительный машет поднятой рукой,
+   практик постукивает молотком, гибкий покачивает головой, независимый кивает в такт наушникам,
+   командный держит связь по рации, бригада за спиной «на марше». Общие для всех: дыхание и моргание.
+   --fig-delay сдвигает фазу, чтобы персонажи на одной странице не двигались синхронно. */
+.figure g, .figure circle, .figure rect, .figure polygon { transform-box: view-box; }
+
+.breathe { animation: breathe 3.6s ease-in-out var(--fig-delay, 0s) infinite alternate; }
+.blink { animation: blink 5s linear calc(var(--fig-delay, 0s) * 1.7) infinite; transform-box: fill-box !important; transform-origin: center; }
+
+/* Руки: вращение вокруг плеча, --dir — наружу (+1 у левой руки, −1 у правой). */
+.wave { animation: wave 2.8s ease-in-out var(--fig-delay, 0s) infinite; }
+.tap { animation: tap 2.2s cubic-bezier(.5, 0, .5, 1) var(--fig-delay, 0s) infinite; }
+.sway { animation: sway 4.2s ease-in-out var(--fig-delay, 0s) infinite; }
+
+/* Голова: поворот вокруг шеи. tilt и nod стоят на разных группах и складываются. */
+.tilt { animation: tilt 5s ease-in-out var(--fig-delay, 0s) infinite; transform-origin: 90px 100px; }
+.nod { animation: nod 1.1s ease-in-out var(--fig-delay, 0s) infinite; }
+
+.glint { animation: glint 4.5s ease-in-out var(--fig-delay, 0s) infinite; opacity: 0; }
+.scan { animation: scan 1.6s ease-in-out infinite alternate; }
+.led { animation: led 1.4s steps(1) var(--fig-delay, 0s) infinite; }
+.march { animation: march 1.6s linear infinite, pulse 3s ease-in-out infinite alternate; }
+
+/* Сверхсилы и детали аватаров. */
+.spin { animation: spin 26s linear infinite; transform-origin: 90px 140px; }
+.streak > * { animation: streak 1s ease-in infinite; }
+.streak > :nth-child(2n) { animation-delay: .35s; }
+.streak > :nth-child(3n) { animation-delay: .6s; }
+.pulse { animation: pulse 2.6s ease-in-out infinite alternate; }
+.twinkle > * { animation: twinkle 2s ease-in-out infinite; transform-box: fill-box !important; transform-origin: center; }
+.twinkle > :nth-child(2) { animation-delay: .5s; }
+.twinkle > :nth-child(3) { animation-delay: 1s; }
+.twinkle > :nth-child(4) { animation-delay: 1.5s; }
+.glow { animation: glow 2.2s ease-in-out infinite alternate; transform-box: fill-box !important; transform-origin: center; }
+.twitch { animation: twitch 4s ease-in-out var(--fig-delay, 0s) infinite; transform-box: fill-box !important; transform-origin: 50% 100%; }
+
+@keyframes breathe { from { transform: none; } to { transform: translateY(-1.6px); } }
+@keyframes blink { 0%, 93%, 100% { transform: none; } 95% { transform: scaleY(.1); } }
+@keyframes wave {
+  0%, 62%, 100% { transform: none; }
+  12%, 37% { transform: rotate(calc(var(--dir) * 14deg)); }
+  25%, 50% { transform: rotate(calc(var(--dir) * -8deg)); }
+}
+@keyframes tap {
+  0%, 52%, 100% { transform: none; }
+  30% { transform: rotate(calc(var(--dir) * 22deg)); }
+  40% { transform: rotate(calc(var(--dir) * -3deg)); }
+}
+@keyframes sway { 0%, 100% { transform: none; } 50% { transform: rotate(calc(var(--dir) * 7deg)); } }
+@keyframes tilt { 0%, 100% { transform: rotate(-3deg); } 50% { transform: rotate(4deg); } }
+@keyframes nod { 0%, 50%, 100% { transform: none; } 25% { transform: translateY(1.8px); } }
+@keyframes glint { 0%, 70%, 100% { opacity: 0; } 80% { opacity: .95; } }
+@keyframes scan { from { opacity: .35; } to { opacity: 1; } }
+@keyframes led { 0% { fill: #3fe07a; } 50% { fill: #1d4a2e; } }
+@keyframes march { to { stroke-dashoffset: -18; } }
+@keyframes pulse { from { opacity: .55; } to { opacity: 1; } }
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes streak { from { transform: translateX(10px); opacity: 0; } 30% { opacity: 1; } to { transform: translateX(-14px); opacity: 0; } }
+@keyframes twinkle { 0%, 100% { transform: scale(.6); opacity: .5; } 50% { transform: scale(1.15); opacity: 1; } }
+@keyframes glow { from { transform: scale(.9); opacity: .6; } to { transform: scale(1.12); opacity: 1; } }
+@keyframes twitch { 0%, 86%, 100% { transform: none; } 90% { transform: rotate(-10deg); } 94% { transform: rotate(6deg); } }
+
+@media (prefers-reduced-motion: reduce) {
+  .figure *, .figure *::before { animation: none !important; }
+  .glint { opacity: 0; }
+}

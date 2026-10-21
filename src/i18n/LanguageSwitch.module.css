@@ -1,0 +1,19 @@
+.wrap { position: relative; display: inline-flex; }
+.switch { display: inline-flex; padding: 3px; border: 1px solid var(--border); border-radius: 12px; background: var(--glass); }
+.switch button { min-width: 48px; min-height: 36px; padding: 0 10px; border: 0; border-radius: 9px; background: transparent; color: var(--muted); font-weight: 700; font-size: .85rem; cursor: pointer; }
+.switch button:hover { color: var(--brand-strong); background: var(--brand-soft); }
+.switch button[aria-pressed="true"] { color: #fff; background: var(--blueprint); }
+/* Прогресс перевода контента: под кнопками, поверх страницы, чтобы шапка не прыгала. */
+.progress { position: absolute; top: calc(100% + 6px); right: 0; z-index: 30; display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 4px 8px;
+  min-width: 100%; width: max-content; max-width: 240px; padding: 6px 8px; border: 1px solid var(--border); border-radius: 10px;
+  background: var(--surface, #fff); box-shadow: 0 6px 18px rgb(15 23 42 / .12); font-size: .75rem; color: var(--muted); }
+.progress progress { grid-column: 1 / -1; width: 100%; height: 6px; border: 0; border-radius: 999px; overflow: hidden; background: var(--brand-soft); appearance: none; }
+.progress progress::-webkit-progress-bar { background: var(--brand-soft); border-radius: 999px; }
+.progress progress::-webkit-progress-value { background: var(--blueprint); border-radius: 999px; transition: width .4s ease; }
+.progress progress::-moz-progress-bar { background: var(--blueprint); border-radius: 999px; }
+.progress[data-state="ready"] progress::-webkit-progress-value { background: var(--success, #16a34a); }
+.progress[data-state="ready"] progress::-moz-progress-bar { background: var(--success, #16a34a); }
+.progress[data-state="failed"] { color: var(--danger, #b91c1c); }
+.progress button { padding: 2px 8px; border: 1px solid currentColor; border-radius: 7px; background: transparent; color: inherit; font: inherit; font-weight: 700; cursor: pointer; }
+/* Узкий экран: кнопки уже, чтобы логотип, настройки и бургер уместились в одну строку. */
+@media(max-width: 520px) { .switch button { min-width: 40px; padding: 0 6px; } }

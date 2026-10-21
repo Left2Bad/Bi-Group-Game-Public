@@ -1,0 +1,162 @@
+{
+  "OPS_033": { "context": "Two brands of waterproofing with almost identical packaging were noticed in the warehouse.", "text": "How will you prevent the wrong item being issued?", "options": {
+    "A": "I will compare the item codes, certificates and areas of use in the specification.",
+    "B": "I will tell the warehouse that issue must be suspended until the batches are separated.",
+    "C": "I will check the labelling and arrange separate storage with clear labels.",
+    "D": "I will put the batches in separate places and send a request to the engineer." } },
+  "OPS_034": { "context": "The transport company offers to deliver ventilation units at night with no receiving staff present.", "text": "What will you propose?", "options": {
+    "A": "I will arrange a new delivery time slot and coordinate everyone's attendance.",
+    "B": "I will check the unloading requirements and schedule receipt within an authorised time slot.",
+    "C": "I will ask for the truck's arrival to be moved to a daytime slot when the ramp is available.",
+    "D": "I will agree a realistic unloading time with security, the warehouse and the transport company." } },
+  "OPS_035": { "context": "After the rain, some boxes of electrical equipment got wet under the tarpaulin.", "text": "How will you organise assessment of the batch?", "options": {
+    "A": "I will involve the electricians and the warehouse in a joint inspection and decision.",
+    "B": "I will mark the damaged spots and put the batch in a dry area until it is inspected.",
+    "C": "I will check the packaging and documents against the storage conditions for each item.",
+    "D": "I will assess the damage with a specialist and set aside the disputed boxes." } },
+  "OPS_036": { "context": "The supplier is pushing for urgent confirmation of the order, although price approval is not yet complete.", "text": "How will you act?", "options": {
+    "A": "I will ask them to reserve the goods until approval is complete.",
+    "B": "I will give the decision date and speed up the documentary approval without skipping steps.",
+    "C": "I will check the limit and go through the purchase approval route.",
+    "D": "I will explain directly that the order will be confirmed after the terms are approved." } },
+  "OPS_037": { "context": "Air ducts arrived on site with a data sheet specifying a different sheet metal thickness.", "text": "How will you check whether the delivery is fit for use?", "options": {
+    "A": "I will compare the actual marking, the data sheet and the design specification.",
+    "B": "I will set aside the disputed batch and file a claim according to the procedure.",
+    "C": "I will check the thickness and documents, then formalise acceptance or rejection.",
+    "D": "I will leave the batch in the quarantine area and call the HVAC (OViK) engineer." } },
+  "OPS_038": { "context": "A driver reports that the unloading area is occupied by machinery, and his truck is blocking the entrance.", "text": "How will you resolve the situation?", "options": {
+    "A": "I will assign a safe parking spot and clarify a new unloading time with the participants.",
+    "B": "I will take on coordinating the entry and designate a safe waiting area.",
+    "C": "I will ask the driver to wait in the approved area and warn the dispatcher.",
+    "D": "I will connect the driver, the machinery dispatcher and the warehouse to clear the area." } },
+  "OPS_039": { "context": "Two sites are demanding the last pumps from the warehouse at the same time.", "text": "How will you set the priority?", "options": {
+    "A": "I will openly present the shortage to the managers and propose a justified order.",
+    "B": "I will reserve the pumps until an authorised person agrees the allocation.",
+    "C": "I will compare the approved schedules, installation dates and availability of alternative batches.",
+    "D": "I will prepare a comparison of deadlines and agree the decision with the site managers." } },
+  "OPS_040": { "context": "Thermal insulation arrived without some of the accompanying documents, and installation is in a week.", "text": "How will you organise further actions?", "options": {
+    "A": "I will place the batch separately and remind the supplier of the list of documents.",
+    "B": "I will request the missing documents and agree a backup installation date with the team.",
+    "C": "I will agree a date for the complete document package with the supplier, the warehouse and the supervisor.",
+    "D": "I will not issue the batch until confirmed documents arrive." } },
+  "OPS_041": { "context": "Deliveries to the cast-in-place section often end with leftovers that are not reflected in the orders.", "text": "How will you improve the purchasing plan?", "options": {
+    "A": "I will compare consumption rates, actual yield and leftovers over several cycles.",
+    "B": "I will discuss with the site manager the reasons for the leftovers and updating the weekly requirement.",
+    "C": "I will check the consumption history together with the section and adjust the order.",
+    "D": "I will propose a weekly reconciliation of leftovers with the supervisor." } },
+  "OPS_042": { "context": "The specification names a specific brand of fixing, while the contractor offers an equivalent it has in stock.", "text": "How will you respond?", "options": {
+    "A": "I will set out the necessary documents and send the equivalent for approval.",
+    "B": "I will explain that substitution is possible only after technical approval.",
+    "C": "I will keep the original order and pass the proposal to the project engineer.",
+    "D": "I will check the set of documents and the approval route for the equivalent." } },
+  "OPS_043": { "context": "When issuing a batch of pipes, different heat numbers were found inside one package.", "text": "How will you document traceability?", "options": {
+    "A": "I will separate the batches in the records and arrange separate issue.",
+    "B": "I will put the package on hold for a check and inform the plumbing (VK) engineer.",
+    "C": "I will check the marking of each group against the certificates and design requirements.",
+    "D": "I will check the certificates and separate the pipes by number before issue." } },
+  "OPS_044": { "context": "The supplier missed the agreed concrete delivery window, and the crew has already prepared the formwork.", "text": "How will you coordinate with the participants?", "options": {
+    "A": "Once I get a new time from the plant, I will pass it to the site manager and the laboratory.",
+    "B": "I will openly report the delay and clarify a feasible schedule together with the team.",
+    "C": "I will connect the plant, the laboratory, the site manager and the dispatcher to agree a plan.",
+    "D": "I will report the real delivery time and the restrictions of the new window myself." } },
+  "OPS_045": { "context": "The forwarder proposed a shorter route for long beams through a residential street.", "text": "How will you assess the route?", "options": {
+    "A": "I will check the size restrictions, permits and turning conditions.",
+    "B": "I will point out that dispatch is possible only along a permitted route.",
+    "C": "I will check the route documents and justify the approved option to the driver.",
+    "D": "I will keep the planned route and request a check from the transport department." } },
+  "OPS_046": { "context": "The forklift is needed at the same time by the warehouse and the finishers to move pallets.", "text": "How will you agree its use?", "options": {
+    "A": "I will record the order of use and jointly choose suitable time slots.",
+    "B": "I will check the usage plan and set up time slots.",
+    "C": "I will pass the requests to the dispatcher and notify the teams of the decision.",
+    "D": "I will collect the requests of both teams and agree a sequence without downtime." } },
+  "OPS_047": { "context": "In the monthly report, insulation write-offs increased while the volume of work stayed the same.", "text": "How will you deal with the deviation?", "options": {
+    "A": "I will discuss likely sources of the discrepancy with the storekeeper and the supervisor.",
+    "B": "I will pass the report to the warehouse and production for a joint reconciliation.",
+    "C": "I will compare receipts, issues, returns and the actual area insulated.",
+    "D": "I will check the accounting operations together with the section and clarify the real requirement." } },
+  "OPS_048": { "context": "An emergency delivery requires a payment not covered by the purchasing limit.", "text": "How will you formalise the decision?", "options": {
+    "A": "I will request standard delivery and pass the proposal to speed it up to the manager.",
+    "B": "I will explain the delivery options and formalise approval of the chosen rate.",
+    "C": "I will prepare a calculation and go through the approval route for the extra payment.",
+    "D": "I will tell the initiator that the expense requires separate approval." } },
+  "OPS_049": { "context": "In the network schedule, facade work starts before the fixing tests are complete.", "text": "How will you fix the dependency?", "options": {
+    "A": "I will check the construction sequence and the conditions for authorising work specified in the design.",
+    "B": "I will update the task links and issue a new version of the schedule.",
+    "C": "I will check the test conditions and enter the confirmed dependency into the schedule.",
+    "D": "I will flag the conflict and send it to the project manager for a decision." } },
+  "OPS_050": { "context": "The contractor promises to make up a week's delay but has not presented a plan.", "text": "How will you discuss the contractor's promise?", "options": {
+    "A": "I will clearly request a calculation and jointly confirm verifiable milestones.",
+    "B": "I will ask for specific shifts, volumes and resources and set a deadline for the answer.",
+    "C": "I will schedule a meeting and ask the contractor to send a weekly plan.",
+    "D": "I will gather the supervisors and the contractor to agree a realistic plan together." } },
+  "OPS_051": { "context": "The report shows 90% completion of the building services, but the test certificates have not yet been signed.", "text": "How will you assess the real progress?", "options": {
+    "A": "I will tell the client that the completion percentage needs to be clarified.",
+    "B": "I will request a list of unconfirmed stages from the engineers.",
+    "C": "I will separate installation, testing and acceptance based on confirmed volumes.",
+    "D": "I will check the confirmations and openly present the adjusted status." } },
+  "OPS_052": { "context": "A layout change affects three contracting organisations and the overall handover date for the floor.", "text": "How will you start revising the schedule?", "options": {
+    "A": "I will send the change to the participants and ask them to update their schedules.",
+    "B": "I will record the change, collect the adjacent trades' timings and propose a new plan.",
+    "C": "I will hold a meeting of the adjacent trades and clarify the available work windows.",
+    "D": "I will formalise the change and update the baseline schedule after agreement on its impact." } },
+  "OPS_053": { "context": "In weekly reports, adjacent trades calculate room readiness differently.", "text": "How will you work out a single rule?", "options": {
+    "A": "I will check the readiness criteria against the contract milestones and the acceptance scope.",
+    "B": "I will discuss with the teams clear signs that each room is complete.",
+    "C": "I will propose common criteria after reviewing the disputed rooms with the contractors.",
+    "D": "I will collect the current definitions and schedule a working meeting." } },
+  "OPS_054": { "context": "At a meeting, the manager proposes accepting an unrealistic date without assessing resources.", "text": "How will you react?", "options": {
+    "A": "I will voice the risk and prepare a confirmed calculation for the decision.",
+    "B": "I will firmly point out the resource risk and propose a date after the calculation.",
+    "C": "I will record the date as preliminary and agree a check of resources.",
+    "D": "I will check the volumes and available crews before updating the schedule." } },
+  "OPS_055": { "context": "The slab pour is planned for the day the independent inspection service will inspect the formwork.", "text": "How will you reflect the dependency in the plan?", "options": {
+    "A": "I will put the pour after the confirmed inspection in the working schedule.",
+    "B": "I will mark the pour as conditional and notify the batching plant.",
+    "C": "I will clarify the inspection time, the conditions for authorising work and possible reasons for postponement.",
+    "D": "I will check the duration of the inspection and schedule the transition only after approval." } },
+  "OPS_056": { "context": "An adjacent trade asks for two days of access to a shaft already occupied by another crew.", "text": "How will you resolve the conflict between time slots?", "options": {
+    "A": "I will ask each crew for its minimum scope and propose a meeting.",
+    "B": "I will openly point out the conflict and allocate access by stages with the teams.",
+    "C": "I will bring both crews and the shaft supervisor together to allocate the time jointly.",
+    "D": "I will set out the priority rules and the deadline by which an agreed plan is needed." } },
+  "OPS_057": { "context": "The contractor reported that the lift delivery has been postponed, but the delay is not reflected in the monthly forecast.", "text": "How will you recalculate the forecast?", "options": {
+    "A": "I will check the critical path, the float and the related commissioning work.",
+    "B": "I will inform management of the likely impact on the commissioning date.",
+    "C": "I will recalculate the dependencies and present management with a new forecast and its assumptions.",
+    "D": "I will note the risk in the register and request a confirmed delivery date." } },
+  "OPS_058": { "context": "After an internal partition was moved, some already closed work orders need to be reviewed.", "text": "How will you organise change control?", "options": {
+    "A": "I will formalise the change and clarify the remaining volumes together with the contractors.",
+    "B": "I will record the review of volumes, milestones and approvals in the change log.",
+    "C": "I will request updated volumes from the technical department (PTO) and put the task in the plan.",
+    "D": "I will gather the technical department (PTO) and the contractor to reconcile what has actually been done." } },
+  "OPS_059": { "context": "In finishing works, handover of concealed work before structures are closed up is regularly skipped.", "text": "How will you build the check into the schedule?", "options": {
+    "A": "I will agree the inspection time and the form of the readiness signal with the supervisors.",
+    "B": "I will remind the contractors to submit inspection requests in advance.",
+    "C": "I will find the areas where the control point is missing from the sequence.",
+    "D": "I will add inspection points and discuss their realistic duration with the teams." } },
+  "OPS_060": { "context": "The client asks for a daily status of the site, although data is collected once a week.", "text": "What will you propose?", "options": {
+    "A": "I will propose a daily status on critical milestones with the data source.",
+    "B": "I will agree a short set of verifiable indicators and regular submission.",
+    "C": "I will assign responsible people and a daily update deadline according to the procedure.",
+    "D": "I will clarify which indicators can be reliably confirmed every day." } },
+  "OPS_061": { "context": "According to the schedule, window installation will start before the openings have been measured.", "text": "How will you clarify the start of work?", "options": {
+    "A": "I will check the scope of the measurements and the deadlines for adjusting the products.",
+    "B": "I will link the start of installation to the measurement report and update the plan.",
+    "C": "I will recalculate the start based on confirmed measurements and formalise the schedule change.",
+    "D": "I will note the dependency and ask the contractor for the measurement date." } },
+  "OPS_062": { "context": "The section manager reports that the same installers are included in the plans of two buildings.", "text": "How will you settle the resource conflict?", "options": {
+    "A": "I will present the conflict at a meeting and reallocate shifts together with the site managers.",
+    "B": "I will point out that double assignment is impossible and propose prioritising by milestones.",
+    "C": "I will ask each site manager to confirm how many crew members are needed and when.",
+    "D": "I will gather the site managers to agree shifts and sequence." } },
+  "OPS_063": { "context": "The actual masonry rate has been below plan for three weeks in a row, and the reports attribute this to the weather.", "text": "How will you check the cause of the deviation?", "options": {
+    "A": "I will tell the managers that the cause needs to be checked before speeding up.",
+    "B": "I will review the deviation with the site manager and the contractor.",
+    "C": "I will compare the weather, work area availability, crew size and daily output.",
+    "D": "I will collect the indicators and present a justified cause with options for measures." } },
+  "OPS_064": { "context": "To issue working documentation, the designer needs data from several contractors.", "text": "How will you organise data collection?", "options": {
+    "A": "I will send out a single list of data and remind them of the response deadlines.",
+    "B": "I will set up a register and organise a short meeting on dependencies.",
+    "C": "I will help the contractors agree the format and procedure for passing on information.",
+    "D": "I will create a request register with responsible people and deadlines." } }
+}

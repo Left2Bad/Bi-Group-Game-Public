@@ -1,0 +1,56 @@
+{
+  "name": "bi-academy",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "engines": {
+    "node": ">=24.13.1 <25",
+    "npm": ">=11 <12"
+  },
+  "packageManager": "npm@11.8.0",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "dev:api": "node --env-file-if-exists=.env --watch server/dev.mjs",
+    "lint": "eslint . --max-warnings 0",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "build": "npm run typecheck && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "start": "node --env-file-if-exists=.env server/index.mjs",
+    "seed:test-accounts": "node --env-file-if-exists=.env server/seed-test-accounts.mjs",
+    "test-accounts:build": "node scripts/build-test-accounts.mjs",
+    "test:e2e": "playwright test",
+    "test:e2e:dynamic": "playwright test --config=playwright.dynamic.config.ts",
+    "test:e2e:container": "playwright test --config=playwright.container.config.ts",
+    "test:http": "node scripts/smoke-http.mjs",
+    "check": "npm run lint && npm run test:run && npm run build"
+  },
+  "dependencies": {
+    "express": "5.3.0",
+    "motion": "14.4.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "react-router-dom": "7.18.4"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@playwright/test": "1.64.1",
+    "@testing-library/jest-dom": "7.0.1",
+    "@testing-library/react": "16.3.3",
+    "@types/express": "5.0.6",
+    "@types/node": "24.19.2",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.1.2",
+    "eslint": "10.12.0",
+    "eslint-plugin-react-hooks": "7.1.1",
+    "eslint-plugin-react-refresh": "0.5.7",
+    "globals": "17.13.0",
+    "jsdom": "29.1.1",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.71.2",
+    "vite": "8.3.4",
+    "vitest": "5.0.5"
+  }
+}

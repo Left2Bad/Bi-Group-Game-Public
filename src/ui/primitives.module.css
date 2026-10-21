@@ -1,0 +1,26 @@
+.page { width: min(var(--content-width), calc(100% - 40px)); margin: 0 auto; padding: clamp(28px, 6vw, 72px) 0; }
+.card { position: relative; min-width: 0; padding: clamp(22px, 4vw, 34px); border: 1px solid var(--border); border-radius: var(--radius-card); background: var(--surface); box-shadow: var(--shadow-md); transition: border-color .25s ease, box-shadow .3s ease; }
+/* Подсветка под курсором: градиент центрируется на --mx/--my (пишет trackSpotlight). */
+.card::before { position: absolute; inset: 0; border-radius: inherit; content: ''; pointer-events: none; opacity: 0; transition: opacity .3s ease; background: radial-gradient(320px circle at var(--mx, 50%) var(--my, 0%), var(--spot), transparent 70%); }
+.card:hover { border-color: color-mix(in srgb, var(--brand-bright) 45%, var(--border)); }
+.card:hover::before { opacity: 1; }
+.card > * { position: relative; }
+/* position+overflow нужны для блика, который пробегает по кнопке при наведении. */
+.button { position: relative; overflow: hidden; display: inline-flex; min-height: 48px; justify-content: center; align-items: center; gap: 10px; padding: 11px 19px; border: 1px solid transparent; border-radius: var(--radius-control); font-weight: 750; cursor: pointer; text-decoration: none; transition: background-color .16s ease, transform .3s var(--ease-spring), box-shadow .25s ease; }
+.button::after { position: absolute; inset: 0; content: ''; pointer-events: none; background: linear-gradient(105deg, transparent 35%, rgb(255 255 255 / 30%) 50%, transparent 65%) no-repeat 160% 0 / 250% 100%; transition: background-position .7s var(--ease-out); }
+.button:hover:not(:disabled)::after { background-position: -60% 0; }
+.button:hover:not(:disabled) { transform: translateY(-2px); }
+.button:active:not(:disabled) { transform: translateY(1px); }
+.button:disabled { opacity: .5; cursor: not-allowed; }
+.primary { color: white; background: linear-gradient(180deg, var(--brand-bright), var(--brand) 55%); box-shadow: 0 8px 20px -8px rgb(0 106 203 / 70%), inset 0 1px 0 rgb(255 255 255 / 30%); }.primary:hover:not(:disabled) { box-shadow: 0 14px 28px -10px rgb(0 106 203 / 80%), inset 0 1px 0 rgb(255 255 255 / 30%); }.primary:hover:not(:disabled) { background: linear-gradient(180deg, #3ba0f5, var(--brand-strong) 55%); }
+.secondary { color: var(--brand-strong); border-color: var(--border); background: var(--surface); }.secondary:hover:not(:disabled) { background: var(--brand-soft); }
+.quiet { color: var(--muted); background: transparent; }
+.eyebrow { margin: 0 0 8px; color: var(--brand-strong); font-size: .95rem; font-weight: 600; }
+.status { padding: 13px 16px; border-left: 4px solid var(--brand); border-radius: 0 10px 10px 0; background: var(--brand-soft); }.warning { border-color: #c77900; background: var(--warn-soft); }
+.progress { display: grid; gap: 8px; }.progressHeader { display: flex; justify-content: space-between; gap: 12px; font-size: .9rem; }.progressHeader strong { color: var(--brand-strong); font-variant-numeric: tabular-nums; }
+.track { height: 10px; overflow: hidden; border-radius: 99px; background: var(--track); }.track span { position: relative; display: block; height: 100%; overflow: hidden; border-radius: inherit; background: linear-gradient(90deg, var(--brand), var(--brand-bright)); transition: width .6s var(--ease-out); }
+.track span::after { position: absolute; inset: 0; content: ''; background: linear-gradient(100deg, transparent 30%, rgb(255 255 255 / 45%) 50%, transparent 70%) no-repeat -120% 0 / 60% 100%; animation: bar-shine 3.2s ease-in-out 1s infinite; }
+@keyframes bar-shine { 0% { background-position: -120% 0; } 60%, 100% { background-position: 260% 0; } }
+@media (prefers-reduced-motion: reduce) { .track span::after { animation: none; } }
+.heading h2 { margin: 0; font-size: clamp(1.35rem, 3vw, 1.8rem); line-height: 1.2; }.heading p { margin: 8px 0 0; color: var(--muted); }
+@media(max-width: 520px) { .page { width: min(100% - 28px, var(--content-width)); padding-top: 26px; }.card { border-radius: 15px; }.button { width: 100%; } }

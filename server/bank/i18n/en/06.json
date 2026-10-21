@@ -1,0 +1,167 @@
+{
+  "ENG_031": { "context": "After the underlay was updated, some model elements shifted in coordinates.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will check the control points and register the shift before the next publication.",
+    "B": "I will compare the coordinate transformation with the source system and register the result of checking the underlay.",
+    "C": "I will compare the base points and control elements before and after the update.",
+    "D": "I will block the release and open a task to check the coordinates." } },
+  "ENG_032": { "context": "The design load in the calculation report differs from the value in the model.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will check where the two loads come from and personally propose to those responsible a procedure for clarifying the value.",
+    "B": "I will check the source of the load, the calculation date and the model revisions.",
+    "C": "I will tell the adjacent disciplines that the value needs to be clarified and give a deadline for the answer.",
+    "D": "I will check the calculation against the model and give the adjacent disciplines a confirmed value." } },
+  "ENG_033": { "context": "The model check revealed a fire resistance parameter that is systematically left blank.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will find out in which template and at what stage the parameter gets lost.",
+    "B": "I will help the discipline authors fill in the parameter and check the standard objects.",
+    "C": "I will find the source of the omissions and agree a mandatory check with the authors.",
+    "D": "I will collect the reasons for the omissions together with the authors and check at what stage the fire resistance parameter should be entered." } },
+  "ENG_034": { "context": "An adjacent discipline asks you to set the status «approved» on a model that has not been reviewed.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will keep the review status and go through the checklist according to the regulations.",
+    "B": "I will point out the open checks and change the status after they have been documented.",
+    "C": "I will clarify the scope of the remaining review myself and set the conditions for changing the model status.",
+    "D": "I will explain which checks have not yet been done and when I will carry them out." } },
+  "ENG_035": { "context": "At a coordination meeting there is an argument about who should redo an opening in the slab.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will show the source requirements and help allocate the actions for the detail.",
+    "B": "I will propose my own way of allocating the task and clarify the boundaries of the change with the section authors.",
+    "C": "I will propose a clear area of responsibility based on the brief and the model.",
+    "D": "I will give the two disciplines a common view of the detail for a joint decision." } },
+  "ENG_036": { "context": "One of the model authors cannot see a remark linked to an old revision.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will agree a new link for the remark with the author and keep the connection to the original entry.",
+    "B": "I will check the element ID and the link between the remark and the revision history.",
+    "C": "I will contact the author and help move the remark to the current object.",
+    "D": "I will check the element's history and update the task link together with the author." } },
+  "ENG_037": { "context": "The schedule automatically counted elements from the temporary demolition model.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will check the category filter and the contents of the source model.",
+    "B": "I will stop the publication and record the schedule set-up error.",
+    "C": "I will identify the extra source, fix the filter and arrange a repeat check.",
+    "D": "I will check the counting filters by phase and issue a corrected version of the schedule." } },
+  "ENG_038": { "context": "On the drawing, the shaft's dimension to the grid does not match the coordination dimension in the model.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will name the specific dimension that must not be passed on to the site.",
+    "B": "I will check the model against the sheet and request a corrected release, giving my reasons.",
+    "C": "I will compare the shaft's position with the source dimensions and personally present a way to resolve the discrepancy.",
+    "D": "I will check the grid lines, the dimension chains and the publication date of the view." } },
+  "ENG_039": { "context": "Contractors often ask the same questions about how embedded parts are designated.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will check the recurring queries and add an agreed explanation.",
+    "B": "I will collect examples of unclear designations together with the builders and check what information is missing on the sheet.",
+    "C": "I will compare the queries and find the unclear spot on the standard sheet.",
+    "D": "I will discuss with the site which view of the detail would help when reading the drawing." } },
+  "ENG_040": { "context": "Before the model is published, a link to an unchecked external file has been found.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will personally arrange a check of the external link and confirm the set of files for publication.",
+    "B": "I will report that the status of the linked file does not allow it to be included in the release.",
+    "C": "I will check where the link came from and carry out the file approval procedure.",
+    "D": "I will record the problem and publish the model after the link has been checked." } },
+  "ENG_041": { "context": "A young designer is unsure how to formalise a change after a request from the site.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will explain which decisions require confirmation from the design author.",
+    "B": "I will go through the request route with him and help prepare the package.",
+    "C": "I will set out the limits of authority and prepare the change request together with him.",
+    "D": "I will suggest preparing the first request with the designer and take responsibility for reviewing the disputed decisions." } },
+  "ENG_042": { "context": "Publications of several sections with shared links are scheduled for this week.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will gather the section authors to synchronise the update dates.",
+    "B": "I will check the dependencies, agree a publication window and send out the plan.",
+    "C": "I will agree the order of publications with the authors and record the versions of the shared links for each release.",
+    "D": "I will record the control revisions and dependencies before publication." } },
+  "ENG_043": { "context": "The site reports that the coordinate of an opening on the sheet differs from the model.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will check the references and formalise a correction or a confirmation of the sheet.",
+    "B": "I will compare the history of the sheet and the model and record the confirmed position of the opening.",
+    "C": "I will check the coordinate systems, the reference to the grid lines and the sheet revisions.",
+    "D": "I will log a remark and suspend use of the disputed coordinate." } },
+  "ENG_044": { "context": "During the facade check, an element's height was found not to match the approved detail.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will check how the height differs from the detail and propose to the responsible person myself a procedure for fixing it before release.",
+    "B": "I will check the family parameter and the constraints in the approved detail.",
+    "C": "I will point the author to the exact place of the mismatch and the confirmation required.",
+    "D": "I will check the parameter against the detail and return the element for correction with justification." } },
+  "ENG_045": { "context": "The clash report contains dozens of false positives for permissible intersections.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will classify the hits by cause and check the filter rules.",
+    "B": "I will agree exceptions with the disciplines so that only real conflicts remain.",
+    "C": "I will analyse the causes of the false positives and update the checking rules together.",
+    "D": "I will collect examples of permissible intersections together with the authors and clarify the basis for the checking filters." } },
+  "ENG_046": { "context": "The release sheet shows a revision index that is not in the change log.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will check the sheet against the log and start a correction according to the procedure.",
+    "B": "I will point out the discrepancy and release after the correction has been documented.",
+    "C": "I will personally arrange a check of the release index and record the confirmed revision in the log.",
+    "D": "I will tell the person issuing the release directly about the unapproved index." } },
+  "ENG_047": { "context": "At a meeting the client asks you to confirm right away that a new opening is technically feasible.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will state the conditions and arrange a check with the structural engineer.",
+    "B": "I will propose to the client a procedure for checking the opening and agree a response date with the structural engineer.",
+    "C": "I will say which calculations and approvals are needed before confirmation.",
+    "D": "I will involve the structural engineer and organise a check of the proposal." } },
+  "ENG_048": { "context": "After the BIM template was changed, part of the team continues to use the old set of parameters.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will agree with the authors on switching to the new template and make parameter checks part of publication.",
+    "B": "I will check the differences between the templates and make a list of mandatory parameters.",
+    "C": "I will hold a short set-up session with the authors and collect questions.",
+    "D": "I will publish a verified list of changes and help the authors update." } },
+  "ENG_049": { "context": "Before setting out the columns, a discrepancy in grid line coordinates was found on two sheets of the same revision.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will compare the coordinates with the base grid and the grid line schedule.",
+    "B": "I will suspend setting out and file a request to confirm the coordinates.",
+    "C": "I will check the grid and register the discrepancy before issuing the points.",
+    "D": "I will compare the source coordinates of the two sheets and register the confirmed basis for setting out." } },
+  "ENG_050": { "context": "A control point after earthworks differs from its previous position.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will report that the point cannot be used for now and explain why.",
+    "B": "I will confirm the discrepancy with an independent measurement and demand that the point be re-referenced.",
+    "C": "I will check the position of the point relative to the control network and present the conclusion to the site manager myself.",
+    "D": "I will check the stability of the marker and repeat the measurement from an independent base." } },
+  "ENG_051": { "context": "Two crews use different designations for height benchmarks.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will check the catalogue and update the benchmark diagram together with the crews.",
+    "B": "I will collect the designations together with the crews and check whether they refer to the same benchmarks.",
+    "C": "I will check the coordinates and elevations of the markers against the approved catalogue.",
+    "D": "I will gather the foremen and help them reconcile the designations they use." } },
+  "ENG_052": { "context": "The supervisor asks you to issue an elevation based on a verbal report without a control measurement.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will personally arrange a check of the elevation and record the confirmed result before giving it to the supervisor.",
+    "B": "I will explain that the elevation will be issued after verification by measurement with an instrument.",
+    "C": "I will take the measurement and enter the result in the established form.",
+    "D": "I will give a time, carry out a control measurement and hand over the documented elevation." } },
+  "ENG_053": { "context": "After setting out, old axis marks were found on site that do not match the new ones.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will mark the valid points and indicate which marks are to be considered invalid.",
+    "B": "I will do a short walk-round with the supervisor and help mark the current axes.",
+    "C": "I will show the confirmed diagram and mark the points together with the supervisor.",
+    "D": "I will suggest checking the valid marks together with the crew and take responsibility for explaining the accepted setting-out reference." } },
+  "ENG_054": { "context": "The surveyors on site have changed, and some field records have not yet been transferred to the log.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will go over the points with the new shift and help sort out the unfinished measurements.",
+    "B": "I will bring the log up to date and check the control points together.",
+    "C": "I will agree with the new shift on reconciling the field records and record the unfinished handover items.",
+    "D": "I will check the logs and enter the measurements with links to the source files." } },
+  "ENG_055": { "context": "After the total station was moved, the resection gave an increased misclosure.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will check the stations and settings, then formalise a control calculation.",
+    "B": "I will check the source stations with the senior surveyor and formalise confirmation of the instrument set-up.",
+    "C": "I will check the source stations, the resection geometry and the instrument settings.",
+    "D": "I will stop issuing points and record the misclosure in the field log." } },
+  "ENG_056": { "context": "The as-built survey showed the retaining wall outside its design position.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will compare the survey results with the design boundary and personally present the grounds for the remark.",
+    "B": "I will repeat the measurement from a control station and compare it with the design tolerance.",
+    "C": "I will tell those responsible about the measured deviation and the need for a decision.",
+    "D": "I will confirm the deviation with an independent measurement and send the diagram to those responsible." } },
+  "ENG_057": { "context": "At the end of the week, several as-built surveys have no photographic record linking them to their work section.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will find out at what stage the link between photos and measurements gets lost.",
+    "B": "I will propose a single file naming scheme to the crews and help apply it.",
+    "C": "I will analyse the source of the gaps and introduce a single storage procedure together.",
+    "D": "I will collect examples of lost links together with the surveyors and determine what data needs to be recorded on site." } },
+  "ENG_058": { "context": "The contractor asks you to sign the pile field drawing before all piles have been checked.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will mark the unchecked piles and carry out the prescribed control.",
+    "B": "I will explain the restriction, complete the control and formalise a correct drawing.",
+    "C": "I will personally arrange for the pile check to be completed and set the conditions for issuing the as-built drawing.",
+    "D": "I will say that the drawing can be confirmed only for the points that have been checked." } },
+  "ENG_059": { "context": "Workers report that one of the control markers on the section has been damaged.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will report the restriction and jointly arrange to reference the survey to verified control points.",
+    "B": "I will propose a procedure to the crew for restoring the marker and agree access for control measurements together.",
+    "C": "I will make clear that the damaged marker cannot be used as a basis.",
+    "D": "I will contact the supervisor and the team to protect the marker and choose a replacement." } },
+  "ENG_060": { "context": "On two floors elevations are recorded in different formats, and the crew is getting confused.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will agree a single elevation format with the supervisors and apply it in the diagrams we issue.",
+    "B": "I will bring the records to a single format and check them against the height datum.",
+    "C": "I will show the crew a single marking sample and help update the signs.",
+    "D": "I will check the elevations and bring the marking up to standard together with the crew." } },
+  "ENG_061": { "context": "The coordinate file received from the contractor does not specify the coordinate system.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will check the control stations and signs of a coordinate transformation.",
+    "B": "I will not load the file into the working project without a confirmed system.",
+    "C": "I will check the file against the stations and file a request for the coordinate system.",
+    "D": "I will compare the file with the control coordinates and register the confirmed system before use." } },
+  "ENG_062": { "context": "A check of the slab axes showed a difference close to the permissible limit.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will tell the supervisor about the borderline result and the need for confirmation.",
+    "B": "I will repeat the measurement and present the confirmed value with the tolerance.",
+    "C": "I will check the conditions of the borderline measurement and propose my own method for verifying the result.",
+    "D": "I will assess the method's error and repeat the check from another station." } },
+  "ENG_063": { "context": "Several sections keep having delays because source elevations are handed over late.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will analyse the causes and help introduce advance requests by work section.",
+    "B": "I will collect the actual request times together with the supervisors and find the cause of delays in providing reference elevations.",
+    "C": "I will trace the step at which requests are delayed.",
+    "D": "I will agree a calendar of elevation needs with the supervisors in advance." } }
+}

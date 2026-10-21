@@ -1,0 +1,46 @@
+.page { padding-block: 32px 60px; }
+.heading { display: flex; align-items: start; justify-content: space-between; flex-wrap: wrap; gap: 16px; margin-bottom: 24px; }
+.heading h1 { margin: 4px 0 10px; font-size: clamp(2rem, 4vw, 3rem); }
+.identity { display: flex; align-items: center; gap: 18px; min-width: 0; }
+/* Голова героя рядом с именем: тот же кадр, что в списке команды, только крупнее. */
+.hero { display: block; flex: none; width: 76px; height: 76px; overflow: hidden; border-radius: 22px; background: linear-gradient(150deg, #072a58, #0a4a95);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--construction-accent) 60%, transparent), var(--shadow-md); animation: hero-in .6s cubic-bezier(.3, 1.4, .5, 1) both; }
+.hero > svg { margin: -15px 0 0 -29px; }
+/* Пока сотрудник не в команде: форма слева, объяснение шагов справа. */
+.joinLayout { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(260px, 1fr); gap: 20px; align-items: start; }
+.teamCard { animation: card-rise .55s var(--ease-out) both; }
+.howTo { display: grid; gap: 14px; padding: clamp(22px, 3vw, 30px); border-radius: var(--radius-card); color: #fff;
+  background:
+    linear-gradient(rgb(155 206 255 / 8%) 1px, transparent 1px) 0 0 / 24px 24px,
+    linear-gradient(90deg, rgb(155 206 255 / 8%) 1px, transparent 1px) 0 0 / 24px 24px,
+    linear-gradient(150deg, #061f45, #0a4a95);
+  box-shadow: var(--shadow-lg); animation: card-rise .55s var(--ease-out) .1s both; }
+.howTo h2 { margin: 0; color: #fff; font-size: 1.25rem; }
+.howTo ol { display: grid; gap: 12px; margin: 0; padding: 0; list-style: none; }
+.howTo li { display: flex; align-items: flex-start; gap: 12px; color: #d6e9fd; line-height: 1.45; animation: card-rise .5s var(--ease-out) calc(.2s + var(--i, 0) * 90ms) both; }
+.howTo b { display: grid; flex: 0 0 auto; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: var(--construction-accent); color: var(--blueprint); font-family: var(--font-technical); }
+.howTo .muted { margin: 0; color: var(--blueprint-line); font-size: .88rem; }
+@keyframes hero-in { from { opacity: 0; transform: scale(.6) rotate(-8deg); } to { opacity: 1; transform: none; } }
+@keyframes card-rise { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
+@media (max-width: 860px) { .joinLayout { grid-template-columns: 1fr; } }
+.muted { color: var(--muted); }
+.grid { display: grid; grid-template-columns: minmax(250px, 1fr) minmax(0, 2fr); gap: 24px; align-items: start; }
+.form { display: grid; gap: 12px; }
+.form label { display: grid; gap: 6px; font-weight: 600; }
+.form input, .select { width: 100%; min-width: 0; min-height: 46px; padding: 10px 12px; border: 1px solid var(--border); border-radius: 10px; background: var(--surface); color: var(--ink); font: inherit; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-top: 16px; }
+.code { display: block; padding: 16px; background: var(--brand-soft); color: var(--brand-strong); font-size: 1.15rem; font-weight: 750; letter-spacing: .12em; overflow-wrap: anywhere; border-radius: 12px; margin-block: 12px; }
+.list { list-style: none; padding: 0; margin: 16px 0 0; }
+.list li { display: flex; align-items: center; justify-content: space-between; gap: 12px; border-top: 1px solid var(--border); padding-block: 14px; }
+.person { min-width: 0; }
+.person strong, .person small { display: block; overflow-wrap: anywhere; }
+.status { font-size: .85rem; color: var(--muted); }
+.error { padding: 12px 16px; background: var(--danger-bg); color: var(--danger-ink); border-radius: 10px; }
+.notice { padding: 12px 16px; background: var(--brand-soft); border-radius: 10px; }
+.result { border-top: 1px solid var(--border); margin-top: 24px; padding-top: 16px; }
+@media (max-width: 760px) { .grid { grid-template-columns: 1fr; } .list li { flex-wrap: wrap; } }
+.consent { display: grid; grid-template-columns: auto 1fr; gap: 10px; align-items: start; padding: 12px 14px; border: 1px solid var(--border); border-radius: 10px; background: var(--surface); font-size: .92rem; line-height: 1.45; }
+.consent label { display: contents; font-weight: 600; cursor: pointer; }
+.form .consent input[type="checkbox"] { width: 20px; min-width: 20px; height: 20px; min-height: 0; margin: 2px 0 0; padding: 0; accent-color: var(--brand); }
+.form .consent input[aria-invalid="true"] { outline: 2px solid var(--danger-ink); outline-offset: 2px; }
+.consent small { grid-column: 2; color: var(--muted); font-weight: 400; }

@@ -1,0 +1,37 @@
+/*
+ * Плашка «Пример» над настоящими экранами сотрудника: пунктирная рамка чертежа, жёлтая бирка и переключатель разделов.
+ * Ширина повторяет экран под ней, чтобы края плашки и профиля совпадали.
+ */
+.demo { display: grid; }
+.demo > .bannerPage { padding-bottom: 0; }
+.demo > section + section { padding-top: clamp(18px, 3vw, 28px); }
+.demo[data-view="profile"] > .bannerPage, .demo[data-view="route"] > .bannerPage { max-width: 1000px; }
+.demo[data-view="team"] > .bannerPage { max-width: 1120px; }
+
+.banner { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; grid-template-areas: "tag text cta" "views views views"; align-items: center; gap: 14px 18px;
+  padding: 18px 20px; border: 1.5px dashed color-mix(in srgb, var(--brand-bright) 45%, var(--border)); border-radius: var(--radius-card);
+  background:
+    linear-gradient(color-mix(in srgb, var(--brand-bright) 6%, transparent) 1px, transparent 1px) 0 0 / 22px 22px,
+    linear-gradient(90deg, color-mix(in srgb, var(--brand-bright) 6%, transparent) 1px, transparent 1px) 0 0 / 22px 22px,
+    var(--surface);
+  box-shadow: var(--shadow-sm); animation: banner-in .5s var(--ease-out) both; }
+.tag { grid-area: tag; align-self: start; padding: 6px 12px; border-radius: 8px; background: var(--construction-accent); color: var(--blueprint);
+  font-family: var(--font-technical); font-size: .8rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.bannerText { grid-area: text; display: grid; gap: 4px; min-width: 0; }
+.bannerText p { margin: 0; color: var(--muted); line-height: 1.5; }
+.bannerText .bannerTitle { color: var(--ink); font-size: 1.08rem; font-weight: 750; }
+.cta { grid-area: cta; }
+.views { grid-area: views; display: flex; flex-wrap: wrap; gap: 6px; padding: 5px; border-radius: 14px; background: var(--chip); justify-self: start; }
+.views a { padding: 9px 16px; border-radius: 10px; color: var(--ink-soft); font-weight: 650; text-decoration: none; transition: background-color .2s ease, color .2s ease, box-shadow .2s ease; }
+.views a:hover { color: var(--brand-strong); background: var(--surface); }
+.views a:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+.views a[aria-current="page"] { background: var(--blueprint); color: #fff; box-shadow: 0 6px 16px -8px rgb(8 46 96 / 60%); }
+
+@keyframes banner-in { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: none; } }
+
+@media (max-width: 720px) {
+  .banner { grid-template-columns: minmax(0, 1fr); grid-template-areas: "tag" "text" "views" "cta"; }
+  .views { justify-self: stretch; }
+  .views a { flex: 1 1 auto; text-align: center; }
+}
+@media (prefers-reduced-motion: reduce) { .banner { animation: none; } .views a { transition: none; } }

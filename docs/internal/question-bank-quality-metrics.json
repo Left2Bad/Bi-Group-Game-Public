@@ -1,0 +1,2334 @@
+{
+  "total": 300,
+  "schemaValid": true,
+  "duplicateIds": [],
+  "duplicatePrompts": [],
+  "groups": {
+    "Q": {
+      "count": 15,
+      "templates": {
+        "0,0;1,3;2,2;3,1": 11,
+        "1,0;1,3;2,2;3,1": 1,
+        "0,1;1,3;2,2;3,1": 3
+      },
+      "balancedPercent": {
+        "criticalThinking": 67,
+        "confidence": 67,
+        "discipline": 67,
+        "engagement": 67
+      },
+      "balancedFinalWithBehavior75": {
+        "criticalThinking": 70,
+        "confidence": 70,
+        "discipline": 70,
+        "engagement": 70
+      },
+      "expectedRandomPercent": {
+        "criticalThinking": 51.04,
+        "confidence": 51.19,
+        "discipline": 51.19,
+        "engagement": 51.04
+      },
+      "balancedPositionPeriod": null,
+      "balancedPositionSequence": "CCBABDACBDAB",
+      "longestOptionMaxSum": 5,
+      "randomMaxSumExpectedCount": 11.25
+    },
+    "FIELD": {
+      "count": 95,
+      "templates": {
+        "1,1;1,3;2,2;3,1": 95
+      },
+      "balancedPercent": {
+        "criticalThinking": 67,
+        "confidence": 67,
+        "discipline": 67,
+        "engagement": 67
+      },
+      "balancedFinalWithBehavior75": {
+        "criticalThinking": 70,
+        "confidence": 70,
+        "discipline": 70,
+        "engagement": 70
+      },
+      "expectedRandomPercent": {
+        "criticalThinking": 58.33,
+        "confidence": 58.33,
+        "discipline": 58.33,
+        "engagement": 58.33
+      },
+      "balancedPositionPeriod": 4,
+      "balancedPositionSequence": "CBADCBADCBAD",
+      "longestOptionMaxSum": 91,
+      "randomMaxSumExpectedCount": 71.25
+    },
+    "ENG": {
+      "count": 95,
+      "templates": {
+        "1,2;1,4;3,3;4,1": 95
+      },
+      "balancedPercent": {
+        "criticalThinking": 75,
+        "confidence": 75,
+        "discipline": 75,
+        "engagement": 75
+      },
+      "balancedFinalWithBehavior75": {
+        "criticalThinking": 75,
+        "confidence": 75,
+        "discipline": 75,
+        "engagement": 75
+      },
+      "expectedRandomPercent": {
+        "criticalThinking": 56.25,
+        "confidence": 58.33,
+        "discipline": 60.51,
+        "engagement": 62.5
+      },
+      "balancedPositionPeriod": 4,
+      "balancedPositionSequence": "CBADCBADCBAD",
+      "longestOptionMaxSum": 37,
+      "randomMaxSumExpectedCount": 23.75
+    },
+    "OPS": {
+      "count": 95,
+      "templates": {
+        "2,2;2,4;3,3;4,2": 95
+      },
+      "balancedPercent": {
+        "criticalThinking": 75,
+        "confidence": 75,
+        "discipline": 75,
+        "engagement": 75
+      },
+      "balancedFinalWithBehavior75": {
+        "criticalThinking": 75,
+        "confidence": 75,
+        "discipline": 75,
+        "engagement": 75
+      },
+      "expectedRandomPercent": {
+        "criticalThinking": 68.75,
+        "confidence": 68.75,
+        "discipline": 68.75,
+        "engagement": 68.75
+      },
+      "balancedPositionPeriod": 4,
+      "balancedPositionSequence": "CADBCADBCADB",
+      "longestOptionMaxSum": 89,
+      "randomMaxSumExpectedCount": 71.25
+    }
+  },
+  "roleCoverage": {
+    "прораб": {
+      "count": 24,
+      "traits": {
+        "criticalThinking": 12,
+        "confidence": 12,
+        "discipline": 12,
+        "engagement": 12
+      }
+    },
+    "мастер монолитных работ": {
+      "count": 24,
+      "traits": {
+        "criticalThinking": 12,
+        "confidence": 12,
+        "discipline": 12,
+        "engagement": 12
+      }
+    },
+    "мастер отделочных работ": {
+      "count": 24,
+      "traits": {
+        "criticalThinking": 12,
+        "confidence": 12,
+        "discipline": 12,
+        "engagement": 12
+      }
+    },
+    "инженер строительного контроля": {
+      "count": 23,
+      "traits": {
+        "criticalThinking": 12,
+        "confidence": 11,
+        "discipline": 12,
+        "engagement": 11
+      }
+    },
+    "инженер пто": {
+      "count": 24,
+      "traits": {
+        "criticalThinking": 12,
+        "confidence": 12,
+        "discipline": 12,
+        "engagement": 12
+      }
+    },
+    "bim-координатор": {
+      "count": 24,
+      "traits": {
+        "criticalThinking": 12,
+        "confidence": 12,
+        "discipline": 12,
+        "engagement": 12
+      }
+    },
+    "геодезист": {
+      "count": 23,
+      "traits": {
+        "criticalThinking": 12,
+        "confidence": 12,
+        "discipline": 11,
+        "engagement": 11
+      }
+    },
+    "инженер лаборатории": {
+      "count": 24,
+      "traits": {
+        "criticalThinking": 12,
+        "confidence": 12,
+        "discipline": 12,
+        "engagement": 12
+      }
+    },
+    "инженер от": {
+      "count": 24,
+      "traits": {
+        "criticalThinking": 12,
+        "confidence": 12,
+        "discipline": 12,
+        "engagement": 12
+      }
+    },
+    "снабженец": {
+      "count": 24,
+      "traits": {
+        "criticalThinking": 12,
+        "confidence": 12,
+        "discipline": 12,
+        "engagement": 12
+      }
+    },
+    "планировщик": {
+      "count": 24,
+      "traits": {
+        "criticalThinking": 12,
+        "confidence": 12,
+        "discipline": 12,
+        "engagement": 12
+      }
+    },
+    "инженер инженерных систем": {
+      "count": 23,
+      "traits": {
+        "criticalThinking": 12,
+        "confidence": 11,
+        "discipline": 11,
+        "engagement": 12
+      }
+    }
+  },
+  "questions": [
+    {
+      "id": "Q01",
+      "role": "прораб",
+      "template": "0,0;1,3;2,2;3,1",
+      "shortestToLongest": 0.92,
+      "balancedOption": "Q01-C"
+    },
+    {
+      "id": "Q02",
+      "role": "прораб",
+      "template": "0,0;1,3;2,2;3,1",
+      "shortestToLongest": 0.86,
+      "balancedOption": "Q02-C"
+    },
+    {
+      "id": "Q03",
+      "role": "прораб",
+      "template": "0,0;1,3;2,2;3,1",
+      "shortestToLongest": 0.78,
+      "balancedOption": "Q03-B"
+    },
+    {
+      "id": "Q04",
+      "role": "прораб",
+      "template": "0,0;1,3;2,2;3,1",
+      "shortestToLongest": 0.85,
+      "balancedOption": "Q04-A"
+    },
+    {
+      "id": "Q05",
+      "role": "прораб",
+      "template": "0,0;1,3;2,2;3,1",
+      "shortestToLongest": 0.87,
+      "balancedOption": "Q05-B"
+    },
+    {
+      "id": "Q06",
+      "role": "прораб",
+      "template": "0,0;1,3;2,2;3,1",
+      "shortestToLongest": 0.8,
+      "balancedOption": "Q06-D"
+    },
+    {
+      "id": "Q07",
+      "role": "прораб",
+      "template": "1,0;1,3;2,2;3,1",
+      "shortestToLongest": 0.67,
+      "balancedOption": "Q07-A"
+    },
+    {
+      "id": "Q08",
+      "role": "прораб",
+      "template": "0,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.62,
+      "balancedOption": "Q08-C"
+    },
+    {
+      "id": "Q09",
+      "role": "прораб",
+      "template": "0,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.85,
+      "balancedOption": "Q09-B"
+    },
+    {
+      "id": "Q10",
+      "role": "прораб",
+      "template": "0,0;1,3;2,2;3,1",
+      "shortestToLongest": 0.89,
+      "balancedOption": "Q10-D"
+    },
+    {
+      "id": "Q11",
+      "role": "инженер пто",
+      "template": "0,0;1,3;2,2;3,1",
+      "shortestToLongest": 0.83,
+      "balancedOption": "Q11-A"
+    },
+    {
+      "id": "Q12",
+      "role": "прораб",
+      "template": "0,0;1,3;2,2;3,1",
+      "shortestToLongest": 0.69,
+      "balancedOption": "Q12-B"
+    },
+    {
+      "id": "Q13",
+      "role": "прораб",
+      "template": "0,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.8,
+      "balancedOption": "Q13-D"
+    },
+    {
+      "id": "Q14",
+      "role": "прораб",
+      "template": "0,0;1,3;2,2;3,1",
+      "shortestToLongest": 0.91,
+      "balancedOption": "Q14-D"
+    },
+    {
+      "id": "Q15",
+      "role": "прораб",
+      "template": "0,0;1,3;2,2;3,1",
+      "shortestToLongest": 0.8,
+      "balancedOption": "Q15-D"
+    },
+    {
+      "id": "FIELD_001",
+      "role": "прораб",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.83,
+      "balancedOption": "C"
+    },
+    {
+      "id": "FIELD_002",
+      "role": "прораб",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.83,
+      "balancedOption": "B"
+    },
+    {
+      "id": "FIELD_003",
+      "role": "прораб",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.81,
+      "balancedOption": "A"
+    },
+    {
+      "id": "FIELD_004",
+      "role": "прораб",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.77,
+      "balancedOption": "D"
+    },
+    {
+      "id": "FIELD_005",
+      "role": "прораб",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.86,
+      "balancedOption": "C"
+    },
+    {
+      "id": "FIELD_006",
+      "role": "прораб",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.76,
+      "balancedOption": "B"
+    },
+    {
+      "id": "FIELD_007",
+      "role": "прораб",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.79,
+      "balancedOption": "A"
+    },
+    {
+      "id": "FIELD_008",
+      "role": "прораб",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.84,
+      "balancedOption": "D"
+    },
+    {
+      "id": "FIELD_009",
+      "role": "прораб",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.81,
+      "balancedOption": "C"
+    },
+    {
+      "id": "FIELD_010",
+      "role": "прораб",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.68,
+      "balancedOption": "B"
+    },
+    {
+      "id": "FIELD_011",
+      "role": "прораб",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.76,
+      "balancedOption": "A"
+    },
+    {
+      "id": "FIELD_012",
+      "role": "прораб",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.78,
+      "balancedOption": "D"
+    },
+    {
+      "id": "FIELD_013",
+      "role": "прораб",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.91,
+      "balancedOption": "C"
+    },
+    {
+      "id": "FIELD_014",
+      "role": "прораб",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.78,
+      "balancedOption": "B"
+    },
+    {
+      "id": "FIELD_015",
+      "role": "прораб",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.89,
+      "balancedOption": "A"
+    },
+    {
+      "id": "FIELD_016",
+      "role": "прораб",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.77,
+      "balancedOption": "D"
+    },
+    {
+      "id": "FIELD_017",
+      "role": "прораб",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.89,
+      "balancedOption": "C"
+    },
+    {
+      "id": "FIELD_018",
+      "role": "прораб",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.86,
+      "balancedOption": "B"
+    },
+    {
+      "id": "FIELD_019",
+      "role": "прораб",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.78,
+      "balancedOption": "A"
+    },
+    {
+      "id": "FIELD_020",
+      "role": "прораб",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.79,
+      "balancedOption": "D"
+    },
+    {
+      "id": "FIELD_021",
+      "role": "прораб",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.8,
+      "balancedOption": "C"
+    },
+    {
+      "id": "FIELD_022",
+      "role": "прораб",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.8,
+      "balancedOption": "B"
+    },
+    {
+      "id": "FIELD_023",
+      "role": "прораб",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.75,
+      "balancedOption": "A"
+    },
+    {
+      "id": "FIELD_024",
+      "role": "прораб",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.85,
+      "balancedOption": "D"
+    },
+    {
+      "id": "FIELD_025",
+      "role": "мастер монолитных работ",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.77,
+      "balancedOption": "C"
+    },
+    {
+      "id": "FIELD_026",
+      "role": "мастер монолитных работ",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.87,
+      "balancedOption": "B"
+    },
+    {
+      "id": "FIELD_027",
+      "role": "мастер монолитных работ",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.81,
+      "balancedOption": "A"
+    },
+    {
+      "id": "FIELD_028",
+      "role": "мастер монолитных работ",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.82,
+      "balancedOption": "D"
+    },
+    {
+      "id": "FIELD_029",
+      "role": "мастер монолитных работ",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.78,
+      "balancedOption": "C"
+    },
+    {
+      "id": "FIELD_030",
+      "role": "мастер монолитных работ",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.81,
+      "balancedOption": "B"
+    },
+    {
+      "id": "FIELD_031",
+      "role": "мастер монолитных работ",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.81,
+      "balancedOption": "A"
+    },
+    {
+      "id": "FIELD_032",
+      "role": "мастер монолитных работ",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.78,
+      "balancedOption": "D"
+    },
+    {
+      "id": "FIELD_033",
+      "role": "мастер монолитных работ",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.73,
+      "balancedOption": "C"
+    },
+    {
+      "id": "FIELD_034",
+      "role": "мастер монолитных работ",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.89,
+      "balancedOption": "B"
+    },
+    {
+      "id": "FIELD_035",
+      "role": "мастер монолитных работ",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.9,
+      "balancedOption": "A"
+    },
+    {
+      "id": "FIELD_036",
+      "role": "мастер монолитных работ",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.73,
+      "balancedOption": "D"
+    },
+    {
+      "id": "FIELD_037",
+      "role": "мастер монолитных работ",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.78,
+      "balancedOption": "C"
+    },
+    {
+      "id": "FIELD_038",
+      "role": "мастер монолитных работ",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.81,
+      "balancedOption": "B"
+    },
+    {
+      "id": "FIELD_039",
+      "role": "мастер монолитных работ",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.78,
+      "balancedOption": "A"
+    },
+    {
+      "id": "FIELD_040",
+      "role": "мастер монолитных работ",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.8,
+      "balancedOption": "D"
+    },
+    {
+      "id": "FIELD_041",
+      "role": "мастер монолитных работ",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.93,
+      "balancedOption": "C"
+    },
+    {
+      "id": "FIELD_042",
+      "role": "мастер монолитных работ",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.74,
+      "balancedOption": "B"
+    },
+    {
+      "id": "FIELD_043",
+      "role": "мастер монолитных работ",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.71,
+      "balancedOption": "A"
+    },
+    {
+      "id": "FIELD_044",
+      "role": "мастер монолитных работ",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.79,
+      "balancedOption": "D"
+    },
+    {
+      "id": "FIELD_045",
+      "role": "мастер монолитных работ",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.81,
+      "balancedOption": "C"
+    },
+    {
+      "id": "FIELD_046",
+      "role": "мастер монолитных работ",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.68,
+      "balancedOption": "B"
+    },
+    {
+      "id": "FIELD_047",
+      "role": "мастер монолитных работ",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.84,
+      "balancedOption": "A"
+    },
+    {
+      "id": "FIELD_048",
+      "role": "мастер монолитных работ",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.73,
+      "balancedOption": "D"
+    },
+    {
+      "id": "FIELD_049",
+      "role": "мастер отделочных работ",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.73,
+      "balancedOption": "C"
+    },
+    {
+      "id": "FIELD_050",
+      "role": "мастер отделочных работ",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.81,
+      "balancedOption": "B"
+    },
+    {
+      "id": "FIELD_051",
+      "role": "мастер отделочных работ",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.8,
+      "balancedOption": "A"
+    },
+    {
+      "id": "FIELD_052",
+      "role": "мастер отделочных работ",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.77,
+      "balancedOption": "D"
+    },
+    {
+      "id": "FIELD_053",
+      "role": "мастер отделочных работ",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.8,
+      "balancedOption": "C"
+    },
+    {
+      "id": "FIELD_054",
+      "role": "мастер отделочных работ",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.89,
+      "balancedOption": "B"
+    },
+    {
+      "id": "FIELD_055",
+      "role": "мастер отделочных работ",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.92,
+      "balancedOption": "A"
+    },
+    {
+      "id": "FIELD_056",
+      "role": "мастер отделочных работ",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.81,
+      "balancedOption": "D"
+    },
+    {
+      "id": "FIELD_057",
+      "role": "мастер отделочных работ",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.84,
+      "balancedOption": "C"
+    },
+    {
+      "id": "FIELD_058",
+      "role": "мастер отделочных работ",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.94,
+      "balancedOption": "B"
+    },
+    {
+      "id": "FIELD_059",
+      "role": "мастер отделочных работ",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.73,
+      "balancedOption": "A"
+    },
+    {
+      "id": "FIELD_060",
+      "role": "мастер отделочных работ",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.74,
+      "balancedOption": "D"
+    },
+    {
+      "id": "FIELD_061",
+      "role": "мастер отделочных работ",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.79,
+      "balancedOption": "C"
+    },
+    {
+      "id": "FIELD_062",
+      "role": "мастер отделочных работ",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.74,
+      "balancedOption": "B"
+    },
+    {
+      "id": "FIELD_063",
+      "role": "мастер отделочных работ",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.79,
+      "balancedOption": "A"
+    },
+    {
+      "id": "FIELD_064",
+      "role": "мастер отделочных работ",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.7,
+      "balancedOption": "D"
+    },
+    {
+      "id": "FIELD_065",
+      "role": "мастер отделочных работ",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.84,
+      "balancedOption": "C"
+    },
+    {
+      "id": "FIELD_066",
+      "role": "мастер отделочных работ",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.84,
+      "balancedOption": "B"
+    },
+    {
+      "id": "FIELD_067",
+      "role": "мастер отделочных работ",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.69,
+      "balancedOption": "A"
+    },
+    {
+      "id": "FIELD_068",
+      "role": "мастер отделочных работ",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.88,
+      "balancedOption": "D"
+    },
+    {
+      "id": "FIELD_069",
+      "role": "мастер отделочных работ",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.74,
+      "balancedOption": "C"
+    },
+    {
+      "id": "FIELD_070",
+      "role": "мастер отделочных работ",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.72,
+      "balancedOption": "B"
+    },
+    {
+      "id": "FIELD_071",
+      "role": "мастер отделочных работ",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.79,
+      "balancedOption": "A"
+    },
+    {
+      "id": "FIELD_072",
+      "role": "мастер отделочных работ",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.87,
+      "balancedOption": "D"
+    },
+    {
+      "id": "FIELD_073",
+      "role": "инженер строительного контроля",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.71,
+      "balancedOption": "C"
+    },
+    {
+      "id": "FIELD_074",
+      "role": "инженер строительного контроля",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.84,
+      "balancedOption": "B"
+    },
+    {
+      "id": "FIELD_075",
+      "role": "инженер строительного контроля",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.76,
+      "balancedOption": "A"
+    },
+    {
+      "id": "FIELD_076",
+      "role": "инженер строительного контроля",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.77,
+      "balancedOption": "D"
+    },
+    {
+      "id": "FIELD_077",
+      "role": "инженер строительного контроля",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.85,
+      "balancedOption": "C"
+    },
+    {
+      "id": "FIELD_078",
+      "role": "инженер строительного контроля",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.7,
+      "balancedOption": "B"
+    },
+    {
+      "id": "FIELD_079",
+      "role": "инженер строительного контроля",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.7,
+      "balancedOption": "A"
+    },
+    {
+      "id": "FIELD_080",
+      "role": "инженер строительного контроля",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.68,
+      "balancedOption": "D"
+    },
+    {
+      "id": "FIELD_081",
+      "role": "инженер строительного контроля",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.85,
+      "balancedOption": "C"
+    },
+    {
+      "id": "FIELD_082",
+      "role": "инженер строительного контроля",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.73,
+      "balancedOption": "B"
+    },
+    {
+      "id": "FIELD_083",
+      "role": "инженер строительного контроля",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.82,
+      "balancedOption": "A"
+    },
+    {
+      "id": "FIELD_084",
+      "role": "инженер строительного контроля",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.68,
+      "balancedOption": "D"
+    },
+    {
+      "id": "FIELD_085",
+      "role": "инженер строительного контроля",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.89,
+      "balancedOption": "C"
+    },
+    {
+      "id": "FIELD_086",
+      "role": "инженер строительного контроля",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.68,
+      "balancedOption": "B"
+    },
+    {
+      "id": "FIELD_087",
+      "role": "инженер строительного контроля",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.93,
+      "balancedOption": "A"
+    },
+    {
+      "id": "FIELD_088",
+      "role": "инженер строительного контроля",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.76,
+      "balancedOption": "D"
+    },
+    {
+      "id": "FIELD_089",
+      "role": "инженер строительного контроля",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.79,
+      "balancedOption": "C"
+    },
+    {
+      "id": "FIELD_090",
+      "role": "инженер строительного контроля",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.8,
+      "balancedOption": "B"
+    },
+    {
+      "id": "FIELD_091",
+      "role": "инженер строительного контроля",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.88,
+      "balancedOption": "A"
+    },
+    {
+      "id": "FIELD_092",
+      "role": "инженер строительного контроля",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.83,
+      "balancedOption": "D"
+    },
+    {
+      "id": "FIELD_093",
+      "role": "инженер строительного контроля",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.79,
+      "balancedOption": "C"
+    },
+    {
+      "id": "FIELD_094",
+      "role": "инженер строительного контроля",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.79,
+      "balancedOption": "B"
+    },
+    {
+      "id": "FIELD_095",
+      "role": "инженер строительного контроля",
+      "template": "1,1;1,3;2,2;3,1",
+      "shortestToLongest": 0.82,
+      "balancedOption": "A"
+    },
+    {
+      "id": "ENG_001",
+      "role": "инженер пто",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.89,
+      "balancedOption": "C"
+    },
+    {
+      "id": "ENG_002",
+      "role": "инженер пто",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.7,
+      "balancedOption": "B"
+    },
+    {
+      "id": "ENG_003",
+      "role": "инженер пто",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.91,
+      "balancedOption": "A"
+    },
+    {
+      "id": "ENG_004",
+      "role": "инженер пто",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.78,
+      "balancedOption": "D"
+    },
+    {
+      "id": "ENG_005",
+      "role": "инженер пто",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.85,
+      "balancedOption": "C"
+    },
+    {
+      "id": "ENG_006",
+      "role": "инженер пто",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.79,
+      "balancedOption": "B"
+    },
+    {
+      "id": "ENG_007",
+      "role": "инженер пто",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.76,
+      "balancedOption": "A"
+    },
+    {
+      "id": "ENG_008",
+      "role": "инженер пто",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.72,
+      "balancedOption": "D"
+    },
+    {
+      "id": "ENG_009",
+      "role": "инженер пто",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.78,
+      "balancedOption": "C"
+    },
+    {
+      "id": "ENG_010",
+      "role": "инженер пто",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.84,
+      "balancedOption": "B"
+    },
+    {
+      "id": "ENG_011",
+      "role": "инженер пто",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.93,
+      "balancedOption": "A"
+    },
+    {
+      "id": "ENG_012",
+      "role": "инженер пто",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.89,
+      "balancedOption": "D"
+    },
+    {
+      "id": "ENG_013",
+      "role": "инженер пто",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.81,
+      "balancedOption": "C"
+    },
+    {
+      "id": "ENG_014",
+      "role": "инженер пто",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.78,
+      "balancedOption": "B"
+    },
+    {
+      "id": "ENG_015",
+      "role": "инженер пто",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.86,
+      "balancedOption": "A"
+    },
+    {
+      "id": "ENG_016",
+      "role": "инженер пто",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.76,
+      "balancedOption": "D"
+    },
+    {
+      "id": "ENG_017",
+      "role": "инженер пто",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.8,
+      "balancedOption": "C"
+    },
+    {
+      "id": "ENG_018",
+      "role": "инженер пто",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.74,
+      "balancedOption": "B"
+    },
+    {
+      "id": "ENG_019",
+      "role": "инженер пто",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.84,
+      "balancedOption": "A"
+    },
+    {
+      "id": "ENG_020",
+      "role": "инженер пто",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.9,
+      "balancedOption": "D"
+    },
+    {
+      "id": "ENG_021",
+      "role": "инженер пто",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.82,
+      "balancedOption": "C"
+    },
+    {
+      "id": "ENG_022",
+      "role": "инженер пто",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.69,
+      "balancedOption": "B"
+    },
+    {
+      "id": "ENG_023",
+      "role": "инженер пто",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.95,
+      "balancedOption": "A"
+    },
+    {
+      "id": "ENG_024",
+      "role": "инженер пто",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.94,
+      "balancedOption": "D"
+    },
+    {
+      "id": "ENG_025",
+      "role": "bim-координатор",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.88,
+      "balancedOption": "C"
+    },
+    {
+      "id": "ENG_026",
+      "role": "bim-координатор",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.88,
+      "balancedOption": "B"
+    },
+    {
+      "id": "ENG_027",
+      "role": "bim-координатор",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.75,
+      "balancedOption": "A"
+    },
+    {
+      "id": "ENG_028",
+      "role": "bim-координатор",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.94,
+      "balancedOption": "D"
+    },
+    {
+      "id": "ENG_029",
+      "role": "bim-координатор",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.89,
+      "balancedOption": "C"
+    },
+    {
+      "id": "ENG_030",
+      "role": "bim-координатор",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.74,
+      "balancedOption": "B"
+    },
+    {
+      "id": "ENG_031",
+      "role": "bim-координатор",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.79,
+      "balancedOption": "A"
+    },
+    {
+      "id": "ENG_032",
+      "role": "bim-координатор",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.73,
+      "balancedOption": "D"
+    },
+    {
+      "id": "ENG_033",
+      "role": "bim-координатор",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.71,
+      "balancedOption": "C"
+    },
+    {
+      "id": "ENG_034",
+      "role": "bim-координатор",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.94,
+      "balancedOption": "B"
+    },
+    {
+      "id": "ENG_035",
+      "role": "bim-координатор",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.82,
+      "balancedOption": "A"
+    },
+    {
+      "id": "ENG_036",
+      "role": "bim-координатор",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.83,
+      "balancedOption": "D"
+    },
+    {
+      "id": "ENG_037",
+      "role": "bim-координатор",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.74,
+      "balancedOption": "C"
+    },
+    {
+      "id": "ENG_038",
+      "role": "bim-координатор",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.74,
+      "balancedOption": "B"
+    },
+    {
+      "id": "ENG_039",
+      "role": "bim-координатор",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.91,
+      "balancedOption": "A"
+    },
+    {
+      "id": "ENG_040",
+      "role": "bim-координатор",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.86,
+      "balancedOption": "D"
+    },
+    {
+      "id": "ENG_041",
+      "role": "bim-координатор",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.87,
+      "balancedOption": "C"
+    },
+    {
+      "id": "ENG_042",
+      "role": "bim-координатор",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.82,
+      "balancedOption": "B"
+    },
+    {
+      "id": "ENG_043",
+      "role": "bim-координатор",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.88,
+      "balancedOption": "A"
+    },
+    {
+      "id": "ENG_044",
+      "role": "bim-координатор",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.72,
+      "balancedOption": "D"
+    },
+    {
+      "id": "ENG_045",
+      "role": "bim-координатор",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.83,
+      "balancedOption": "C"
+    },
+    {
+      "id": "ENG_046",
+      "role": "bim-координатор",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.75,
+      "balancedOption": "B"
+    },
+    {
+      "id": "ENG_047",
+      "role": "bim-координатор",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.8,
+      "balancedOption": "A"
+    },
+    {
+      "id": "ENG_048",
+      "role": "bim-координатор",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.82,
+      "balancedOption": "D"
+    },
+    {
+      "id": "ENG_049",
+      "role": "геодезист",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.85,
+      "balancedOption": "C"
+    },
+    {
+      "id": "ENG_050",
+      "role": "геодезист",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.81,
+      "balancedOption": "B"
+    },
+    {
+      "id": "ENG_051",
+      "role": "геодезист",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.98,
+      "balancedOption": "A"
+    },
+    {
+      "id": "ENG_052",
+      "role": "геодезист",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.78,
+      "balancedOption": "D"
+    },
+    {
+      "id": "ENG_053",
+      "role": "геодезист",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.93,
+      "balancedOption": "C"
+    },
+    {
+      "id": "ENG_054",
+      "role": "геодезист",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.85,
+      "balancedOption": "B"
+    },
+    {
+      "id": "ENG_055",
+      "role": "геодезист",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.97,
+      "balancedOption": "A"
+    },
+    {
+      "id": "ENG_056",
+      "role": "геодезист",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.93,
+      "balancedOption": "D"
+    },
+    {
+      "id": "ENG_057",
+      "role": "геодезист",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.91,
+      "balancedOption": "C"
+    },
+    {
+      "id": "ENG_058",
+      "role": "геодезист",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.86,
+      "balancedOption": "B"
+    },
+    {
+      "id": "ENG_059",
+      "role": "геодезист",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.87,
+      "balancedOption": "A"
+    },
+    {
+      "id": "ENG_060",
+      "role": "геодезист",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.81,
+      "balancedOption": "D"
+    },
+    {
+      "id": "ENG_061",
+      "role": "геодезист",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.85,
+      "balancedOption": "C"
+    },
+    {
+      "id": "ENG_062",
+      "role": "геодезист",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.87,
+      "balancedOption": "B"
+    },
+    {
+      "id": "ENG_063",
+      "role": "геодезист",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.63,
+      "balancedOption": "A"
+    },
+    {
+      "id": "ENG_064",
+      "role": "геодезист",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.67,
+      "balancedOption": "D"
+    },
+    {
+      "id": "ENG_065",
+      "role": "геодезист",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.84,
+      "balancedOption": "C"
+    },
+    {
+      "id": "ENG_066",
+      "role": "геодезист",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.82,
+      "balancedOption": "B"
+    },
+    {
+      "id": "ENG_067",
+      "role": "геодезист",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.79,
+      "balancedOption": "A"
+    },
+    {
+      "id": "ENG_068",
+      "role": "геодезист",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.74,
+      "balancedOption": "D"
+    },
+    {
+      "id": "ENG_069",
+      "role": "геодезист",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.85,
+      "balancedOption": "C"
+    },
+    {
+      "id": "ENG_070",
+      "role": "геодезист",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.71,
+      "balancedOption": "B"
+    },
+    {
+      "id": "ENG_071",
+      "role": "геодезист",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.74,
+      "balancedOption": "A"
+    },
+    {
+      "id": "ENG_072",
+      "role": "инженер лаборатории",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.76,
+      "balancedOption": "D"
+    },
+    {
+      "id": "ENG_073",
+      "role": "инженер лаборатории",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.75,
+      "balancedOption": "C"
+    },
+    {
+      "id": "ENG_074",
+      "role": "инженер лаборатории",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.93,
+      "balancedOption": "B"
+    },
+    {
+      "id": "ENG_075",
+      "role": "инженер лаборатории",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.9,
+      "balancedOption": "A"
+    },
+    {
+      "id": "ENG_076",
+      "role": "инженер лаборатории",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.92,
+      "balancedOption": "D"
+    },
+    {
+      "id": "ENG_077",
+      "role": "инженер лаборатории",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.78,
+      "balancedOption": "C"
+    },
+    {
+      "id": "ENG_078",
+      "role": "инженер лаборатории",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.74,
+      "balancedOption": "B"
+    },
+    {
+      "id": "ENG_079",
+      "role": "инженер лаборатории",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.74,
+      "balancedOption": "A"
+    },
+    {
+      "id": "ENG_080",
+      "role": "инженер лаборатории",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.83,
+      "balancedOption": "D"
+    },
+    {
+      "id": "ENG_081",
+      "role": "инженер лаборатории",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.7,
+      "balancedOption": "C"
+    },
+    {
+      "id": "ENG_082",
+      "role": "инженер лаборатории",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.83,
+      "balancedOption": "B"
+    },
+    {
+      "id": "ENG_083",
+      "role": "инженер лаборатории",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.91,
+      "balancedOption": "A"
+    },
+    {
+      "id": "ENG_084",
+      "role": "инженер лаборатории",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.8,
+      "balancedOption": "D"
+    },
+    {
+      "id": "ENG_085",
+      "role": "инженер лаборатории",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.96,
+      "balancedOption": "C"
+    },
+    {
+      "id": "ENG_086",
+      "role": "инженер лаборатории",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.72,
+      "balancedOption": "B"
+    },
+    {
+      "id": "ENG_087",
+      "role": "инженер лаборатории",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.9,
+      "balancedOption": "A"
+    },
+    {
+      "id": "ENG_088",
+      "role": "инженер лаборатории",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.9,
+      "balancedOption": "D"
+    },
+    {
+      "id": "ENG_089",
+      "role": "инженер лаборатории",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.89,
+      "balancedOption": "C"
+    },
+    {
+      "id": "ENG_090",
+      "role": "инженер лаборатории",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.62,
+      "balancedOption": "B"
+    },
+    {
+      "id": "ENG_091",
+      "role": "инженер лаборатории",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.86,
+      "balancedOption": "A"
+    },
+    {
+      "id": "ENG_092",
+      "role": "инженер лаборатории",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.78,
+      "balancedOption": "D"
+    },
+    {
+      "id": "ENG_093",
+      "role": "инженер лаборатории",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.88,
+      "balancedOption": "C"
+    },
+    {
+      "id": "ENG_094",
+      "role": "инженер лаборатории",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.86,
+      "balancedOption": "B"
+    },
+    {
+      "id": "ENG_095",
+      "role": "инженер лаборатории",
+      "template": "1,2;1,4;3,3;4,1",
+      "shortestToLongest": 0.87,
+      "balancedOption": "A"
+    },
+    {
+      "id": "OPS_001",
+      "role": "инженер от",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.68,
+      "balancedOption": "C"
+    },
+    {
+      "id": "OPS_002",
+      "role": "инженер от",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.72,
+      "balancedOption": "A"
+    },
+    {
+      "id": "OPS_003",
+      "role": "инженер от",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.69,
+      "balancedOption": "D"
+    },
+    {
+      "id": "OPS_004",
+      "role": "инженер от",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.84,
+      "balancedOption": "B"
+    },
+    {
+      "id": "OPS_005",
+      "role": "инженер от",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.69,
+      "balancedOption": "C"
+    },
+    {
+      "id": "OPS_006",
+      "role": "инженер от",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.86,
+      "balancedOption": "A"
+    },
+    {
+      "id": "OPS_007",
+      "role": "инженер от",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.9,
+      "balancedOption": "D"
+    },
+    {
+      "id": "OPS_008",
+      "role": "инженер от",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.74,
+      "balancedOption": "B"
+    },
+    {
+      "id": "OPS_009",
+      "role": "инженер от",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.8,
+      "balancedOption": "C"
+    },
+    {
+      "id": "OPS_010",
+      "role": "инженер от",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.86,
+      "balancedOption": "A"
+    },
+    {
+      "id": "OPS_011",
+      "role": "инженер от",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.76,
+      "balancedOption": "D"
+    },
+    {
+      "id": "OPS_012",
+      "role": "инженер от",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.83,
+      "balancedOption": "B"
+    },
+    {
+      "id": "OPS_013",
+      "role": "инженер от",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.64,
+      "balancedOption": "C"
+    },
+    {
+      "id": "OPS_014",
+      "role": "инженер от",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.78,
+      "balancedOption": "A"
+    },
+    {
+      "id": "OPS_015",
+      "role": "инженер от",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.65,
+      "balancedOption": "D"
+    },
+    {
+      "id": "OPS_016",
+      "role": "инженер от",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.75,
+      "balancedOption": "B"
+    },
+    {
+      "id": "OPS_017",
+      "role": "инженер от",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.7,
+      "balancedOption": "C"
+    },
+    {
+      "id": "OPS_018",
+      "role": "инженер от",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.7,
+      "balancedOption": "A"
+    },
+    {
+      "id": "OPS_019",
+      "role": "инженер от",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.6,
+      "balancedOption": "D"
+    },
+    {
+      "id": "OPS_020",
+      "role": "инженер от",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.83,
+      "balancedOption": "B"
+    },
+    {
+      "id": "OPS_021",
+      "role": "инженер от",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.77,
+      "balancedOption": "C"
+    },
+    {
+      "id": "OPS_022",
+      "role": "инженер от",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.86,
+      "balancedOption": "A"
+    },
+    {
+      "id": "OPS_023",
+      "role": "инженер от",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.83,
+      "balancedOption": "D"
+    },
+    {
+      "id": "OPS_024",
+      "role": "инженер от",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.78,
+      "balancedOption": "B"
+    },
+    {
+      "id": "OPS_025",
+      "role": "снабженец",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.85,
+      "balancedOption": "C"
+    },
+    {
+      "id": "OPS_026",
+      "role": "снабженец",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.92,
+      "balancedOption": "A"
+    },
+    {
+      "id": "OPS_027",
+      "role": "снабженец",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.88,
+      "balancedOption": "D"
+    },
+    {
+      "id": "OPS_028",
+      "role": "снабженец",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.81,
+      "balancedOption": "B"
+    },
+    {
+      "id": "OPS_029",
+      "role": "снабженец",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.91,
+      "balancedOption": "C"
+    },
+    {
+      "id": "OPS_030",
+      "role": "снабженец",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.75,
+      "balancedOption": "A"
+    },
+    {
+      "id": "OPS_031",
+      "role": "снабженец",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.82,
+      "balancedOption": "D"
+    },
+    {
+      "id": "OPS_032",
+      "role": "снабженец",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.74,
+      "balancedOption": "B"
+    },
+    {
+      "id": "OPS_033",
+      "role": "снабженец",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.86,
+      "balancedOption": "C"
+    },
+    {
+      "id": "OPS_034",
+      "role": "снабженец",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.86,
+      "balancedOption": "A"
+    },
+    {
+      "id": "OPS_035",
+      "role": "снабженец",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.93,
+      "balancedOption": "D"
+    },
+    {
+      "id": "OPS_036",
+      "role": "снабженец",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.68,
+      "balancedOption": "B"
+    },
+    {
+      "id": "OPS_037",
+      "role": "снабженец",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.84,
+      "balancedOption": "C"
+    },
+    {
+      "id": "OPS_038",
+      "role": "снабженец",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.94,
+      "balancedOption": "A"
+    },
+    {
+      "id": "OPS_039",
+      "role": "снабженец",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.96,
+      "balancedOption": "D"
+    },
+    {
+      "id": "OPS_040",
+      "role": "снабженец",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.76,
+      "balancedOption": "B"
+    },
+    {
+      "id": "OPS_041",
+      "role": "снабженец",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.66,
+      "balancedOption": "C"
+    },
+    {
+      "id": "OPS_042",
+      "role": "снабженец",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.85,
+      "balancedOption": "A"
+    },
+    {
+      "id": "OPS_043",
+      "role": "снабженец",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.67,
+      "balancedOption": "D"
+    },
+    {
+      "id": "OPS_044",
+      "role": "снабженец",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.91,
+      "balancedOption": "B"
+    },
+    {
+      "id": "OPS_045",
+      "role": "снабженец",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.91,
+      "balancedOption": "C"
+    },
+    {
+      "id": "OPS_046",
+      "role": "снабженец",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.77,
+      "balancedOption": "A"
+    },
+    {
+      "id": "OPS_047",
+      "role": "снабженец",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.8,
+      "balancedOption": "D"
+    },
+    {
+      "id": "OPS_048",
+      "role": "снабженец",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.73,
+      "balancedOption": "B"
+    },
+    {
+      "id": "OPS_049",
+      "role": "планировщик",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.71,
+      "balancedOption": "C"
+    },
+    {
+      "id": "OPS_050",
+      "role": "планировщик",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.82,
+      "balancedOption": "A"
+    },
+    {
+      "id": "OPS_051",
+      "role": "планировщик",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.78,
+      "balancedOption": "D"
+    },
+    {
+      "id": "OPS_052",
+      "role": "планировщик",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.8,
+      "balancedOption": "B"
+    },
+    {
+      "id": "OPS_053",
+      "role": "планировщик",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.77,
+      "balancedOption": "C"
+    },
+    {
+      "id": "OPS_054",
+      "role": "планировщик",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.84,
+      "balancedOption": "A"
+    },
+    {
+      "id": "OPS_055",
+      "role": "планировщик",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.73,
+      "balancedOption": "D"
+    },
+    {
+      "id": "OPS_056",
+      "role": "планировщик",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.86,
+      "balancedOption": "B"
+    },
+    {
+      "id": "OPS_057",
+      "role": "планировщик",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.7,
+      "balancedOption": "C"
+    },
+    {
+      "id": "OPS_058",
+      "role": "планировщик",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.84,
+      "balancedOption": "A"
+    },
+    {
+      "id": "OPS_059",
+      "role": "планировщик",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.75,
+      "balancedOption": "D"
+    },
+    {
+      "id": "OPS_060",
+      "role": "планировщик",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.96,
+      "balancedOption": "B"
+    },
+    {
+      "id": "OPS_061",
+      "role": "планировщик",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.75,
+      "balancedOption": "C"
+    },
+    {
+      "id": "OPS_062",
+      "role": "планировщик",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.81,
+      "balancedOption": "A"
+    },
+    {
+      "id": "OPS_063",
+      "role": "планировщик",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.73,
+      "balancedOption": "D"
+    },
+    {
+      "id": "OPS_064",
+      "role": "планировщик",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.74,
+      "balancedOption": "B"
+    },
+    {
+      "id": "OPS_065",
+      "role": "планировщик",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.85,
+      "balancedOption": "C"
+    },
+    {
+      "id": "OPS_066",
+      "role": "планировщик",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.84,
+      "balancedOption": "A"
+    },
+    {
+      "id": "OPS_067",
+      "role": "планировщик",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.81,
+      "balancedOption": "D"
+    },
+    {
+      "id": "OPS_068",
+      "role": "планировщик",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.89,
+      "balancedOption": "B"
+    },
+    {
+      "id": "OPS_069",
+      "role": "планировщик",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.77,
+      "balancedOption": "C"
+    },
+    {
+      "id": "OPS_070",
+      "role": "планировщик",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.97,
+      "balancedOption": "A"
+    },
+    {
+      "id": "OPS_071",
+      "role": "планировщик",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.76,
+      "balancedOption": "D"
+    },
+    {
+      "id": "OPS_072",
+      "role": "планировщик",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.77,
+      "balancedOption": "B"
+    },
+    {
+      "id": "OPS_073",
+      "role": "инженер инженерных систем",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.84,
+      "balancedOption": "C"
+    },
+    {
+      "id": "OPS_074",
+      "role": "инженер инженерных систем",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.83,
+      "balancedOption": "A"
+    },
+    {
+      "id": "OPS_075",
+      "role": "инженер инженерных систем",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.96,
+      "balancedOption": "D"
+    },
+    {
+      "id": "OPS_076",
+      "role": "инженер инженерных систем",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.83,
+      "balancedOption": "B"
+    },
+    {
+      "id": "OPS_077",
+      "role": "инженер инженерных систем",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.72,
+      "balancedOption": "C"
+    },
+    {
+      "id": "OPS_078",
+      "role": "инженер инженерных систем",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.89,
+      "balancedOption": "A"
+    },
+    {
+      "id": "OPS_079",
+      "role": "инженер инженерных систем",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.76,
+      "balancedOption": "D"
+    },
+    {
+      "id": "OPS_080",
+      "role": "инженер инженерных систем",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.88,
+      "balancedOption": "B"
+    },
+    {
+      "id": "OPS_081",
+      "role": "инженер инженерных систем",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.77,
+      "balancedOption": "C"
+    },
+    {
+      "id": "OPS_082",
+      "role": "инженер инженерных систем",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.81,
+      "balancedOption": "A"
+    },
+    {
+      "id": "OPS_083",
+      "role": "инженер инженерных систем",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.71,
+      "balancedOption": "D"
+    },
+    {
+      "id": "OPS_084",
+      "role": "инженер инженерных систем",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.89,
+      "balancedOption": "B"
+    },
+    {
+      "id": "OPS_085",
+      "role": "инженер инженерных систем",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.84,
+      "balancedOption": "C"
+    },
+    {
+      "id": "OPS_086",
+      "role": "инженер инженерных систем",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.69,
+      "balancedOption": "A"
+    },
+    {
+      "id": "OPS_087",
+      "role": "инженер инженерных систем",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.66,
+      "balancedOption": "D"
+    },
+    {
+      "id": "OPS_088",
+      "role": "инженер инженерных систем",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.72,
+      "balancedOption": "B"
+    },
+    {
+      "id": "OPS_089",
+      "role": "инженер инженерных систем",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.86,
+      "balancedOption": "C"
+    },
+    {
+      "id": "OPS_090",
+      "role": "инженер инженерных систем",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.81,
+      "balancedOption": "A"
+    },
+    {
+      "id": "OPS_091",
+      "role": "инженер инженерных систем",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.81,
+      "balancedOption": "D"
+    },
+    {
+      "id": "OPS_092",
+      "role": "инженер инженерных систем",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.85,
+      "balancedOption": "B"
+    },
+    {
+      "id": "OPS_093",
+      "role": "инженер инженерных систем",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.8,
+      "balancedOption": "C"
+    },
+    {
+      "id": "OPS_094",
+      "role": "инженер инженерных систем",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.74,
+      "balancedOption": "A"
+    },
+    {
+      "id": "OPS_095",
+      "role": "инженер инженерных систем",
+      "template": "2,2;2,4;3,3;4,2",
+      "shortestToLongest": 0.89,
+      "balancedOption": "D"
+    }
+  ]
+}

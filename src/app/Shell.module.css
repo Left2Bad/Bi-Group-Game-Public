@@ -1,0 +1,29 @@
+/* Оболочка A использует токены B и не переопределяет стили внутри feature-компонентов. Стили шапки лежат в SiteHeader.module.css. */
+.shell {
+  color: var(--ink);
+  overflow-wrap: anywhere;
+  background-image: linear-gradient(90deg, rgb(0 106 203 / 2%) 1px, transparent 1px);
+  background-size: 96px 100%;
+}
+
+.shell > footer { width: min(var(--content-width), calc(100% - 40px)); margin-inline: auto; padding-block: 1.1rem; }
+.shell main { min-height: 24rem; }
+.shell main:focus { outline: none; }
+.shell > footer { border-top: 1px solid var(--border); color: var(--muted); }
+.shell > footer { font-size: .85rem; }
+.footer { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px 28px; }
+.footer p { max-width: 70ch; margin: 0; }
+.footer nav { display: flex; flex-wrap: wrap; gap: 4px 18px; }
+.footer nav a { position: relative; color: var(--ink-soft); font-weight: 600; text-decoration: none; }
+.footer nav a::after { position: absolute; right: 0; bottom: -3px; left: 0; height: 2px; border-radius: 2px; background: var(--construction-accent); content: ''; transform: scaleX(0); transform-origin: left; transition: transform .3s var(--ease-out); }
+.footer nav a:hover { color: var(--ink); }
+.footer nav a:hover::after, .footer nav a:focus-visible::after { transform: none; }
+.skip { position: absolute; left: -9999px; }
+.skip:focus { position: static; display: block; padding: 1rem; }
+.attemptControls > button { margin: .5rem .75rem .5rem 0; }
+.attemptControls a { color: var(--brand-strong); }
+@media print {
+  .shell { background: none; }
+  .shell > main > section { width: auto; margin: 0; padding: 0; }
+}
+.contentNotice { width: min(var(--content-width), calc(100% - 40px)); margin: 0 auto 8px; padding: 10px 14px; border-left: 4px solid var(--construction-accent); border-radius: 0 12px 12px 0; background: var(--warn-bg); color: var(--ink); font-size: .9rem; }

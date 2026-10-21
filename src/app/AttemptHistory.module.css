@@ -1,0 +1,8 @@
+.history { margin-top: 1.5rem; }
+.field { display: grid; gap: .5rem; margin-block: 1.25rem; font-weight: 650; }
+.field select { width: 100%; min-width: 0; min-height: 48px; padding: .75rem .5rem; font: inherit; font-weight: 400; color: var(--ink); background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-control); }
+.field select:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+.history table { width: 100%; border-collapse: collapse; table-layout: fixed; font-size: .9rem; }
+.history caption { text-align: left; font-weight: 700; padding-bottom: .5rem; }
+.history th, .history td { border: 1px solid var(--border); padding: .5rem; text-align: left; vertical-align: top; }
+.history th:first-child { width: 43%; }

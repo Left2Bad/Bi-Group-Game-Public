@@ -1,0 +1,152 @@
+{
+  "ENG_001": { "context": "In the as-built drawing, the wall axis differs from the latest revision of the working drawing.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will compare the source measurements and the revisions to find the source of the discrepancy.",
+    "B": "I will suspend the release and file a remark through the approval route.",
+    "C": "I will check the measurements against the revision and register the discrepancy for approval.",
+    "D": "I will ask the lead engineer for the grounds for the chosen revision and record the confirmed position of the wall." } },
+  "ENG_002": { "context": "A subcontractor has submitted quantities for completed work that exceed those recorded in the works log.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will point out the specific discrepancy to the contractor and request a correction.",
+    "B": "I will check the measurements against the log and propose correcting the quantities, giving my reasons.",
+    "C": "I will compare the disputed items with the primary records and propose a reconciliation procedure to the contractor myself.",
+    "D": "I will check the links to the work sections and the original measurements." } },
+  "ENG_003": { "context": "The handover package is missing the concealed work certificate for one joint.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will check the primary records and, together with the site, restore a valid package.",
+    "B": "I will collect the available confirmations from the site and check which stages can actually be traced.",
+    "C": "I will pull up the log and the photo records and check the actual sequence.",
+    "D": "I will contact the site and collect confirmed information from the people who did the work." } },
+  "ENG_004": { "context": "The site manager asks you to urgently send the client a statement with an unconfirmed date.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will clarify the source of the date myself and record the confirmed value before sending the statement.",
+    "B": "I will state directly that the date needs to be confirmed before sending.",
+    "C": "I will record the request and submit the statement through the established approval process.",
+    "D": "I will explain the risk and send the statement only after the date has been checked against documents." } },
+  "ENG_005": { "context": "At a meeting, two departments interpret the boundary of the contractor's scope differently.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will present my verified interpretation based on the contract and drawings.",
+    "B": "I will organise a short reconciliation with both departments and write down the questions.",
+    "C": "I will show the calculation and help agree a common position with those responsible.",
+    "D": "I will propose my interpretation of the boundaries and check it on the disputed items together with the departments." } },
+  "ENG_006": { "context": "Before the month-end submission, corrections to the as-built documentation register have piled up.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will agree priorities with the site and help collect the missing attachments.",
+    "B": "I will update the register, checking the sources, and share the collection of attachments with the site.",
+    "C": "I will agree with colleagues on dividing up the corrections and establish the procedure for checking the updated register.",
+    "D": "I will check each correction against the source document and update the statuses." } },
+  "ENG_007": { "context": "The incoming change record states the old concrete grade.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will check the grade against the approved set and return the record formally.",
+    "B": "I will compare the concrete grade with the current decision and register a clarification to the record.",
+    "C": "I will check the chain of revisions and the source of the grade value.",
+    "D": "I will register the error and send the document to be reissued." } },
+  "ENG_008": { "context": "The certificate of completed works lists a type of work that is not in the current estimate.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will check the basis for the disputed quantity and personally propose a procedure for approving it separately.",
+    "B": "I will compare the type of work with the contract and the basis for the change.",
+    "C": "I will discuss with the person responsible the need for a proper basis before inclusion.",
+    "D": "I will check the contract documents and make clear that the line needs to be justified." } },
+  "ENG_009": { "context": "At the client's request, a set of documents is needed for a joint completed several months ago.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will trace the joint through the drawing, logs and certificates for the relevant period.",
+    "B": "I will contact the archive and the site to quickly collect confirmations.",
+    "C": "I will match the joint numbers with the logs and involve the archive in putting the package together.",
+    "D": "I will ask the site to outline the stages of work on the joint and use them to check the contents of the archive set." } },
+  "ENG_010": { "context": "A colleague suggests signing the certificate while the as-built drawing has not yet been attached.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will check the mandatory attachments and return the certificate according to the procedure.",
+    "B": "I will explain the reason for the return and file a request for the missing drawing.",
+    "C": "I will identify the missing attachments myself and set a deadline for checking the complete certificate package.",
+    "D": "I will calmly point out that the package does not yet confirm the quantity." } },
+  "ENG_011": { "context": "The site is waiting for an answer on the status of a design change, but approval is delayed.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will check the change register and communicate a single status to both teams.",
+    "B": "I will propose to the site my own way of getting the status and agree feedback times with the participants.",
+    "C": "I will report the verified status and clearly state which works are affected.",
+    "D": "I will contact the design team and the site for a joint status update." } },
+  "ENG_012": { "context": "Several crews are submitting certificates at the same time with different designations for the same work section.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will agree the section designations with the crews and record them in the rules for accepting certificates.",
+    "B": "I will apply the agreed designation reference when checking each certificate.",
+    "C": "I will gather the contractors and help them agree uniform designations.",
+    "D": "I will check the certificates against the reference and send the participants the agreed template." } },
+  "ENG_013": { "context": "A discrepancy in units of measurement compared with the drawing was found in the materials list.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will recalculate the item according to the specification and check the units.",
+    "B": "I will stop the release of the list and file a request for correction.",
+    "C": "I will check the units, recalculate the quantity and register the correction.",
+    "D": "I will check the unit conversion on the disputed items and enter the confirmed values into the list." } },
+  "ENG_014": { "context": "During approval there is an argument about whether temporary fencing is a separate scope item.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will formulate a position citing the contract clause and the source data.",
+    "B": "I will check the grounds and present a reasoned calculation to the participants.",
+    "C": "I will compare the fencing calculation with the contract terms and present the basis for my position myself.",
+    "D": "I will study the contractual boundaries and the supporting statements." } },
+  "ENG_015": { "context": "For a recurring defect, it is hard to trace the room numbers in the defect reports.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will check the causes of the errors and agree a single card template with the site.",
+    "B": "I will collect examples of incomplete remarks together with the supervisors and find out at what stage the room number gets lost.",
+    "C": "I will find the pattern of errors in the original remark records.",
+    "D": "I will help the site introduce a clear template for designating rooms." } },
+  "ENG_016": { "context": "The contractor asks to enter an inspection date in the log that has not yet been confirmed.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will request confirmation of the actual inspection myself and record a traceable date in the log.",
+    "B": "I will refuse to enter an unconfirmed date and explain why.",
+    "C": "I will make the entry only after checking the supporting materials according to the procedure.",
+    "D": "I will explain the requirement and record the verified date after receiving the grounds." } },
+  "ENG_017": { "context": "A new supervisor does not understand which documents are needed before concreting.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will list the required documents and explain the order of checking.",
+    "B": "I will go through the package with him and help find the missing documents.",
+    "C": "I will explain the requirements and check a specific package together with the supervisor.",
+    "D": "I will suggest reviewing the package with the supervisor and take responsibility for explaining the disputed requirements." } },
+  "ENG_018": { "context": "Before the stage handover, several certificates are stuck with different approvers.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will contact the approvers, find out what is blocking them and help collect what is missing.",
+    "B": "I will update the register and help to remove the specific causes of delay.",
+    "C": "I will agree the order of review with the approvers and update the dates in the certificate register.",
+    "D": "I will check the register, the deadlines and the completeness of each certificate." } },
+  "ENG_019": { "context": "Two versions of an as-built drawing with the same date were found in the archive.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will check the transmittal history and file a request about the current version.",
+    "B": "I will compare the history of the two files with the change log and register the confirmed version.",
+    "C": "I will compare the signatures, revision numbers and transmittal register.",
+    "D": "I will mark both versions as disputed and request official confirmation." } },
+  "ENG_020": { "context": "When reconciling the schedule and the certificates, it turned out that a stage was closed in a different sequence.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will compare the actual order with the acceptance conditions and personally propose a way of clarifying the certificates.",
+    "B": "I will check the dates in the logs, the schedule and the certificates to establish the cause.",
+    "C": "I will inform those responsible of the specific inconsistency and propose a reconciliation.",
+    "D": "I will put together a confirmed chronology and confidently propose a correction." } },
+  "ENG_021": { "context": "The client keeps raising the same remarks about how the drawings are formatted.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will classify the remarks and find the source of the repetition.",
+    "B": "I will discuss a short memo with the drafters and help them apply it.",
+    "C": "I will analyse the causes and update the drawing template together with the team.",
+    "D": "I will collect examples of repeated issues together with the drawing authors and determine where the necessary information is lost." } },
+  "ENG_022": { "context": "To send the package, you are being required to sign on behalf of an absent approver.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will find the substitution procedure provided for by the regulations.",
+    "B": "I will point out the restriction and arrange approval through the appointed deputy.",
+    "C": "I will personally arrange a request for an authorised substitute and follow the established signing procedure.",
+    "D": "I will explain that only an authorised person can sign." } },
+  "ENG_023": { "context": "The site is sure the change has already been approved, but in the register it is listed as a draft.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will show the register entry and arrange a quick confirmation from the author.",
+    "B": "I will propose that the site check the status at a joint meeting and take on presenting the confirmed information.",
+    "C": "I will clearly state the confirmed status and the consequences for the package.",
+    "D": "I will connect the site with the author of the change and put together a single explanation." } },
+  "ENG_024": { "context": "At shift handover, some of the remarks on the as-built documentation remain open.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will agree the list of open remarks with the new shift and assign who is responsible for following up.",
+    "B": "I will set up a register with an owner, a deadline and a supporting document.",
+    "C": "I will do a short handover and help colleagues understand the priorities.",
+    "D": "I will update the register and personally go through the open items with the new shift." } },
+  "ENG_025": { "context": "In the federated BIM model, a new air duct intersects a load-bearing beam.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will check the coordinates, levels and source requirements of both disciplines.",
+    "B": "I will register the clash and assign it to those responsible according to the procedure.",
+    "C": "I will check the geometry against the source data and create a task for coordination.",
+    "D": "I will request the source constraints from the authors of the sections and register a confirmed clash task." } },
+  "ENG_026": { "context": "The architectural and structural models contain different finished floor levels.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will present the specific discrepancy to the team and propose establishing a single datum.",
+    "B": "I will check the sources of the levels and propose a single datum, giving my reasons.",
+    "C": "I will compare the basis of both floor levels and propose a question for a joint decision myself.",
+    "D": "I will compare the revisions and the datum levels in the design briefs." } },
+  "ENG_027": { "context": "The same clash with utility networks occurs regularly in standard details.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will identify the cause and help the team update the standard detail.",
+    "B": "I will collect recurring cases together with the authors of the details and check which dependency causes the clash.",
+    "C": "I will determine which placement rule creates the repetition.",
+    "D": "I will discuss with the modellers a common way of preventing such clashes." } },
+  "ENG_028": { "context": "The site is requesting a drawing, although the latest version is still under review.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will personally arrange clarification of the drawing status and establish the procedure for issuing the confirmed version.",
+    "B": "I will clearly report the status and indicate the approved version to be used.",
+    "C": "I will check the release route and the availability of the current set.",
+    "D": "I will explain the status and pass on a link only to the approved release." } },
+  "ENG_029": { "context": "The contractor proposes shifting the cable route to avoid an intersection.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will set out the technical constraints and say that the decision requires review.",
+    "B": "I will gather the designers of the adjacent systems for a joint review.",
+    "C": "I will state the constraints and arrange approval of an alternative route.",
+    "D": "I will propose my own way of presenting the change and refine it with the contractor for the model authors." } },
+  "ENG_030": { "context": "In the model, several people have created different names for identical families.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will help the team bring the families in line with a common reference.",
+    "B": "I will update the list according to the standard and carry out a joint check with the authors.",
+    "C": "I will agree a single naming principle with the authors and build it into the check of new families.",
+    "D": "I will check the names against the BIM standard and draw up a list of corrections." } }
+}

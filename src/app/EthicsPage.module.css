@@ -1,0 +1,89 @@
+/*
+ * Этика и данные: чертёжный лист со щитом, четыре шага согласия, карточки «кто видит» и блок «чем результат не является».
+ */
+.ethics { display: grid; gap: clamp(36px, 5.5vw, 60px); }
+.title { margin: 0 0 22px; font-size: clamp(1.6rem, 3.2vw, 2.3rem); line-height: 1.1; letter-spacing: -.035em; }
+
+/* Первый экран: тот же чертёжный лист, что у 404, только со щитом. */
+.hero { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) 180px; gap: clamp(20px, 4vw, 48px); align-items: center; overflow: hidden;
+  padding: clamp(28px, 5vw, 52px) clamp(24px, 5vw, 52px); border-radius: 28px; color: #fff;
+  background:
+    linear-gradient(rgb(155 206 255 / 8%) 1px, transparent 1px) 0 0 / 30px 30px,
+    linear-gradient(90deg, rgb(155 206 255 / 8%) 1px, transparent 1px) 0 0 / 30px 30px,
+    radial-gradient(70% 80% at 85% 10%, rgb(41 147 237 / 50%), transparent 60%),
+    linear-gradient(150deg, #061f45, #0a4a95);
+  box-shadow: var(--shadow-lg); animation: hero-in .6s var(--ease-out) both; }
+.eyebrow { color: var(--construction-accent); }
+.hero h1 { max-width: 18ch; margin: 0; font-size: clamp(2rem, 4.6vw, 3.2rem); line-height: 1.05; letter-spacing: -.035em; }
+.hero h1 span { color: var(--construction-accent); }
+.lead { max-width: 56ch; margin: 16px 0 0; color: #cfe6ff; font-size: clamp(1rem, 1.6vw, 1.15rem); }
+.promises { display: flex; flex-wrap: wrap; gap: 10px; margin: 24px 0 0; padding: 0; list-style: none; }
+.promises li { display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border: 1px solid rgb(155 206 255 / 35%); border-radius: 999px; background: rgb(6 31 69 / 55%); font-weight: 700; font-size: .92rem; }
+.promises li::before { width: 8px; height: 8px; border-radius: 50%; background: var(--construction-accent); content: ''; }
+.shield { width: 100%; max-width: 180px; height: auto; justify-self: end; overflow: visible; }
+.shieldBody { fill: rgb(155 206 255 / 10%); stroke: var(--blueprint-line); stroke-width: 3; stroke-linejoin: round; }
+.shieldCheck { fill: none; stroke: var(--construction-accent); stroke-width: 8; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 80; stroke-dashoffset: 80; animation: check-draw .7s var(--ease-out) .5s forwards; }
+
+/* Согласие: четыре шага с пунктиром между номерами. */
+.steps { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; margin: 0; padding: 0; list-style: none; counter-reset: step; }
+.steps > li { position: relative; padding-top: 54px; counter-increment: step; }
+.steps > li::before { position: absolute; top: 0; left: 0; display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: var(--brand); color: #fff;
+  font-family: var(--font-technical); font-weight: 600; content: counter(step); transition: transform .3s var(--ease-out), box-shadow .3s ease; }
+.steps > li:last-child::before { background: var(--construction-accent); color: var(--blueprint); }
+.steps > li:hover::before { transform: scale(1.12); box-shadow: 0 0 0 6px var(--brand-soft); }
+.steps > li::after { position: absolute; top: 20px; left: 52px; right: -6px; height: 2px; background: repeating-linear-gradient(90deg, var(--border) 0 8px, transparent 8px 14px); content: ''; }
+.steps > li:last-child::after { display: none; }
+.steps h3 { margin: 0 0 6px; font-size: 1.08rem; }
+.steps p { margin: 0; color: var(--muted); font-size: .95rem; }
+
+/* Кто видит: четыре карточки с цветной кромкой. */
+.viewers { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin: 0; padding: 0; list-style: none; }
+.viewers > li { --edge: var(--brand-bright); padding: 20px 22px; border: 1px solid var(--border); border-top: 4px solid var(--edge); border-radius: 16px; background: var(--surface);
+  transition: transform .25s var(--ease-out), box-shadow .25s ease; }
+.viewers > li:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+.viewers > li[data-tone="self"] { --edge: var(--construction-accent); }
+.viewers > li[data-tone="team"] { --edge: var(--band-4); }
+.viewers > li[data-tone="ai"] { --edge: var(--muted); }
+.viewers h3 { margin: 0 0 10px; font-size: 1.12rem; }
+.viewers p { margin: 0; color: var(--ink-soft); font-size: .96rem; }
+.viewers p + p { margin-top: 8px; }
+.viewers b { color: var(--ink); }
+.viewers .hidden { color: var(--muted); }
+.note { margin: 18px 0 0; padding: 14px 18px; border-left: 3px solid var(--brand-bright); border-radius: 0 12px 12px 0; background: var(--brand-soft); color: var(--ink); }
+
+/* Чем результат не является: три «запрещающих» карточки и памятка руководителю. */
+.nots { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin: 0; padding: 0; list-style: none; }
+.nots > li { position: relative; padding: 20px 22px 22px 66px; border: 1px solid var(--danger-soft); border-radius: 16px; background: var(--danger-bg); }
+.nots > li::before { position: absolute; top: 20px; left: 20px; width: 30px; height: 30px; border: 3px solid var(--danger-ink); border-radius: 50%; content: '';
+  background: linear-gradient(-45deg, transparent calc(50% - 1.5px), var(--danger-ink) calc(50% - 1.5px) calc(50% + 1.5px), transparent calc(50% + 1.5px)); }
+.nots h3 { margin: 0 0 6px; color: var(--danger-ink); font-size: 1.1rem; }
+.nots p { margin: 0; color: var(--ink-soft); font-size: .95rem; }
+.leader { margin-top: 18px; padding: 22px 24px; border: 1px dashed var(--construction-accent); border-radius: 16px; background: var(--warn-bg); }
+.leader h3 { margin: 0 0 12px; color: var(--warn-ink); font-size: 1.12rem; }
+.leader ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 24px; margin: 0; padding: 0; list-style: none; }
+.leader li { position: relative; padding-left: 26px; color: var(--ink); }
+.leader li::before { position: absolute; top: .15em; left: 0; color: var(--construction-accent); font-weight: 800; content: '✓'; }
+.leader p { margin: 14px 0 0; color: var(--muted); font-size: .94rem; }
+
+/* Управление данными: две строки «действие — где». */
+.control { padding: 24px clamp(20px, 4vw, 32px); border: 1px solid var(--border); border-radius: 20px; background: var(--glass); }
+.control h2 { margin: 0 0 16px; font-size: clamp(1.3rem, 2.4vw, 1.7rem); letter-spacing: -.02em; }
+.control dl { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px 28px; margin: 0; }
+.control dt { color: var(--construction-accent); font-family: var(--font-technical); font-size: 1.1rem; font-weight: 600; }
+.control dd { margin: 6px 0 0; color: var(--ink-soft); }
+.control a { color: var(--brand-strong); font-weight: 700; text-underline-offset: 4px; }
+
+@keyframes hero-in { from { opacity: 0; transform: translateY(16px) scale(.98); } to { opacity: 1; transform: none; } }
+@keyframes check-draw { to { stroke-dashoffset: 0; } }
+@media (prefers-reduced-motion: reduce) { .hero { animation: none; } .shieldCheck { animation: none; stroke-dashoffset: 0; } }
+@media (max-width: 900px) {
+  .steps { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 28px; }
+  .steps > li:nth-child(2)::after { display: none; }
+  .nots { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  .hero { grid-template-columns: 1fr; }
+  .shield { display: none; }
+  .steps, .viewers, .leader ul, .control dl { grid-template-columns: 1fr; }
+  .steps > li::after { display: none; }
+}

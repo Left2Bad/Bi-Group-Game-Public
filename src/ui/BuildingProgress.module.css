@@ -1,0 +1,112 @@
+.building { position: sticky; top: 20px; display: grid; justify-items: center; gap: 0; padding: 16px 18px 20px; border: 1px solid rgb(155 206 255 / 28%); border-radius: 22px;
+  box-shadow: 0 24px 60px -28px rgb(41 147 237 / 75%), inset 0 1px 0 rgb(255 255 255 / 8%); background:
+  linear-gradient(rgb(155 206 255 / 9%) 1px, transparent 1px) 0 0 / 16px 16px,
+  linear-gradient(90deg, rgb(155 206 255 / 9%) 1px, transparent 1px) 0 0 / 16px 16px, var(--blueprint); }
+.title { justify-self: stretch; display: flex; align-items: center; justify-content: space-between; gap: 10px; margin: 0 0 6px; color: #9bceff; font-family: var(--font-technical); font-size: .78rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.title::after { width: 9px; height: 9px; border-radius: 50%; background: var(--construction-accent); box-shadow: 0 0 0 4px rgb(255 209 102 / 18%); content: ''; animation: blink 1.4s ease-in-out infinite; }
+.building[data-phase="complete"] .title::after { background: #3ddc84; box-shadow: 0 0 0 4px rgb(61 220 132 / 20%); animation: none; }
+.scene { display: block; width: 100%; max-width: 320px; height: auto; overflow: hidden; }
+.groundLine { stroke: var(--construction-accent); stroke-width: 3; stroke-linecap: round; }
+
+/* Каждый этап дома: пока не построен — пунктир чертежа, следующий — жёлтый пунктир, построенный — в цвете. */
+.piece .shape { stroke-linejoin: round; transition: fill .3s, stroke .3s; }
+.piece[data-state="empty"] .shape, .piece[data-state="current"] .shape { fill: transparent; stroke: rgb(155 206 255 / 38%); stroke-width: 1; stroke-dasharray: 3 2; }
+.piece[data-state="empty"] .knob, .piece[data-state="current"] .knob { display: none; }
+.piece[data-state="current"] .shape { stroke: var(--construction-accent); stroke-width: 1.4; animation: march 1s linear infinite; }
+.piece[data-state="current"] { animation: blink 1.4s ease-in-out infinite; }
+.piece[data-state="done"] { transform-box: fill-box; transform-origin: 50% 100%; animation: piece-in .55s var(--ease-out) var(--delay) backwards; }
+.piece[data-state="done"][data-piece="6"], .piece[data-state="done"][data-piece="7"], .piece[data-state="done"][data-piece="11"] { animation-name: piece-drop; }
+.piece[data-state="done"][data-piece="8"], .piece[data-state="done"][data-piece="9"], .piece[data-state="done"][data-piece="10"], .piece[data-state="done"][data-piece="13"] { transform-origin: 50% 50%; animation-name: piece-pop; }
+
+.concrete { fill: #c9d6e6; stroke: #8fa3bd; stroke-width: .6; }
+.wall { stroke: #2384d8; stroke-width: .6; }
+.frame { fill: none; stroke: #f2a541; stroke-width: 2; }
+.roof { stroke: #c97c22; stroke-width: .8; }
+.atticWindow { fill: #0d2f5c; stroke: #fff; stroke-width: 1.2; }
+.chimney { fill: #b45a3c; stroke: #8a3f27; stroke-width: .6; }
+.trim { fill: #8fa3bd; }
+.door { fill: #7a4a2a; stroke: #4e2e19; stroke-width: .8; }
+.knob { fill: var(--construction-accent); }
+.window { fill: #0d2f5c; stroke: #fff; stroke-width: 1.4; }
+.trunk { fill: #7a4a2a; }
+.leaf { fill: #3ddc84; stroke: #22a862; stroke-width: .6; }
+.pole { fill: none; stroke: #fff; stroke-width: 1.4; }
+.flag { fill: #3ddc84; transform-box: fill-box; transform-origin: 0 50%; }
+.building[data-phase="complete"] .flag { animation: flag-wave .9s ease-in-out infinite alternate; }
+
+/* Финал: окна по очереди загораются, из трубы идёт дым. */
+.light { fill: #ffd166; opacity: 0; filter: drop-shadow(0 0 4px #ffd166); animation: light-on .5s ease-out calc(.4s + var(--i) * .18s) forwards; }
+.smoke { fill: rgb(255 255 255 / 55%); opacity: 0; animation: smoke 2.4s ease-out calc(1.2s + var(--i) * .8s) infinite; }
+
+.pallet { fill: #a0703f; }
+.plank { fill: #e2b06e; stroke: #a0703f; stroke-width: .5; }
+.stack { animation: piece-drop .45s var(--ease-out) backwards; }
+
+/* Грузовик: 3.6 с на рейс — въезд, разгрузка, выезд. */
+.truck { animation: drive 3.6s ease-in-out infinite; }
+.bed { transform-box: fill-box; transform-origin: 0 100%; animation: tip 3.6s ease-in-out infinite; }
+.cargo { animation: unload 3.6s ease-in infinite; }
+/* Бригада в кузове: оранжевые жилеты и жёлтые каски, слегка покачиваются в дороге. */
+.vest { fill: #ff8a3d; stroke: #c25a17; stroke-width: .5; }
+.face { fill: #f5c9a0; }
+.helmet { fill: var(--construction-accent); stroke: #c97c22; stroke-width: .5; }
+.worker { animation: bob .45s ease-in-out infinite alternate; }
+.worker + .worker { animation-delay: .2s; }
+@keyframes bob { to { translate: 0 -1px; } }
+/* Приёмка дома: человек идёт от --from к --to, разворачивается и возвращается; ноги шагают по очереди. */
+.walker { animation: walk var(--time) linear var(--delay) infinite; }
+.figure { animation: turn var(--time) steps(1) var(--delay) infinite; }
+.leg { stroke: #2a3d57; stroke-width: 1.6; stroke-linecap: round; transform-box: fill-box; transform-origin: 50% 0; }
+.legA { animation: step .5s ease-in-out infinite alternate; }
+.legB { animation: step .5s ease-in-out -.5s infinite alternate; }
+.clipboard { fill: #fff; stroke: #8fa3bd; stroke-width: .4; }
+@keyframes walk { 0%, 100% { translate: var(--from) 0; } 50% { translate: var(--to) 0; } }
+@keyframes turn { 0% { scale: var(--face) 1; } 50% { scale: calc(var(--face) * -1) 1; } }
+@keyframes step { from { rotate: -22deg; } to { rotate: 22deg; } }
+.bedBody { fill: var(--construction-accent); stroke: #c97c22; stroke-width: .8; }
+.chassis { fill: #2a3d57; }
+.cab { fill: #2993ed; stroke: #1b5fa6; stroke-width: .8; }
+.glass { fill: #cfe6ff; }
+.wheel { fill: #1a2433; stroke: #9bceff; stroke-width: 1.2; }
+.spoke { stroke: #9bceff; stroke-width: 1; }
+.truck .spoke { transform-box: fill-box; transform-origin: center; animation: spin .5s linear infinite; }
+
+.meter { display: none; height: 4px; margin-top: 3px; border-radius: 99px; background: rgb(155 206 255 / 18%); overflow: hidden; }
+.meter i { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--brand-bright), var(--construction-accent)); transition: width .5s var(--ease-out); }
+.caption { display: grid; gap: 6px; margin: 14px 0 0; color: #cfe6ff; font-size: .95rem; line-height: 1.35; text-align: center; }
+.caption strong { color: #fff; font-family: var(--font-technical); font-size: 1.6rem; vertical-align: -2px; }
+.stage { color: var(--construction-accent); font-size: .9rem; font-weight: 650; }
+.building[data-phase="complete"] .caption { color: #7dffb0; font-family: var(--font-technical); font-weight: 700; animation: piece-pop .5s var(--ease-out) 1.2s backwards; }
+
+@keyframes march { to { stroke-dashoffset: -10; } }
+@keyframes blink { 50% { opacity: .55; } }
+@keyframes piece-in { from { transform: scaleY(0); opacity: .3; } to { transform: none; opacity: 1; } }
+@keyframes piece-drop { 0% { transform: translateY(-26px); opacity: 0; } 70% { transform: translateY(2px); opacity: 1; } 100% { transform: none; } }
+@keyframes piece-pop { 0% { transform: scale(0); opacity: 0; } 70% { transform: scale(1.15); opacity: 1; } 100% { transform: none; } }
+@keyframes light-on { 0% { opacity: 0; } 40% { opacity: 1; } 60% { opacity: .5; } 100% { opacity: .95; } }
+@keyframes smoke { 0% { opacity: 0; transform: none; } 20% { opacity: .8; } 100% { opacity: 0; transform: translate(10px, -22px) scale(2.2); } }
+@keyframes flag-wave { from { transform: skewY(-10deg) scaleX(.85); } to { transform: skewY(6deg) scaleX(1); } }
+@keyframes drive { 0% { transform: translateX(-90px); } 30%, 64% { transform: translateX(0); } 100% { transform: translateX(150px); } }
+@keyframes tip { 0%, 34% { transform: none; } 44%, 54% { transform: rotate(-32deg); } 62%, 100% { transform: none; } }
+@keyframes unload { 0%, 42% { transform: none; opacity: 1; } 56% { transform: translate(-14px, 12px); opacity: 0; } 92% { opacity: 0; } 100% { transform: none; opacity: 1; } }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+@media (prefers-reduced-motion: reduce) {
+  .piece[data-state], .piece .shape, .stack, .truck, .bed, .cargo, .worker, .walker, .figure, .leg, .truck .spoke, .flag, .smoke, .building[data-phase="complete"] .caption { animation: none !important; }
+  .light { animation: none; opacity: .95; }
+}
+
+/*
+ * На узком экране стройка — тонкая полоса, закреплённая сверху: домик виден, пока отвечаешь на вопрос,
+ * а не только во время ожидания. Слева маленькая сцена, справа номер этапа, текущий этап и полоса прогресса.
+ */
+@media(max-width: 900px) {
+  .building { position: sticky; top: 0; z-index: 6; grid-template-columns: 74px minmax(0, 1fr); align-items: center; justify-items: start; gap: 12px; padding: 6px 14px 6px 8px; border-radius: 16px;
+    box-shadow: 0 16px 34px -16px rgb(0 0 0 / 85%), 0 0 0 1px rgb(155 206 255 / 10%), inset 0 1px 0 rgb(255 255 255 / 8%); }
+  .title { display: none; }
+  .scene { max-width: 74px; }
+  .caption { justify-self: stretch; gap: 3px; margin: 0; font-size: .85rem; text-align: left; }
+  .caption strong { font-size: 1.15rem; }
+  .stage { overflow: hidden; font-size: .8rem; text-overflow: ellipsis; white-space: nowrap; }
+  .meter { display: block; }
+}

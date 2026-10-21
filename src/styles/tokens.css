@@ -1,0 +1,81 @@
+:root {
+  color-scheme: dark;
+  font-family: Onest, "Segoe UI", Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  --ink: #e6eef8;
+  --ink-soft: #b7c8dc;
+  --muted: #9fb2c8;
+  --brand: #2272cc;
+  --brand-strong: #8cc4ff;
+  --brand-hover: #1a5fb0;
+  --brand-bright: #5db5ff;
+  --brand-soft: #16355a;
+  --brand-deep: #082e60;
+  --canvas: #0b1726;
+  --surface: #122338;
+  --border: #29415c;
+  --track: #223a57;
+  --construction-accent: #ffd166;
+  --focus: #ffb347;
+  --danger: #ff8f8f;
+  --radius-card: 20px;
+  --radius-control: 12px;
+  --content-width: 1120px;
+  /* Чертёжные цифры и коды: техническое начертание в духе ГОСТ-шрифта. */
+  --font-technical: Tektur, Onest, "Segoe UI", Arial, sans-serif;
+  --blueprint: #12407d;
+  --blueprint-line: #9bceff;
+  --glass: rgb(18 35 56 / 78%);
+  --hover: #183049;
+  --chip: #1e3552;
+  --warn-soft: #4a3411;
+  --warn-bg: #2a2214;
+  --warn-ink: #ffcb7a;
+  --danger-soft: #5a2616;
+  --danger-bg: #2c1b17;
+  --danger-ink: #ffb59c;
+  --band-0: #17314f; --band-0-ink: #cfe3f7;
+  --band-1: #1f4673; --band-1-ink: #e3f0fc;
+  --band-2: #2a68a8; --band-2-ink: #fff;
+  --band-3: #3b8bd9; --band-3-ink: #fff;
+  --band-4: #6db3f5; --band-4-ink: #06203f;
+  --selection: #245a95;
+  --ease-out: cubic-bezier(.2, .8, .2, 1);
+  /* Пружина с лёгким перелётом: для наведения и выбора (по духу spring из Motion). */
+  --ease-spring: cubic-bezier(.34, 1.56, .64, 1);
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / 30%), 0 6px 16px -8px rgb(0 0 0 / 40%);
+  --shadow-md: 0 2px 4px rgb(0 0 0 / 30%), 0 14px 32px -14px rgb(0 0 0 / 55%);
+  --shadow-lg: 0 4px 8px rgb(0 0 0 / 30%), 0 28px 56px -24px rgb(0 0 0 / 70%);
+  --spot: rgb(93 181 255 / 16%);
+  --aurora-a: rgb(41 147 237 / 18%);
+  --aurora-b: rgb(255 209 102 / 7%);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+/* Место под полосу прокрутки зарезервировано всегда: при переходе на короткую страницу (или пока она грузится) вёрстка не сдвигается вбок. */
+html { min-width: 320px; background: var(--canvas); scrollbar-gutter: stable; }
+/* Мягкая аврора за страницей: два размытых пятна, не мешают чтению и не двигаются при прокрутке. */
+body::before { position: fixed; z-index: -1; inset: 0; content: ''; pointer-events: none;
+  background: radial-gradient(55% 38% at 88% -6%, var(--aurora-a), transparent 70%), radial-gradient(45% 32% at -4% 12%, var(--aurora-b), transparent 70%); }
+@media print { body::before { display: none; } }
+body { margin: 0; color: var(--ink); background: transparent; line-height: 1.55; -webkit-font-smoothing: antialiased; }
+h1, h2, h3 { text-wrap: balance; }
+p { text-wrap: pretty; }
+button, input { font: inherit; }
+a { color: var(--brand-strong); text-underline-offset: .25em; }
+button:focus-visible, a:focus-visible, input:focus-visible, summary:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 3px var(--surface);
+}
+::selection { color: var(--ink); background: var(--selection); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
+
+/* При печати бумага белая: тексты и поверхности временно светлые, отчёт задаёт свои цвета. */
+@media print {
+  :root { color-scheme: light; --ink: #172e49; --ink-soft: #3a5470; --muted: #53677e; --canvas: #fff; --surface: #fff; --border: #d3dfed; --brand-strong: #004b96; }
+}

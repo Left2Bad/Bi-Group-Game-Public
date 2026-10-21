@@ -1,0 +1,157 @@
+{
+  "OPS_065": { "context": "After a meeting, two sets of minutes were circulated with different dates for the same milestone.", "text": "How will you restore a single plan?", "options": {
+    "A": "I will check the meeting notes and the original grounds for the change of date.",
+    "B": "I will contact the participants to confirm the common agreement.",
+    "C": "I will check the source of the discrepancy and agree a single set of minutes with the teams.",
+    "D": "I will suspend distribution of the schedule and arrange for the date to be clarified." } },
+  "OPS_066": { "context": "The contractor asks to remove a control milestone for system testing in order to make the report look good.", "text": "How will you respond?", "options": {
+    "A": "I will keep the milestone and propose a separate indicator for installation.",
+    "B": "I will explain that the milestone reflects a mandatory result and will remain.",
+    "C": "I will ask the contractor for a written justification of the change.",
+    "D": "I will check the approved plan and the grounds for changing control points." } },
+  "OPS_067": { "context": "Actual material deliveries are on schedule, but unloading overlaps with concrete works.", "text": "How will you refine the schedule?", "options": {
+    "A": "I will enter the agreed unloading windows into the operational plan.",
+    "B": "I will note the conflict and ask the dispatcher to propose a time.",
+    "C": "I will check the process constraints and available unloading areas.",
+    "D": "I will check the work constraints and record a safe time slot in the plan." } },
+  "OPS_068": { "context": "At the weekly meeting, the technical department (PTO) engineer and the supervisor give different floor completion percentages.", "text": "How will you run the discussion?", "options": {
+    "A": "I will record both values and schedule a check against the source data.",
+    "B": "I will point out the dispute and propose that the team confirm the percentage with a walk-round.",
+    "C": "I will organise a joint walk-round and a check of the completed areas.",
+    "D": "I will confidently ask them to show the quantities and the readiness criterion." } },
+  "OPS_069": { "context": "The schedule has float, but it is being proposed for additional work that has not yet been approved.", "text": "How will you assess the decision?", "options": {
+    "A": "I will check the impact on the critical path and the likelihood of approval.",
+    "B": "I will warn about the risk of losing the float before the decision is made.",
+    "C": "I will present a calculation of the float and propose an approval procedure with justification.",
+    "D": "I will keep the float as a separate line until the change is confirmed." } },
+  "OPS_070": { "context": "The general contractor changed the order of floor handover, affecting the finishing and services schedules.", "text": "How will you update the plan?", "options": {
+    "A": "I will formalise the change of order and recheck the transitions with the teams.",
+    "B": "I will record the new sequence and the versions of the dependent schedules.",
+    "C": "I will send the new sequence to the contractors and request comments.",
+    "D": "I will bring together the supervisors of both disciplines to agree the available work areas." } },
+  "OPS_071": { "context": "The team rarely reports obstacles before the weekly report, and risks become visible too late.", "text": "How will you improve the reporting of problems?", "options": {
+    "A": "I will agree a simple daily channel for reporting blockers with the supervisors.",
+    "B": "I will add a blockers item to the daily operational report.",
+    "C": "I will review cases where an early signal could have changed the decision.",
+    "D": "I will identify typical causes of delay and, together with the team, introduce brief problem notifications." } },
+  "OPS_072": { "context": "Management asks for an exact completion date for the stage while a delivery is unconfirmed.", "text": "How will you word the forecast?", "options": {
+    "A": "I will give a date from the current schedule with a note about the delivery risk.",
+    "B": "I will openly present a range with a documented condition and a date for review.",
+    "C": "I will record the assumption, the range of dates and the deadline for revising the forecast.",
+    "D": "I will say the date is conditional and name its dependence on confirmation of the delivery." } },
+  "OPS_073": { "context": "In the coordination model, an air duct crosses a beam, and installation is scheduled for next week.", "text": "How will you clarify the route?", "options": {
+    "A": "I will check the model elevations, the drawings and acceptable bypass options with the designer.",
+    "B": "I will file a change request and stop the disputed section from being released for installation.",
+    "C": "I will check the clash and submit the change through the agreed approval route.",
+    "D": "I will mark the section as blocked and send a request to the coordinator." } },
+  "OPS_074": { "context": "HVAC (OViK) installers report that the ceiling void is taken up by cable trays.", "text": "How will you agree on the placement?", "options": {
+    "A": "I will propose a joint walk-round and record the agreed elevations.",
+    "B": "I will point out the need for a joint solution and a deadline before the ceiling is closed.",
+    "C": "I will request current drawings from the adjacent trades and schedule a meeting.",
+    "D": "I will bring together representatives of HVAC (OViK), electrical (EOM) and finishing to check the routes on site." } },
+  "OPS_075": { "context": "The data sheet of the delivered fan shows an airflow lower than the design value.", "text": "How will you assess the delivery?", "options": {
+    "A": "I will tell procurement that an equivalent cannot be accepted without approval.",
+    "B": "I will set the equipment aside for checking and send the data sheet to the designer.",
+    "C": "I will compare the operating point, the unit's performance curve and the design calculation.",
+    "D": "I will check the characteristics and, with justification, reject the unconfirmed substitute." } },
+  "OPS_076": { "context": "It is proposed to carry out ventilation tests before the network has been sealed.", "text": "How will you structure the order of work?", "options": {
+    "A": "I will postpone the tests and ask the contractor to confirm the network is ready.",
+    "B": "I will schedule a check of the sealing before the tests and agree the dates with the team.",
+    "C": "I will agree a new sequence with the installers and the commissioning engineers.",
+    "D": "I will record the readiness of the sections and the condition for starting the tests according to the programme." } },
+  "OPS_077": { "context": "The actual air exchange differs markedly between two rooms of the same purpose.", "text": "How will you organise the analysis?", "options": {
+    "A": "I will compare the settings, the damper positions and the measurement results.",
+    "B": "I will carry out a joint inspection with the commissioning engineers and operations.",
+    "C": "I will check the reasons for the difference together with the commissioning engineers and agree an adjustment.",
+    "D": "I will request the measurement reports and schedule a repeat check." } },
+  "OPS_078": { "context": "On site they want to replace the vibration mounts of the equipment without the supplier's calculation.", "text": "How will you respond?", "options": {
+    "A": "I will explain the risk and send the replacement for documented approval.",
+    "B": "I will clearly state the need to confirm the parameters of the replacement.",
+    "C": "I will keep the design mounts in the order until the designer replies.",
+    "D": "I will check the specification and arrange technical approval." } },
+  "OPS_079": { "context": "The plumbing (VK) pipe route passes through a room whose layout has changed.", "text": "How will you clarify the position of the pipes?", "options": {
+    "A": "I will formalise an agreed change to the route before installation.",
+    "B": "I will suspend work in the section and send the drawing for interdisciplinary review.",
+    "C": "I will check the current architectural layout, the elevations and the connection points.",
+    "D": "I will check the clashes and record the new route in the working documents." } },
+  "OPS_080": { "context": "Installers found that access to a drainage inspection point is blocked by built-in furniture.", "text": "How will you settle the matter with the adjacent trades?", "options": {
+    "A": "I will request the current furniture layout and arrange coordination.",
+    "B": "I will state the access requirement and agree the detail with the adjacent trades.",
+    "C": "I will bring together the finishers, the architect and the plumbing (VK) crew to choose an access location.",
+    "D": "I will openly explain why access to the inspection point must be kept." } },
+  "OPS_081": { "context": "Water pipe pressure-test results differ between two instruments.", "text": "How will you interpret the test?", "options": {
+    "A": "I will check the condition of the instruments, the method and the test record.",
+    "B": "I will state that the result cannot yet be considered confirmed.",
+    "C": "I will arrange a repeat test using the agreed method and explain the reason.",
+    "D": "I will request metrological verification of the instruments and a repeat measurement with those responsible." } },
+  "OPS_082": { "context": "The plumbing (VK) joints are already boxed in, but the as-built drawing does not show part of the concealed route.", "text": "How will you organise restoring the data?", "options": {
+    "A": "I will restore the drawing with the contractors and formalise confirmation of the actual route.",
+    "B": "I will note that the documentation is incomplete and request supporting materials.",
+    "C": "I will register the gap and pass it to the responsible plumbing (VK) engineer.",
+    "D": "I will gather the installer, the technical department (PTO) and quality control to restore the route." } },
+  "OPS_083": { "context": "The contractor reports occasional pump noise at start-up, although the data sheet figures are normal.", "text": "How will you look for the cause?", "options": {
+    "A": "I will discuss the observations with the commissioning engineers and operations.",
+    "B": "I will request the start-up log and schedule a check of the installation.",
+    "C": "I will compare the operating modes, the piping, the mountings and the start-up records.",
+    "D": "I will carry out a joint inspection of the modes and record verifiable hypotheses." } },
+  "OPS_084": { "context": "Procurement offers a pump from stock with a different connection size.", "text": "How will you agree the solution?", "options": {
+    "A": "I will keep the original item until the designer gives an opinion.",
+    "B": "I will state the conditions for the substitution and send the comparison for approval.",
+    "C": "I will check the parameters and formalise technical approval of the equivalent.",
+    "D": "I will report that the substitution requires checking the scheme and the connection." } },
+  "OPS_085": { "context": "On the electrical (EOM) plan, a cable route passes through a recently added fire protection detail.", "text": "How will you check the change?", "options": {
+    "A": "I will check the current drawings, the purpose of the assembly and acceptable bypass paths.",
+    "B": "I will prepare an interdisciplinary request and a new revision of the route.",
+    "C": "I will check the assembly's constraints and agree a documented bypass.",
+    "D": "I will mark the route as conflicting and stop installation of this segment." } },
+  "OPS_086": { "context": "Electricians and low-current installers both want the same spot for panels in the corridor.", "text": "How will you agree the layout?", "options": {
+    "A": "I will present the constraints of both panels and agree the placement together.",
+    "B": "I will clearly state the need for agreed access for maintenance.",
+    "C": "I will request the dimensions and access zones from both teams.",
+    "D": "I will organise a joint measurement of the corridor and a meeting with the designer." } },
+  "OPS_087": { "context": "During cable labelling, some tags do not match the current single-line diagram.", "text": "How will you find the cause?", "options": {
+    "A": "I will state that connecting the disputed lines before a check is unacceptable.",
+    "B": "I will isolate the disputed items from commissioning work and notify the electrician.",
+    "C": "I will check the circuit numbers, the diagram revisions and the actual connections with an authorised specialist.",
+    "D": "I will organise a check of the circuits and secure corrected labelling." } },
+  "OPS_088": { "context": "Commissioning of a panel is scheduled before the check of the protective bonding is complete.", "text": "How will you change the plan?", "options": {
+    "A": "I will mark the panel as not ready and request the test report.",
+    "B": "I will formalise the dependency and move the start-up to a verified date together with the team.",
+    "C": "I will agree an available window for the check with the testers and the installers.",
+    "D": "I will make confirmation of the check a condition for starting up." } },
+  "OPS_089": { "context": "On the floor, socket positions are regularly changed after the installation drawings are issued.", "text": "How will you reduce rework?", "options": {
+    "A": "I will find out at what stage of approval the new requirements appear.",
+    "B": "I will hold a meeting of the electrical (EOM) and architectural teams and the future users of the rooms.",
+    "C": "I will identify the source of the changes and agree a joint check before release.",
+    "D": "I will propose obtaining confirmation of the furniture layout before installation." } },
+  "OPS_090": { "context": "Installers propose connecting a temporary load to a free line without a verified calculation.", "text": "How will you respond?", "options": {
+    "A": "I will explain the restriction and arrange a check with a formal decision.",
+    "B": "I will clearly refuse the connection until the line has been assessed by the responsible electrician.",
+    "C": "I will pass the request to the person responsible for the electrical installation and leave the line disconnected.",
+    "D": "I will check the design, the protection and the permitted procedure for a temporary connection." } },
+  "OPS_091": { "context": "During an interdisciplinary walk-round, different elevations were found in the HVAC (OViK) and plumbing (VK) drawings.", "text": "How will you determine the working elevation?", "options": {
+    "A": "I will record the clash and release only an agreed solution for installation.",
+    "B": "I will request a joint review and stop work in the disputed section.",
+    "C": "I will check the revisions, the coordinates and the required falls with both disciplines.",
+    "D": "I will check the source data and formalise an agreed elevation before installation." } },
+  "OPS_092": { "context": "When a plant room is handed over, operations asks for additional access to the valves and panels.", "text": "How will you handle the remark?", "options": {
+    "A": "I will record the remark and schedule a joint walk-round of the room.",
+    "B": "I will accept the remark and agree the location of the hatches with the adjacent trades.",
+    "C": "I will gather operations, the installers and the architect for an on-site inspection.",
+    "D": "I will point out the need to check access before the room is closed up." } },
+  "OPS_093": { "context": "After the tests a disagreement arose: the contractor considers the system ready, while operations is waiting for the reports.", "text": "How will you word the status?", "options": {
+    "A": "I will separate the actual test result from the completeness of the document handover.",
+    "B": "I will tell both sides directly that readiness for handover has not yet been confirmed.",
+    "C": "I will check the missing reports and, with justification, indicate a conditional status.",
+    "D": "I will draw up a list of documents and set a date for repeat handover." } },
+  "OPS_094": { "context": "Commissioning engineers do not see the pump alarm signal in the building management system, although the pump is running.", "text": "How will you organise the check?", "options": {
+    "A": "I will document the open test item and agree a joint check of the circuit and logic.",
+    "B": "I will record the mismatch in the test programme and not close the item until the signal is confirmed.",
+    "C": "I will pass the remark to the commissioning engineers and schedule a repeat test of the signal.",
+    "D": "I will bring together plumbing (VK), controls and electrical (EOM) specialists to check the signal chain." } },
+  "OPS_095": { "context": "During inspection of utility penetrations, sections were found without legible marking of the completed joint.", "text": "How will you prepare them for acceptance?", "options": {
+    "A": "I will ask the installers and quality control to work together to restore the links identifying the joints.",
+    "B": "I will draw up a list of unidentified places and schedule a joint inspection.",
+    "C": "I will check each penetration against the design detail and the as-built schedule.",
+    "D": "I will check the documents and, with the team, label the confirmed penetrations." } }
+}

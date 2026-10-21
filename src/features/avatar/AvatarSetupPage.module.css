@@ -1,0 +1,102 @@
+/*
+ * Первая встреча с приложением: анкета из семи вопросов слева и личная карточка героя справа.
+ * Цвета — из токенов темы, поэтому лист одинаково читается в светлой и тёмной теме.
+ */
+.page { max-width: 1120px; }
+.header { max-width: 720px; margin-bottom: 26px; animation: setup-rise .6s var(--ease-out) both; }
+.header h1 { margin: 0; font-size: clamp(2.1rem, 4.6vw, 3.2rem); line-height: 1.05; letter-spacing: -.04em; }
+.header > p:last-child { margin: 12px 0 0; color: var(--muted); font-size: 1.05rem; }
+.eyebrow { margin: 0 0 8px; color: var(--brand-strong); font-family: var(--font-technical); font-size: .85rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.layout { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 22px; align-items: start; }
+
+.question { display: grid; gap: 4px; animation: setup-rise .6s var(--ease-out) .08s both; }
+.steps { display: grid; grid-template-columns: repeat(7, 1fr); gap: 6px; margin: 0 0 18px; padding: 0; list-style: none; }
+.steps li { height: 6px; border-radius: 6px; background: var(--track); transition: background-color .3s ease, transform .3s var(--ease-out); }
+.steps li[data-state="done"] { background: var(--brand); }
+.steps li[data-state="current"] { background: linear-gradient(90deg, var(--brand-bright), var(--construction-accent)); transform: scaleY(1.5); }
+.sheet { animation: sheet-in .45s var(--ease-out) both; }
+.counter { margin: 0; color: var(--muted); font-size: .92rem; }
+.question h2 { margin: 6px 0 20px; font-size: clamp(1.35rem, 2.6vw, 1.75rem); letter-spacing: -.02em; }
+.options { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.options button { display: flex; align-items: flex-start; gap: 12px; min-height: 64px; padding: 14px 16px; border: 1.5px solid var(--border); border-radius: 14px;
+  background: var(--canvas); color: var(--ink); font: inherit; font-weight: 650; text-align: left; cursor: pointer;
+  transition: border-color .2s ease, background-color .2s ease, box-shadow .25s ease, transform .3s var(--ease-spring);
+  animation: option-in .45s var(--ease-out) calc(var(--i, 0) * 50ms + 80ms) both; }
+.options button:hover { border-color: color-mix(in srgb, var(--brand-bright) 55%, var(--border)); transform: translateY(-2px); box-shadow: var(--shadow-sm); }
+.options button:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+.options button[aria-checked='true'] { border-color: var(--construction-accent); background: color-mix(in srgb, var(--construction-accent) 14%, var(--surface));
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--construction-accent) 30%, transparent); }
+.letter { display: grid; flex: 0 0 auto; place-items: center; width: 30px; height: 30px; border-radius: 9px; background: var(--chip); color: var(--brand-strong);
+  font-family: var(--font-technical); font-size: .9rem; transition: background-color .2s ease, color .2s ease; }
+.options button[aria-checked='true'] .letter { background: var(--construction-accent); color: var(--blueprint); }
+.optionText { display: grid; gap: 3px; min-width: 0; padding-top: 4px; }
+.optionText small { color: var(--muted); font-size: .82rem; font-weight: 500; line-height: 1.35; }
+.error { margin: 14px 0 0; padding: 12px 16px; border-radius: 10px; background: var(--danger-bg); color: var(--danger-ink); }
+.actions { display: flex; justify-content: space-between; gap: 1rem; margin-top: 22px; padding-top: 18px; border-top: 1px dashed var(--border); }
+
+/* Личная карточка героя: чертёж, вращающаяся разметка вокруг фигуры и поля, которые заполняются ответами. */
+.preview { position: sticky; top: 96px; display: grid; justify-items: center; gap: 10px; overflow: hidden; padding: 20px 18px 18px; border-radius: var(--radius-card); color: #fff;
+  background:
+    linear-gradient(rgb(155 206 255 / 8%) 1px, transparent 1px) 0 0 / 24px 24px,
+    linear-gradient(90deg, rgb(155 206 255 / 8%) 1px, transparent 1px) 0 0 / 24px 24px,
+    radial-gradient(80% 60% at 50% 30%, rgb(41 147 237 / 45%), transparent 70%),
+    linear-gradient(160deg, #061f45, #0a4a95);
+  box-shadow: var(--shadow-lg); animation: setup-rise .6s var(--ease-out) .16s both; }
+.stage { position: relative; display: grid; place-items: center; }
+.stage::before { position: absolute; inset: 8% 10%; border: 2px dashed rgb(255 209 102 / 35%); border-radius: 50%; content: ''; animation: ring-spin 30s linear infinite; }
+.figure { position: relative; display: grid; place-items: center; animation: hero-swap .45s var(--ease-spring) both; }
+.figure > svg { position: relative; max-width: 100%; height: auto; animation: hero-bob 4s ease-in-out infinite alternate; }
+.identity { display: grid; justify-items: center; gap: 2px; min-width: 0; }
+.preview strong { font-size: 1.35rem; letter-spacing: -.01em; }
+.filled { display: none; color: var(--blueprint-line); font-family: var(--font-technical); font-size: .78rem; letter-spacing: .04em; }
+.fields { display: grid; width: 100%; gap: 0; margin: 4px 0 0; padding: 10px 12px; border: 1px solid rgb(155 206 255 / 25%); border-radius: 12px; background: rgb(4 25 55 / 45%); }
+.fields div { display: flex; justify-content: space-between; gap: 12px; padding: 5px 0; border-bottom: 1px dashed rgb(155 206 255 / 18%); font-size: .85rem; }
+.fields div:last-child { border-bottom: 0; }
+.fields dt { color: var(--blueprint-line); }
+.fields dd { margin: 0; color: rgb(255 255 255 / 45%); font-weight: 700; text-align: right; }
+.fields div[data-filled] dd { color: var(--construction-accent); animation: field-fill .4s var(--ease-out); }
+
+@keyframes setup-rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+@keyframes sheet-in { from { opacity: 0; transform: translateX(18px); } to { opacity: 1; transform: none; } }
+@keyframes option-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+@keyframes ring-spin { to { transform: rotate(360deg); } }
+@keyframes hero-bob { to { transform: translateY(-6px); } }
+@keyframes hero-swap { from { transform: scale(.92); opacity: .6; } to { transform: none; opacity: 1; } }
+@keyframes field-fill { from { opacity: 0; transform: translateX(6px); } to { opacity: 1; transform: none; } }
+
+/*
+ * Телефон и планшет: превью героя — компактная карточка, закреплённая сверху, чтобы изменения были видны рядом с вариантами.
+ * Слева фигура, справа имя, счётчик и заполненные поля чипами; кнопки «Назад» и «Далее» прилипают к низу экрана.
+ */
+@media (max-width: 860px) {
+  .header { margin-bottom: 14px; }
+  .header > p:last-child { margin-top: 8px; font-size: .95rem; }
+  .layout { grid-template-columns: 1fr; gap: 12px; }
+  .preview { position: sticky; top: 0; z-index: 5; order: -1; grid-template-columns: 76px minmax(0, 1fr); align-items: center; justify-items: start; gap: 4px 14px;
+    padding: 8px 14px 8px 8px; border: 1px solid rgb(155 206 255 / 28%); border-radius: 18px; box-shadow: 0 18px 36px -18px rgb(0 0 0 / 80%); }
+  .stage { grid-row: span 2; width: 76px; height: 112px; overflow: hidden; }
+  .stage::before { inset: 6% 0; border-width: 1.5px; }
+  .figure > svg { width: 76px; }
+  .identity { justify-items: start; }
+  .preview strong { font-size: 1.05rem; line-height: 1.2; }
+  .filled { display: block; }
+  .fields { display: flex; flex-wrap: wrap; gap: 4px; max-height: 52px; margin: 0; padding: 0; overflow: hidden; border: 0; background: none; }
+  .fields div { display: none; padding: 0; border: 0; }
+  .fields div[data-filled] { display: block; }
+  .fields dt { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+  .fields dd { padding: 2px 8px; border-radius: 999px; background: rgb(255 209 102 / 14%); font-size: .74rem; white-space: nowrap; }
+  .question { padding: 18px 16px 0; scroll-margin-top: 142px; }
+  .question h2 { margin-bottom: 14px; }
+  .actions { position: sticky; bottom: 0; z-index: 4; margin: 16px -16px 0; padding: 12px 16px; border-top: 1px solid var(--border); border-radius: 0 0 14px 14px;
+    background: color-mix(in srgb, var(--surface) 88%, transparent); backdrop-filter: blur(12px); }
+  .actions > button { flex: 1 1 0; }
+}
+@media (max-width: 560px) {
+  .options { grid-template-columns: 1fr; gap: 8px; }
+  .options button { min-height: 56px; padding: 11px 14px; }
+  .options button:hover { transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .header, .question, .sheet, .options button, .preview, .stage::before, .figure, .figure > svg, .fields div[data-filled] dd { animation: none; }
+  .options button, .steps li { transition: none; }
+}

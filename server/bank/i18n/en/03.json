@@ -1,0 +1,152 @@
+{
+  "FIELD_036": { "context": "A crane serves two rebar crews; both need finished cages lifted in the first half of the shift.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will propose my own allocation of lifts and, together with the foremen, check whether the sequence is feasible.",
+    "B": "I will name the priority based on the readiness of the cages and establish the order of lifts in advance.",
+    "C": "I will briefly coordinate time slots with the supervisors and the crane operator.",
+    "D": "I will propose a justified sequence and agree the order of lifts with the participants." } },
+  "FIELD_037": { "context": "After the cage was assembled, it was found that the starter bars for a column are close to the design axis but outside the tolerance.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will recheck the as-built survey and the tolerances to establish the size and cause of the offset.",
+    "B": "I will not release the joint for concreting until a formal technical solution is issued.",
+    "C": "I will check the measurements, record the deviation and obtain a confirmed decision before the pour.",
+    "D": "I will compare the actual position of the starter bars with the design and file a request for a technical solution." } },
+  "FIELD_038": { "context": "During a prolonged concrete pour, a pause is approaching the maximum permissible interval.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will firmly prevent pumping from resuming until the responsible concrete technologist makes a decision.",
+    "B": "I will state the time limit, present the data to the concrete technologist and organise continuation in line with the approved decision.",
+    "C": "I will assess the length of the pause from the supply log and personally set out the conditions for continuing to the person in charge.",
+    "D": "I will check the actual time, the mix properties and the placement chart, then assess an acceptable option." } },
+  "FIELD_039": { "context": "On site two batches of rebar of the same diameter lie side by side, but the marking of one is partly lost.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will check the documents and, together with the warehouse, mark the confirmed bundles before issue.",
+    "B": "I will ask the warehouse and the rebar workers to restore the batch information and compare it with the markings.",
+    "C": "I will check the documents and markings of the remaining bundles to restore traceability.",
+    "D": "I will gather the storekeeper and the foreman to identify the batches separately." } },
+  "FIELD_040": { "context": "Before lifting an assembled formwork panel, the sling log shows an overdue inspection.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will personally arrange for the slings to be replaced and record confirmation of readiness before lifting the panel.",
+    "B": "I will record the overdue sling inspection in the log and file a request for a serviceable set.",
+    "C": "I will not allow lifting with this set and will demand a serviceable, inspected sling.",
+    "D": "I will check the log against the markings and arrange a replacement before lifting resumes." } },
+  "FIELD_041": { "context": "After the pour the pump must be washed out, but the area at the agreed washout point is temporarily occupied.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will check an alternative against the waste management scheme and formalise the change of washout point.",
+    "B": "I will contact the site environmental officer and the operator to free up or agree another location.",
+    "C": "I will keep the requirement for the washout location and agree an available option with those responsible.",
+    "D": "I will agree another approved washout location with the operator and update the close-out procedure." } },
+  "FIELD_042": { "context": "After finishing the pour section a few cubic metres of mix are left over; the neighbouring crew is preparing another structure.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will contact the neighbouring supervisor and the laboratory to check together whether it can be used.",
+    "B": "I will take responsibility for agreeing the time limits and quality requirements for the mix, then agree on acceptable use with the neighbouring crew.",
+    "C": "I will suggest discussing the surplus with the neighbouring crew and take responsibility for asking whether it can be used.",
+    "D": "I will make clear that the mix can be used only with confirmed suitability and a permit for a specific area." } },
+  "FIELD_043": { "context": "After storage, surface deposits were found on some rebar; the degree of corrosion is difficult to assess visually.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will check the condition with the inspector and formalise a decision on suitability before issue.",
+    "B": "I will compare the surface deposits with the inspection criteria and document the specialist's decision on the batch.",
+    "C": "I will compare the condition with the design and incoming inspection requirements and arrange an objective assessment.",
+    "D": "I will separate the disputed batch and arrange its inspection before it is sent to the section." } },
+  "FIELD_044": { "context": "After the slab pour, another crew wants to store heavy formwork on the recently concreted slab.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will prepare information on strength and loads and personally propose that the structural engineer check the storage scheme.",
+    "B": "I will check the age and confirmed strength of the concrete, the permissible load and the storage scheme.",
+    "C": "I will clearly prohibit placement until the bearing capacity is confirmed and propose an alternative area.",
+    "D": "I will present the calculated limits and agree another storage location with the crew." } },
+  "FIELD_045": { "context": "During the formwork inspection a local leak of cement laitance was noticed at one joint.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will assess the location and extent of the leak, then check the prescribed sealing method.",
+    "B": "I will gather the formwork supervisor and the technologist to choose an acceptable joint repair.",
+    "C": "I will record the defect and, together with the supervisor, agree the fix before supply continues.",
+    "D": "I will collect the observations of the operator and the carpenters to determine the source of the leak together." } },
+  "FIELD_046": { "context": "The shift assignment schedules formwork stripping for the morning, but there is no confirmation of the required strength yet.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will not allow stripping until the required strength is confirmed and a permit is issued.",
+    "B": "I will check the results and, together with the responsible person, formalise a decision on the acceptable date.",
+    "C": "I will set the deadline for receiving the strength results myself and establish the procedure for issuing the stripping permit.",
+    "D": "I will note the missing confirmation in the shift assignment and postpone stripping until a permit is issued." } },
+  "FIELD_047": { "context": "The embedded part installers ask to combine two small inspections into one so as not to hold up the crew.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will check the inspection requirements and, together with the participants, confirm acceptable inspection time slots.",
+    "B": "I will agree joint preparation for the inspections with the installers while keeping each control point recorded separately.",
+    "C": "I will keep the mandatory inspection stages in the schedule and notify the responsible inspector.",
+    "D": "I will discuss with the installers and the inspector whether the sequence can be safely rearranged." } },
+  "FIELD_048": { "context": "Two rebar crews are arguing about whose turn it is to work in the limited work area in the stairwell.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will propose my own division of the stairwell work area and, together with the foremen, clarify the order of operations.",
+    "B": "I will name the access order based on the readiness of the previous operations and take responsibility for the sequence.",
+    "C": "I will bring the foremen together and agree the time, access and work area handover points.",
+    "D": "I will determine a justified order and confirm the work time slots together with the foremen." } },
+  "FIELD_049": { "context": "Before applying the finishing putty, the moisture of the base on one wall is higher than the neighbouring readings.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will recheck the measurement points and conditions and compare them with the requirements of the mix and the base.",
+    "B": "I will postpone finishing this wall until its readiness is confirmed according to the method statement.",
+    "C": "I will repeat the measurements, record the result and schedule finishing once the permissible value is reached.",
+    "D": "I will compare the moisture readings with the application conditions and record the decision on the wall's readiness." } },
+  "FIELD_050": { "context": "During a facade anchor test, one value is close to the set limit, while the others are higher.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will say directly that the borderline result requires a decision by the quality control service before continuing on this area.",
+    "B": "I will present the test report and propose a control test under an agreed programme.",
+    "C": "I will check the conditions of the borderline test and propose to the responsible person myself a way to confirm the result.",
+    "D": "I will study the test report, the sampling scheme and the condition of the base before drawing a conclusion on the batch." } },
+  "FIELD_051": { "context": "Ceiling installers found that an air duct passes through the designated hanger fixing point.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will check the clash against the drawings and, together with the adjacent trades, formalise an acceptable change.",
+    "B": "I will compare the fixing conflict with the duct route and prepare a joint detail option with the adjacent trades.",
+    "C": "I will check the system drawings and the permissible fixing zones to determine the source of the conflict.",
+    "D": "I will gather the ventilation crew, the ceiling installers and the designer at the joint to agree a solution." } },
+  "FIELD_052": { "context": "Paint of the right shade has arrived at the warehouse, but for some of the buckets the shelf life requires an additional check.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will set the procedure for checking shelf lives myself and record the status of each part of the paint batch.",
+    "B": "I will set aside the buckets with unconfirmed shelf life and arrange a check during incoming inspection.",
+    "C": "I will block issue of the disputed batch until a formal decision is made on its suitability.",
+    "D": "I will split the batch, check the documents and authorise use only of the verified buckets." } },
+  "FIELD_053": { "context": "The cladding sample has been approved, but the new crew has not yet seen it before starting work.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will include viewing the sample and the control parameters in the shift assignment.",
+    "B": "I will show the crew the sample on site and we will discuss what acceptable workmanship looks like.",
+    "C": "I will check the work chart against the sample, then record a control point together with the crew.",
+    "D": "I will arrange for the sample to be shown to the new crew and set up control of the first completed area." } },
+  "FIELD_054": { "context": "In a narrow corridor, painters and door installers are scheduled for the same shift.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will gather the supervisors of both crews to agree passage and handover of the corridor.",
+    "B": "I will propose a sequence of work and, together with the supervisors, confirm access and handover times.",
+    "C": "I will propose an order of work in the corridor and, together with the supervisors, allocate access to the rooms.",
+    "D": "I will determine a safe sequence and announce specific time windows to the sections." } },
+  "FIELD_055": { "context": "The base for tiles has a local level difference; the supervisor proposes compensating for it with a thick layer of adhesive.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will record the measurement and set an acceptable levelling method before tiling starts.",
+    "B": "I will compare the level difference with the adhesive's limits and formalise an agreed technical solution.",
+    "C": "I will measure the level difference and check the permissible adhesive thickness against the design and the instructions.",
+    "D": "I will document the need to prepare the base before tiling in accordance with the approved method statement." } },
+  "FIELD_056": { "context": "The client's representative verbally proposes changing the colour of the accent wall after the material has been purchased.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will clarify the impact of the new colour on materials and personally present the conditions of the change to the client.",
+    "B": "I will check the approved palette, the remaining stock and the impact of the change on time and cost.",
+    "C": "I will explain directly that the change is possible after formal approval and an updated assignment.",
+    "D": "I will present a calculation of the consequences and propose formalising the change before repainting." } },
+  "FIELD_057": { "context": "At the window reveals, two crews applied sealant differently, although both refer to the same detail.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will check the detailing, the joint width and the surface preparation requirements.",
+    "B": "I will gather the foremen and the inspector for a joint review of the reference detail.",
+    "C": "I will check the detail and, together with the crews, agree on a sample of correct workmanship.",
+    "D": "I will compare the two versions of the reveal and, together with the crews, sort out the differences in understanding the detail." } },
+  "FIELD_058": { "context": "Before installing facade cassettes, the scaffold inspection log has no entry for the current shift.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will not allow anyone onto the section until the established inspection is carried out and recorded.",
+    "B": "I will check the condition of the section with the responsible person and secure a formal permit before work.",
+    "C": "I will request confirmation of the scaffold condition myself and enforce the established shift access procedure.",
+    "D": "I will check that the entry is complete and the access tag is on the specific scaffold section." } },
+  "FIELD_059": { "context": "Door units were delivered to the site, and some of them lack a document confirming the required properties.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will note the incomplete set and, together with procurement, request the documents before installation.",
+    "B": "I will agree a check of the door units with the warehouse and quality control and reflect the batch status in the register.",
+    "C": "I will record the list of missing confirmations in the incoming inspection report.",
+    "D": "I will contact procurement and the supplier to speed up receipt of the documents." } },
+  "FIELD_060": { "context": "One tile shade is running out earlier than calculated; another batch may differ slightly in tone.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will propose a way of distributing the tile batches and discuss its visible result with the crew.",
+    "B": "I will make clear that I will not mix batches without an agreed layout and propose stopping work in this area.",
+    "C": "I will gather the tilers, the warehouse and the designer to assess options for distributing the batches.",
+    "D": "I will propose keeping the batches separate at their boundary and agree the layout together with the participants." } },
+  "FIELD_061": { "context": "During installation of facade insulation, the base temperature has approached the lower limit specified by the mix manufacturer.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will measure the base temperature at several points and check the forecast against the instructions.",
+    "B": "I will stop using the mix while the temperature conditions remain unconfirmed and document the checks on those conditions.",
+    "C": "I will record the measurements and schedule work only within a confirmed temperature window.",
+    "D": "I will compare the actual temperature with the mix instructions and record the permissible work window." } },
+  "FIELD_062": { "context": "After a water test of the facade junction, a damp spot appeared on the inside with no visible leak path.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will state clearly that the joint cannot be closed without a repeat check and a decision.",
+    "B": "I will present an observation scheme and initiate a repeat test with the responsible people.",
+    "C": "I will compare the location of the damp spot with the junction detail and propose the next control area myself.",
+    "D": "I will check the test report, the spray zone and possible water paths before concluding there is a defect." } },
+  "FIELD_063": { "context": "In a long corridor, laying floor tiles from both sides leads to a narrow cut at the main entrance.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will prepare two layouts based on actual dimensions and agree one on site.",
+    "B": "I will compare two layouts at the entrance and, together with the designer, choose the basis for approval.",
+    "C": "I will check the axes, dimensions and approved layout, then propose an option with an acceptable cut.",
+    "D": "I will gather the designer, the supervisor and the client at the entrance to choose an acceptable axis." } },
+  "FIELD_064": { "context": "Before closing a service box, it was found that the certificate for fire-stopping the penetration has not been signed.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will personally arrange confirmation of the penetration seal and record that the box is ready to be closed.",
+    "B": "I will note the missing fire-stopping certificate and file a request for the mandatory inspection.",
+    "C": "I will not allow the box to be closed until the seal is checked and the certificate is issued.",
+    "D": "I will check the penetrations against the as-built drawing and arrange an inspection before closing." } },
+  "FIELD_065": { "context": "After the rooms were painted, adjacent trades plan dusty work in the neighbouring zone without the required separation.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will formalise a scheme for separation, cleaning and surface protection before admitting the adjacent trades.",
+    "B": "I will contact the adjacent trades and we will discuss barriers, passages and the cleaning procedure.",
+    "C": "I will include the protection measures in the plan and jointly check that they are ready before allowing access.",
+    "D": "I will agree zone separation with the adjacent trades and establish the procedure for protecting painted surfaces." } }
+}

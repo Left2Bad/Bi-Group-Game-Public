@@ -1,0 +1,162 @@
+{
+  "OPS_001": { "context": "Before earthworks started, a cable line was found that is not on the utilities drawing.", "text": "How will you check the conditions for authorising excavation?", "options": {
+    "A": "I will compare the as-built drawings with the actual utility positions together with the utility owner.",
+    "B": "I will suspend the excavation and formalise a change to the work permit.",
+    "C": "I will clarify the position of the line, then update the permit and the work boundaries.",
+    "D": "I will fence off the spot and pass the discrepancy to the person responsible for permits." } },
+  "OPS_002": { "context": "A section of guardrail is missing on the scaffolding, and the contractor is waiting for permission to work.", "text": "How will you respond to the request to start the shift?", "options": {
+    "A": "I will close access and organise restoration and inspection of the scaffolding with the team.",
+    "B": "I will tell the contractor clearly that access is closed until the guardrail is restored.",
+    "C": "I will mark the danger zone and inform the responsible manager.",
+    "D": "I will gather the supervisor and the installers to agree restoration and a repeat inspection." } },
+  "OPS_003": { "context": "While a load was being lifted, a small object fell next to a walkway; no one was hurt.", "text": "How will you investigate the incident?", "options": {
+    "A": "I will raise the issue at the operational meeting and propose immediate measures.",
+    "B": "I will file an incident report and pass it to the commission.",
+    "C": "I will reconstruct the lifting sequence and check how the load was secured and the route.",
+    "D": "I will record the facts, flag the risk to the manager and secure measures before the next lift." } },
+  "OPS_004": { "context": "A subcontractor's permit for work at height has expired, although the crew is included in the daily plan.", "text": "How will you organise the day?", "options": {
+    "A": "I will inform the planner of the restriction and record a new date for the work.",
+    "B": "I will check the documents and, together with the site manager, move the crew to permitted work.",
+    "C": "I will agree safe tasks on the ground with the crew until the permit is issued.",
+    "D": "I will not allow work at height and will follow up on restoring the permit." } },
+  "OPS_005": { "context": "Remarks about helmets keep recurring on the section, although there are spare helmets in the warehouse.", "text": "How will you look for a lasting solution?", "options": {
+    "A": "I will check helmet sizes, how helmets are issued and the circumstances of each repeat case.",
+    "B": "I will discuss with the workers what prevents them from wearing helmets and collect suggestions.",
+    "C": "I will compare the reasons for the remarks with the crew's opinion and change the issue procedure or the control.",
+    "D": "I will check the issue log and schedule a repeat safety briefing." } },
+  "OPS_006": { "context": "A new worker is not sure that the electrical panel is switched off, and installation is already scheduled.", "text": "How will you ensure a safe start?", "options": {
+    "A": "I will secure the electrician's confirmation and a permit before installation starts.",
+    "B": "I will openly stop the preparation and call an authorised electrician to check.",
+    "C": "I will fence off the area and send the worker to the person responsible for electrical installations.",
+    "D": "I will check that the work permit has been issued and electrical isolation confirmed according to the procedure." } },
+  "OPS_007": { "context": "The delivery route crosses the tower crane's working zone.", "text": "How will you coordinate vehicle movements?", "options": {
+    "A": "I will record the approved route and the restrictions in the traffic plan.",
+    "B": "I will suspend entry and request a decision from the person responsible for lifting.",
+    "C": "I will check the lifting plan, the delivery schedule and possible detour routes.",
+    "D": "I will find a safe route and enter it into the agreed traffic plan." } },
+  "OPS_008": { "context": "The subcontractor's safety briefing describes different operations from the actual installation on the floor.", "text": "How will you handle authorisation for the crew to work?", "options": {
+    "A": "I will request a corrected briefing and schedule a repeat check.",
+    "B": "I will not allow the crew to work until the corrected safety briefing has been given; we will discuss it with the workers.",
+    "C": "Together with the supervisor and the crew, I will clarify the operations and the measures needed.",
+    "D": "I will firmly refuse authorisation to work and explain the mismatch to the works manager." } },
+  "OPS_009": { "context": "During roof work, wind readings at ground level and at the top differ noticeably.", "text": "How will you decide whether to continue lifting materials?", "options": {
+    "A": "I will check the measuring location and that the instrument works, then compare the values with the limits.",
+    "B": "I will tell the manager that a pause is needed until there is a reliable measurement.",
+    "C": "I will stop lifting, get a repeat measurement at the top and record the decision.",
+    "D": "I will request a control measurement from the responsible person and keep the load on the ground." } },
+  "OPS_010": { "context": "A worker reported pain after carrying materials by hand and wants to finish the shift.", "text": "What actions will you take?", "options": {
+    "A": "I will provide help, register the report and hand the task over to another worker.",
+    "B": "I will arrange for medical help and file the report according to the procedure.",
+    "C": "I will notify the supervisor and send the worker to a medical specialist.",
+    "D": "I will coordinate a replacement in the crew and help the worker leave the site safely." } },
+  "OPS_011": { "context": "The supplier changed the safety data sheet for the sealant that the crew uses every day.", "text": "How will you introduce the updated requirements?", "options": {
+    "A": "I will discuss the changes with the crew and collect questions about its use.",
+    "B": "I will pass the new data sheet to the supervisor and arrange for workers to read it.",
+    "C": "I will compare the composition, risks and ventilation requirements with the previous data sheet.",
+    "D": "I will check the differences in the data sheet and adjust the work procedure together with the workers." } },
+  "OPS_012": { "context": "The manager asks you to temporarily open a passage across the site without an approved access plan.", "text": "How will you respond to the request?", "options": {
+    "A": "I will fence off the route and pass the request to the person responsible for site layout.",
+    "B": "I will keep the passage closed and initiate approval of a temporary route.",
+    "C": "I will request a plan, an inspection and a permit under the current procedure.",
+    "D": "I will explain why the passage is closed for now and propose a safe alternative." } },
+  "OPS_013": { "context": "Before entering a manhole it turned out that the gas detector calibration log is not fully filled in.", "text": "How will you check readiness for the work?", "options": {
+    "A": "I will check the serial number, the valid metrological verification and the results of the instrument's control check.",
+    "B": "I will not allow entry and will restore the documents and atmosphere testing according to the procedure.",
+    "C": "I will check the instrument, record the data and issue a permit only after the air has been tested.",
+    "D": "I will close the entry and call the person responsible for the gas detector." } },
+  "OPS_014": { "context": "The contractor asks to remove part of the guardrail at an opening to carry equipment through.", "text": "How will you organise the operation?", "options": {
+    "A": "I will set the conditions for temporary access and make sure the crew restores the protection.",
+    "B": "I will firmly demand a temporary solution that keeps fall protection in place.",
+    "C": "I will pass the request to the supervisor and schedule an inspection of the area before the operation.",
+    "D": "I will agree with the installers the order of carrying the equipment and restoring the guardrail." } },
+  "OPS_015": { "context": "Two shifts mark the same danger zone near the warehouse differently.", "text": "How will you resolve the inconsistency?", "options": {
+    "A": "I will raise the issue with the shift managers and point out the need for a single scheme.",
+    "B": "I will keep the wider fencing until a common decision is made.",
+    "C": "I will compare the actual movement paths, the scheme and the reasons for the different markings.",
+    "D": "I will check the risk and secure a single agreed marking for both shifts." } },
+  "OPS_016": { "context": "The hot work permit expires before the actual end of welding.", "text": "How will you organise continuation?", "options": {
+    "A": "I will remind the supervisor of the deadline and prepare a new permit in advance.",
+    "B": "I will finish work within the permit's validity period, then agree the new shift and protective measures.",
+    "C": "I will agree with the crew to postpone the remaining welds and arrange a fire watch.",
+    "D": "I will stop welding by the deadline and formalise an extension with a repeat check of the area." } },
+  "OPS_017": { "context": "Several workers bypass the designated pedestrian route to take a shortcut to the site cabin.", "text": "How will you find the cause and change the behaviour?", "options": {
+    "A": "I will check the length of the route, the lighting and the actual points where it crosses vehicle paths.",
+    "B": "I will discuss with the workers the obstacles on the route and ways to improve it.",
+    "C": "I will check the risk of the crossings and, together with the team, propose a convenient safe route.",
+    "D": "I will strengthen the route signage and hold a targeted briefing." } },
+  "OPS_018": { "context": "The supervisor disputes a remark about cylinders placed next to the welding area.", "text": "How will you resolve the situation?", "options": {
+    "A": "I will explain the requirement, record the moving of the cylinders and check the result.",
+    "B": "I will firmly show the specific requirement and stop the use of the cylinders until it is corrected.",
+    "C": "I will pass the remark to the person responsible for welding and set a date for checking.",
+    "D": "I will check the placement and record a remark with a follow-up inspection." } },
+  "OPS_019": { "context": "After the rain, the walkway near the excavation was washed out, but earthworks have not yet resumed.", "text": "How will you assess the readiness of the section?", "options": {
+    "A": "I will close the walkway and update the access scheme before re-admission.",
+    "B": "I will inform the site manager and keep the walkway closed until it is checked.",
+    "C": "I will inspect the stability of the slope, the drainage and the condition of the route with the responsible specialist.",
+    "D": "I will assess the condition of the excavation, update the fencing and arrange a repeat inspection." } },
+  "OPS_020": { "context": "The foreman reports that the workers do not understand the new evacuation procedure from two levels.", "text": "How will you carry out the preparation?", "options": {
+    "A": "I will pass the clarified scheme to the supervisors and set a time for the briefing.",
+    "B": "I will get the scheme explained and hold a joint drill before work starts.",
+    "C": "I will organise a practical walk-through of the routes with both crews and collect questions.",
+    "D": "I will tell the managers that admission is impossible without a clear evacuation procedure." } },
+  "OPS_021": { "context": "Conflicting reports came in on site about damage to a temporary cable.", "text": "How will you find out the extent of the risk?", "options": {
+    "A": "I will clarify the location, load and condition of the cable with the electrician and from the inspection log.",
+    "B": "I will demand that access to the area be closed and inform those responsible of the possible damage.",
+    "C": "I will fence off the area, arrange a check by an electrician and communicate the result to the shift.",
+    "D": "I will pass the information to the duty electrician and keep the fencing in place." } },
+  "OPS_022": { "context": "The contractor wants to work on a day off, when regular supervision of the site is not planned.", "text": "How will you organise the approval?", "options": {
+    "A": "I will check the availability of duty staff and agree a feasible scope of work with the team.",
+    "B": "I will check the duty roster, the permit and the responsible people before confirming the work.",
+    "C": "I will reschedule unprepared work and notify everyone on the schedule.",
+    "D": "I will connect the contractor with the duty services and agree a feasible safe task." } },
+  "OPS_023": { "context": "Workers have complained about dust in the tile cutting area.", "text": "How will you choose the measures?", "options": {
+    "A": "I will collect the workers' suggestions on equipment placement and protection.",
+    "B": "I will pass the complaints to the supervisor and arrange measurement of the conditions if needed.",
+    "C": "I will check the source, the cutting mode and how the dust extraction actually works.",
+    "D": "I will check the causes of the dust and, together with the crew, change the cutting method and control." } },
+  "OPS_024": { "context": "The contractor asks you to accept verbal authorisation to enter a restricted technical area.", "text": "What will you do?", "options": {
+    "A": "I will provide the contact details of the person responsible for the area and keep the entrance closed.",
+    "B": "I will keep the restriction and help arrange an official permit.",
+    "C": "I will check the list of authorised persons and arrange access according to the established procedure.",
+    "D": "I will firmly explain that entry is impossible without a confirmed permit." } },
+  "OPS_025": { "context": "The rebar order specifies a diameter from an old design revision, and shipment is scheduled for the morning.", "text": "How will you clarify the order?", "options": {
+    "A": "I will check the design revision, the materials list and the confirmed quantities with the technical department (PTO) engineer.",
+    "B": "I will freeze the shipment and file a corrected order according to the procedure.",
+    "C": "I will confirm the current diameter and update the order before the shipment is approved.",
+    "D": "I will report the discrepancy to the person who placed the order and wait for confirmation." } },
+  "OPS_026": { "context": "Concrete blocks and equipment for urgent installation arrived at the unloading area at the same time.", "text": "How will you allocate the ramp resources?", "options": {
+    "A": "I will set the priority and agree the time for each unloading with the participants.",
+    "B": "I will tell the drivers the unloading order and agree it with the warehouse manager.",
+    "C": "I will register both vehicles and request a decision on the order from the dispatcher.",
+    "D": "I will bring together the warehouse representative, the site manager and the drivers to agree safe time slots." } },
+  "OPS_027": { "context": "The supplier offers a cheaper equivalent cable, but its fire resistance is unclear in the data sheet.", "text": "How will you assess the offer?", "options": {
+    "A": "I will openly refuse to approve the substitution without confirmation of the parameters.",
+    "B": "I will send the data sheet to the designer and keep the original item in the order.",
+    "C": "I will compare the required marking and certificates with the design specification.",
+    "D": "I will check the documents and explain to the supplier what data is needed for consideration." } },
+  "OPS_028": { "context": "A batch of fasteners arrived before the installation area was ready and is blocking the warehouse aisle.", "text": "How will you organise storage?", "options": {
+    "A": "I will temporarily allocate a free permitted spot and inform the warehouse.",
+    "B": "I will formalise the move and discuss the earliest issue date with the crew.",
+    "C": "I will agree with the storekeeper and the installers on placement that does not block the aisle.",
+    "D": "I will determine a permissible area and record the move in the warehouse records." } },
+  "OPS_029": { "context": "Installers often request small fittings on the day of work, which causes downtime.", "text": "How will you change the supply arrangements?", "options": {
+    "A": "I will collect the issue history and identify items with unstable stock.",
+    "B": "I will discuss the weekly need and a convenient request format with the supervisors.",
+    "C": "I will compare consumption with the schedule and set up a minimum stock with the crews.",
+    "D": "I will suggest that the supervisors submit a list of fittings for the week in advance." } },
+  "OPS_030": { "context": "The site manager asks by phone to send material to another site without a delivery note.", "text": "How will you respond?", "options": {
+    "A": "I will explain the procedure, quickly formalise the transfer and give the delivery time.",
+    "B": "I will clearly confirm that the transfer is possible only after it is formalised.",
+    "C": "I will clarify the site details and start the approval with the person responsible.",
+    "D": "I will prepare the documents and check the stock before sending." } },
+  "OPS_031": { "context": "The delivery note says 120 bags of mix, but 116 were counted on the pallets during acceptance.", "text": "How will you carry out the acceptance?", "options": {
+    "A": "I will record the discrepancy in a report and adjust the receipt according to the procedure.",
+    "B": "I will leave the delivery note unsigned and call the senior storekeeper.",
+    "C": "I will recount the pallets and check the labelling with the driver.",
+    "D": "I will check the actual quantity and record the discrepancy before signing the acceptance." } },
+  "OPS_032": { "context": "The supplier warned that delivery of the window units will be three days late.", "text": "How will you inform the team?", "options": {
+    "A": "I will pass the notice to those responsible and request an updated schedule.",
+    "B": "I will openly report the delay and help the team agree interim work.",
+    "C": "I will gather the site manager, the planner and the supplier to agree a new sequence.",
+    "D": "I will name the confirmed date and immediately point out the impact on the schedule." } }
+}

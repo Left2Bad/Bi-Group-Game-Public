@@ -1,0 +1,57 @@
+/* Дорога маршрута: пунктир-чертёж, поверх него участки, которые «асфальтируются» при отметке недель. */
+.track { position: relative; }
+.track > ol { position: relative; z-index: 1; padding-bottom: 44px; }
+/* При объезде справа от карточек освобождается полоса под временную дорогу. */
+.track[data-detour] > ol > li { padding-right: 72px; transition: padding .3s ease; }
+.road { position: absolute; z-index: 0; top: 0; left: 0; overflow: visible; pointer-events: none; }
+.plan { fill: none; stroke: rgb(155 206 255 / 22%); stroke-width: 10; stroke-linecap: round; }
+.dashes { fill: none; stroke: rgb(155 206 255 / 45%); stroke-width: 2; stroke-dasharray: 2 9; stroke-linecap: round; }
+.paved { fill: none; stroke-width: 10; stroke-linecap: round; stroke-dasharray: 1 1; stroke-dashoffset: 1; filter: drop-shadow(0 0 6px rgb(255 209 102 / 35%)); transition: stroke-dashoffset 1.4s var(--ease-out); }
+g[data-built] > .paved { stroke-dashoffset: 0; }
+/* На построенном участке разметка становится светлой осевой линией. */
+g[data-built] > .dashes { stroke: rgb(255 255 255 / 85%); stroke-dasharray: 8 8; transition: stroke .4s ease 1s; }
+.cone { animation: cone-in .5s var(--ease-spring) both; }
+.cone path:first-child { fill: #ff8a3d; }
+.cone .coneStripe { fill: #fff; }
+.cone rect { fill: #3a2a1a; }
+@keyframes cone-in { from { opacity: 0; transform: translateY(-8px) scale(.4); } }
+/* Объезд: неделя отмечена вне очереди — оранжевая временная дорога в обход пропущенных недель. */
+.detourRoad { fill: none; stroke: rgb(255 138 61 / 75%); stroke-width: 8; stroke-linecap: round; stroke-dasharray: 1 1; stroke-dashoffset: 1; filter: drop-shadow(0 0 6px rgb(255 138 61 / 45%)); animation: detour-draw 1.1s var(--ease-out) .15s forwards; }
+.detourDashes { fill: none; stroke: #fff4e6; stroke-width: 2; stroke-dasharray: 6 7; stroke-linecap: round; opacity: 0; animation: detour-fade .3s ease 1.1s forwards, detour-flow .9s linear 1.1s infinite; }
+@keyframes detour-draw { to { stroke-dashoffset: 0; } }
+@keyframes detour-fade { to { opacity: .85; } }
+@keyframes detour-flow { to { stroke-dashoffset: -13; } }
+.car { opacity: 0; animation: detour-fade .3s ease 1.2s forwards; }
+.car rect:first-child { fill: #ffd166; stroke: #0b1726; stroke-width: 1; }
+.car .carGlass { fill: #0b1726; }
+.sign { opacity: 0; animation: sign-in .5s var(--ease-spring) .9s forwards; }
+.sign path { stroke: var(--muted); stroke-width: 1.5; }
+.sign rect { fill: #ff8a3d; stroke: #fff; stroke-width: 1; }
+.sign text { fill: #fff; font-size: 6.5px; font-weight: 800; letter-spacing: .04em; text-anchor: middle; }
+@keyframes sign-in { from { opacity: 0; transform: translateY(-6px) scale(.5); } to { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) {
+  .detourRoad { animation: none; stroke-dashoffset: 0; }
+  .detourDashes, .sign, .car { animation: none; opacity: 1; }
+  .car { display: none; }
+}
+.finish path:first-child { stroke: var(--muted); stroke-width: 2; stroke-linecap: round; }
+.flag { fill: var(--border); transition: fill .4s ease; }
+.road[data-complete] .flag { fill: var(--construction-accent); animation: wave 1.6s ease-in-out 1.2s infinite; transform-origin: 0 -21px; }
+@keyframes wave { 0%, 100% { transform: skewY(0); } 50% { transform: skewY(-8deg); } }
+
+/* Недели: шире полоса слева под изгибы дороги. */
+.week { grid-template-columns: 76px minmax(0, 1fr); }
+.marker::after { display: none; }
+.marker { align-self: start; }
+/* Неотмеченная неделя — пунктирный «колышек» с бледной цифрой; отмеченная — цветная наклейка с галочкой. */
+.marker span { position: relative; width: 44px; height: 44px; border: 2px dashed rgb(155 206 255 / 45%); background: var(--canvas); color: rgb(155 206 255 / 40%); transition: background-color .3s ease, border-color .3s ease, color .3s ease; }
+.marker[data-done] span { border: 2px solid rgb(255 255 255 / 70%); background: var(--sticker); color: #0b1726; box-shadow: 0 0 0 5px color-mix(in srgb, var(--sticker) 25%, transparent), 0 0 22px var(--sticker); animation: stamp .55s var(--ease-spring) both; }
+.marker[data-done] span::after { position: absolute; right: -6px; bottom: -4px; display: grid; place-items: center; width: 18px; height: 18px; border-radius: 50%; background: #0b1726; color: #7df0bd; font-size: .7rem; content: "✓"; box-shadow: 0 0 0 2px var(--sticker); }
+@keyframes stamp { 0% { transform: scale(.4) rotate(-25deg); } 60% { transform: scale(1.15) rotate(6deg); } 100% { transform: none; } }
+
+.doneBadge { margin-left: 10px; padding: 2px 9px; border-radius: 99px; background: rgb(91 224 168 / 14%); color: #7df0bd; font-size: .72rem; font-weight: 700; animation: stamp .5s var(--ease-spring) both; }
+.early { display: flex; gap: 10px; align-items: flex-start; margin: 0 0 12px; padding: 10px 12px; border: 1px dashed rgb(255 138 61 / 55%); border-radius: 12px; background: rgb(255 138 61 / 8%); color: var(--ink-soft); font-size: .88rem; }
+.early svg { flex: none; width: 20px; height: 20px; }
+
+@media (max-width: 520px) { .week { grid-template-columns: 56px minmax(0, 1fr); gap: 10px; } }
+@media print { .road { display: none; } }

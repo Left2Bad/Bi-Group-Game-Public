@@ -1,0 +1,131 @@
+/* Шапка: логотип | меню | инструменты. Ширина и отступы совпадают с подвалом (см. Shell.module.css). */
+.header {
+  position: relative;
+  z-index: 30;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  grid-template-areas: "brand nav tools";
+  align-items: center;
+  gap: .75rem 1.25rem;
+  width: min(var(--content-width), calc(100% - 40px));
+  margin-inline: auto;
+  padding-block: 1.1rem;
+}
+
+.brand { grid-area: brand; justify-self: start; display: inline-flex; align-items: center; gap: 12px; color: var(--ink); text-decoration: none; }
+.brand svg { width: 40px; height: 40px; flex-shrink: 0; }
+.brandText { display: grid; gap: 1px; }
+.brandName { font-size: 1.3rem; font-weight: 800; line-height: 1.1; letter-spacing: -.03em; white-space: nowrap; }
+.brandRole { color: var(--muted); font-size: .72rem; font-weight: 600; line-height: 1.1; white-space: nowrap; }
+
+.tools { grid-area: tools; display: flex; align-items: center; gap: 8px; }
+.account { display: grid; font-size: .75rem; line-height: 1.3; }
+.accountName { max-width: 180px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-weight: 650; }
+.signOut { border: 0; padding: 3px 0; text-align: left; background: transparent; color: var(--muted); cursor: pointer; font-size: .75rem; }
+.signIn { font-size: .85rem; font-weight: 650; }
+.logoutError { grid-column: 1 / -1; color: var(--danger-ink); margin: 0; }
+
+/* Меню: основные пункты в «стеклянной» плашке, справочные — в выпадающем «Ещё». */
+.nav { grid-area: nav; min-width: 0; justify-self: center; display: flex; align-items: center; gap: .25rem; padding: 4px; border: 1px solid var(--border); border-radius: 14px; background: var(--glass); backdrop-filter: blur(6px); flex-wrap: wrap; justify-content: center; }
+
+.item { display: inline-flex; align-items: center; gap: .4rem; padding: .45rem .8rem; border: 0; border-radius: 10px; background: transparent; color: var(--muted); font: inherit; font-size: .93rem; font-weight: 600; line-height: 1.4; text-decoration: none; white-space: nowrap; cursor: pointer; transition: color .15s ease, background-color .15s ease; }
+.item:hover { color: var(--brand-strong); background: var(--brand-soft); }
+.item[aria-current="page"], .moreButton[data-current="true"] { color: #fff; background: var(--blueprint); }
+
+/* Подсказка у пункта, который нельзя открыть без аватара. */
+.tipHost { position: relative; display: inline-flex; }
+.tip { position: absolute; top: calc(100% + 8px); left: 50%; z-index: 25; width: max-content; max-width: 16rem; transform: translateX(-50%); padding: .5rem .75rem; border-radius: 10px; background: var(--ink); color: var(--surface); font-size: .8rem; font-weight: 600; line-height: 1.35; white-space: normal; box-shadow: 0 8px 24px rgb(8 46 96 / 20%); }
+
+/* Закрытая страница: виден замок, нажать нельзя. Состояние «отключено» не требует контраста, но текст остаётся читаемым. */
+.locked, .locked:hover { color: var(--muted); background: transparent; opacity: .7; cursor: not-allowed; }
+.lock { width: 14px; height: 14px; flex-shrink: 0; }
+.srOnly { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+
+.more { position: relative; display: flex; }
+.chevron { width: 14px; height: 14px; transition: transform .15s var(--ease-out); }
+.moreButton[aria-expanded="true"] .chevron { transform: rotate(180deg); }
+.moreCaption { display: none; }
+.morePanel { position: absolute; top: calc(100% + 10px); right: 0; z-index: 20; display: none; flex-direction: column; gap: .15rem; min-width: 12rem; padding: 4px; border: 1px solid var(--border); border-radius: 14px; background: var(--surface); box-shadow: 0 12px 32px rgb(8 46 96 / 16%); }
+.morePanel[data-open="true"] { display: flex; }
+.morePanel .item { width: 100%; }
+
+.burger { grid-area: burger; display: none; place-items: center; width: 44px; height: 44px; padding: 0; border: 1px solid var(--border); border-radius: 12px; background: var(--glass); color: var(--ink); cursor: pointer; }
+.burger:hover { color: var(--brand-strong); background: var(--brand-soft); }
+.burger svg { width: 22px; height: 22px; }
+
+/* Режим теста: вместо меню — одна кнопка выхода. */
+.exit { grid-area: nav; justify-self: end; display: inline-flex; align-items: center; gap: .4rem; min-height: 44px; padding: 0 14px; border: 1px solid var(--border); border-radius: 12px; background: var(--glass); color: var(--muted); font-size: .93rem; font-weight: 600; text-decoration: none; white-space: nowrap; transition: color .15s ease, background-color .15s ease; }
+.exit:hover { color: var(--brand-strong); background: var(--brand-soft); }
+.exitIcon { width: 16px; height: 16px; }
+
+/* Узкий экран: логотип, настройки и бургер в одной строке; меню раскрывается ниже на всю ширину, все пункты в один столбец. */
+@media (max-width: 1280px) {
+  .header { grid-template-columns: minmax(0, 1fr) auto auto; grid-template-areas: "brand tools burger" "nav nav nav"; gap: .5rem .5rem; }
+  .burger { display: inline-grid; }
+  .nav { display: none; justify-self: stretch; flex-direction: column; align-items: stretch; gap: .15rem; padding: 6px; border-radius: 16px; }
+  .nav[data-open="true"] { display: flex; }
+  .item { min-height: 44px; padding: .65rem .9rem; font-size: 1rem; }
+  .tipHost { display: flex; flex-direction: column; }
+  .tip { position: static; transform: none; max-width: none; margin: .15rem .9rem .35rem; }
+  .more { display: block; }
+  .moreButton { display: none; }
+  .moreCaption { display: block; margin-top: .35rem; padding: .7rem .9rem .25rem; border-top: 1px solid var(--border); color: var(--muted); font-size: .75rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+  .morePanel { position: static; display: flex; min-width: 0; padding: 0; border: 0; border-radius: 0; background: transparent; box-shadow: none; }
+}
+
+/* В режиме теста бургера нет: возвращаем трёхколоночную сетку, выход стоит перед настройками. */
+.header[data-focus="true"] { grid-template-columns: auto minmax(0, 1fr) auto; grid-template-areas: "brand nav tools"; }
+
+@media (max-width: 600px) {
+  .header[data-focus="true"] { grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "brand tools" "nav nav"; }
+  .header[data-focus="true"] .exit { justify-self: start; }
+}
+
+/* Совсем узкий экран: остаётся значок логотипа, название доступно через подпись ссылки. */
+@media (max-width: 520px) {
+  .brandText { display: none; }
+  .accountName { max-width: 120px; }
+}
+
+/* Анимации меню в духе PillNav: плашка-капсула разворачивается при загрузке, пункты появляются по очереди,
+   при наведении снизу поднимается синий круг и подпись «перекатывается», под текущим пунктом пружинит жёлтая точка. */
+.face { display: inline-flex; align-items: center; gap: .4rem; transition: transform .36s cubic-bezier(.22, 1, .36, 1); }
+.dot { display: none; }
+.brand svg { animation: logo-pop .7s cubic-bezier(.34, 1.56, .64, 1) both; }
+.brand:hover svg { animation: logo-spin .9s cubic-bezier(.65, 0, .25, 1); }
+@keyframes logo-pop { from { opacity: 0; transform: scale(.6); } }
+@keyframes logo-spin { from { transform: rotate(0); } to { transform: rotate(360deg); } }
+
+@media (min-width: 1281px) {
+  .nav { position: relative; flex-wrap: nowrap; padding: 5px; border-radius: 999px; box-shadow: 0 22px 44px -22px rgb(0 0 0 / 70%), inset 0 1px 0 rgb(255 255 255 / 6%);
+    animation: nav-unroll .76s cubic-bezier(.22, 1, .36, 1) .09s backwards; }
+  .nav > * { animation: nav-item-in .56s cubic-bezier(.22, 1, .36, 1) backwards; }
+  .nav > :nth-child(1) { animation-delay: .2s; } .nav > :nth-child(2) { animation-delay: .25s; } .nav > :nth-child(3) { animation-delay: .3s; }
+  .nav > :nth-child(4) { animation-delay: .35s; } .nav > :nth-child(5) { animation-delay: .4s; } .nav > :nth-child(6) { animation-delay: .45s; }
+  .nav > :nth-child(7) { animation-delay: .5s; } .nav > :nth-child(8) { animation-delay: .55s; }
+  .nav > .dot { animation: none; }
+
+  .nav .item { position: relative; overflow: hidden; isolation: isolate; border-radius: 999px; transition: color .25s ease, background-color .25s ease; }
+  .nav .item:not(.locked):hover { background: transparent; color: var(--muted); }
+  /* Круг-заливка: центр у нижнего края пункта, растёт до полного покрытия. */
+  .nav .item:not(.locked)::before { position: absolute; z-index: -1; top: 100%; left: 50%; width: 200%; aspect-ratio: 1; margin: -100% 0 0 -100%; border-radius: 50%;
+    background: linear-gradient(180deg, var(--brand-bright), var(--brand) 70%); content: ""; transform: scale(0); transition: transform .36s cubic-bezier(.4, 0, .2, 1); pointer-events: none; }
+  /* Вторая подпись ждёт снизу и въезжает на место первой. */
+  .nav .item[data-label]::after { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: #fff; content: attr(data-label);
+    transform: translateY(2.2em); transition: transform .36s cubic-bezier(.22, 1, .36, 1); pointer-events: none; }
+  .nav .item:not(.locked):hover::before, .nav .item:not(.locked):focus-visible::before { transform: scale(1); transition-duration: .55s; transition-timing-function: cubic-bezier(.22, 1, .36, 1); }
+  .nav .item:not(.locked):hover .face, .nav .item:not(.locked):focus-visible .face { transform: translateY(-2.2em); transition-duration: .5s; }
+  .nav .item:not(.locked):hover::after, .nav .item:not(.locked):focus-visible::after { transform: translateY(0); transition-duration: .5s; }
+  .nav .item[aria-current="page"], .nav .moreButton[data-current="true"] { box-shadow: inset 0 1px 0 rgb(255 255 255 / 12%), 0 6px 16px -8px rgb(0 0 0 / 60%); }
+
+  .dot { position: absolute; bottom: 4px; left: 0; display: block; width: 5px; height: 5px; margin-left: -2.5px; border-radius: 99px; background: var(--construction-accent, #ffd166);
+    box-shadow: 0 0 8px rgb(255 209 102 / 70%); opacity: 0; pointer-events: none; transition: transform .6s cubic-bezier(.34, 1.56, .64, 1), opacity .3s ease; }
+  .nav:hover .dot { background: #fff; }
+}
+@keyframes nav-unroll { from { clip-path: inset(0 calc(100% - 48px) 0 0 round 999px); } to { clip-path: inset(0 0 0 0 round 999px); } }
+@keyframes nav-item-in { from { opacity: 0; transform: translateX(-10px); } }
+
+@media (prefers-reduced-motion: reduce) {
+  .brand svg, .brand:hover svg, .nav, .nav > * { animation: none; }
+  .face, .dot, .nav .item::before, .nav .item::after { transition: none; }
+}

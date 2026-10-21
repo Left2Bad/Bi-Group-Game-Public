@@ -1,0 +1,56 @@
+[
+  {
+    "id": "84bfd332-0e7d-4006-9d73-09e3615ff725",
+    "name": "Замер A1",
+    "email": "a1-fc69f0e0@measure.test",
+    "role": "employee"
+  },
+  {
+    "id": "30e72e4c-0352-49ac-8719-997eaf633277",
+    "name": "Замер R1",
+    "email": "r1-4d488357@measure.test",
+    "role": "employee"
+  },
+  {
+    "id": "11566b1f-79a8-42b4-b6cb-f0ecd82a64df",
+    "name": "Замер R2",
+    "email": "r2-3b160969@measure.test",
+    "role": "employee"
+  },
+  {
+    "id": "8fcec746-86d7-4991-a55a-73fe73d9a4b5",
+    "name": "Замер R3",
+    "email": "r3-3074d8ba@measure.test",
+    "role": "employee"
+  },
+  {
+    "id": "c9127fe3-41ba-4de0-a4ec-aaaf8fc93064",
+    "name": "Замер R4",
+    "email": "r4-2322525d@measure.test",
+    "role": "employee"
+  },
+  {
+    "id": "b70d9ce4-eeac-4f60-aba6-95b686baa487",
+    "name": "Замер R5",
+    "email": "r5-e57e2085@measure.test",
+    "role": "employee"
+  },
+  {
+    "id": "a5fce92c-e7a9-4abf-9289-081ac6065b39",
+    "name": "Замер B1",
+    "email": "b1-ba9df0da@measure.test",
+    "role": "employee"
+  },
+  {
+    "id": "449867b4-3160-42c3-aa67-ff9638d4d1b4",
+    "name": "Замер C1",
+    "email": "c1-1f56af03@measure.test",
+    "role": "employee"
+  },
+  {
+    "id": "efcd9327-3779-4d62-aa87-a0ff9c4ce8f7",
+    "name": "Замер A2",
+    "email": "a2-502c492c@measure.test",
+    "role": "employee"
+  }
+]

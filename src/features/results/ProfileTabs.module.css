@@ -1,0 +1,99 @@
+.tabs { display: grid; grid-template-columns: repeat(var(--tab-count, 3), minmax(0, 1fr)); gap: 8px; margin: 0 0 20px; padding: 6px; border: 1px solid var(--border); border-radius: 18px; background: var(--surface); box-shadow: var(--shadow-sm); }
+.tabs button { display: flex; align-items: center; gap: 12px; min-height: 56px; padding: 8px 14px; border: 0; border-radius: 13px; background: transparent; color: var(--muted); text-align: left; cursor: pointer; transition: background-color .2s ease, color .2s ease, box-shadow .2s ease; }
+.tabs button:hover { background: var(--hover); color: var(--ink); }
+.tabs button[aria-selected="true"] { background: linear-gradient(180deg, var(--brand-bright), var(--brand) 60%); color: #fff; box-shadow: 0 8px 20px -10px rgb(0 106 203 / 80%); }
+.step { display: grid; flex: none; place-items: center; width: 28px; height: 28px; border-radius: 50%; background: var(--chip); color: var(--brand-strong); font-family: var(--font-technical); font-weight: 700; }
+.tabs button[aria-selected="true"] .step { background: rgb(255 255 255 / 22%); color: #fff; }
+.text { display: grid; min-width: 0; }
+.text strong { font-size: 1rem; }
+.text small { font-size: .78rem; opacity: .85; }
+.panel { display: grid; grid-template-columns: minmax(0, 1fr); gap: 18px; }
+.panel:focus { outline: none; }
+@media(max-width: 650px) { .tabs { gap: 4px; padding: 4px; } .tabs button { flex-direction: column; justify-content: center; gap: 4px; padding: 8px 4px; text-align: center; } .text small { display: none; } }
+/* Телефон: до четырёх вкладок в ряд. Номер скрыт, подпись мельче и переносится только по словам, длинная заменяется короткой. */
+.short { display: none; }
+@media (max-width: 650px) {
+  .tabs > button { min-height: 48px; padding: 6px 4px; }
+  .tabs .step { display: none; }
+  .text strong, .short { font-size: .82rem; line-height: 1.15; overflow-wrap: normal; hyphens: auto; }
+  .text strong[data-has-short] { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  .short { display: block; font-weight: 700; }
+}
+@media print { .tabs { display: none; } }
+
+/* Закреплённая панель слева: выезжает, когда вкладки ушли за верх экрана; при наведении раскрывает названия. */
+.rail { position: fixed; z-index: 40; top: 50%; left: 16px; display: grid; gap: 6px; padding: 6px; border: 1px solid var(--border); border-radius: 18px; background: color-mix(in srgb, var(--surface) 88%, transparent); box-shadow: var(--shadow-sm), 0 18px 40px -18px rgb(0 0 0 / 60%); backdrop-filter: blur(10px);
+  opacity: 0; pointer-events: none; transform: translate(calc(-100% - 24px), -50%); transition: transform .45s cubic-bezier(.2, .9, .25, 1.15), opacity .3s ease; }
+.rail[data-visible] { opacity: 1; pointer-events: auto; transform: translate(0, -50%); }
+.rail button { display: flex; align-items: center; gap: 0; padding: 6px; border: 0; border-radius: 12px; background: transparent; color: var(--muted); cursor: pointer; transition: background-color .2s ease, color .2s ease, gap .3s ease; }
+.rail button:hover { background: var(--hover); color: var(--ink); }
+.rail button[aria-current] { background: linear-gradient(180deg, var(--brand-bright), var(--brand) 60%); color: #fff; box-shadow: 0 8px 20px -10px rgb(0 106 203 / 80%); }
+.rail button[aria-current] .step { background: rgb(255 255 255 / 22%); color: #fff; }
+.railLabel { max-width: 0; overflow: hidden; font-size: .9rem; font-weight: 650; white-space: nowrap; transition: max-width .35s ease; }
+.rail:hover button, .rail:focus-within button { gap: 10px; padding-right: 14px; }
+.rail:hover .railLabel, .rail:focus-within .railLabel { max-width: 220px; }
+.rail[data-visible] button { animation: rail-in .4s ease both; }
+.rail[data-visible] button:nth-child(2) { animation-delay: .06s; }
+.rail[data-visible] button:nth-child(3) { animation-delay: .12s; }
+@keyframes rail-in { from { opacity: 0; transform: translateX(-10px); } }
+/* Телефон: столбик слева закрывал текст, поэтому панель становится пилюлей внизу по центру; подпись видна только у текущего раздела. */
+@media (max-width: 650px) {
+  .rail { top: auto; bottom: calc(12px + env(safe-area-inset-bottom)); left: 50%; width: max-content; max-width: calc(100vw - 24px); grid-auto-flow: column; gap: 4px; padding: 4px; border-radius: 999px; transform: translate(-50%, calc(100% + 24px)); }
+  .rail[data-visible] { transform: translate(-50%, 0); }
+  .rail .dot { display: none; }
+  .rail .step { width: 26px; height: 26px; font-size: .8rem; }
+  .rail button[aria-current] { gap: 8px; padding-right: 14px; }
+  .rail button[aria-current] .railLabel { max-width: 180px; }
+  .rail:hover button:not([aria-current]), .rail:focus-within button:not([aria-current]) { gap: 0; padding-right: 6px; }
+  .rail:hover button:not([aria-current]) .railLabel, .rail:focus-within button:not([aria-current]) .railLabel { max-width: 0; }
+}
+@media (prefers-reduced-motion: reduce) { .rail, .rail button, .railLabel { transition: none; animation: none; } }
+@media print { .rail { display: none; } }
+
+/* Тот же стиль, что у меню сайта (PillNav): капсула, текущий пункт — тёмная «пилюля» с жёлтой точкой, которая
+   переезжает с пружиной; при наведении синий круг заливает пункт и подпись перекатывается. Во вкладках круг и подпись
+   идут сверху вниз, в боковой панели — слева направо. При появлении плашка разворачивается, пункты выходят по очереди. */
+.tabs { --pad: 6px; --gap: 8px; position: relative; isolation: isolate; border-radius: 999px; box-shadow: 0 22px 44px -22px rgb(0 0 0 / 70%), inset 0 1px 0 rgb(255 255 255 / 6%);
+  animation: tabs-unroll .76s cubic-bezier(.22, 1, .36, 1) .05s backwards; }
+.tabs > button, .rail > button { position: relative; overflow: hidden; isolation: isolate; border-radius: 999px; transition: color .25s ease, background-color .25s ease; }
+.tabs > button { animation: tab-in .56s cubic-bezier(.22, 1, .36, 1) backwards; }
+.tabs > button:nth-of-type(1) { animation-delay: .15s; } .tabs > button:nth-of-type(2) { animation-delay: .21s; } .tabs > button:nth-of-type(3) { animation-delay: .27s; } .tabs > button:nth-of-type(4) { animation-delay: .33s; }
+.tabs > button[aria-selected="true"], .rail > button[aria-current] { background: var(--blueprint); color: #fff; box-shadow: inset 0 1px 0 rgb(255 255 255 / 12%), 0 6px 16px -8px rgb(0 0 0 / 60%); }
+.tabs > button:hover, .rail > button:hover { background: transparent; color: var(--muted); }
+.tabs > button[aria-selected="true"]:hover, .rail > button[aria-current]:hover { background: var(--blueprint); }
+
+/* Синий круг-заливка. */
+.tabs > button::before, .rail > button::before { position: absolute; z-index: -1; left: 50%; width: 200%; aspect-ratio: 1; margin-left: -100%; border-radius: 50%;
+  background: linear-gradient(180deg, var(--brand-bright), var(--brand) 70%); content: ""; transform: scale(0); transition: transform .36s cubic-bezier(.4, 0, .2, 1); pointer-events: none; }
+.tabs > button::before { bottom: 100%; margin-bottom: -100%; }
+.rail > button::before { top: 50%; left: 0; width: 220%; margin: -110% 0 0 -110%; }
+/* Вторая подпись: ждёт за краем и въезжает на место первой. */
+.tabs > button::after, .rail > button::after { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 1rem; font-weight: 700;
+  content: attr(data-label); transition: transform .36s cubic-bezier(.22, 1, .36, 1); pointer-events: none; }
+.tabs > button::after { transform: translateY(-64px); }
+.rail > button::after { display: none; }
+.tabs > button > *, .rail > button > * { transition: transform .36s cubic-bezier(.22, 1, .36, 1), opacity .3s ease; }
+.tabs > button:hover::before, .tabs > button:focus-visible::before, .rail > button:hover::before, .rail > button:focus-visible::before { transform: scale(1); transition-duration: .55s; transition-timing-function: cubic-bezier(.22, 1, .36, 1); }
+.tabs > button:hover > *, .tabs > button:focus-visible > * { opacity: 0; transform: translateY(64px); transition-duration: .5s; }
+.tabs > button:hover::after, .tabs > button:focus-visible::after { transform: translateY(0); transition-duration: .5s; }
+.rail > button:hover, .rail > button:focus-visible { color: #fff; }
+.rail > button:hover .step, .rail > button:focus-visible .step { background: rgb(255 255 255 / 22%); color: #fff; }
+
+/* Жёлтая точка под текущим пунктом: во вкладках едет по горизонтали, в боковой панели — по вертикали у левого края. */
+.dot { position: absolute; z-index: 2; width: 5px; height: 5px; border-radius: 99px; background: var(--construction-accent, #ffd166); box-shadow: 0 0 8px rgb(255 209 102 / 70%); pointer-events: none;
+  transition: left .6s cubic-bezier(.34, 1.56, .64, 1), top .6s cubic-bezier(.34, 1.56, .64, 1), background-color .3s ease; }
+.tabs .dot { top: calc(var(--pad) + 4px); left: calc(var(--pad) + (var(--active) + .5) * ((100% - 2 * var(--pad) - (var(--tab-count) - 1) * var(--gap)) / var(--tab-count)) + var(--active) * var(--gap) - 2.5px); }
+.rail { --pad: 6px; --gap: 6px; isolation: isolate; }
+.rail .dot { left: 2px; top: calc(var(--pad) + (var(--active) + .5) * ((100% - 2 * var(--pad) - (var(--tab-count) - 1) * var(--gap)) / var(--tab-count)) + var(--active) * var(--gap) - 2.5px); }
+.tabs:hover .dot, .rail:hover .dot { background: #fff; }
+
+@keyframes tabs-unroll { from { clip-path: inset(0 calc(100% - 60px) 0 0 round 999px); } to { clip-path: inset(0 0 0 0 round 999px); } }
+@keyframes tab-in { from { opacity: 0; transform: translateX(-10px); } }
+@media (max-width: 650px) {
+  .tabs { --pad: 4px; --gap: 4px; border-radius: 22px; } .tabs > button { border-radius: 18px; } .rail { --pad: 4px; }
+  .tabs > button::after { font-size: .82rem; transform: translateY(-110%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .tabs, .tabs > button { animation: none; }
+  .dot, .tabs > button::before, .tabs > button::after, .tabs > button > *, .rail > button::before, .rail > button > * { transition: none !important; }
+}

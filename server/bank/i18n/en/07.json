@@ -1,0 +1,162 @@
+{
+  "ENG_064": { "context": "A point without a measurement number was noticed in the as-built drawing.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will personally arrange for the link between the point and its measurement to be restored and record it in the as-built drawing.",
+    "B": "I will point out to the drafter that the point cannot be confirmed without tracing the measurement.",
+    "C": "I will find the source file and assign the number according to the procedure.",
+    "D": "I will report the omission, check the source file and complete the drawing." } },
+  "ENG_065": { "context": "The supervisor asks to transfer an axis to the neighbouring area because access is blocked.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will explain the conditions under which an auxiliary point keeps its accuracy.",
+    "B": "I will help the crew clear a safe spot for the control point.",
+    "C": "I will set out the control scheme and choose an accessible spot together.",
+    "D": "I will propose a spot for an offset point and agree access for checking it together with the supervisor." } },
+  "ENG_066": { "context": "Before the night shift, the established points need to be handed over to the next survey crew.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will do a joint walk-round and show the marking of the points.",
+    "B": "I will update the log and check the key points together with the new crew.",
+    "C": "I will agree a joint check of the points with the night shift and record the handover result in the log.",
+    "D": "I will record the coordinates, elevations and control method in the log." } },
+  "ENG_067": { "context": "After heavy rain, a control benchmark on a temporary structure may have shifted.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will check the benchmark against the base and record the check results before use.",
+    "B": "I will check the benchmark against the stable network and register the confirmed status of the point.",
+    "C": "I will close the survey onto stable control points and compare the elevations.",
+    "D": "I will take the benchmark out of use until a documented check is done." } },
+  "ENG_068": { "context": "Setting-out coordinates from different contractors give different positions for the same joint.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will compare the contractors' source systems and personally propose a procedure for resolving the coordinate conflict.",
+    "B": "I will compare the coordinate systems, the source axes and the file versions.",
+    "C": "I will point out to both sides the exact discrepancy and the need for a single basis.",
+    "D": "I will check the transformations and present the confirmed discrepancy." } },
+  "ENG_069": { "context": "On site, people often forget to mark the date on control marks.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will check which marks are actually used and how they are updated.",
+    "B": "I will agree on marking with the supervisors and help update the current marks.",
+    "C": "I will find out the reasons and introduce clear dated marking together.",
+    "D": "I will collect cases of missing dates together with the workers and check where it is most convenient to confirm that marks are current." } },
+  "ENG_070": { "context": "The contractor demands the as-built drawing while the control traverse has not yet been processed.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will finish processing the traverse and formalise the control results.",
+    "B": "I will explain the timing and issue the drawing after checking the misclosure and formalising it.",
+    "C": "I will personally arrange for the traverse processing to be completed and establish the procedure for issuing the confirmed drawing.",
+    "D": "I will report that the accuracy of the drawing has not yet been confirmed." } },
+  "ENG_071": { "context": "During a floor handover, the neighbouring crew cannot find the established axis marks.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will check the log and restore the reference with a control measurement together with the crew.",
+    "B": "I will suggest searching together with the crew using the diagram and take responsibility for confirming the axes we find.",
+    "C": "I will show the coordinates and condition of the valid points from the log.",
+    "D": "I will organise a joint search with the supervisor and mark the axes found." } },
+  "ENG_072": { "context": "The concrete batch certificate shows a class that does not match the site's order.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will compare the certificate with the order and file a request to confirm the properties of the actual batch.",
+    "B": "I will check the certificate, the order and the truck mixer's marking.",
+    "C": "I will suspend acceptance of the batch and record the non-conformity.",
+    "D": "I will check the documents and register the deviation until those responsible decide." } },
+  "ENG_073": { "context": "The strength of the control specimens is close to the threshold, and the report shows unusual scatter.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will check the conditions of sampling, storage and testing, and the calculation.",
+    "B": "I will tell the quality engineer that I doubt the reliability of the results and request a check.",
+    "C": "I will check the testing chain and propose a repeat analysis with justification.",
+    "D": "I will check the reasons for the scatter and personally propose to the head of the laboratory a procedure for a repeat analysis." } },
+  "ENG_074": { "context": "The same kind of remark about the concrete surface recurs on several pour sections.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will discuss with the site what data is needed to prevent the defect.",
+    "B": "I will analyse the recurrence and help the site check the cause on the spot.",
+    "C": "I will collect data on the conditions in which the defects appeared together with the site teams and test a hypothesis common to the pour sections.",
+    "D": "I will compare the locations, shifts and placement conditions to find a pattern." } },
+  "ENG_075": { "context": "The contractor asks you to mark the incoming inspection of rebar as done before the certificates arrive.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will clearly explain the restriction and record the actual stage of the inspection.",
+    "B": "I will request the set of rebar confirmations myself and record the incoming inspection status until they are checked.",
+    "C": "I will explain that without confirmed documents the acceptance status is not complete.",
+    "D": "I will carry out the check that is possible and note in the log that the documents are awaited." } },
+  "ENG_076": { "context": "The supervisor considers a mandatory control point in the quality plan unnecessary because of deadlines.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will suggest discussing the arrangements for the control point with the supervisor and take responsibility for explaining its role.",
+    "B": "I will state the basis for the control point and the consequences of skipping it.",
+    "C": "I will propose jointly planning the time for the check in the site schedule.",
+    "D": "I will explain the requirement and help agree the check without disrupting the work." } },
+  "ENG_077": { "context": "During sampling, the new shift did not receive a record of where the previous samples were taken.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will check the logs, the specimen markings and the work section diagram.",
+    "B": "I will contact both shifts and help clarify the location from the confirmations.",
+    "C": "I will check the records and, together with the shifts, document a reliable link to the sampling location.",
+    "D": "I will agree the sampling location with the previous shift and record the restored traceability of the sample." } },
+  "ENG_078": { "context": "The calibration of the compaction test instrument has expired.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will take the instrument out of service and record the need for metrological verification.",
+    "B": "I will check the status and arrange a replacement with an instrument that has valid calibration.",
+    "C": "I will check the instrument's status with the metrologist and formalise the use of a confirmed replacement.",
+    "D": "I will check the certificate, the instrument ID and the available spare instrument." } },
+  "ENG_079": { "context": "The weld inspection results differ between two methods.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will compare the reports and propose a confirmed plan for an additional check.",
+    "B": "I will compare the conditions of the two inspection methods and present the grounds for an additional check myself.",
+    "C": "I will check the scope of applicability of the methods and the inspection conditions.",
+    "D": "I will tell those responsible that the conclusion requires a technical reconciliation." } },
+  "ENG_080": { "context": "Remarks about joint sealing recur at the same detail.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will collect information on the sealing conditions together with the workers and check the common causes of the recurring remark.",
+    "B": "I will group the defects by conditions, materials and workers.",
+    "C": "I will discuss with the supervisors checking the substrate preparation before sealing.",
+    "D": "I will find the recurring factor and clarify the control step together with the site." } },
+  "ENG_081": { "context": "The log shows an air temperature that nobody measured on site.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will point out that an unconfirmed value cannot be passed off as a measured one.",
+    "B": "I will take an actual measurement and record the time and the instrument.",
+    "C": "I will explain the reason for the correction and formalise a confirmed measurement.",
+    "D": "I will personally arrange for the source of the temperature to be clarified and record the confirmed information in the log." } },
+  "ENG_082": { "context": "The crew asks to be told in advance the acceptance criteria for the substrate before finishing.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will do a short walk-round of typical inspection points with the foreman.",
+    "B": "I will explain the criteria and demonstrate how to check them together on site.",
+    "C": "I will suggest reviewing the substrate acceptance criteria together with the crew and take responsibility for explaining the disputed points.",
+    "D": "I will name the parameters to be checked and where the tolerances are set." } },
+  "ENG_083": { "context": "Materials from different batches but with a common label were found in the warehouse.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will check traceability and re-label the batches together with the warehouse.",
+    "B": "I will agree with the warehouse on separating the batches and establish traceable labelling when materials are issued.",
+    "C": "I will check the labelling and documents of each batch, then separate the records.",
+    "D": "I will help the warehouse set up separate zones and clear labels." } },
+  "ENG_084": { "context": "The laboratory test report has no reference to the measurement method.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will compare the test records with the method used and formalise a clarification of the report before it is passed on.",
+    "B": "I will check the source logs and the method used.",
+    "C": "I will return the report for completion according to the quality procedure.",
+    "D": "I will check the method against the log and formalise a correction to the report." } },
+  "ENG_085": { "context": "A geometry check of a finished opening shows a value at the edge of the tolerance.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will check the tool, the measurement method and the tolerance according to the current documentation.",
+    "B": "I will tell the supervisor about the borderline result and propose a control measurement.",
+    "C": "I will repeat the measurement and present the confirmed value relative to the tolerance.",
+    "D": "I will check the borderline measurement together with the inspector and personally explain the basis for the decision to the site." } },
+  "ENG_086": { "context": "Non-conformity cards often do not state which drawing was used.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will help the inspectors add a revision field to the working card.",
+    "B": "I will check the reasons for the omissions and agree a mandatory revision check.",
+    "C": "I will collect examples of omissions together with the authors of the cards and check where the drawing reference gets lost.",
+    "D": "I will trace at what stage the revision number gets lost." } },
+  "ENG_087": { "context": "After a soil test, the supervisor asks to be told the result before the measurements have been processed.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will tell him when it will be issued and hand over the confirmed report after the calculation.",
+    "B": "I will personally arrange for processing of the measurements to be completed and establish the procedure for issuing the confirmed result.",
+    "C": "I will explain that preliminary readings are not yet a conclusion.",
+    "D": "I will process the data and formalise the report in the established way." } },
+  "ENG_088": { "context": "The contractor offers its material as an equivalent to the specified material without agreed properties.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will suggest clarifying the substitute's parameters together with the contractor and take responsibility for discussing the assessment conditions.",
+    "B": "I will set out the list of properties and the need to approve the substitution.",
+    "C": "I will help collect the data sheets and organise a review by specialists.",
+    "D": "I will explain the criteria and help send the package for approval." } },
+  "ENG_089": { "context": "Before concrete works, some of the inspection checklists are filled in by different shifts.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will check the mandatory fields and examples of correct completion.",
+    "B": "I will hold a short review with both shifts and answer questions.",
+    "C": "I will clarify a single template and check the first entries together with the shifts.",
+    "D": "I will agree with the shifts on how to fill in the checklists and establish checks on the handover of open items." } },
+  "ENG_090": { "context": "During sampling of crushed stone, the bag marking did not match the batch number on the delivery note.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will isolate the sample until its origin is established and note the discrepancy.",
+    "B": "I will check traceability and resolve the non-conformity in writing before testing.",
+    "C": "I will compare the sample marking with the primary records and formalise a confirmed identification.",
+    "D": "I will check the seal, the sampling location and the source documents." } },
+  "ENG_091": { "context": "A moisture content check gave a result noticeably different from the previous shift.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will repeat the check and explain to the site the reasons or the limit of uncertainty.",
+    "B": "I will check the conditions of the new measurement and present the shift with an explanation of the difference from the previous result myself.",
+    "C": "I will check the method, the condition of the sample and the records of the sampling conditions.",
+    "D": "I will inform the site of the confirmed deviation and the need for a check." } },
+  "ENG_092": { "context": "On one section the inspector is regularly called late before concealed work is closed up.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will collect the reasons for late calls together with the site team and check at what stage the readiness signal gets lost.",
+    "B": "I will check the intervals between requests and actual closing up.",
+    "C": "I will agree a convenient call window and early notification with the supervisors.",
+    "D": "I will analyse the causes of the delays and help introduce a notification schedule." } },
+  "ENG_093": { "context": "The inspection report states a defect category that has not been confirmed by measurement.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will say that the category cannot be confirmed without the required measurement.",
+    "B": "I will return the report for an additional check and record a remark.",
+    "C": "I will explain the shortcoming, carry out the check and update the report based on the result.",
+    "D": "I will personally arrange confirmation of the defect category and record the basis in the inspection report." } },
+  "ENG_094": { "context": "A new laboratory shift is unsure how to take samples from a non-uniform batch.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will hold a joint review of the batch and help prepare a sampling plan.",
+    "B": "I will explain the method and check the sampling locations together with the shift.",
+    "C": "I will suggest going through the sampling plan together with the shift and take responsibility for explaining the chosen approach.",
+    "D": "I will explain the requirements for the sampling scheme and the limits of an acceptable decision." } },
+  "ENG_095": { "context": "At handover of the building to the client, several minor remarks on material labelling remain open.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will check each remark and confirm the corrections together with the teams.",
+    "B": "I will agree a labelling check with those responsible and record the verified closure of each entry.",
+    "C": "I will check the register of remarks against the actual labels and documents.",
+    "D": "I will help the warehouse and the site distribute the corrections by location." } }
+}

@@ -1,0 +1,29 @@
+node_modules/
+dist/
+coverage/
+playwright-report/
+test-results/
+.env
+.env.*
+!.env.example
+*.log
+*.tsbuildinfo
+.DS_Store
+.idea/
+.vscode/
+.tmp/
+bi-academy-*.tar
+artifacts/
+data/
+
+# Presentation files and build artifacts
+/docs/presentation/
+/.presentation-build/
+/output/
+
+# Служебные файлы SQLite
+*.sqlite-shm
+*.sqlite-wal
+
+# Временные файлы Office
+~$*

@@ -1,0 +1,9 @@
+.panel { display: grid; gap: 14px; }
+.panel h2 { margin: 0; }
+.panel > p { margin: 0; }
+.privacy { color: var(--muted); font-size: .93rem; }
+.field { display: grid; gap: 6px; font-weight: 600; }
+.field input { min-height: 44px; padding: 8px 12px; border: 1px solid var(--border); border-radius: var(--radius-control); background: var(--surface); color: var(--ink); font-weight: 400; }
+.field input[readonly] { background: var(--canvas); font-size: .9rem; }
+.preview { max-width: 640px; overflow: hidden; border: 1px solid var(--border); border-radius: 20px; box-shadow: 0 10px 30px rgb(8 46 96 / 12%); }
+.buttons { display: flex; flex-wrap: wrap; gap: 10px; }

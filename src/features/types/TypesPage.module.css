@@ -1,0 +1,89 @@
+.page { max-width: 1120px; }
+
+/* Заголовок: огромная «16» чертёжным шрифтом проступает за текстом. */
+.header { position: relative; max-width: none; margin-bottom: 24px; padding-right: 28%; }
+.header::after { position: absolute; top: -34px; right: 0; content: '16'; z-index: -1; pointer-events: none; font-family: var(--font-technical); font-size: clamp(6rem, 19vw, 12.5rem); font-weight: 700; line-height: 1; letter-spacing: -.04em;
+  color: transparent; -webkit-text-stroke: 2px color-mix(in srgb, var(--brand-bright) 38%, transparent); animation: num-in 1s var(--ease-out) backwards; }
+.header h1 { margin: 0; max-width: 14ch; font-size: clamp(2.1rem, 5vw, 3.4rem); line-height: 1.04; letter-spacing: -.04em; animation: rise-in .7s var(--ease-out) backwards; }
+.header p { max-width: 54ch; margin: 14px 0 0; color: var(--muted); animation: rise-in .7s var(--ease-out) .12s backwards; }
+
+/* Фильтры-«таблетки»: активная заливается синим, буква полюса остаётся жёлтой. */
+.filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; animation: rise-in .7s var(--ease-out) .2s backwards; }
+.filters button { min-height: 42px; padding: 8px 15px; border: 1px solid var(--border); border-radius: 999px; background: var(--surface); box-shadow: var(--shadow-sm); color: var(--ink); font-weight: 600; cursor: pointer; transition: transform .3s var(--ease-spring), border-color .2s ease, background-color .2s ease, box-shadow .25s ease; }
+.filters button:hover { border-color: var(--brand-bright); transform: translateY(-2px); }
+.filters button:active { transform: scale(.96); }
+.filters b { font-family: var(--font-technical); color: var(--brand-strong); }
+.filters button[aria-pressed="true"] { border-color: transparent; background: linear-gradient(160deg, #0a4a95, var(--blueprint)); color: #fff; box-shadow: 0 10px 22px -10px rgb(8 46 96 / 80%); }
+.filters button[aria-pressed="true"] b { color: var(--construction-accent); }
+
+/* Подробности выбранного типа: лист чертежа с авророй и «сценой» под персонажем. */
+.detail { position: relative; isolation: isolate; display: grid; grid-template-columns: minmax(0, 340px) minmax(0, 1fr); gap: 24px 36px; align-items: end; overflow: hidden; padding: 28px 36px 0; border-radius: 28px; color: #fff;
+  box-shadow: var(--shadow-lg), inset 0 1px 0 rgb(255 255 255 / 14%);
+  background: linear-gradient(rgb(155 206 255 / 7%) 1px, transparent 1px) 0 0 / 28px 28px, linear-gradient(90deg, rgb(155 206 255 / 7%) 1px, transparent 1px) 0 0 / 28px 28px, linear-gradient(140deg, #061f45, #083b80 60%, #0a55a8); }
+.detail::before { position: absolute; z-index: -1; inset: 0; content: ''; pointer-events: none; background: radial-gradient(420px circle at var(--mx, 70%) var(--my, 0%), rgb(155 206 255 / 16%), transparent 70%); }
+.aurora { position: absolute; z-index: -1; inset: 0; overflow: hidden; pointer-events: none; filter: blur(50px); }
+.aurora i { position: absolute; width: 46%; aspect-ratio: 1; border-radius: 50%; will-change: transform; }
+.aurora i:first-child { top: -35%; right: -8%; background: rgb(60 160 255 / 50%); animation: float-a 14s ease-in-out infinite alternate; }
+.aurora i:last-child { bottom: -45%; left: 14%; background: rgb(255 209 102 / 18%); animation: float-b 17s ease-in-out infinite alternate; }
+.detail[data-kind="П"] .aurora i:first-child { background: rgb(255 180 70 / 38%); }
+.stage { position: relative; display: grid; place-items: end center; animation: stage-in .7s var(--ease-spring) backwards; }
+.stage { min-height: 300px; }
+/* Код типа крупным контуром за персонажем заполняет пустой угол листа. */
+.stage::before { position: absolute; bottom: 0; width: 86%; aspect-ratio: 1; border-radius: 50%; content: ''; background: radial-gradient(circle, rgb(155 206 255 / 30%), transparent 65%); animation: breathe 6s ease-in-out infinite alternate; }
+.detail::after { position: absolute; z-index: -1; top: 14px; left: 22px; content: attr(data-code); pointer-events: none; font-family: var(--font-technical); font-size: clamp(3.5rem, 8vw, 6rem); font-weight: 700; letter-spacing: .06em; color: transparent; -webkit-text-stroke: 1.5px rgb(155 206 255 / 22%); }
+.stage::after { position: absolute; bottom: 6px; width: 70%; height: 18px; border-radius: 50%; content: ''; background: radial-gradient(ellipse, rgb(2 12 30 / 60%), transparent 70%); }
+.stage > svg { position: relative; z-index: 1; max-width: 100%; height: auto; filter: drop-shadow(0 18px 24px rgb(2 12 30 / 45%)); animation: float 5s ease-in-out infinite; }
+.detailBody { padding-bottom: 28px; animation: body-in .6s var(--ease-out) backwards; }
+.detailBody p { color: #cfe6ff; }
+.detailBody h2 { margin: 6px 0 4px; font-size: clamp(1.9rem, 4vw, 2.8rem); line-height: 1.05; letter-spacing: -.03em; }
+.detailBody strong { color: #fff; }
+.detailBody > .detailCode { display: flex; align-items: center; gap: 12px; margin: 0; font-family: var(--font-technical); font-size: 1.7rem; font-weight: 700; letter-spacing: .14em; color: var(--construction-accent); text-shadow: 0 0 22px rgb(255 209 102 / 45%); }
+.detailCode span { padding: 4px 10px; border-radius: 999px; background: var(--construction-accent); color: var(--blueprint); font-family: Onest, sans-serif; font-size: .75rem; font-weight: 800; letter-spacing: 0; text-shadow: none; animation: pulse 2.6s ease-out infinite; }
+.detailBody > .tagline { margin: 0 0 12px; color: var(--construction-accent); font-size: 1.1rem; font-weight: 600; }
+.split { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-top: 18px; }
+.good, .risk { padding: 16px 18px; border: 1px solid rgb(155 206 255 / 22%); border-radius: 18px; background: rgb(255 255 255 / 6%); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); }
+.risk { border-color: rgb(255 209 102 / 28%); background: rgb(255 209 102 / 7%); }
+.split h3 { margin: 0 0 8px; font-size: .95rem; }
+.split ul { display: grid; gap: 6px; margin: 0; padding: 0; list-style: none; color: #d6e9fd; font-size: .92rem; }
+.split li { position: relative; padding-left: 24px; }
+.split li::before { position: absolute; top: 2px; left: 0; display: grid; place-items: center; width: 16px; height: 16px; border-radius: 50%; background: rgb(110 214 160 / 22%); color: #8ff0bd; font-size: .68rem; font-weight: 900; content: '✓'; }
+.risk li::before { background: rgb(255 209 102 / 22%); color: var(--construction-accent); content: '!'; }
+.detailBody > .best { margin: 16px 0 0; padding: 12px 16px; border-left: 3px solid var(--construction-accent); border-radius: 0 14px 14px 0; background: linear-gradient(100deg, rgb(255 209 102 / 14%), transparent); }
+
+/* Сетка 16 карточек: «чертёжные» плитки с подсветкой под курсором и каскадным входом. */
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 14px; margin: 22px 0 0; padding: 0; list-style: none; }
+.grid li { animation: card-in .6s var(--ease-out) calc(var(--i, 0) * 45ms + 250ms) backwards; transition: opacity .3s ease, filter .3s ease, transform .3s var(--ease-out); }
+.grid li[data-dim] { opacity: .32; transform: scale(.96); }
+.grid button { position: relative; display: flex; overflow: hidden; align-items: end; gap: 10px; width: 100%; padding: 16px 14px 18px; border: 1px solid rgb(155 206 255 / 16%); border-radius: 22px; color: #fff; text-align: left; cursor: pointer; box-shadow: var(--shadow-md);
+  background: linear-gradient(rgb(155 206 255 / 6%) 1px, transparent 1px) 0 0 / 24px 24px, linear-gradient(90deg, rgb(155 206 255 / 6%) 1px, transparent 1px) 0 0 / 24px 24px, linear-gradient(160deg, #0b3a76, var(--blueprint) 70%);
+  transition: transform .4s var(--ease-spring), box-shadow .3s ease, border-color .25s ease; }
+.grid button[data-kind="П"] { background-image: linear-gradient(rgb(255 209 102 / 6%) 1px, transparent 1px), linear-gradient(90deg, rgb(255 209 102 / 6%) 1px, transparent 1px), linear-gradient(160deg, #3a3560, var(--blueprint) 70%); background-size: 24px 24px, 24px 24px, auto; }
+.grid button::before { position: absolute; inset: 0; content: ''; pointer-events: none; opacity: 0; transition: opacity .3s ease; background: radial-gradient(220px circle at var(--mx, 50%) var(--my, 0%), rgb(155 206 255 / 26%), transparent 70%); }
+.grid button > * { position: relative; }
+.grid button svg { transition: transform .5s var(--ease-spring); transform-origin: 50% 100%; }
+.grid button:hover { border-color: var(--construction-accent); box-shadow: var(--shadow-lg); transform: translateY(-6px); }
+.grid button:hover::before { opacity: 1; }
+.grid button:hover svg { transform: scale(1.07) rotate(-1.5deg); }
+.grid button:active { transform: translateY(-2px) scale(.985); }
+.grid button[aria-pressed="true"] { border-color: var(--construction-accent); box-shadow: 0 0 0 3px var(--construction-accent), 0 18px 40px -14px rgb(255 209 102 / 55%); }
+.cardText { display: grid; gap: 4px; padding-bottom: 4px; }
+.cardText b { width: fit-content; padding: 2px 8px; border-radius: 7px; background: rgb(255 209 102 / 14%); color: var(--construction-accent); font-family: var(--font-technical); letter-spacing: .1em; transition: letter-spacing .3s var(--ease-out); }
+.grid button:hover .cardText b { letter-spacing: .18em; }
+.cardText strong { line-height: 1.15; }
+.mine { position: absolute; top: 12px; right: 12px; padding: 3px 9px; border-radius: 999px; background: var(--construction-accent); color: var(--blueprint); font-size: .72rem; font-weight: 800; box-shadow: 0 4px 12px rgb(255 209 102 / 40%); }
+
+@keyframes rise-in { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+@keyframes num-in { from { opacity: 0; transform: translateX(40px); } to { opacity: 1; transform: none; } }
+@keyframes card-in { from { opacity: 0; transform: translateY(22px) scale(.94); } to { opacity: 1; transform: none; } }
+@keyframes stage-in { from { opacity: 0; transform: translateY(24px) scale(.88); } to { opacity: 1; transform: none; } }
+@keyframes body-in { from { opacity: 0; transform: translateX(22px); } to { opacity: 1; transform: none; } }
+@keyframes float { 50% { transform: translateY(-8px); } }
+@keyframes breathe { from { opacity: .6; transform: scale(.92); } to { opacity: 1; transform: scale(1.05); } }
+@keyframes pulse { 0% { box-shadow: 0 0 0 0 rgb(255 209 102 / 60%); } 70%, 100% { box-shadow: 0 0 0 10px rgb(255 209 102 / 0%); } }
+@keyframes float-a { to { transform: translate3d(-20%, 24%, 0) scale(1.15); } }
+@keyframes float-b { to { transform: translate3d(28%, -16%, 0) scale(.9); } }
+@media (prefers-reduced-motion: reduce) { .aurora i, .stage > svg, .stage::before, .detailCode span { animation: none; } }
+@media print { .aurora, .header::after { display: none; } }
+@media (hover: none) { .grid button:hover { transform: none; } }
+@media(max-width: 900px) { .header { padding-right: 0; } .header::after { top: -10px; opacity: .6; } .header h1 { max-width: 12ch; } }
+@media(max-width: 720px) { .detail { grid-template-columns: 1fr; justify-items: center; padding: 22px 20px 0; } .stage { width: min(220px, 70%); } .stage > svg { width: 100%; } .detailBody { width: 100%; } .split { grid-template-columns: 1fr; } .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; } .grid button { flex-direction: column; align-items: flex-start; } .grid button svg { width: 100%; max-width: 104px; height: auto; align-self: center; } }

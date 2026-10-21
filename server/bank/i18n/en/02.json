@@ -1,0 +1,127 @@
+{
+  "FIELD_011": { "context": "The shift sheet does not show that part of the team is taking a mandatory safety briefing in the morning.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will update the sheet and, together with the foreman, allocate permitted tasks after the briefing.",
+    "B": "I will check the list of briefing participants with the supervisors and reflect the available staff in the assignment.",
+    "C": "I will correct the sheet and link people starting work to confirmation of the briefing.",
+    "D": "In advance I will agree with the crew how to redistribute preparatory tasks for the duration of the briefing." } },
+  "FIELD_012": { "context": "A neighbouring section asks to borrow two workers for a day when your crew is completing its monthly work target.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will offer the neighbouring section part of the working day and together we will agree a feasible amount of help.",
+    "B": "I will make clear to the managers which commitments I can meet with my own resources and propose a specific window for help.",
+    "C": "I will clarify the critical operations with both foremen and we will find a joint support option.",
+    "D": "I will agree the limit of help with the manager, then together with the sections allocate people to critical operations." } },
+  "FIELD_013": { "context": "After the rain the access route for concrete trucks on site has changed, but the logistics plan remains the same.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will inspect the route and turning areas, check the vehicle restrictions and propose a workable scheme.",
+    "B": "I will update the traffic scheme and agree it with the person responsible for safety before the next trip.",
+    "C": "I will check the route with the logistics specialist and the driver, then formalise the agreed traffic scheme.",
+    "D": "I will check the new route with the dispatcher and formalise the change to the concrete supply scheme." } },
+  "FIELD_014": { "context": "At a meeting it is proposed to shorten the curing time of the coating in order to open passage for adjacent trades.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will object directly to opening the passage prematurely and set a time for a repeat check.",
+    "B": "I will state the restriction and present confirmed data on the timing, after which I will agree a detour route.",
+    "C": "I will compare the required curing time with the actual conditions and propose an acceptable passage date myself.",
+    "D": "I will check the material requirements and actual conditions, then propose an acceptable opening date." } },
+  "FIELD_015": { "context": "The crews disagree on where the boundary between their work areas lies at the staircase.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will prepare a boundary diagram based on the documents and confirm it during a joint walkthrough.",
+    "B": "I will ask the crews to mark the disputed boundaries on the plan and compare them before a general meeting.",
+    "C": "I will check the drawings and the bill of quantities to determine the exact point where the work area is to be handed over.",
+    "D": "I will hold a meeting of supervisors at the staircase and agree the sequence and handover criteria." } },
+  "FIELD_016": { "context": "The certificate for installed equipment states a different serial number than the one on the nameplate.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will determine the procedure for checking the serial number myself and record the result before acceptance.",
+    "B": "I will record the serial number mismatch and send the certificate for correction according to the acceptance procedure.",
+    "C": "I will not sign the certificate until the discrepancy is resolved and will give the contractor a specific requirement.",
+    "D": "I will check where the number came from and return the certificate for correction, recording the reason." } },
+  "FIELD_017": { "context": "Workers report that recurring small losses of time are related to carrying tools between floors.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will note the losses in the shift records and propose a change to the tool issue procedure.",
+    "B": "I will discuss several placement options with the crew and launch an agreed trial.",
+    "C": "I will record the time lost, check a new issue point together with the crew and update the procedure.",
+    "D": "Together with the workers I will organise a trial scheduled tool delivery and assign responsible people." } },
+  "FIELD_018": { "context": "Your supervisor proposes changing the order of work sections because adjacent trades have no work area available.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will gather the supervisors of the adjacent works and together we will determine a feasible sequence.",
+    "B": "I will state the chosen option, check it with the adjacent trades and record the agreed transition.",
+    "C": "I will offer the supervisor a joint trial of the new order and take on the coordination with the adjacent trades.",
+    "D": "I will take responsibility for the new order after checking its impact on mandatory deadlines." } },
+  "FIELD_019": { "context": "A day before concreting, the supplier announced that the pump will be replaced with a model of different capacity.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will check the pumping rate and the installation location, then formalise the agreed concreting plan.",
+    "B": "I will compare the time needed to pump the concrete with the old and new pumps and update the shift assignment based on confirmed data.",
+    "C": "I will recalculate the delivery rate, the time buffer and the placement constraints, then propose an adjustment.",
+    "D": "I will update the request, the installation scheme and the permits according to the procedure before the machine arrives." } },
+  "FIELD_020": { "context": "The technical department (PTO) engineer claims that a remark on quantities is insignificant, but closing out the stage depends on it.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will prepare a verifiable calculation of quantities and personally propose to PTO a way to resolve the dispute.",
+    "B": "I will check the as-built drawings against the actual measurements to determine the exact difference.",
+    "C": "I will make clear that I will sign the quantities only after confirmation, and propose a joint measurement.",
+    "D": "I will present a calculation of the discrepancy and organise a control measurement with the PTO engineer." } },
+  "FIELD_021": { "context": "Questions have piled up on site about the completeness of the work areas being handed over, and each adjacent trade keeps its own list.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will compare the lists and find the recurring causes of handover delays.",
+    "B": "I will gather the supervisors of the adjacent sections and propose a common format for a control walkthrough.",
+    "C": "I will analyse the causes, then together with the supervisors introduce a single work area readiness checklist.",
+    "D": "I will ask each adjacent trade to show recurring gaps and consolidate them into a common handover checklist." } },
+  "FIELD_022": { "context": "At the end of the week it was found that the concrete curing log is filled in, but the signature of the person responsible for one shift is missing.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will contact the responsible person and demand that the confirmation be restored according to the established procedure.",
+    "B": "I will check the primary records, formalise a clarification and arrange for the responsible person to sign.",
+    "C": "I will personally arrange confirmation of the shift entry and make sure the check result is formalised.",
+    "D": "I will note the gap in the concrete curing log and file a request to clarify the shift entry." } },
+  "FIELD_023": { "context": "Young workers propose changing where consumables are kept in order to cut unnecessary trips up and down.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will check the storage restrictions, agree the location with the participants and update the issue scheme.",
+    "B": "I will agree with the workers on a trial arrangement of consumables and record how it will be checked.",
+    "C": "I will check the storage rules and formalise a trial placement scheme.",
+    "D": "I will discuss the idea with the warehouse, the supervisor and the crew to choose a convenient location." } },
+  "FIELD_024": { "context": "During the floor handover, the contractor argues with your crew about the deadline for addressing several minor remarks.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will take responsibility for proposing deadlines and, together with the contractor, assign the defect remarks to those responsible.",
+    "B": "I will immediately name a realistic deadline based on the crew's resources and take responsibility for it.",
+    "C": "I will hold a short meeting of the people doing the work and the acceptance inspector to agree the order of addressing the defect remarks.",
+    "D": "I will propose a confirmed deadline and, together with the participants, assign a person responsible for each item." } },
+  "FIELD_025": { "context": "In a column cage the spacing of stirrups in the layout differs from the latest issued working drawing.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will compare the revisions and the actual position of the stirrups to establish the cause of the discrepancy.",
+    "B": "I will not release the cage for concreting until I receive a formal clarification of the drawing.",
+    "C": "I will check the actual spacing, file a request and allow work to continue after a confirmed decision.",
+    "D": "I will check the stirrup layout against the issued revision and formalise a clarification before accepting the cage." } },
+  "FIELD_026": { "context": "The concrete pump operator proposes placing the outrigger in a different spot because of limited access.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will state clearly that we will start pumping only after the permissible installation spot is confirmed.",
+    "B": "I will state the restriction and check the area together with the operator against the agreed scheme.",
+    "C": "I will assess the site restrictions against the installation plan and personally propose an approval process to the operator.",
+    "D": "I will check the bearing capacity of the area, the reach of the boom and the obstacles with the responsible people." } },
+  "FIELD_027": { "context": "While tying rebar it turned out that an embedded part blocks access to several bars.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will check the joint, then together with both crews agree an assembly method without changing the design.",
+    "B": "I will compare the installation order of the embedded part with the cage assembly and discuss access with the adjacent trades.",
+    "C": "I will check the joint in the model and the drawings to understand the permissible assembly sequence.",
+    "D": "I will gather the rebar workers and the embedded part installers to agree the order of actions." } },
+  "FIELD_028": { "context": "Concrete of the required class has arrived on site, but the batch certificate is missing one mandatory parameter.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will request the missing batch parameter myself and record the decision on its status in the documents.",
+    "B": "I will check the set of documents and immediately note which confirmation is missing.",
+    "C": "I will not accept the mix for use until I receive a correct certificate and confirmation that the inspection has been completed.",
+    "D": "I will record the discrepancy, demand confirmation of the parameter and only then decide on acceptance." } },
+  "FIELD_029": { "context": "The formwork inspection has been rescheduled, but the crew asks to keep the pour on the original schedule.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will keep the control point in the plan and will not allow concrete supply before the inspection.",
+    "B": "I will contact the inspectors and the crew to find an available inspection time without downtime.",
+    "C": "I will update the plan and jointly agree the inspection time before supply starts.",
+    "D": "I will agree a backup task with the crew and set the inspection as a condition for starting the pour." } },
+  "FIELD_030": { "context": "Before the pour, one internal vibrator was sent for repair; there is a spare one on the neighbouring section.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will arrange to borrow the spare vibrator from the neighbouring supervisor and allocate its use.",
+    "B": "I will state the minimum need and, together with the neighbouring section, agree the transfer of a working spare.",
+    "C": "I will take on arranging the spare vibrator and agree the return time with the neighbouring supervisor.",
+    "D": "I will state right away that compaction cannot start without enough equipment, and propose postponing the concrete supply." } },
+  "FIELD_031": { "context": "The temperature forecast for the night shift has changed, while the concrete curing chart was drawn up for warmer conditions.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will check the forecast and the heating resources, then formalise an agreed adjustment to the chart.",
+    "B": "I will compare the forecast with the curing chart requirements and have the responsible specialist formalise a clarification.",
+    "C": "I will compare the forecast with the method statement and the heating calculation, then propose a clarification.",
+    "D": "I will formalise a revision of the curing chart and will not start placement without confirmed curing conditions." } },
+  "FIELD_032": { "context": "The laser level shows a greater difference in slab levels than expected, but the survey elevation on the neighbouring axis is different.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will check the reference elevations of both measurements and explain to the crew myself why a repeat check is needed.",
+    "B": "I will recheck the instrument and the benchmarks to rule out a measurement error before drawing a conclusion.",
+    "C": "I will say directly that the surface cannot be accepted based on an unverified elevation.",
+    "D": "I will present the results of the control measurements and demand that the basis for acceptance be clarified." } },
+  "FIELD_033": { "context": "At a wall with dense reinforcement the crew has difficulty providing the concrete cover in one corner.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will check the actual joint, the spacers and the design tolerances, then send the question to the designer.",
+    "B": "I will gather the rebar worker, technical supervision and the designer on site to agree an acceptable joint.",
+    "C": "I will check the dimensions and, together with the participants, formalise a decision before the formwork is closed.",
+    "D": "I will check the cover dimensions at the disputed joint and, together with the rebar workers, prepare a question for the technologist." } },
+  "FIELD_034": { "context": "The concreting permit specifies one pour section, but the crew has prepared the neighbouring one.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will limit the supply to the specified section only until a permit for the neighbouring one is issued.",
+    "B": "I will check the boundaries, clarify readiness and arrange a permit for the additional section.",
+    "C": "I will personally arrange a check of the prepared section against the permit and record the confirmed scope.",
+    "D": "I will compare the permit boundaries with the as-built drawing and note the readiness of each section." } },
+  "FIELD_035": { "context": "The laboratory is late for the start of the pour, and the regulations require taking control samples.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will keep the sampling requirement and agree a new supply window together with the laboratory.",
+    "B": "I will agree the sampling time with the laboratory and enter the confirmed window into the shift assignment.",
+    "C": "I will keep the control point in the log and postpone the start until the responsible person arrives.",
+    "D": "I will agree the actual supply time with the laboratory and the dispatcher and prepare the sampling spot." } }
+}

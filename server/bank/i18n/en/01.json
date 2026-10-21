@@ -1,0 +1,127 @@
+{
+  "Q01": { "context": "−20 °C is expected tonight. Concrete for the slab has already left the plant, but heating on the pour section is not fully installed.", "text": "What will you do?", "options": {
+    "Q01-A": "I will compare the forecast, delivery time and heating readiness and decide myself whether to pour part of the section today.",
+    "Q01-B": "I will not start pouring until the heating is ready: the winter concreting work execution plan (PPR) requires it. I will inform the plant and the site manager.",
+    "Q01-C": "I will ask the power engineer when the heating will be ready and, based on the answer, agree with the site manager whether to pour or send the mixer back.",
+    "Q01-D": "I will pour as is so as not to lose the concrete, and we will insulate the section with mats and film right after placement." } },
+  "Q02": { "context": "An experienced site manager proposes stripping the slab formwork two days early: «The concrete has already gained strength».", "text": "What will you do?", "options": {
+    "Q02-A": "I will say directly that I disagree: the formwork stripping schedule must be followed, and I will not sign off on early removal.",
+    "Q02-B": "I will ask for the specimen test results and decide based on the numbers, without getting into an argument in advance.",
+    "Q02-C": "In front of the crew I will voice my doubt and propose checking the strength with a non-destructive method before deciding.",
+    "Q02-D": "I will agree with the site manager: he has twenty years of experience and has stripped formwork from similar slabs early before." } },
+  "Q03": { "context": "A supplier offers insulation of a different brand 15% cheaper, with shipment as early as tomorrow.", "text": "How will you assess the offer?", "options": {
+    "Q03-A": "I will bring the procurement specialist, the designer and the technical supervision representative together for a short call so we can decide together.",
+    "Q03-B": "I will request the material data sheet and ask the designer to check the key parameters together with me.",
+    "Q03-C": "I will take it: the savings are noticeable, and the thermal performance of such brands is usually the same.",
+    "Q03-D": "I will compare the properties and certificates against the design requirements and prepare my own assessment for approval." } },
+  "Q04": { "context": "Cracks in the screed have reappeared on the same floors, even though the previous remark was closed.", "text": "How will you find the cause?", "options": {
+    "Q04-A": "I will raise the issue at the briefing, state my version of the cause and propose checking it on one floor.",
+    "Q04-B": "I will ask the contractor to trowel over the cracks and close the remark again — deadlines are more important.",
+    "Q04-C": "I will collect data: pour dates, temperature, mix composition — and first find the common factor.",
+    "Q04-D": "I will stop acceptance of the screed on the next floors until the contractor explains the cause." } },
+  "Q05": { "context": "The client's technical supervision has issued a remark that you consider unjustified.", "text": "How will you respond?", "options": {
+    "Q05-A": "Right on the spot I will defend my position: the work was done according to the design, I do not accept the remark.",
+    "Q05-B": "I will ask to be shown the clause of the standard, present my arguments and propose inspecting the joint together.",
+    "Q05-C": "I will redo the joint without discussion: it is better not to argue with the client, and the work will take only a couple of days.",
+    "Q05-D": "I will take the instruction without argument, check it against the standards and the design and reply in writing with references." } },
+  "Q06": { "context": "An installer is working at the edge of a slab without fall protection. The foreman says: «He will only be five minutes».", "text": "What will you do?", "options": {
+    "Q06-A": "Without getting into an argument, I will immediately inform the occupational safety engineer and record the violation.",
+    "Q06-B": "This is another supervisor's crew: I will point it out to him at the evening briefing, in front of everyone and with an example.",
+    "Q06-C": "I will personally stop the installer and not let him continue without fall protection; the argument with the foreman can wait.",
+    "Q06-D": "I will demand that the foreman stop the worker and check that the harness is on." } },
+  "Q07": { "context": "At the briefing the manager asks how to speed up shift handover. You have an idea, but it still needs work.", "text": "What will you do?", "options": {
+    "Q07-A": "I will briefly present the idea and ask interested colleagues to refine it with me.",
+    "Q07-B": "First I will discuss the idea with the shift supervisors, and at the next briefing we will propose it together.",
+    "Q07-C": "I will present the idea right away and offer to trial it on my section under my own responsibility.",
+    "Q07-D": "I will stay silent for now: first I will quietly test the idea myself over a couple of shifts and propose it once I am sure of the result." } },
+  "Q08": { "context": "For the first time you have been appointed responsible for accepting a floor from a subcontractor.", "text": "How will you start?", "options": {
+    "Q08-A": "I will ask that this time the acceptance be handed to an experienced engineer, while I walk alongside and watch how he works.",
+    "Q08-B": "I will take it on right away: I will figure things out as I go and resolve questions on the spot.",
+    "Q08-C": "I will accept the task, draw up my own checklist based on the regulations and agree it with the manager before acceptance.",
+    "Q08-D": "First I will study the regulations and ask an experienced engineer to go through the first floor together with me." } },
+  "Q09": { "context": "There is a week left before handing the stage over to the client, and you see that your section is 2–3 days behind.", "text": "What will you do?", "options": {
+    "Q09-A": "I will immediately report the risk, its cause and my catch-up plan with new dates to the manager.",
+    "Q09-B": "I will warn the manager and, together with the crew, work out which tasks can be done in parallel.",
+    "Q09-C": "I will arrange help from an adjacent crew and tell the manager once it becomes clear whether we will make it.",
+    "Q09-D": "I will not raise an alarm: I will ask the crew to work at the weekend, and most likely we will make the deadline." } },
+  "Q10": { "context": "The work area needs to be handed over to the finishers, but some of the concealed work has not yet been checked.", "text": "What will you do?", "options": {
+    "Q10-A": "I will hand everything over now and prepare the certificates later: a reliable crew did these joints, and everything is usually fine there.",
+    "Q10-B": "I will hand over the work area now, and we will go through the unchecked items together with the finishers as work proceeds.",
+    "Q10-C": "I will not hand over the work area until I check all items and sign the certificates, even if the finishers have to wait.",
+    "Q10-D": "I will agree with the finishers which rooms I hand over now and which after the check, and record this." } },
+  "Q11": { "context": "Concealed work certificates and as-built documentation are two weeks behind.", "text": "How will you restore order?", "options": {
+    "Q11-A": "I will make a list of the missing documents, check it with the technical department and spread the work over the days.",
+    "Q11-B": "I will set aside an hour at the end of each day and complete the documents in order, starting with the oldest.",
+    "Q11-C": "First I will find out which certificates are holding up subsequent work and acceptance, and complete them first.",
+    "Q11-D": "The main thing now is construction: I will put all the certificates together at once before the next inspection and restore the data from photos." } },
+  "Q12": { "context": "A new worker in the crew skips the morning safety briefing, saying he already knows everything.", "text": "How will you react?", "options": {
+    "Q12-A": "I will talk to him after the shift, find out the reason and ask an experienced worker to take him under his wing.",
+    "Q12-B": "I will explain why the briefing matters, agree with him that he must attend from tomorrow, and check that he does.",
+    "Q12-C": "I will not intervene: he is experienced, and the foreman is responsible for briefings in the crew, it is his area.",
+    "Q12-D": "I will not allow him to work without the briefing and will note the violation in the log." } },
+  "Q13": { "context": "An adjacent electricians' crew is behind schedule, and this is delaying finishing on your floor.", "text": "How will you get involved?", "options": {
+    "Q13-A": "This is their area of responsibility: I will move my people to another floor and wait.",
+    "Q13-B": "I will offer my workers to help them with supporting tasks so they can finish the floor sooner.",
+    "Q13-C": "I will figure out where the electricians' bottleneck is and prepare an option for rearranging the work for the manager.",
+    "Q13-D": "I will meet their foreman, find the cause of the delay together and agree on what I will do to help." } },
+  "Q14": { "context": "A lot of rebar offcuts that could be put to use have accumulated in the site warehouse.", "text": "What will you do?", "options": {
+    "Q14-A": "I will order the offcuts to be used for embedded parts on my section myself and then show the savings.",
+    "Q14-B": "I will tell the procurement specialist and the foremen and propose that we calculate together how much can be used.",
+    "Q14-C": "I will not get distracted: a dedicated person is in charge of the warehouse and material write-offs, he will decide.",
+    "Q14-D": "I will prepare a short calculation and propose to the manager a trial in one work section with the crew's participation." } },
+  "Q15": { "context": "The contractor and your team interpret responsibility for addressing the facade remarks differently.", "text": "How will you organise the work?", "options": {
+    "Q15-A": "I will pull out the contract and the design, determine the area of responsibility and send the contractor a letter.",
+    "Q15-B": "I will forward the defect remarks to the contractor in an official letter and wait for a reply before discussing anything.",
+    "Q15-C": "I will bring both sides together on site and we will agree who does what and by when.",
+    "Q15-D": "I will check the contract and immediately meet the contractor to agree the division of work according to the documents." } },
+  "FIELD_001": { "context": "Before the slab pour, the rebar delivery has slipped by half a day, while the neighbouring crew is already ready for its stage.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will check the actual remaining stock, the critical path and the available time slots for adjacent trades, then propose two verified scenarios.",
+    "B": "I will formalise the change to the shift assignment and record the agreed schedule before issuing tasks.",
+    "C": "I will check the remaining stock and dependencies, agree the schedule adjustment and communicate it to both crews.",
+    "D": "I will check the time buffer for the neighbouring section and establish a backup sequence for supplying the rebar." } },
+  "FIELD_002": { "context": "The crew asks me to accept the completed waterproofing before the required base inspection so they can close up the section sooner.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will state clearly that the section cannot be closed before the inspection and set a time for a joint walkthrough.",
+    "B": "I will name the necessary checks and personally agree the further procedure with the foreman.",
+    "C": "I will compare the available evidence of the base condition and set the acceptance conditions myself.",
+    "D": "I will check the condition of the base and the acceptance criteria, then explain what further checks are needed." } },
+  "FIELD_003": { "context": "At the morning briefing two crews are claiming the same hoist at the same time.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will check the priority according to the schedule and, together with the foremen, confirm the sequence and a backup time slot.",
+    "B": "I will ask both crews to estimate their losses from waiting and agree the order on that basis.",
+    "C": "I will compare the duration of the operations and the impact of delaying each of them on the overall schedule.",
+    "D": "I will bring the foremen and the dispatcher together to agree on time slots." } },
+  "FIELD_004": { "context": "The incoming inspection log has no signature for a batch of anchors due to be issued to the installers.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will set the deadline for checking the batch status myself and record the condition for issuing it.",
+    "B": "I will note the missing signature in the incoming inspection log and file a request to complete the batch inspection.",
+    "C": "I will suspend the issue and demand that the established incoming inspection procedure be completed.",
+    "D": "I will check the documents and markings, then document the inspection before the batch is released for use." } },
+  "FIELD_005": { "context": "A new supervisor noticed that the weekly plan makes no allowance for moving the formwork.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will include the required time for the operation in my own schedule calculation and retain the basis for the adjustment.",
+    "B": "I will discuss with the supervisor and the crew which transitions actually take time and propose an adjustment.",
+    "C": "I will check the duration with the crew, then enter the agreed correction into the weekly plan.",
+    "D": "I will include the supervisor's estimate in the plan and agree with the crew to verify the transition duration." } },
+  "FIELD_006": { "context": "The contractor asks to postpone the joint inspection of concealed work to the end of the day, although the crew is ready to close the section in the morning.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will contact the contractor and the adjacent trades to jointly find an earlier inspection window.",
+    "B": "I will record the requirement to leave the section open and agree with the participants on an inspection time that allows work to continue.",
+    "C": "I will take on the negotiations about the inspection time and suggest that the adjacent trades prepare a backup work area.",
+    "D": "I will state right away that I do not accept closing without inspection and propose an available morning window." } },
+  "FIELD_007": { "context": "The setting-out drawing shows a different elevation than the latest issued working documentation.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will check the source data, file a request and pass only the confirmed elevation to the crew.",
+    "B": "I will ask the surveyor to confirm the reference elevations and enter the verified version into the assignment.",
+    "C": "I will compare the revisions and the survey control, then clarify the source of the discrepancy with the designer.",
+    "D": "I will file a request for clarification and will not release the disputed elevation for construction." } },
+  "FIELD_008": { "context": "During a site walk an experienced foreman insists that a non-standard fastening of the temporary fencing «has always held».", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will show the foreman the deviation from the approved drawing and propose my own way of checking the fastening.",
+    "B": "I will check the joint against the work execution plan (PPR) and the actual loads before proposing a fastening option.",
+    "C": "I will say directly that I do not accept such a joint without confirmation, and organise a check.",
+    "D": "I will voice my objection, compare the joint with the work execution plan (PPR) and agree an acceptable solution." } },
+  "FIELD_009": { "context": "In one zone the finishers and electricians found different switch locations on their drawings.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will check the current revisions and the change history to establish the correct location.",
+    "B": "I will gather both crews and the designer on site to agree a single layout.",
+    "C": "I will check the documents and hold a short meeting of the parties, recording the decision.",
+    "D": "I will compile the points marked on both drawings and find the source of the discrepancy together with the workers." } },
+  "FIELD_010": { "context": "The supplier offers a split delivery of blocks instead of the agreed batch; storage space on site is limited.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will tell the supplier directly that I do not accept a split delivery to an unprepared site, and propose a new schedule.",
+    "B": "I will formalise the agreed delivery schedule and tell procurement which area needs to be prepared.",
+    "C": "I will propose the sequence of split deliveries myself and record it in the agreed request.",
+    "D": "I will register the change to the request and the storage location according to the approved procedure before the delivery is confirmed." } }
+}

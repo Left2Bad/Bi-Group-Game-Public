@@ -1,0 +1,15 @@
+/* Ориентир BI Academy: реальный этап приложения и внешние этапы без вымышленных статусов. */
+.block { container-type: inline-size; min-width: 0; padding: 20px 22px; border: 1px solid var(--border); border-radius: 22px; background: var(--surface); color: var(--ink); }
+.block h4, .block h2 { margin: 0 0 12px; color: var(--ink); font-size: 1.1rem; letter-spacing: -.01em; }
+.route { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; margin: 0; padding: 0; list-style: none; }
+.route li { position: relative; display: grid; justify-items: center; align-content: start; gap: 4px; text-align: center; }
+.route li:not(:last-child)::after { position: absolute; top: 17px; left: calc(50% + 22px); width: calc(100% - 34px); height: 0; border-top: 3px dashed var(--track); content: ""; }
+.step { position: relative; z-index: 1; display: grid; place-items: center; width: 36px; height: 36px; border: 2px dashed var(--border); border-radius: 50%; background: var(--surface); color: var(--muted); font-family: var(--font-technical); font-weight: 700; }
+.route li[data-status="done"] .step { border: 2px solid var(--brand); background: var(--brand); color: #fff; }
+.route strong { color: var(--ink); font-size: .9rem; }
+.route li[data-status="external"] strong { color: var(--muted); }
+.route small { color: var(--muted); font-size: .76rem; line-height: 1.35; }
+@container (max-width: 560px) {
+  .route { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 16px; }
+  .route li:nth-child(2)::after { display: none; }
+}

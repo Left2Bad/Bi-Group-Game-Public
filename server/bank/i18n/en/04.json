@@ -1,0 +1,152 @@
+{
+  "FIELD_066": { "context": "Two facade crews share one lifting platform and are arguing about which level has priority.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will hold a meeting of the foremen and the platform operator to agree time windows.",
+    "B": "I will propose a justified sequence and jointly confirm the platform handover times.",
+    "C": "I will propose an order for the levels and agree it with both facade crews.",
+    "D": "I will name the order based on the readiness of the substrates and the conditions for safe work on each level." } },
+  "FIELD_067": { "context": "The floor covering was delivered on time, but control measurements of screed moisture give different values.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will repeat the measurements using the accepted method and record the decision on readiness.",
+    "B": "I will compare the conditions of the moisture measurements and arrange a control check before laying the covering.",
+    "C": "I will check the instrument, the measuring points and the curing conditions, then compare the results with the material requirements.",
+    "D": "I will document the moisture check and will not allow laying until the base is confirmed ready." } },
+  "FIELD_068": { "context": "On the trial area the texture of the decorative plaster differs noticeably from the approved sample.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will compare the texture with the sample on specific features and propose a way of showing it again myself.",
+    "B": "I will check the tools, the mix and the application conditions to determine the cause of the difference.",
+    "C": "I will tell the contractor directly that I do not accept continuing based on the current sample.",
+    "D": "I will show the measurable differences and propose a new trial before agreeing any further area." } },
+  "FIELD_069": { "context": "The same remark about the skirting junction recurs on several floors.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will collect photos and batch data to find the common cause.",
+    "B": "I will discuss the defect with the floor supervisors and installers to agree a consistent correction.",
+    "C": "I will check the cause on one joint and, together with the crew, update the workmanship sample.",
+    "D": "I will collect examples of the junctions from each floor and, together with the finishers, find the common source of the remarks." } },
+  "FIELD_070": { "context": "For the suspended facade panels, the as-built drawing of the fixings lags behind the actual installation by one work section.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will not hand over the section until the drawing is updated and the fixings are confirmed.",
+    "B": "I will organise a control check on site and formalise an up-to-date drawing before handover.",
+    "C": "I will personally organise the update of the fixing drawing and establish the procedure for handing over completed sections.",
+    "D": "I will note that the facade as-built drawing is behind and send a request to update it before handover." } },
+  "FIELD_071": { "context": "Before handing over an apartment, the contractor sent a list of remarks without assigned owners or deadlines.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will update the register and, together with the participants, agree priorities and inspection dates.",
+    "B": "I will agree with the contractor who will address each remark and enter the confirmed deadlines into the common register.",
+    "C": "I will set up a single register with an owner and a deadline for each item.",
+    "D": "I will bring together the contractors and the acceptance inspector to assign the remarks to those responsible." } },
+  "FIELD_072": { "context": "The facade contractor asks for an additional evening shift to finish the section before the rain.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will propose conditions for the evening shift and check the participants' readiness together with the contractor.",
+    "B": "I will state the necessary conditions for lighting, permits and control, then agree the decision with the manager.",
+    "C": "I will contact the contractor, the safety service and the inspector to assess the real shift staffing.",
+    "D": "I will propose the shift only under confirmed conditions and establish control points together with the participants." } },
+  "FIELD_073": { "context": "The inspection certificate states one drawing number, but on site the work corresponds to a later revision.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will check the drawing issue log against the actual joint to determine which revision was applied.",
+    "B": "I will return the certificate for its details to be clarified and will not sign it until the documentation is agreed.",
+    "C": "I will check the revision on site and prepare a correct set of supporting documents before signing.",
+    "D": "I will compare the work with the revision history and record a confirmed reference in the acceptance package." } },
+  "FIELD_074": { "context": "The contractor asks you to sign acceptance of the section today, citing an urgent payment, although one measurement has not yet been documented.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will say directly that signing is possible after a documented measurement and set a time for the check.",
+    "B": "I will present a list of the missing data and propose that the contractor carry out the measurement promptly.",
+    "C": "I will check the information on the undocumented measurement and personally set out the conditions for signing to the contractor.",
+    "D": "I will check which parameter is unconfirmed and what control is required to complete acceptance." } },
+  "FIELD_075": { "context": "A similar surface defect in the concrete recurs on three pour sections after stripping.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will organise the data and, together with the participants, agree to test the hypothesis on the next section.",
+    "B": "I will collect data on the recurring defect and, together with the supervisors, compare the conditions of the three sections.",
+    "C": "I will compare the placement logs, mix compositions and compaction conditions to find the common factor.",
+    "D": "I will gather the supervisors, the laboratory and the technologist for a joint analysis of the recurrence." } },
+  "FIELD_076": { "context": "The material test report lacks a reference linking the sample to the delivered batch.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will request the link between the sample and the batch myself and establish the procedure for checking the corrected report.",
+    "B": "I will record that the report has no link between the sample and the batch and file a request to the laboratory.",
+    "C": "I will not accept the report as confirmation for this batch until the identification is restored.",
+    "D": "I will check the sampling documents and file a request for a corrected report before acceptance." } },
+  "FIELD_077": { "context": "Inspections of several joints due to be concealed have been requested for one shift, but the quality control service cannot get to all of them.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will record the mandatory hold points in the register and notify the sections of the windows.",
+    "B": "I will contact the supervisors and allocate inspections according to the readiness of the joints and the availability of inspectors.",
+    "C": "I will update the register and, together with the sections, agree a realistic inspection sequence.",
+    "D": "I will agree the available windows with the sections and enter the confirmed sequence into the inspection register." } },
+  "FIELD_078": { "context": "The contractor sharply objects to your quality remark, and the acceptance is taking place in front of the client.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will propose looking at the joint and the documents together so that both sides understand the remark in the same way.",
+    "B": "I will present verifiable facts and invite the contractor to agree on a method of checking.",
+    "C": "I will present my position on the remark and invite the contractor to a joint check of the disputed joint.",
+    "D": "I will calmly state the specific non-conformity and the evidence required, leaving the decision to quality control." } },
+  "FIELD_079": { "context": "The as-built fixing drawing shows coordinates that differ from the surveyor's control survey.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will reconcile the source data and demand an up-to-date drawing before the remark is closed.",
+    "B": "I will compare the source data of both surveys and file a request for a confirmed fixing drawing.",
+    "C": "I will check the coordinate system, the reference benchmarks and the dates of both surveys.",
+    "D": "I will suspend acceptance of the drawing and file a request for it to be corrected using confirmed data." } },
+  "FIELD_080": { "context": "Photos of concealed work are attached to the certificate, but two work sections are mixed up in the file names.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will check where the photos belong using visible landmarks and personally propose to the contractor a procedure for correcting the archive.",
+    "B": "I will check the metadata, the sequence of work and the landmarks in the frames to establish which section they belong to.",
+    "C": "I will say clearly that I cannot accept the photos as evidence without an unambiguous link.",
+    "D": "I will show the discrepancy and propose restoring the link together using the log and the original photos." } },
+  "FIELD_081": { "context": "Within an hour, three requests to inspect joints came in from different contractors; two of the work items will be covered up immediately after inspection.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will compare the readiness and construction sequence for each inspection request.",
+    "B": "I will contact the contractors and agree windows while keeping all joints accessible.",
+    "C": "I will set priorities by the risk of closing up and confirm the inspection order together with the supervisors.",
+    "D": "I will compare the readiness of the three joints and, together with the contractors, allocate time for control inspections." } },
+  "FIELD_082": { "context": "During incoming inspection of window units, it was found that the document for the required type of glazing unit belongs to a different delivery.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will not accept the document for this batch and will demand the corresponding confirmation.",
+    "B": "I will record the mismatch and approve the units after receiving the document for the actual batch.",
+    "C": "I will personally point out the document mismatch to the supplier and record the status of the window units until it is clarified.",
+    "D": "I will note the delivery mismatch in the incoming inspection and file a request for the correct document." } },
+  "FIELD_083": { "context": "In the designer's supervision log, a remark was closed with a date earlier than when the contractor sent the photo of the fix.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will check the entries and, together with the participants, restore a provable inspection date.",
+    "B": "I will agree confirmation of the inspection date with the participants and keep the verified chronology in the register.",
+    "C": "I will keep the original entries and demand a verifiable chronology of the work.",
+    "D": "I will contact the contractor and the designer's supervision to find out the source of the inconsistency." } },
+  "FIELD_084": { "context": "The client's representative asks to reduce the sample size for checking facade fixings because the handover deadline is close.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will propose my own solution to the client for organising access and discuss it with the contractor.",
+    "B": "I will state directly that the inspection procedure changes only through an agreed programme and the responsible people.",
+    "C": "I will discuss with the client and the contractor how to speed up access to the points without reducing the required control.",
+    "D": "I will propose an additional team for access and keep the approved sample size." } },
+  "FIELD_085": { "context": "Wall plumbness measurements from two instruments gave different values near the limit specified in the design.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will check the instruments' metrological verification status, the method and the control points, then repeat the measurements.",
+    "B": "I will not confirm acceptance until a reproducible result is obtained using the established method.",
+    "C": "I will compare the measurement conditions, arrange a repeat survey and decide based on its data.",
+    "D": "I will compare the conditions of the two measurements and arrange an additional measurement according to the established procedure." } },
+  "FIELD_086": { "context": "The contractor considers the cladding deviation cosmetic, but you see a possible defect in the junction detail.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will state clearly that the joint must be checked before the work is accepted.",
+    "B": "I will show the differences from the detail and propose jointly opening up a control area by agreement.",
+    "C": "I will compare the actual junction with the design detail and personally present the grounds for the check.",
+    "D": "I will check the design detail and the actual workmanship, separating appearance from function." } },
+  "FIELD_087": { "context": "Control measurements of the concrete cover to the reinforcement give an inconsistent picture across different areas.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will prepare a measurement map and, together with the participants, agree a check of the areas with deviations.",
+    "B": "I will prepare a map of cover measurements and clarify the disputed areas together with the laboratory.",
+    "C": "I will compare the measurement points with the design, the reinforcement layout and the conditions of use of the instrument.",
+    "D": "I will discuss with the supervisor and the laboratory a programme of additional checks in the disputed zones." } },
+  "FIELD_088": { "context": "To get approval for a material substitution, the contractor brought the manufacturer's catalogue, but there is no confirmation of a specific design requirement.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will formulate the missing material confirmations myself and include them in the approval request.",
+    "B": "I will add the missing confirmation of the design parameter to the list of remarks on the substitution package.",
+    "C": "I will not confirm the substitution without the designer's approval and a complete technical justification.",
+    "D": "I will check the parameters and draw up a list of documents needed to decide on the substitution." } },
+  "FIELD_089": { "context": "Certificates for individual systems were brought for handover of a services shaft, but the overall as-built drawing has not been put together.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will draw up a list of mandatory documents and keep control over each section.",
+    "B": "I will bring together the system contractors and the technical department (PTO) to assign preparation of the missing materials.",
+    "C": "I will check the certificates against the actual work and, together with the participants, prepare a complete set of drawings.",
+    "D": "I will allocate preparation of the drawings among the contractors and keep control of completeness for each section." } },
+  "FIELD_090": { "context": "A young inspector reports a possible defect but is afraid to argue with the contractor's experienced supervisor.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will go with the inspector for a joint inspection, listen to both sides and help put the facts into words.",
+    "B": "I will state the requirement for a check and, together with the inspector, carry out the inspection and record the result.",
+    "C": "I will suggest that the inspector and I present the facts to the supervisor together, and take responsibility for leading the discussion.",
+    "D": "I will record the fact myself and clearly set out to the supervisor the procedure for an objective check." } },
+  "FIELD_091": { "context": "In the drawing of utility penetrations, one sleeve is shown in a different place than on the actual wall.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will formalise a measurement, check whether the change was approved and demand a correct as-built drawing.",
+    "B": "I will compare the actual position of the sleeve with the design and record the result of checking the change.",
+    "C": "I will check the axes, the current design and the as-built measurement, then determine the impact on the joint.",
+    "D": "I will not sign the drawing until the actual position is approved in writing." } },
+  "FIELD_092": { "context": "During a spot check of facade cassettes, one concealed joint raises doubts about the completeness of the fasteners.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will check the completeness of the disputed joint and personally propose to the contractor the scope of an additional inspection.",
+    "B": "I will check the documentation and the actual joint, then propose extending the inspection under the programme.",
+    "C": "I will firmly demand that access be kept and that the section not be accepted until the fixing is confirmed.",
+    "D": "I will point out my specific concern and propose a joint check of the neighbouring joints." } },
+  "FIELD_093": { "context": "After heavy rain, damp patches appeared on the facade insulation, but the contractor considers them superficial.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will check the type of material, the permissible storage conditions and the actual depth of wetting.",
+    "B": "I will gather the technologist, the contractor and the inspector to agree a method of checking.",
+    "C": "I will record the zones, check the instructions and, together with the participants, arrange a suitability check.",
+    "D": "I will compare the wetting conditions with the material instructions and, together with the technologist, determine the method of checking." } },
+  "FIELD_094": { "context": "The contractor marked a remark as resolved, attaching a general photo of the floor in which the joint is not visible.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will not close the entry until the joint is inspected or unambiguous confirmation is received.",
+    "B": "I will clarify the location, organise a control inspection and document the result before closing.",
+    "C": "I will personally arrange confirmation that the joint was fixed and record the result before closing the remark.",
+    "D": "I will record that the general photo does not confirm the specific joint and leave the remark open." } },
+  "FIELD_095": { "context": "Within a month, three contractors repeated the same mistake in concealed work certificates.", "text": "Which approach would you prefer in this situation?", "options": {
+    "A": "I will show the typical mistakes, agree a checklist with the contractors and check the next submission.",
+    "B": "I will agree with the contractors to review the repeated mistakes and establish an updated procedure for preparing certificates.",
+    "C": "I will collect examples of the mistakes and update the document completeness checklist.",
+    "D": "I will hold a short review with the contractors and the technical department (PTO) using specific examples." } }
+}

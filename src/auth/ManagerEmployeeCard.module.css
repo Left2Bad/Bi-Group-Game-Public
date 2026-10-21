@@ -1,0 +1,221 @@
+/* Карточка развития сотрудника: слева тёмный «чертёж» с аватаром и следующим действием, справа качества, навыки и маршрут. */
+.wrap { container-type: inline-size; }
+.card { display: grid; grid-template-columns: minmax(0, 290px) minmax(0, 1fr); gap: 18px; margin-block: 8px 24px; }
+
+.person { position: sticky; top: 16px; display: flex; flex-direction: column; align-items: center; align-self: start; padding: 26px 20px; border-radius: 22px; color: #fff; text-align: center;
+  background:
+    linear-gradient(rgb(155 206 255 / 7%) 1px, transparent 1px) 0 0 / 28px 28px,
+    linear-gradient(90deg, rgb(155 206 255 / 7%) 1px, transparent 1px) 0 0 / 28px 28px,
+    linear-gradient(160deg, #072a58, #0a4a95);
+  box-shadow: 0 24px 60px rgb(8 46 96 / 22%); }
+/* Фигура 180×320, центр головы — (90, 75). При ширине 250 px голова оказывается в точке (125, 104):
+   сдвигаем её в центр круга 162×162 (внутренний размер при рамке 3 px) с небольшим запасом вниз, чтобы были видны плечи. */
+.figure { position: relative; flex: none; width: 168px; height: 168px; overflow: hidden; border: 3px solid rgb(255 255 255 / 85%); border-radius: 50%; background: rgb(255 255 255 / 10%); }
+.figure > svg { position: absolute; top: -18px; left: 50%; width: 250px !important; height: auto !important; transform: translateX(-50%); }
+.person h3 { margin: 14px 0 2px; color: #fff; font-size: 1.3rem; overflow-wrap: anywhere; }
+.role { margin: 0 0 6px; color: #cfe6ff; font-size: .95rem; font-weight: 600; overflow-wrap: anywhere; }
+.facts { display: grid; gap: 12px; width: 100%; margin: 10px 0 0; text-align: left; }
+.facts div { padding-top: 10px; border-top: 1px solid rgb(155 206 255 / 22%); }
+.facts dt { color: var(--blueprint-line); font-size: .8rem; font-weight: 600; }
+.facts dd { margin: 2px 0 0; color: #fff; font-size: .9rem; line-height: 1.4; overflow-wrap: anywhere; }
+
+.main { display: grid; gap: 16px; min-width: 0; align-content: start; }
+.notice { margin: 0; padding: 14px 18px; border: 1px solid color-mix(in srgb, var(--warn-ink) 25%, transparent); border-radius: 16px; background: var(--warn-bg); color: var(--warn-ink); font-size: .9rem; line-height: 1.45; }
+.panel { min-width: 0; padding: 20px 22px; border: 1px solid var(--border); border-radius: 22px; background: var(--surface); }
+.panel h4 { margin: 0 0 12px; color: var(--ink); font-size: 1.1rem; letter-spacing: -.01em; }
+.panel[data-tone="strength"] { border-color: color-mix(in srgb, var(--brand-bright) 35%, var(--border)); background: var(--brand-soft); }
+/* Зоны роста — тёмный блок с жёлтым акцентом, как «Зона роста команды» на странице команды. */
+.panel[data-tone="growth"] { border: 0; background: var(--blueprint); color: #fff; }
+.panel[data-tone="growth"] h4, .panel[data-tone="growth"] .points, .panel[data-tone="growth"] .points p { color: #fff; }
+.panel[data-tone="growth"] .points li::marker { color: var(--construction-accent); }
+.panelHead { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 4px 16px; }
+.note { margin: 12px 0 0; color: var(--muted); font-size: .8rem; line-height: 1.45; }
+.caveat { margin: -4px 0 14px; color: var(--ink-soft); font-size: .86rem; line-height: 1.45; }
+.empty { margin: 0; color: var(--muted); font-size: .9rem; }
+.small { margin: 6px 0 0; color: var(--muted); font-size: .8rem; line-height: 1.4; }
+.counter { margin: 0 0 12px; color: var(--brand-strong); font-family: var(--font-technical); font-size: .9rem; font-weight: 700; }
+
+/* Динамика: тонкая серая полоса — входная оценка, яркая — последняя. */
+.legend { display: flex; align-items: center; gap: 6px; margin: 0 0 12px; color: var(--muted); font-size: .78rem; }
+.legend span { display: inline-block; width: 18px; height: 8px; margin-left: 8px; border-radius: 4px; }
+.legend span[data-kind="before"] { background: var(--track); box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--muted) 30%, transparent); }
+.legend span[data-kind="now"] { background: var(--brand); }
+.dynamics { display: grid; gap: 12px; margin: 0; padding: 0; list-style: none; }
+.dynamics li { display: grid; grid-template-columns: minmax(0, 190px) minmax(0, 1fr) 84px; gap: 14px; align-items: center; }
+.trait { display: grid; color: var(--ink); font-size: .92rem; font-weight: 600; }
+.trait small { color: var(--muted); font-size: .74rem; font-weight: 500; }
+.bars { display: grid; gap: 4px; }
+.bars i, .skillBar i { display: block; height: 10px; border-radius: 99px; background: linear-gradient(90deg, var(--brand), var(--brand-bright)); }
+.dynamics .bars i[data-kind="now"] { background: var(--c, var(--brand)); }
+.bars i[data-kind="before"], .skillBar i[data-kind="before"] { height: 6px; background: var(--track); box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--muted) 30%, transparent); }
+.score, .skillScore { display: grid; justify-items: end; }
+.score b, .skillScore b { color: var(--ink); font-family: var(--font-technical); }
+.score small, .skillScore small { font-size: .78rem; font-weight: 700; }
+.wrap [data-trend="up"] { color: var(--brand-strong); }
+.wrap [data-trend="down"] { color: var(--warn-ink); }
+.wrap [data-trend="flat"] { color: var(--muted); }
+
+.columns { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.points { display: grid; gap: 8px; margin: 0; padding-left: 18px; color: var(--ink); font-size: .9rem; }
+.points p { margin: 2px 0 0; color: var(--ink-soft); font-size: .85rem; line-height: 1.4; }
+
+/* Навыки: каждая строка — название, процент или «Недостаточно данных», объяснение и раскрываемое основание. */
+.skills { display: grid; gap: 14px; margin: 0; padding: 0; list-style: none; }
+.skills > li { display: grid; gap: 6px; padding-bottom: 14px; border-bottom: 1px solid var(--border); }
+.skills > li:last-child { padding-bottom: 0; border-bottom: 0; }
+.skills > li > p { margin: 0; color: var(--ink-soft); font-size: .88rem; line-height: 1.45; }
+.skillHead { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; color: var(--ink); }
+.skillScore { flex: none; grid-auto-flow: column; gap: 8px; align-items: baseline; }
+.skillBar { display: grid; gap: 4px; }
+.insufficient { flex: none; padding: 2px 10px; border-radius: 999px; background: var(--chip); color: var(--muted); font-size: .8rem; font-weight: 600; }
+.more summary, .details > summary { color: var(--brand-strong); font-size: .86rem; font-weight: 600; cursor: pointer; }
+.more p { margin: 6px 0 0; color: var(--ink-soft); font-size: .86rem; line-height: 1.45; }
+
+/* Недельные практики: отметка сотрудника и ближайшее невыполненное действие. */
+.weeks { display: grid; gap: 12px; margin: 0; padding: 0; list-style: none; }
+.weeks > li { display: grid; grid-template-columns: 36px minmax(0, 1fr); gap: 12px; }
+.weeks p { margin: 4px 0 0; color: var(--ink-soft); font-size: .88rem; line-height: 1.45; }
+.weekNo { display: grid; place-items: center; width: 36px; height: 36px; border: 2px solid var(--border); border-radius: 50%; background: var(--surface); color: var(--muted); font-family: var(--font-technical); font-size: .85rem; font-weight: 700; }
+.weeks li[data-marked="yes"] .weekNo { border-color: var(--brand); background: var(--brand); color: #fff; }
+.weeks li[data-next] .weekNo { border-color: var(--blueprint); background: var(--blueprint); color: var(--construction-accent); box-shadow: 0 0 0 4px rgb(255 209 102 / 45%); }
+.weeks li[data-marked="retest"] .weekNo { border-style: dashed; }
+.weekHead { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 2px 12px; margin: 6px 0 0 !important; color: var(--ink) !important; }
+.weekHead span { color: var(--muted); font-size: .8rem; }
+.criterion strong { color: var(--ink); }
+.mark { display: inline-block; padding: 2px 10px; border-radius: 999px; background: var(--chip); color: var(--muted) !important; font-size: .78rem !important; font-weight: 600; }
+.weeks li[data-marked="yes"] .mark { background: var(--brand-soft); color: var(--brand-strong) !important; }
+.weeks li[data-next] .mark { background: var(--warn-soft); color: var(--warn-ink) !important; }
+
+
+
+/* Ответы и обоснования: заголовок-кнопка, затем три пронумерованные части с карточками. */
+.details { padding: 0; border: 1px solid var(--border); border-radius: 22px; background: var(--surface); }
+.details > summary { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; padding: 16px 22px; border-radius: 22px; list-style: none; }
+.details > summary::-webkit-details-marker { display: none; }
+.details > summary::before { content: "▸"; color: var(--construction-accent); transition: transform .2s ease; }
+.details[open] > summary::before { transform: rotate(90deg); }
+.details > summary:hover { background: color-mix(in srgb, var(--brand) 6%, transparent); }
+.details[open] { padding-bottom: 20px; }
+.details[open] > summary { border-bottom: 1px solid var(--border); border-radius: 22px 22px 0 0; }
+.detailsTitle { color: var(--ink); font-size: 1.02rem; font-weight: 700; }
+.detailsMeta { color: var(--muted); font-size: .82rem; font-weight: 500; }
+.details > :not(summary) { margin-inline: 22px; }
+.detailsHead { display: flex; align-items: center; gap: 10px; margin-block: 22px 12px; color: var(--ink); font-size: 1rem; }
+.detailsHead span { display: grid; place-items: center; width: 26px; height: 26px; border-radius: 8px; background: var(--brand-soft); color: var(--brand-strong); font-family: var(--font-technical); font-size: .85rem; }
+.label { margin: 0 0 4px !important; color: var(--muted) !important; font-size: .72rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+
+.reasons { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin: 0; padding: 0; list-style: none; }
+.reasons > li { position: relative; display: grid; align-content: start; gap: 12px; padding: 16px 16px 14px; overflow: hidden; border: 1px solid color-mix(in srgb, var(--c) 28%, var(--border)); border-radius: 16px;
+  background: radial-gradient(120% 70% at 100% 0%, color-mix(in srgb, var(--c) 14%, transparent), transparent 60%), var(--surface); }
+.reasons > li::before { position: absolute; inset: 0 0 auto; height: 3px; content: ""; background: linear-gradient(90deg, var(--c), transparent 85%); }
+.reasonHead { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
+.reasonHead strong { color: var(--ink); font-size: .98rem; }
+.reasonHead b { color: var(--c); font-family: var(--font-technical); font-size: 1.4rem; font-weight: 600; }
+.parts { display: grid; gap: 6px; margin: 0; }
+.parts div { display: grid; grid-template-columns: 9.5em minmax(0, 1fr); align-items: center; gap: 10px; }
+.parts dt { color: var(--muted); font-size: .8rem; white-space: nowrap; }
+.parts dd { display: flex; align-items: center; gap: 8px; margin: 0; color: var(--ink); font-family: var(--font-technical); font-size: .82rem; font-variant-numeric: tabular-nums; }
+.partBar { flex: 1; height: 6px; overflow: hidden; border-radius: 99px; background: var(--track); }
+.partBar i { display: block; height: 100%; border-radius: inherit; background: var(--c); }
+.evidence { margin: 0; padding: 10px 12px; border-left: 3px solid var(--c); border-radius: 0 10px 10px 0; background: color-mix(in srgb, var(--c) 8%, transparent); }
+.evidence p { margin: 0; color: var(--ink-soft); font-size: .86rem; font-style: italic; line-height: 1.5; overflow-wrap: anywhere; }
+.evidence .label { display: flex; align-items: center; gap: 8px; font-size: .7rem; font-style: normal; }
+.qid { padding: 1px 6px; border-radius: 5px; background: var(--track); color: var(--ink-soft); font-family: var(--font-technical); font-size: .7rem; letter-spacing: 0; text-transform: none; }
+.success { display: flex; gap: 8px; margin: 0; color: var(--ink-soft); font-size: .84rem; line-height: 1.45; }
+.success > span:first-child { flex: none; display: grid; place-items: center; width: 20px; height: 20px; border-radius: 50%; background: rgb(91 224 168 / 16%); color: #5be0a8; font-size: .72rem; font-weight: 800; }
+.success strong { color: var(--ink); }
+.model { display: flex; flex-wrap: wrap; gap: 6px; margin-block: 12px 0; }
+.model span { padding: 3px 9px; border: 1px solid var(--border); border-radius: 999px; color: var(--muted); font-size: .74rem; }
+
+.answers { display: grid; gap: 10px; margin: 0; padding: 0; list-style: none; }
+.answers > li { display: grid; gap: 8px; padding: 14px 16px; border: 1px solid var(--border); border-radius: 14px; background: color-mix(in srgb, var(--surface) 85%, #000); }
+.answerHead { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+.answerNo { margin-right: 4px; color: var(--brand-strong); font-family: var(--font-technical); font-size: .78rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; }
+.traitChip { padding: 2px 8px; border: 1px solid color-mix(in srgb, var(--c) 45%, transparent); border-radius: 999px; background: color-mix(in srgb, var(--c) 14%, transparent); color: var(--c); font-size: .72rem; font-weight: 700; }
+.traitChip[data-secondary] { background: transparent; opacity: .8; }
+.context { margin: 0; color: var(--muted); font-size: .84rem; line-height: 1.45; overflow-wrap: anywhere; }
+.question { margin: 0; color: var(--ink); font-size: .92rem; font-weight: 600; line-height: 1.45; overflow-wrap: anywhere; }
+.reply { padding: 10px 12px; border-radius: 10px; border-left: 3px solid var(--construction-accent); background: rgb(255 209 102 / 8%); }
+.reply p:last-child { margin: 0; color: var(--ink); font-size: .88rem; line-height: 1.5; overflow-wrap: anywhere; }
+.reply[data-kind="open"] { border-left-color: var(--brand-bright); background: color-mix(in srgb, var(--brand-bright) 8%, transparent); }
+.reply[data-kind="open"] p:last-child { white-space: pre-line; }
+.reply[data-empty] { border-left-color: var(--border); background: transparent; }
+.reply[data-empty] p:last-child { color: var(--muted); font-style: italic; }
+
+@container (max-width: 760px) {
+  .card { grid-template-columns: 1fr; }
+  .person { position: static; }
+  .facts { max-width: 420px; }
+}
+@container (max-width: 560px) {
+  .panel { padding: 16px; }
+  .details > summary { padding: 14px 16px; }
+  .details > :not(summary) { margin-inline: 16px; }
+  .reasons { grid-template-columns: 1fr; }
+  .dynamics li { grid-template-columns: minmax(0, 1fr) 70px; gap: 6px 10px; }
+  .bars { grid-column: 1 / -1; grid-row: 2; }
+  .columns { grid-template-columns: 1fr; }
+  .skillHead { flex-wrap: wrap; }
+}
+@media print { .card { break-inside: avoid; } .person { position: static; box-shadow: none; } }
+
+/* Комментарии руководителя под неделей маршрута. */
+.comments { display: grid; gap: 8px; margin-top: 8px; }
+.commentList { display: grid; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.commentList li { padding: 8px 12px; border-left: 3px solid var(--construction-accent); border-radius: 0 10px 10px 0; background: var(--hover); }
+.commentMeta { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; margin: 0 !important; color: var(--muted) !important; font-size: .78rem !important; }
+.commentMeta strong { color: var(--ink); }
+.commentText { margin: 2px 0 0 !important; color: var(--ink) !important; white-space: pre-wrap; overflow-wrap: anywhere; }
+.commentOpen, .linkButton { justify-self: start; padding: 0; border: 0; background: none; color: var(--brand-strong); font: inherit; font-size: .86rem; font-weight: 700; cursor: pointer; }
+.commentOpen:hover, .linkButton:hover { text-decoration: underline; }
+.commentForm { display: grid; gap: 6px; }
+.commentForm label { display: grid; gap: 4px; color: var(--ink); font-size: .86rem; font-weight: 600; }
+.commentForm textarea { width: 100%; padding: 10px 12px; border: 1px solid var(--border); border-radius: 12px; background: var(--surface); color: var(--ink); font: inherit; font-weight: 400; resize: vertical; }
+.commentHint { margin: 0 !important; color: var(--muted) !important; font-size: .78rem !important; }
+.commentError { margin: 0 !important; color: var(--danger) !important; font-size: .84rem !important; font-weight: 600; }
+.commentActions { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; }
+.commentSubmit { padding: 8px 16px; border: 0; border-radius: 10px; background: var(--brand); color: #fff; font: inherit; font-size: .88rem; font-weight: 700; cursor: pointer; }
+.commentSubmit:disabled { opacity: .6; cursor: progress; }
+
+/* Мини-модуль прогресса: линия прохождений, четыре качества «было → стало» с бейджами, итоги по критериям и навыкам. */
+.panel[data-tone="progress"] { border-color: color-mix(in srgb, #5be0a8 30%, var(--border));
+  background: radial-gradient(90% 60% at 100% 0%, rgb(91 224 168 / 10%), transparent 60%), var(--surface); }
+.progressSpan { margin: 0 0 12px; color: var(--muted); font-size: .82rem; }
+.progressEmpty { margin: 0; color: var(--ink-soft); font-size: .9rem; line-height: 1.5; }
+.progressLine { display: flex; gap: 0; margin: 0 0 16px; padding: 0; list-style: none; }
+.progressLine li { position: relative; flex: 1; display: grid; gap: 1px; padding-top: 18px; }
+.progressLine li::before { position: absolute; top: 5px; right: 0; left: 0; height: 2px; content: ""; background: var(--border); }
+.progressLine li:first-child::before { left: 6px; }
+.progressLine li:last-child::before { right: auto; width: 6px; }
+.progressLine li span { position: absolute; top: 0; left: 0; width: 12px; height: 12px; border: 2px solid var(--surface); border-radius: 50%; background: var(--muted); }
+.progressLine li[data-point="now"] span { background: #5be0a8; box-shadow: 0 0 0 3px rgb(91 224 168 / 25%); }
+.progressLine strong { color: var(--ink); font-size: .82rem; }
+.progressLine small { color: var(--muted); font-size: .76rem; }
+.progressRows { display: grid; gap: 10px; margin: 0; padding: 0; list-style: none; }
+.progressRows li { display: grid; grid-template-columns: 7.5em minmax(0, 1fr) auto 4.2em; align-items: center; gap: 12px; }
+.progressName { color: var(--ink); font-size: .88rem; font-weight: 600; }
+.progressBar { position: relative; height: 10px; border-radius: 99px; background: var(--track); }
+.progressBar i { position: absolute; top: 0; bottom: 0; left: 0; border-radius: inherit; }
+.progressBar i[data-kind="first"] { background: color-mix(in srgb, var(--c) 28%, transparent); }
+.progressBar i[data-kind="now"] { top: 2px; bottom: 2px; background: var(--c); box-shadow: 0 0 10px color-mix(in srgb, var(--c) 40%, transparent); }
+.progressBar i[data-kind="now"][data-trend="down"] { background: repeating-linear-gradient(135deg, var(--c) 0 6px, color-mix(in srgb, var(--c) 60%, transparent) 6px 9px); }
+.progressValues { color: var(--muted); font-family: var(--font-technical); font-size: .8rem; white-space: nowrap; }
+.progressValues b { color: var(--ink); font-weight: 600; }
+.progressRows li > :last-child { justify-self: end; }
+.progressTally { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0 0; padding: 0; list-style: none; }
+.progressTally li { display: flex; align-items: center; gap: 8px; padding: 6px 12px; border: 1px solid var(--border); border-radius: 12px; font-size: .82rem; }
+.progressTally strong { color: var(--ink); }
+.progressTally span { font-family: var(--font-technical); font-weight: 700; }
+.progressTally span[data-trend="up"] { color: #5be0a8; }
+.progressTally span[data-trend="down"] { color: #ff8fa3; }
+.progressTally small { color: var(--muted); }
+.progressAnalysis { display: grid; gap: 6px; margin-top: 14px; padding: 12px 14px; border-left: 3px solid #5be0a8; border-radius: 0 12px 12px 0; background: rgb(91 224 168 / 7%); }
+.progressAnalysis p { margin: 0; color: var(--ink-soft); font-size: .88rem; line-height: 1.5; }
+.progressVerdict { justify-self: start; padding: 2px 10px; border-radius: 999px; background: rgb(91 224 168 / 16%); color: #5be0a8 !important; font-size: .8rem !important; font-weight: 700; }
+.progressVerdict[data-verdict="same"] { background: var(--track); color: var(--ink-soft) !important; }
+.progressVerdict[data-verdict="worse"] { background: rgb(255 143 163 / 16%); color: #ff8fa3 !important; }
+.progressFocus strong { color: var(--ink); }
+@container (max-width: 560px) {
+  .progressRows li { grid-template-columns: minmax(0, 1fr) auto auto; gap: 4px 10px; }
+  .progressBar { grid-column: 1 / -1; grid-row: 2; }
+}

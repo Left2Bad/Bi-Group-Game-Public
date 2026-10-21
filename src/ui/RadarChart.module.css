@@ -1,0 +1,49 @@
+.figure { width: 100%; margin: 0; display: grid; justify-items: center; gap: 6px; }
+.chart { width: 100%; max-width: 520px; height: auto; overflow: visible; }
+.grid { fill: none; stroke: var(--border); stroke-width: 1; }
+.axis { stroke: var(--border); stroke-width: 1; }
+.balanced { fill: none; stroke: var(--muted); stroke-width: 1.5; stroke-dasharray: 4 4; opacity: .7; }
+.shape { fill: color-mix(in srgb, var(--brand) 18%, transparent); stroke: var(--brand); stroke-width: 2; stroke-linejoin: round;
+  transform-origin: 250px 190px; animation: radar-in .7s cubic-bezier(.2, .8, .2, 1) both; }
+.dot { fill: var(--brand); stroke: var(--surface); stroke-width: 2; animation: radar-in .7s cubic-bezier(.2, .8, .2, 1) both; transform-origin: 250px 190px; }
+.hit { fill: transparent; cursor: default; }
+.vertex:hover .dot { r: 7; }
+.label { font-size: 16px; fill: var(--muted); }
+.labelName { font-weight: 600; }
+.labelValue { fill: var(--ink); font-weight: 800; font-size: 19px; font-variant-numeric: tabular-nums; }
+.legend { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; font-size: .8rem; color: var(--muted); }
+.legendShape, .legendBalanced { display: inline-block; width: 18px; height: 10px; border-radius: 3px; margin-left: 6px; }
+.legendShape { background: color-mix(in srgb, var(--brand) 18%, transparent); border: 2px solid var(--brand); }
+.legendBalanced { border: 1.5px dashed var(--muted); height: 0; border-radius: 0; }
+/* Цветной вариант: сектора по качествам, контур и светящиеся точки. */
+.wedge { transform-origin: 250px 190px; animation: radar-in .7s cubic-bezier(.2, .8, .2, 1) both; }
+.outline { fill: none; stroke: rgb(255 255 255 / 85%); stroke-width: 1.5; stroke-linejoin: round; transform-origin: 250px 190px; animation: radar-in .7s cubic-bezier(.2, .8, .2, 1) both; }
+.halo { opacity: .28; }
+@keyframes radar-in { from { transform: scale(.2); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+
+/* Тёмный лист чертежа: линии сетки светлые, фигура — голубая, значения белые. */
+.dark .grid, .dark .axis { stroke: rgb(155 206 255 / 28%); }
+.dark .balanced { stroke: var(--blueprint-line); opacity: .8; }
+.dark .shape { fill: rgb(93 181 255 / 26%); stroke: #5db5ff; }
+.dark .dot { fill: #5db5ff; stroke: var(--blueprint); }
+.dark .label { fill: var(--blueprint-line); }
+.dark .labelValue { fill: #fff; }
+.dark .legend { color: #cfe6ff; }
+.dark .legendShape { background: rgb(93 181 255 / 26%); border-color: #5db5ff; }
+.dark .legendBalanced { border-color: var(--blueprint-line); }
+@media(max-width: 520px) { .label { font-size: 18px; } .labelValue { font-size: 21px; } }
+
+/* Вторая серия: основная фигура уходит в тень, профиль сотрудника рисуется поверх ярким контуром. */
+.base { transition: opacity .35s ease, filter .35s ease; }
+[data-overlay] .base { opacity: .32; filter: saturate(.4); }
+.overlayShape { fill: rgb(255 209 102 / 20%); stroke: #ffd166; stroke-width: 2.5; stroke-linejoin: round;
+  filter: drop-shadow(0 0 8px rgb(255 209 102 / 45%)); transform-origin: 250px 190px; animation: radar-in .55s cubic-bezier(.2, .8, .2, 1) both; }
+.overlayDot { fill: #ffd166; stroke: var(--surface); stroke-width: 2; transform-origin: 250px 190px; animation: radar-in .55s cubic-bezier(.2, .8, .2, 1) both; }
+.overlayDot[data-sign="1"] { fill: #5be0a8; }
+.overlayDot[data-sign="-1"] { fill: #ff8fa3; }
+.labelBase { fill: var(--muted); font-size: 13px; font-weight: 600; }
+.dark .labelBase { fill: var(--blueprint-line); }
+.legendOverlay { display: inline-block; width: 18px; height: 10px; margin-left: 6px; border-radius: 3px; background: rgb(255 209 102 / 20%); border: 2px solid #ffd166; }
+@media (prefers-reduced-motion: reduce) { .overlayShape, .overlayDot { animation: none; } .base { transition: none; } }
+/* Третья строка нижней подписи выходит к краю viewBox: легенду отодвигаем. */
+[data-overlay] .chart { margin-bottom: 14px; }

@@ -1,0 +1,11 @@
+.backdrop { position: fixed; z-index: -1; inset: 0; overflow: hidden; pointer-events: none; background: linear-gradient(180deg, color-mix(in srgb, var(--brand-soft) 55%, var(--canvas)), var(--canvas) 70%); }
+.particles { position: absolute !important; inset: 0; filter: blur(2px); opacity: .55; }
+/* Огни темнее, чем на главной: меньше прозрачность и глубже цвета, чтобы не спорить с карточками. */
+.orbs { position: absolute; inset: -10%; filter: blur(90px); opacity: .32; }
+.orbs i { position: absolute; aspect-ratio: 1; border-radius: 50%; }
+.orbs i:nth-child(1) { top: -5%; left: -5%; width: 34vw; background: #1f6fc4; animation: orb 20s ease-in-out infinite alternate; }
+.orbs i:nth-child(2) { top: 10%; right: 6%; width: 24vw; background: #c99a2e; animation: orb 24s ease-in-out infinite alternate-reverse; }
+.orbs i:nth-child(3) { bottom: 0; left: 35%; width: 30vw; background: #2b78c9; animation: orb 22s ease-in-out infinite alternate; }
+@keyframes orb { to { transform: translate3d(8vw, 6vh, 0) scale(1.15); } }
+@media (prefers-reduced-motion: reduce) { .orbs i { animation: none; } }
+@media print { .backdrop { display: none; } }
